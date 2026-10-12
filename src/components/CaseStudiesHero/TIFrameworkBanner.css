@@ -1,0 +1,276 @@
+/* =========================================================
+   TI FRAMEWORK BANNER
+========================================================= */
+
+.ti-framework-banner {
+  position: relative;
+
+  width: 100%;
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.ti-framework-banner__overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: -1;
+
+  background:  #000000c2;
+}
+
+
+/* =========================================================
+   CENTER CONTENT
+========================================================= */
+
+.ti-framework-banner__content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding: 40px 24px;
+
+  text-align: center;
+
+  margin-top: 90px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.ti-framework-banner__content h2 {
+  margin: 0 0 30px;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  font-weight: 500;
+
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+
+/* =========================================================
+   SHOW MORE BUTTON
+========================================================= */
+
+.ti-framework-banner__button {
+  min-width: 210px;
+
+  padding: 19px 30px;
+
+  border: none;
+  border-radius: 5px;
+
+background: #006ea4;
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.ti-framework-banner__button:hover {
+  background: #b18d60;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.ti-framework-banner__button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   SCROLL BUTTON
+========================================================= */
+
+.ti-framework-banner__scroll {
+  position: absolute;
+
+  right: 24px;
+  bottom: 38px;
+
+  z-index: 3;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  background: rgba(255, 255, 255, 0.95);
+  color: #243c4c;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ti-framework-banner__scroll:hover {
+  background: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+.ti-framework-banner__scroll span {
+  display: block;
+
+  font-size: 1.35rem;
+  font-weight: 400;
+
+  line-height: 1;
+
+  transform: translateY(2px);
+}
+
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+  .ti-framework-banner {
+    min-height: 570px;
+  }
+
+  .ti-framework-banner__content {
+    margin-top: 70px;
+  }
+
+  .ti-framework-banner__scroll {
+    right: 20px;
+    bottom: 26px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+  .ti-framework-banner {
+    min-height: 520px;
+
+    background-position: center center;
+  }
+
+  .ti-framework-banner__overlay {
+    background: rgba(0, 0, 0, 0.28);
+  }
+
+  .ti-framework-banner__content {
+    margin-top: 50px;
+
+    padding: 0 20px;
+  }
+
+  .ti-framework-banner__content h2 {
+    margin-bottom: 24px;
+
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .ti-framework-banner__button {
+    min-width: 180px;
+
+    padding: 17px 26px;
+
+    font-size: 0.92rem;
+  }
+
+  .ti-framework-banner__scroll {
+    width: 42px;
+    height: 42px;
+
+    right: 16px;
+    bottom: 18px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .ti-framework-banner {
+    min-height: 470px;
+  }
+
+  .ti-framework-banner__content {
+    margin-top: 35px;
+  }
+
+  .ti-framework-banner__content h2 {
+    font-size: 2rem;
+
+    letter-spacing: 0;
+  }
+
+  .ti-framework-banner__button {
+    min-width: 165px;
+
+    padding: 15px 22px;
+
+    font-size: 0.85rem;
+  }
+
+  .ti-framework-banner__scroll {
+    width: 38px;
+    height: 38px;
+
+    right: 12px;
+    bottom: 14px;
+  }
+}

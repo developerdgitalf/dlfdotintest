@@ -1,0 +1,368 @@
+/* =========================================
+   SERVICES CAPABILITY GRID
+========================================= */
+
+.capability-section {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #072f7d 0%,
+    #144bd3 53%,
+    #2860ff 100%
+  );
+  padding: 90px 0;
+}
+
+/* Slightly narrower content area on large screens */
+
+.capability-section .site-container-small {
+  width: min(100% - 180px, 1450px);
+  margin-inline: auto;
+}
+
+/* =========================================
+   ASYMMETRIC DESKTOP GRID
+========================================= */
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 310px 310px;
+  gap: 10px;
+}
+
+/* Large top-left panel */
+
+.capability-narrative {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+/* Bottom left panel */
+
+.capability-business {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* Bottom middle panel */
+
+.capability-advisory {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Tall right panel */
+
+.capability-research {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
+/* =========================================
+   PANEL
+========================================= */
+
+.capability-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+
+  background-color: #07111d;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  isolation: isolate;
+
+  transition: transform 0.35s ease;
+}
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.capability-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 13, 23, 0.88) 0%,
+      rgba(5, 13, 23, 0.58) 52%,
+      rgba(5, 13, 23, 0.18) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 13, 23, 0.82) 0%,
+      rgba(5, 13, 23, 0.08) 100%
+    );
+}
+
+/* =========================================
+   PANEL CONTENT
+========================================= */
+
+.capability-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 38px;
+}
+
+/* Narrative panel */
+
+.capability-narrative .capability-content {
+  max-width: 600px;
+}
+
+/* Research panel */
+
+.capability-research .capability-content {
+  max-width: 100%;
+  padding-top: 350px;
+}
+
+/* =========================================
+   HEADINGS
+   Increased ~10%
+========================================= */
+
+.capability-content h3 {
+  margin: 0;
+
+  min-height: 38px;
+
+  color: #f4f1eb;
+
+  font-family: "Inter", Arial, sans-serif;
+
+  /* Increased from 1.15rem–1.55rem */
+  font-size: clamp(1.27rem, 1.65vw, 1.70rem);
+
+  font-weight: 600;
+
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+
+  max-width: 430px;
+}
+
+/* =========================================
+   ACCENT LINE
+========================================= */
+
+.capability-line {
+  display: block;
+  flex-shrink: 0;
+
+  width: 92px;
+  height: 2px;
+
+  background: #19a8e8;
+
+  margin: 10px 0;
+}
+
+/* =========================================
+   DESCRIPTION
+   Increased ~10%
+========================================= */
+
+.capability-content p {
+  margin: 0;
+
+  max-width: 470px;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-family: "Inter", Arial, sans-serif;
+
+  /* Increased from 14px */
+  font-size: 15.4px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+}
+
+/* =========================================
+   READ MORE
+   Increased ~10%
+========================================= */
+
+.capability-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: auto;
+
+  color: #f4f1eb;
+
+  font-family: "Inter", Arial, sans-serif;
+
+  /* Increased from 0.72rem */
+  font-size: 0.79rem;
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: opacity 0.25s ease;
+}
+
+/* =========================================
+   ARROW
+========================================= */
+
+.capability-arrow {
+  color: #19a8e8;
+
+  font-size: 1rem;
+  line-height: 1;
+
+  transition: transform 0.25s ease;
+}
+
+/* =========================================
+   READ MORE HOVER
+========================================= */
+
+.capability-link:hover {
+  opacity: 0.85;
+}
+
+.capability-link:hover .capability-arrow {
+  transform: translateX(4px);
+}
+
+/* =========================================
+   SUBTLE PANEL INTERACTION
+========================================= */
+
+.capability-panel:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+  .capability-section .site-container-small {
+    width: min(100% - 100px, 1450px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .capability-section {
+    padding: 48px 0;
+  }
+
+  .capability-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .capability-narrative,
+  .capability-business,
+  .capability-advisory,
+  .capability-research {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 280px;
+  }
+
+  .capability-content {
+    padding: 32px;
+  }
+
+  .capability-research .capability-content {
+    padding-top: 32px;
+  }
+
+  /* Tablet typography */
+
+  .capability-content h3 {
+    font-size: 1.43rem;
+  }
+
+  .capability-content p {
+    font-size: 14.3px;
+  }
+
+  .capability-link {
+    font-size: 0.77rem;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .capability-section .site-container-small {
+    width: min(100% - 48px, 1450px);
+  }
+}
+
+@media (max-width: 700px) {
+  .capability-section {
+    padding: 36px 0;
+  }
+
+  .capability-section .site-container-small {
+    width: calc(100% - 40px);
+  }
+
+  .capability-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .capability-narrative,
+  .capability-business,
+  .capability-advisory,
+  .capability-research {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 300px;
+  }
+
+  .capability-content {
+    padding: 24px;
+  }
+
+  .capability-research .capability-content {
+    padding-top: 24px;
+  }
+
+  /* Mobile heading +10% */
+
+  .capability-content h3 {
+    min-height: auto;
+    font-size: 1.49rem;
+  }
+
+  /* Mobile description +10% */
+
+  .capability-content p {
+    font-size: 0.825rem;
+  }
+
+  /* Mobile Read More +10% */
+
+  .capability-link {
+    margin-top: 20px;
+    font-size: 0.79rem;
+  }
+}

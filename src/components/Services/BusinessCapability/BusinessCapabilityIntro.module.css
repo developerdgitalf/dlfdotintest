@@ -1,0 +1,413 @@
+/* =========================================================
+   BUSINESS CAPABILITY — INTRO
+========================================================= */
+
+.introSection {
+  width: 100%;
+
+  background: #ffffff;
+
+  padding: 72px 24px 78px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   1200PX CONTAINER
+========================================================= */
+
+.container {
+  width: 1200px;
+
+  max-width: 100%;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TOP INTRO TEXT
+========================================================= */
+
+.introText {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  color: #173f68;
+
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+
+  letter-spacing: 0;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider {
+  width: 950px;
+
+  max-width: 80%;
+
+  height: 1px;
+
+  margin: 38px auto 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   DIVIDER LINE
+========================================================= */
+
+.divider::before,
+.divider::after {
+  content: "";
+
+  display: block;
+
+  width: 100%;
+
+  height: 1px;
+
+  background: rgba(164, 124, 66, 0.32);
+}
+
+
+/* Hide center dot */
+
+.divider span {
+  display: none;
+}
+
+
+/* =========================================================
+   MAIN STATEMENT
+========================================================= */
+
+.statement {
+  width: 100%;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  color: #082c55;
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+
+  font-size: 33px;
+
+  font-weight: 400;
+
+  line-height: 1.32;
+
+  letter-spacing: 0;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TECHNOLOGY HIGHLIGHT
+========================================================= */
+
+.statement span {
+  color: #2868b7;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SERVICE / PRODUCT / SOLUTION HIGHLIGHT
+========================================================= */
+
+.statement .highlight {
+  color: #0053d3;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+
+/* =========================================================
+   DESKTOP BREAK
+========================================================= */
+
+.desktopBreak {
+  display: block;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1401px) {
+
+  .introSection {
+    padding: 82px 24px 88px;
+  }
+
+  .introText {
+    font-size: 27px;
+
+    line-height: 1.4;
+  }
+
+  .divider {
+    max-width: 950px;
+
+    margin-top: 40px;
+
+    margin-bottom: 36px;
+  }
+
+  .statement {
+    font-size: 32px;
+
+    line-height: 1.3;
+
+    max-width: 1250px;
+  }
+}
+
+
+/* =========================================================
+   1200 → 1025
+========================================================= */
+
+@media (max-width: 1400px) and (min-width: 1025px) {
+
+  .introSection {
+    padding: 75px 24px 82px;
+  }
+
+  .introText {
+    font-size: 28px;
+  }
+
+  .divider {
+    max-width: 900px;
+
+    margin: 36px auto 32px;
+  }
+
+  .statement {
+    max-width: 1150px;
+
+    font-size: 32px;
+
+    line-height: 1.32;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .introSection {
+    padding: 64px 24px 72px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .introText {
+    max-width: 900px;
+
+    font-size: 25px;
+
+    line-height: 1.4;
+  }
+
+  .divider {
+    width: 80%;
+
+    margin: 32px auto 30px;
+  }
+
+  .statement {
+    max-width: 900px;
+
+    font-size: 28px;
+
+    line-height: 1.35;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .introSection {
+    padding: 55px 22px 64px;
+  }
+
+  .introText {
+    max-width: 760px;
+
+    font-size: 23px;
+
+    line-height: 1.45;
+  }
+
+  .divider {
+    width: 75%;
+
+    margin: 28px auto;
+  }
+
+  .statement {
+    max-width: 760px;
+
+    font-size: 25px;
+
+    line-height: 1.4;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .introSection {
+    padding: 48px 18px 58px;
+  }
+
+  .introText {
+    max-width: 100%;
+
+    font-size: 21px;
+
+    line-height: 1.5;
+  }
+
+  .divider {
+    width: 70%;
+
+    max-width: 320px;
+
+    margin: 24px auto;
+  }
+
+  .statement {
+    max-width: 100%;
+
+    font-size: 22px;
+
+    line-height: 1.45;
+
+    letter-spacing: 0;
+  }
+
+  .desktopBreak {
+    display: block;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .introSection {
+    padding: 42px 16px 50px;
+  }
+
+  .introText {
+    font-size: 19px;
+
+    line-height: 1.5;
+  }
+
+  .divider {
+    width: 68%;
+
+    max-width: 280px;
+
+    margin: 22px auto;
+  }
+
+  .statement {
+    font-size: 19px;
+
+    line-height: 1.5;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .introText {
+    font-size: 18px;
+  }
+
+  .statement {
+    font-size: 18px;
+  }
+
+  .divider {
+    width: 65%;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .divider,
+  .introText,
+  .statement {
+    transition: none;
+  }
+}

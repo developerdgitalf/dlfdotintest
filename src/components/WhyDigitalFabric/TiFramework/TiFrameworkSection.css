@@ -1,0 +1,260 @@
+/* =====================================================
+   TI FRAMEWORK OUTCOMES SECTION
+===================================================== */
+
+.framework-section {
+  width: 100%;
+  padding: 72px 0;
+  background: #f4f3f1;
+}
+
+.framework-container {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 2px minmax(0, 1fr);
+  gap: 56px;
+
+  padding: 58px 70px;
+  border-radius: 18px;
+
+  background-color: #0c092e ;
+  
+
+  box-shadow: 0 14px 35px rgba(13, 27, 46, 0.22);
+}
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.framework-content {
+  color: #f3f4f6;
+}
+
+.framework-content h2 {
+  margin: 0 0 34px;
+
+  color: #f5f5f3;
+  font-size: clamp(28px, 2.1vw, 38px);
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.framework-content h2 sup,
+.framework-content p sup {
+  font-size: 0.5em;
+}
+
+.framework-content p {
+  margin: 0 0 26px;
+
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(17px, 1.25vw, 22px);
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.framework-content p:last-child {
+  margin-bottom: 0;
+}
+
+.framework-content p span {
+  color: #79acec;
+  font-weight: 700;
+}
+
+/* =====================================================
+   CENTER DIVIDER
+===================================================== */
+
+.framework-divider {
+  width: 2px;
+  height: 100%;
+  min-height: 580px;
+  align-self: center;
+
+  background: rgba(255, 255, 255, 0.82);
+}
+
+/* =====================================================
+   RIGHT OUTCOMES
+===================================================== */
+
+.framework-outcomes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.framework-item {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  align-items: center;
+  gap: 26px;
+
+  padding: 13px 0 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.framework-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* =====================================================
+   ICON CIRCLE
+===================================================== */
+
+.framework-icon {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #f5f5f3;
+
+  box-shadow:
+    inset 0 0 18px rgba(18, 38, 65, 0.08),
+    0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.framework-icon svg {
+  width: 43px;
+  height: 43px;
+
+  fill: none;
+  stroke: #4b89d4;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* =====================================================
+   OUTCOME TEXT
+===================================================== */
+
+.framework-text {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(17px, 1.35vw, 24px);
+  line-height: 1.42;
+  font-weight: 400;
+}
+
+.framework-text strong {
+  color: #79acec;
+  font-weight: 700;
+}
+
+/* =====================================================
+   LARGE DESKTOP / 4K
+   Maximum width remains controlled at 1400px
+===================================================== */
+
+@media (min-width: 1920px) {
+  .framework-section {
+    padding: 88px 0;
+  }
+}
+
+/* =====================================================
+   LAPTOP
+===================================================== */
+
+@media (max-width: 1200px) {
+  .framework-container {
+    width: min(1200px, calc(100% - 64px));
+    gap: 42px;
+    padding: 52px;
+  }
+
+  .framework-divider {
+    min-height: 520px;
+  }
+
+  .framework-item {
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+  }
+
+  .framework-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .framework-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+  .framework-container {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .framework-divider {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+  }
+
+  .framework-content h2 {
+    font-size: 30px;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+  .framework-section {
+    padding: 48px 0;
+  }
+
+  .framework-container {
+    width: calc(100% - 32px);
+    padding: 36px 24px;
+    border-radius: 12px;
+  }
+
+  .framework-content h2 {
+    font-size: 25px;
+  }
+
+  .framework-content p {
+    font-size: 16px;
+  }
+
+  .framework-item {
+    grid-template-columns: 56px 1fr;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .framework-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .framework-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .framework-text {
+    font-size: 16px;
+  }
+}

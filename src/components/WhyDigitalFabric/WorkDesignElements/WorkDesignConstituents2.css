@@ -1,0 +1,586 @@
+/* =========================================================
+   WORK DESIGN CONSTITUENTS
+========================================================= */
+
+.work-design-constituents {
+  width: 100%;
+
+  background: #fff;
+
+  padding: 70px 0 70px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.work-design-constituents__container {
+  width: 1200px;
+
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.constituents-list {
+ box-sizing: border-box;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 30px;
+}
+
+
+/* =========================================================
+   ROW
+========================================================= */
+
+.constituent-row {
+  width: 100%;
+
+  min-height: 430px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  background: transparent;
+
+  border: 0;
+
+  outline: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGE LEFT
+========================================================= */
+
+.constituent-row--image-left
+.constituent-image {
+  order: 1;
+}
+
+.constituent-row--image-left
+.constituent-content {
+  order: 2;
+}
+
+
+/* =========================================================
+   IMAGE RIGHT
+========================================================= */
+
+.constituent-row--image-right
+.constituent-content {
+  order: 1;
+}
+
+.constituent-row--image-right
+.constituent-image {
+  order: 2;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.constituent-image {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 430px;
+
+  overflow: hidden;
+
+  background: #d9d9d9;
+
+  box-sizing: border-box;
+}
+
+
+.constituent-image__img {
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+.constituent-image:hover
+.constituent-image__img {
+  transform: scale(1.025);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.constituent-content {
+  width: 100%;
+
+  min-height: 430px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  padding: 60px 70px;
+
+  background: #ffffff;
+
+  border: 0;
+
+  box-shadow: none;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.constituent-title {
+  width: 100%;
+
+  margin: 0 0 24px;
+
+  padding: 0;
+
+  background: transparent;
+
+  box-sizing: border-box;
+}
+
+
+.constituent-title h3 {
+  margin: 0;
+
+  color: #173f68;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 34px;
+
+  font-weight: 500;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.4px;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.constituent-content p {
+  width: 100%;
+
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #4c5660;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.constituent-read-more {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 28px;
+
+  color: #173f68;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.constituent-read-more-arrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 24px;
+
+  height: 24px;
+
+  color: #ffffff;
+
+  background: #2f7dcc;
+
+  font-size: 14px;
+
+  line-height: 1;
+}
+
+
+.constituent-read-more:hover {
+  color: #2f7dcc;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (max-width: 1280px) {
+
+  .work-design-constituents {
+    padding: 65px 0 80px;
+  }
+
+  .work-design-constituents__container {
+    width: 1160px;
+  }
+
+  .constituents-list {
+    gap: 35px;
+  }
+
+  .constituent-row {
+    min-height: 400px;
+  }
+
+  .constituent-image {
+    min-height: 400px;
+  }
+
+  .constituent-content {
+    min-height: 400px;
+
+    padding: 55px 60px;
+  }
+
+  .constituent-title h3 {
+    font-size: 31px;
+  }
+
+  .constituent-content p {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .work-design-constituents {
+    padding: 55px 0 70px;
+  }
+
+  .work-design-constituents__container {
+    width: calc(100% - 40px);
+
+    max-width: 900px;
+  }
+
+  .constituents-list {
+    gap: 30px;
+  }
+
+  .constituent-row {
+    min-height: 340px;
+  }
+
+  .constituent-image {
+    min-height: 340px;
+  }
+
+  .constituent-content {
+    min-height: 340px;
+
+    padding: 45px 35px;
+  }
+
+  .constituent-title {
+    margin-bottom: 20px;
+  }
+
+  .constituent-title h3 {
+    font-size: 28px;
+  }
+
+  .constituent-content p {
+    font-size: 16px;
+
+    line-height: 1.62;
+  }
+
+  .constituent-read-more {
+    margin-top: 22px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .work-design-constituents__container {
+    width: calc(100% - 32px);
+
+    max-width: 720px;
+  }
+
+  .constituent-row {
+    min-height: 300px;
+  }
+
+  .constituent-image {
+    min-height: 300px;
+  }
+
+  .constituent-content {
+    min-height: 300px;
+
+    padding: 35px 28px;
+  }
+
+  .constituent-title h3 {
+    font-size: 25px;
+  }
+
+  .constituent-content p {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .work-design-constituents {
+    padding: 45px 0 55px;
+  }
+
+  .work-design-constituents__container {
+    width: calc(100% - 28px);
+
+    max-width: 620px;
+  }
+
+  .constituents-list {
+    gap: 28px;
+  }
+
+  .constituent-row {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+  }
+
+
+  /* -----------------------------------------
+     MOBILE ORDER
+  ----------------------------------------- */
+
+  .constituent-row--image-left
+  .constituent-image {
+    order: 1;
+  }
+
+  .constituent-row--image-left
+  .constituent-content {
+    order: 2;
+  }
+
+  .constituent-row--image-right
+  .constituent-image {
+    order: 1;
+  }
+
+  .constituent-row--image-right
+  .constituent-content {
+    order: 2;
+  }
+
+
+  /* -----------------------------------------
+     IMAGE
+  ----------------------------------------- */
+
+  .constituent-image {
+    width: 100%;
+
+    min-height: 260px;
+
+    height: 260px;
+  }
+
+
+  /* -----------------------------------------
+     CONTENT
+  ----------------------------------------- */
+
+  .constituent-content {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 38px 26px;
+  }
+
+  .constituent-title {
+    margin-bottom: 18px;
+  }
+
+  .constituent-title h3 {
+    font-size: 27px;
+
+    line-height: 1.2;
+  }
+
+  .constituent-content p {
+    max-width: 100%;
+
+    font-size: 16px;
+
+    line-height: 1.62;
+  }
+
+  .constituent-read-more {
+    margin-top: 22px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .work-design-constituents {
+    padding: 38px 0 45px;
+  }
+
+  .work-design-constituents__container {
+    width: calc(100% - 20px);
+
+    max-width: 450px;
+  }
+
+  .constituents-list {
+    gap: 22px;
+  }
+
+  .constituent-image {
+    min-height: 210px;
+
+    height: 210px;
+  }
+
+  .constituent-content {
+    padding: 30px 20px;
+  }
+
+  .constituent-title {
+    margin-bottom: 15px;
+  }
+
+  .constituent-title h3 {
+    font-size: 24px;
+  }
+
+  .constituent-content p {
+    font-size: 15px;
+
+    line-height: 1.62;
+  }
+
+  .constituent-read-more {
+    margin-top: 20px;
+
+    font-size: 13px;
+  }
+
+  .constituent-read-more-arrow {
+    width: 22px;
+    height: 22px;
+  }
+}

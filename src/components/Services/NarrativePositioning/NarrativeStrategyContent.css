@@ -1,0 +1,190 @@
+/* =========================================================
+   NARRATIVE STRATEGY CONTENT
+========================================================= */
+
+.narrative-strategy-content {
+  width: 100%;
+  padding: 48px 20px 54px;
+  background: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.narrative-strategy-content__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN FEATURED CARD
+========================================================= */
+
+.narrative-strategy-content__featured {
+  width: min(100%, 1200px);
+  height: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 14px;
+  box-sizing: border-box;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.narrative-strategy-content__featured:hover {
+  box-shadow: 0 18px 40px rgba(26, 43, 69, 0.16);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.narrative-strategy-content__content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.narrative-strategy-content__content h3 {
+  max-width: 390px;
+  margin: 0;
+  color: #142b5d;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: clamp(1.65rem, 1.4vw, 2rem);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0;
+}
+
+.narrative-strategy-content__line {
+  width: 34px;
+  height: 2px;
+  margin: 18px 0;
+  background: #2288d0;
+}
+
+.narrative-strategy-content__content p {
+  max-width: 410px;
+  margin: 0;
+  color: #506079;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.narrative-strategy-content__image {
+ position: relative;
+  width: 100%;
+  height: 300px;
+  min-height: 0;
+  overflow: hidden;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.narrative-strategy-content__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .narrative-strategy-content {
+    padding: 42px 18px 48px;
+  }
+
+  .narrative-strategy-content__featured {
+    min-height: 300px;
+  }
+
+  .narrative-strategy-content__image {
+    min-height: 350px;
+  }
+
+  .narrative-strategy-content__content {
+    padding: 32px;
+  }
+
+  .narrative-strategy-content__content h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+  .narrative-strategy-content {
+    padding: 38px 14px 44px;
+  }
+
+  .narrative-strategy-content__featured {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    border-radius: 10px;
+  }
+
+  .narrative-strategy-content__image {
+    min-height: 240px;
+    order: 1;
+  }
+
+  .narrative-strategy-content__content {
+    order: 2;
+    padding: 28px 22px 32px;
+  }
+
+  .narrative-strategy-content__content h3 {
+    font-size: 1.55rem;
+  }
+
+  .narrative-strategy-content__content p {
+    font-size: 0.86rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .narrative-strategy-content__content {
+    padding: 24px 18px 28px;
+  }
+
+  .narrative-strategy-content__content h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .narrative-strategy-content__featured {
+    transition: none;
+  }
+}

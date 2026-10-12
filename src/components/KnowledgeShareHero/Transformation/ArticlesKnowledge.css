@@ -1,0 +1,1030 @@
+/* =========================================================
+   ARTICLES & KNOWLEDGE
+========================================================= */
+
+.articles-knowledge-section {
+  width: 100%;
+
+  padding: 90px 0 100px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.articles-knowledge-container {
+  width: min(1200px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.articles-knowledge-header {
+  width: 100%;
+
+  margin-bottom: 42px;
+
+  box-sizing: border-box;
+}
+
+.articles-knowledge-header-copy {
+  max-width: 850px;
+}
+
+.articles-knowledge-eyebrow {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  color: #173f68;
+}
+
+.articles-knowledge-header h2 {
+  margin: 0 0 16px;
+
+  color: #141415;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.03em;
+}
+
+.articles-knowledge-header p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #173f68;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.articles-knowledge-toolbar {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+  margin-bottom: 18px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #e6edf4;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CATEGORY LIST
+========================================================= */
+
+.articles-category-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.articles-category-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 42px;
+
+  margin: 0;
+
+  padding: 9px 18px;
+
+  border: 1px solid #d8e3ed;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  color: #173f68;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  letter-spacing: 0;
+
+  cursor: default;
+
+  box-sizing: border-box;
+}
+
+.articles-category-button.is-active {
+  border-color: #173f68;
+
+  background: #173f68;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.articles-search {
+  position: relative;
+
+  width: 300px;
+
+  flex: 0 0 300px;
+
+  box-sizing: border-box;
+}
+
+.articles-search svg {
+  position: absolute;
+
+  left: 15px;
+  top: 50%;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translateY(-50%);
+
+  color: #173f68;
+
+  pointer-events: none;
+}
+
+.articles-search input {
+  width: 100%;
+
+  height: 44px;
+
+  margin: 0;
+
+  padding: 0 16px 0 43px;
+
+  border: 1px solid #d8e3ed;
+
+  border-radius: 22px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #141415;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+}
+
+.articles-search input::placeholder {
+  color: #7b8a99;
+}
+
+.articles-search input:focus {
+  border-color: #173f68;
+
+  box-shadow:
+    0 0 0 3px rgba(23, 63, 104, 0.08);
+}
+
+
+/* =========================================================
+   ARTICLE COUNT
+========================================================= */
+
+.articles-knowledge-count {
+  width: 100%;
+
+  margin-bottom: 22px;
+
+  color: #6d7c8a;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  text-align: right;
+}
+
+
+/* =========================================================
+   ARTICLE GRID
+========================================================= */
+
+.articles-knowledge-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 28px;
+
+  align-items: stretch;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ARTICLE CARD
+========================================================= */
+
+.knowledge-article-card {
+  width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 18px rgba(18, 51, 79, 0.08);
+
+  transition:
+    box-shadow 0.3s ease;
+
+  box-sizing: border-box;
+}
+
+.knowledge-article-card:hover {
+  box-shadow:
+    0 12px 30px rgba(18, 51, 79, 0.13);
+}
+
+
+/* =========================================================
+   ARTICLE IMAGE
+========================================================= */
+
+.knowledge-article-image {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  height: 230px;
+
+  overflow: hidden;
+
+  background: #eef3f7;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+}
+
+.knowledge-article-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.knowledge-article-card:hover
+.knowledge-article-image img {
+  transform: scale(1.015);
+}
+
+
+/* =========================================================
+   IMAGE PLACEHOLDER
+========================================================= */
+
+.knowledge-article-image-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #eef3f7;
+
+  color: #173f68;
+}
+
+.knowledge-article-image-placeholder svg {
+  width: 34px;
+  height: 34px;
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+========================================================= */
+
+.knowledge-article-content {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 24px 24px 26px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.knowledge-article-meta {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 15px;
+
+  color: #d0782e;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.knowledge-article-content h3 {
+  margin: 0 0 13px;
+
+  color: #141415;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   EXCERPT
+========================================================= */
+
+.knowledge-article-content p {
+  margin: 0;
+
+  color: #173f68;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.knowledge-article-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  margin-top: auto;
+  padding-top: 22px;
+
+  color: #173f68;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+
+  transition:
+    gap 0.25s ease,
+    color 0.25s ease;
+}
+
+.knowledge-article-link svg {
+  width: 16px;
+  height: 16px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+.knowledge-article-link:hover {
+  gap: 12px;
+
+  color: #168cff;
+}
+
+.knowledge-article-link:hover svg {
+  transform: translateX(2px);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.articles-empty-state {
+  grid-column: 1 / -1;
+
+  min-height: 260px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: #f8fafc;
+
+  border-radius: 10px;
+
+  box-sizing: border-box;
+}
+
+.articles-empty-state > svg {
+  width: 38px;
+  height: 38px;
+
+  margin-bottom: 15px;
+
+  color: #173f68;
+}
+
+.articles-empty-state h3 {
+  margin: 0 0 8px;
+
+  color: #141415;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.articles-empty-state p {
+  margin: 0;
+
+  color: #6d7c8a;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.articles-knowledge-cta {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 50px;
+
+  padding: 24px 26px;
+
+  background: #f5f8fc;
+
+  border-radius: 10px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CTA ICON
+========================================================= */
+
+.articles-knowledge-cta-icon {
+  width: 48px;
+  height: 48px;
+
+  flex: 0 0 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #173f68;
+
+  color: #ffffff;
+}
+
+.articles-knowledge-cta-icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+
+/* =========================================================
+   CTA COPY
+========================================================= */
+
+.articles-knowledge-cta-copy {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.articles-knowledge-cta-copy h3 {
+  margin: 0 0 5px;
+
+  color: #141415;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.articles-knowledge-cta-copy p {
+  margin: 0;
+
+  color: #173f68;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.articles-knowledge-cta-button {
+  display: inline-flex;
+
+  flex: 0 0 auto;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 44px;
+
+  padding: 11px 18px;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: #173f68;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease;
+}
+
+.articles-knowledge-cta-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.articles-knowledge-cta-button:hover {
+  background: #168cff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .articles-knowledge-section {
+    padding: 75px 0 85px;
+  }
+
+  .articles-knowledge-container {
+    width: calc(100% - 40px);
+    max-width: 920px;
+  }
+
+  .articles-knowledge-header h2 {
+    font-size: 38px;
+  }
+
+  .articles-knowledge-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .articles-knowledge-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .articles-search {
+    width: 100%;
+    max-width: 420px;
+    flex-basis: auto;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .articles-knowledge-section {
+    padding: 55px 0 65px;
+  }
+
+  .articles-knowledge-container {
+    width: calc(100% - 28px);
+  }
+
+
+  /* =========================================
+     HEADER
+  ========================================= */
+
+  .articles-knowledge-header {
+    margin-bottom: 30px;
+  }
+
+  .articles-knowledge-eyebrow {
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+
+  .articles-knowledge-header h2 {
+    margin-bottom: 12px;
+    font-size: 31px;
+    line-height: 1.1;
+  }
+
+  .articles-knowledge-header p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+
+  /* =========================================
+     TOOLBAR
+  ========================================= */
+
+  .articles-knowledge-toolbar {
+    gap: 15px;
+
+    margin-bottom: 15px;
+
+    padding-bottom: 18px;
+  }
+
+  .articles-category-list {
+    width: 100%;
+  }
+
+  .articles-category-button {
+    min-height: 40px;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .articles-search {
+    width: 100%;
+    max-width: none;
+  }
+
+
+  /* =========================================
+     COUNT
+  ========================================= */
+
+  .articles-knowledge-count {
+    margin-bottom: 18px;
+    text-align: left;
+  }
+
+
+  /* =========================================
+     GRID
+  ========================================= */
+
+  .articles-knowledge-grid {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+
+  /* =========================================
+     IMAGE
+  ========================================= */
+
+  .knowledge-article-image {
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+  }
+
+
+  /* =========================================
+     CONTENT
+  ========================================= */
+
+  .knowledge-article-content {
+    padding: 21px 20px 23px;
+  }
+
+  .knowledge-article-meta {
+    margin-bottom: 12px;
+    font-size: 9px;
+  }
+
+  .knowledge-article-content h3 {
+    margin-bottom: 11px;
+    font-size: 21px;
+  }
+
+  .knowledge-article-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  /* =========================================
+     CTA
+  ========================================= */
+
+  .articles-knowledge-cta {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    margin-top: 32px;
+
+    padding: 22px;
+  }
+
+  .articles-knowledge-cta-button {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .articles-knowledge-section {
+    padding: 45px 0 55px;
+  }
+
+  .articles-knowledge-container {
+    width: calc(100% - 20px);
+  }
+
+  .articles-knowledge-header h2 {
+    font-size: 28px;
+  }
+
+  .articles-knowledge-header p {
+    font-size: 15px;
+  }
+
+  .knowledge-article-content h3 {
+    font-size: 20px;
+  }
+
+  .knowledge-article-content p {
+    font-size: 14px;
+  }
+
+  .articles-knowledge-cta {
+    padding: 19px;
+  }
+
+  .articles-knowledge-cta-copy h3 {
+    font-size: 18px;
+  }
+
+  .articles-knowledge-cta-copy p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .knowledge-article-card,
+  .knowledge-article-image img,
+  .knowledge-article-link,
+  .knowledge-article-link svg,
+  .articles-search input,
+  .articles-knowledge-cta-button {
+    transition: none;
+  }
+}

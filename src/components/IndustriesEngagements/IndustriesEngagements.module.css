@@ -1,0 +1,197 @@
+/* =========================================
+   DIGITALFABRIC — INDUSTRIES ENGAGEMENTS
+========================================= */
+
+.industries {
+  width: 100%;
+  background: #fff;
+  padding: 80px 0;
+}
+
+.container {
+  width: min(100% - 128px, 1360px);
+  margin: 0 auto;
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.heading {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.heading h2 {
+  margin: 0;
+
+  color: #080808;
+
+  font-size: clamp(28px, 2.5vw, 40px);
+  font-weight: 600;
+
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+
+  text-align: center;
+}
+
+.heading p {
+  width: 100%;
+  max-width: 620px;
+
+  margin: 12px auto 0;
+
+  color: rgba(19, 18, 18, 0.7);
+
+  font-size: 15px;
+  font-weight: 400;
+
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+/* =========================================
+   ENGAGEMENT GRID
+========================================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+  position: relative;
+
+  min-height: 230px;
+  padding: 28px;
+
+  display: flex;
+  align-items: flex-end;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background-color: #152033;
+  background-size: cover;
+  background-position: center;
+
+  isolation: isolate;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -1;
+
+  background: linear-gradient(
+    180deg,
+    rgba(8, 15, 28, 0.15) 0%,
+    rgba(8, 15, 28, 0.9) 100%
+  );
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.22);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+}
+
+.cardContent h3 {
+  margin: 0;
+
+  max-width: 280px;
+
+  color: #ffffff;
+
+  font-size: clamp(18px, 1.4vw, 22px);
+  font-weight: 600;
+
+  line-height: 1.2;
+}
+
+.cardContent p {
+  margin: 14px 0 0;
+
+  max-width: 300px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .container {
+    width: min(100% - 80px, 1360px);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .industries {
+    padding: 60px 0;
+  }
+
+  .container {
+    width: calc(100% - 40px);
+  }
+
+  .heading {
+    margin-bottom: 30px;
+  }
+
+  .heading h2 {
+    font-size: 29px;
+  }
+
+  .heading p {
+    max-width: 100%;
+    margin-top: 10px;
+
+    font-size: 14px;
+    line-height: 1.55;
+
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    min-height: 220px;
+    padding: 24px;
+  }
+}

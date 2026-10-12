@@ -1,0 +1,887 @@
+/* =========================================================
+   TECHNOLOGY PRODUCT FIRM
+========================================================= */
+
+.section {
+  width: 100%;
+
+  padding: 78px 0 88px;
+
+  background: #06142d;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN 1200PX CONTAINER
+========================================================= */
+
+.container {
+  width: 1200px;
+
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.06fr)
+    minmax(0, 0.94fr);
+
+  align-items: center;
+
+  gap: 68px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.content {
+  width: 100%;
+
+  max-width: 640px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.eyebrow {
+  display: block;
+
+  margin: 0 0 18px;
+
+  color: #55aef0;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.content h1 {
+  margin: 0;
+
+  color: #f7f4ef;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 58px;
+
+  font-weight: 600;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.8px;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   BLUE DIVIDER
+========================================================= */
+
+.line {
+  width: 84px;
+
+  height: 2px;
+
+  margin: 30px 0 28px;
+
+  background: #2f7fd3;
+
+  border-radius: 20px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.descriptionWrap {
+  width: 100%;
+
+  max-width: 640px;
+}
+
+.description {
+  margin: 0 0 18px;
+
+  color: rgba(232, 239, 248, 0.78);
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.72;
+
+  letter-spacing: 0;
+
+  text-align: left;
+}
+
+.description:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   COMPANY PROFILE LABEL
+========================================================= */
+
+.description strong {
+  color: #62b3f2;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  align-self: flex-start;
+
+  gap: 12px;
+
+  margin-top: 28px;
+
+  padding: 14px 24px;
+
+  color: #ffffff;
+
+  background: #2f6fca;
+
+  border: 1px solid #4a88df;
+
+  border-radius: 4px;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: 0.03em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 7px 18px rgba(47, 111, 202, 0.18);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+========================================================= */
+
+.button:hover {
+  background: #397edb;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 24px rgba(47, 111, 202, 0.25);
+}
+
+
+/* =========================================================
+   RIGHT CARDS
+========================================================= */
+
+.cards {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-rows:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   INFO CARD
+========================================================= */
+
+.infoCard {
+  width: 100%;
+
+  min-height: 220px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 34px 38px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #193b6c 0%,
+      #123259 100%
+    );
+
+  border: 1px solid rgba(75, 142, 222, 0.42);
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.infoCard:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(83, 156, 235, 0.62);
+
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+
+/* =========================================================
+   CARD INNER
+========================================================= */
+
+.infoItem {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    64px minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 24px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.icon {
+  width: 58px;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #dcecff;
+
+  background: #0d3b77;
+
+  border: 1px solid rgba(88, 157, 231, 0.36);
+
+  border-radius: 50%;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.infoCard:hover .icon {
+  background: #124b93;
+
+  transform: scale(1.03);
+}
+
+
+.icon svg {
+  width: 22px;
+
+  height: 22px;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.infoContent {
+  min-width: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD HEADING
+========================================================= */
+
+.infoContent h4 {
+  margin: 0 0 12px;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  letter-spacing: 0;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   CARD PARAGRAPH
+========================================================= */
+
+.infoContent p {
+  margin: 0;
+
+  color: rgba(216, 226, 240, 0.84);
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  letter-spacing: 0;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   HIGHLIGHT TEXT
+   BLUE — NO YELLOW
+========================================================= */
+
+.highlightText {
+  color: #68b8f5 !important;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1401px) {
+
+  .section {
+    padding: 85px 0 95px;
+  }
+
+  .container {
+    width: 1200px;
+
+    gap: 76px;
+  }
+
+  .eyebrow {
+    font-size: 25px;
+  }
+
+  .content h1 {
+    font-size: 41px;
+
+    letter-spacing: -2px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .infoCard {
+    min-height: 230px;
+
+    padding: 38px 42px;
+  }
+
+  .infoContent h4 {
+    font-size: 18px;
+  }
+
+  .infoContent p {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   1200 → 1025
+========================================================= */
+
+@media (max-width: 1400px) and (min-width: 1025px) {
+
+  .container {
+    width: 1200px;
+
+    max-width: calc(100% - 64px);
+
+    gap: 58px;
+  }
+
+  .eyebrow {
+    font-size: 21px;
+  }
+
+  .content h1 {
+    font-size: 52px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .infoCard {
+    min-height: 205px;
+
+    padding: 30px 32px;
+  }
+
+  .infoContent h4 {
+    font-size: 16px;
+  }
+
+  .infoContent p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .section {
+    padding: 62px 0 72px;
+  }
+
+  .container {
+    width: calc(100% - 48px);
+
+    max-width: 900px;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 40px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 18px;
+  }
+
+  .content h1 {
+    font-size: 44px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1px;
+  }
+
+  .line {
+    margin: 24px 0;
+  }
+
+  .description {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .infoCard {
+    min-height: 190px;
+
+    padding: 26px 24px;
+  }
+
+  .infoItem {
+    grid-template-columns:
+      56px minmax(0, 1fr);
+
+    gap: 18px;
+  }
+
+  .icon {
+    width: 50px;
+
+    height: 50px;
+  }
+
+  .icon svg {
+    width: 20px;
+
+    height: 20px;
+  }
+
+  .infoContent h4 {
+    font-size: 15px;
+  }
+
+  .infoContent p {
+    font-size: 12px;
+
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .container {
+    width: calc(100% - 40px);
+
+    max-width: 760px;
+
+    gap: 28px;
+  }
+
+  .content h1 {
+    font-size: 38px;
+  }
+
+  .eyebrow {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .infoCard {
+    min-height: 180px;
+
+    padding: 22px 20px;
+  }
+
+  .infoItem {
+    grid-template-columns:
+      50px minmax(0, 1fr);
+
+    gap: 15px;
+  }
+
+  .icon {
+    width: 46px;
+
+    height: 46px;
+  }
+
+  .infoContent h4 {
+    font-size: 14px;
+  }
+
+  .infoContent p {
+    font-size: 11.5px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .section {
+    padding: 50px 0 60px;
+  }
+
+  .container {
+    width: calc(100% - 28px);
+
+    max-width: 620px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 38px;
+  }
+
+
+  /* LEFT */
+
+  .content {
+    width: 100%;
+
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 16px;
+
+    margin-bottom: 16px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.8px;
+  }
+
+  .line {
+    width: 70px;
+
+    margin: 24px 0;
+  }
+
+  .descriptionWrap {
+    max-width: 100%;
+  }
+
+  .description {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .button {
+    margin-top: 24px;
+
+    padding: 13px 22px;
+
+    font-size: 12px;
+  }
+
+
+  /* RIGHT */
+
+  .cards {
+    width: 100%;
+
+    gap: 16px;
+  }
+
+  .infoCard {
+    min-height: 190px;
+
+    padding: 26px 22px;
+  }
+
+  .infoItem {
+    grid-template-columns:
+      52px minmax(0, 1fr);
+
+    gap: 16px;
+  }
+
+  .icon {
+    width: 46px;
+
+    height: 46px;
+  }
+
+  .infoContent h4 {
+    font-size: 15px;
+
+    line-height: 1.45;
+  }
+
+  .infoContent p {
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .section {
+    padding: 44px 0 52px;
+  }
+
+  .container {
+    width: calc(100% - 20px);
+
+    max-width: 450px;
+  }
+
+  .eyebrow {
+    font-size: 13px;
+
+    letter-spacing: 0.035em;
+  }
+
+  .content h1 {
+    font-size: 33px;
+
+    letter-spacing: -0.6px;
+  }
+
+  .description {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+  .button {
+    width: auto;
+
+    padding: 13px 20px;
+
+    font-size: 11px;
+  }
+
+  .infoCard {
+    min-height: auto;
+
+    padding: 24px 20px;
+  }
+
+  .infoItem {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .icon {
+    width: 46px;
+
+    height: 46px;
+  }
+
+  .infoContent h4 {
+    font-size: 14px;
+  }
+
+  .infoContent p {
+    font-size: 12px;
+
+    line-height: 1.65;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .button,
+  .infoCard,
+  .icon {
+    transition: none;
+  }
+}

@@ -1,0 +1,143 @@
+/* =========================================================
+   OUR EXPERTISE INTRO
+========================================================= */
+
+.our-expertise-intro {
+  width: 100%;
+
+  padding: 70px 0;
+
+  background: #f3f3f3;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.our-expertise-intro__container {
+  width: 1100px;
+
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.our-expertise-intro__content {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.our-expertise-intro__content p {
+  margin: 0;
+
+  color: #082b55;
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 22px;
+
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.2px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .our-expertise-intro {
+    padding: 65px 0;
+  }
+
+  .our-expertise-intro__container {
+    width: 900px;
+
+    max-width: calc(100% - 40px);
+  }
+
+  .our-expertise-intro__content p {
+    font-size: 21px;
+
+    line-height: 1.5;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .our-expertise-intro {
+    padding: 50px 0;
+  }
+
+  .our-expertise-intro__container {
+    width: calc(100% - 32px);
+
+    max-width: 620px;
+  }
+
+  .our-expertise-intro__content p {
+    font-size: 18px;
+
+    line-height: 1.55;
+
+    letter-spacing: 0;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .our-expertise-intro {
+    padding: 40px 0;
+  }
+
+  .our-expertise-intro__container {
+    width: calc(100% - 24px);
+  }
+
+  .our-expertise-intro__content p {
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+}

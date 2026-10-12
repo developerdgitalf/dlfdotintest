@@ -1,0 +1,225 @@
+/* ========================================
+   TEAM INTRODUCTION
+======================================== */
+
+.introductionSection {
+  width: 100%;
+  background: #f3f3f4;
+  padding: 90px 0;
+}
+
+.container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.85fr);
+  align-items: center;
+  gap: 80px;
+}
+
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.content {
+  max-width: 570px;
+  color: #294154;
+}
+
+.content p {
+  margin: 0;
+
+  font-size: clamp(1rem, 1.35vw, 1.12rem);
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.content p + p {
+  margin-top: 4px;
+}
+
+
+/* ========================================
+   RIGHT ARTWORK
+======================================== */
+
+.artwork {
+  position: relative;
+  width: 100%;
+  min-height: 310px;
+}
+
+/* Common image block styles */
+
+.block {
+  position: absolute;
+  display: block;
+
+  width: 180px;
+  height: 215px;
+  object-fit: cover;
+
+  /* Optional subtle premium effect */
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.block:hover {
+  transform: translateY(-6px);
+}
+
+
+/* ========================================
+   IMAGE POSITIONS
+======================================== */
+
+/* Back / Top Image */
+
+.blockOne {
+  width: 162px;
+  height: 195px;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-8%);
+  z-index: 1;
+}
+
+.blockOne:hover {
+  transform: translateX(-8%) translateY(-6px);
+}
+
+
+/* Main / Center Image */
+
+.blockTwo {
+  width: 190px;
+  height: 220px;
+
+  top: 58px;
+  left: 42%;
+
+  z-index: 3;
+}
+
+
+/* Right / Bottom Image */
+
+.blockThree {
+  width: 165px;
+  height: 215px;
+
+  top: 90px;
+  right: 0;
+
+  z-index: 2;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .content {
+    max-width: 680px;
+  }
+
+  .artwork {
+    width: min(520px, 100%);
+    margin: 0 auto;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+  .introductionSection {
+    padding: 65px 0;
+  }
+
+  .container {
+    width: 88%;
+    gap: 45px;
+  }
+
+  .content p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .artwork {
+    min-height: 270px;
+  }
+
+  .blockOne {
+    width: 135px;
+    height: 165px;
+
+    left: 47%;
+    transform: translateX(-15%);
+  }
+
+  .blockOne:hover {
+    transform: translateX(-15%) translateY(-5px);
+  }
+
+  .blockTwo {
+    width: 155px;
+    height: 185px;
+
+    top: 48px;
+    left: 28%;
+  }
+
+  .blockThree {
+    width: 135px;
+    height: 175px;
+
+    top: 75px;
+    right: 3%;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 420px) {
+  .artwork {
+    min-height: 235px;
+  }
+
+  .blockOne {
+    width: 115px;
+    height: 145px;
+  }
+
+  .blockTwo {
+    width: 135px;
+    height: 165px;
+
+    left: 20%;
+  }
+
+  .blockThree {
+    width: 115px;
+    height: 150px;
+
+    right: 0;
+  }
+}

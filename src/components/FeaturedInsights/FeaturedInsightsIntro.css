@@ -1,0 +1,183 @@
+/* =========================================
+   FEATURED INSIGHTS INTRO
+========================================= */
+
+.featured-insights-intro {
+  width: 100%;
+  background: #fff;
+  padding: 50px 0 80px;
+
+
+  
+}
+
+
+
+/* =========================================
+   SHARED CONTENT ALIGNMENT
+   This keeps all content centered.
+========================================= */
+
+.featured-insights-intro__container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* =========================================
+   TWO COLUMN INTRODUCTION
+========================================= */
+
+.featured-insights-intro__grid {
+ grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(40px, 7vw, 100px);
+  display: grid;
+  background-color: white;
+  padding: 0px 2px 0px 0px;
+}
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.featured-insights-intro__content {
+  max-width: 430px;
+}
+
+.featured-insights-intro__content h2 {
+  margin: 0;
+  color: #26394a;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.featured-insights-intro__line {
+  display: block;
+  width: 96px;
+  height: 3px;
+  margin: 12px 0 20px;
+  background: #1a9ad6;
+}
+
+.featured-insights-intro__content p {
+  margin: 0;
+  max-width: 400px;
+  color: #35485a;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.featured-insights-intro__image {
+  width: 100%;
+}
+
+.featured-insights-intro__image img {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+/* =========================================
+   STATEMENT BANNER
+========================================= */
+
+.featured-insights-intro__statement {
+  width: 100%;
+  margin-top: 48px;
+  padding: 22px 50px;
+  background: #214966;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.featured-insights-intro__statement p {
+  margin: 0;
+  max-width: 1000px;
+  color: #f4f2ee;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: clamp(1rem, 1.45vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+  .featured-insights-intro {
+    padding: 60px 0 70px;
+  }
+
+  .featured-insights-intro__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .featured-insights-intro__grid {
+    gap: 48px;
+  }
+
+  .featured-insights-intro__statement {
+    margin-top: 40px;
+    padding: 20px 36px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .featured-insights-intro {
+    padding: 48px 0 0px;
+  }
+
+  .featured-insights-intro__container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .featured-insights-intro__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .featured-insights-intro__content,
+  .featured-insights-intro__content p {
+    max-width: 100%;
+  }
+
+  .featured-insights-intro__image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .featured-insights-intro__statement {
+    margin-top: 36px;
+    padding: 24px 20px;
+  }
+
+  .featured-insights-intro__statement p {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+}

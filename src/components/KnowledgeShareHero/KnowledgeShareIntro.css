@@ -1,0 +1,260 @@
+/* =========================================================
+   KNOWLEDGE SHARE INTRO
+========================================================= */
+
+.knowledgeShareIntro {
+  width: 100%;
+
+  padding: 80px 0;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.knowledgeShareIntro__container {
+  width: 1200px;
+
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 90px;
+
+  align-items: start;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT BOX
+   NORMAL = NO SHADOW
+========================================================= */
+
+.knowledgeShareIntro__content {
+  width: 100%;
+
+  max-width: 520px;
+
+  min-height: 175px;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  font-weight: 500;
+
+  border: 0;
+
+  border-radius: 0;
+
+  box-shadow: none;
+
+  transition: box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   CONTENT BOX HOVER
+   SHADOW ONLY
+   NO MOVEMENT
+   NO RESIZING
+   NO BORDER
+========================================================= */
+
+.knowledgeShareIntro__content:hover {
+  box-shadow:
+    0 14px 35px rgba(20, 40, 60, 0.14);
+
+  transform: none;
+}
+
+
+/* =========================================================
+   ACCENT LINE
+========================================================= */
+
+.knowledgeShareIntro__line {
+  width: 105px;
+
+  height: 3px;
+
+  margin: 0 0 28px;
+
+  background: #1ea8e8;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.knowledgeShareIntro__content p {
+  margin: 0;
+
+  color: #212225;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 19px;
+
+  font-weight: 500;
+
+  line-height: 1.45;
+
+  letter-spacing: -0.1px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .knowledgeShareIntro {
+    padding: 65px 0;
+  }
+
+
+  .knowledgeShareIntro__container {
+    width: calc(100% - 48px);
+
+    gap: 55px;
+  }
+
+
+  .knowledgeShareIntro__content {
+    max-width: 100%;
+
+    padding: 24px;
+
+    min-height: 175px;
+  }
+
+
+  .knowledgeShareIntro__content p {
+    font-size: 17px;
+
+    line-height: 1.55;
+  }
+
+
+  .knowledgeShareIntro__line {
+    width: 90px;
+
+    height: 3px;
+
+    margin-bottom: 23px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .knowledgeShareIntro {
+    padding: 55px 0;
+  }
+
+
+  .knowledgeShareIntro__container {
+    width: calc(100% - 36px);
+
+    max-width: 620px;
+
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+
+  .knowledgeShareIntro__content {
+    width: 100%;
+
+    max-width: 100%;
+
+    min-height: 0;
+
+    padding: 24px;
+  }
+
+
+  .knowledgeShareIntro__content p {
+    font-size: 17px;
+
+    line-height: 1.62;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .knowledgeShareIntro {
+    padding: 42px 0;
+  }
+
+
+  .knowledgeShareIntro__container {
+    width: calc(100% - 28px);
+
+    gap: 24px;
+  }
+
+
+  .knowledgeShareIntro__content {
+    padding: 20px;
+  }
+
+
+  .knowledgeShareIntro__line {
+    width: 75px;
+
+    height: 2px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .knowledgeShareIntro__content p {
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .knowledgeShareIntro__content {
+    transition: none;
+  }
+}

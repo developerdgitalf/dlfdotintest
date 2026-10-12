@@ -1,0 +1,598 @@
+/* =========================================================
+   WORK DESIGN INTERACTIVE
+========================================================= */
+
+.work-design-interactive {
+  width: 100%;
+  padding: 70px 0 80px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+   FULL WIDTH
+========================================================= */
+
+.work-design-interactive__container {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TOP IMAGE SECTION
+   FULL WIDTH WHITE
+========================================================= */
+
+.work-design-interactive__visual {
+  position: relative;
+
+  width: 100%;
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  overflow: visible;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* =========================================================
+   IMAGE CONTAINER
+   1200PX
+========================================================= */
+
+.work-design-interactive__image-wrapper {
+  position: relative;
+
+  width: min(1200px, calc(100% - 48px));
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid transparent;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* =========================================================
+   IMAGE HOVER
+   BORDER + SHADOW ONLY
+========================================================= */
+
+.work-design-interactive__image-wrapper:hover {
+  border-color: rgba(5, 97, 201, 0.18);
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+/* =========================================================
+   IMAGEZOOM IMAGE
+========================================================= */
+
+.work-design-interactive__image-wrapper .image-zoom-image {
+  display: block;
+
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+
+  object-fit: contain;
+  object-position: center;
+
+  transition: none;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   DISABLE IMAGEZOOM HOVER SCALE
+========================================================= */
+
+.work-design-interactive__image-wrapper:hover .image-zoom-image {
+  transform: none;
+}
+
+/* =========================================================
+   DISABLE IMAGEZOOM OVERLAY
+========================================================= */
+
+.work-design-interactive__image-wrapper .image-zoom-overlay {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+/* =========================================================
+   BOTTOM BLUE SECTION
+   FULL WIDTH
+========================================================= */
+
+.work-design-interactive__content {
+  width: 100%;
+  min-height: 500px;
+
+  padding: 60px 0 65px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+  justify-content: flex-start;
+
+  background: #0561c9;
+  color: #ffffff;
+
+  border: 1px solid transparent;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* =========================================================
+   BLUE SECTION HOVER
+   BORDER + SHADOW ONLY
+========================================================= */
+
+.work-design-interactive__content:hover {
+  border-color: rgba(5, 97, 201, 0.35);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.14);
+}
+
+/* =========================================================
+   TEXT CONTAINER
+   MAX WIDTH 1200PX
+========================================================= */
+
+.work-design-interactive__heading,
+.work-design-interactive__slide-content {
+  width: min(1200px, calc(100% - 48px));
+  max-width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.work-design-interactive__heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  padding: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 0;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER STRONG
+========================================================= */
+
+.work-design-interactive__heading strong {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-size: inherit;
+  font-weight: 700;
+
+  line-height: inherit;
+
+  white-space: normal;
+}
+
+/* =========================================================
+   TEXT AREA
+========================================================= */
+
+.work-design-interactive__slide-content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding: 0;
+}
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.work-design-interactive__paragraph {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 0 24px;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  letter-spacing: 0;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+/* Last paragraph */
+
+.work-design-interactive__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+  .work-design-interactive {
+    padding: 80px 0 90px;
+  }
+
+  .work-design-interactive__visual {
+    min-height: 560px;
+  }
+
+  .work-design-interactive__image-wrapper {
+    width: min(1200px, calc(100% - 48px));
+    max-width: 1200px;
+  }
+
+  .work-design-interactive__content {
+    min-height: 500px;
+
+    padding: 65px 0 70px;
+  }
+
+  .work-design-interactive__heading {
+    font-size: 26px;
+  }
+
+  .work-design-interactive__paragraph {
+    font-size: 18px;
+    line-height: 1.65;
+  }
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .work-design-interactive {
+    padding: 60px 0 70px;
+  }
+
+  .work-design-interactive__visual {
+    min-height: 500px;
+  }
+
+  .work-design-interactive__image-wrapper {
+    width: min(1200px, calc(100% - 48px));
+    max-width: 1200px;
+  }
+
+  .work-design-interactive__content {
+    min-height: 500px;
+
+    padding: 55px 0 60px;
+  }
+
+  .work-design-interactive__heading {
+    font-size: 23px;
+  }
+
+  .work-design-interactive__paragraph {
+    font-size: 17px;
+    line-height: 1.62;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .work-design-interactive {
+    padding: 55px 0 65px;
+  }
+
+  .work-design-interactive__visual {
+    min-height: 430px;
+  }
+
+  .work-design-interactive__image-wrapper {
+    width: calc(100% - 40px);
+    max-width: 900px;
+  }
+
+  .work-design-interactive__content {
+    min-height: 0;
+
+    padding: 45px 0 50px;
+  }
+
+  .work-design-interactive__heading,
+  .work-design-interactive__slide-content {
+    width: calc(100% - 40px);
+    max-width: 900px;
+  }
+
+  .work-design-interactive__heading {
+    margin-bottom: 24px;
+
+    font-size: 21px;
+    line-height: 1.45;
+  }
+
+  .work-design-interactive__paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .work-design-interactive {
+    padding: 45px 0 55px;
+
+    background: #ffffff;
+  }
+
+  /* =========================================
+     FULL WIDTH MAIN
+  ========================================= */
+
+  .work-design-interactive__container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* =========================================
+     IMAGE SECTION
+  ========================================= */
+
+  .work-design-interactive__visual {
+    width: 100%;
+
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+  }
+
+  /* =========================================
+     IMAGE CONTAINER
+  ========================================= */
+
+  .work-design-interactive__image-wrapper {
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
+
+  .work-design-interactive__image-wrapper .image-zoom-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* =========================================
+     BLUE SECTION
+  ========================================= */
+
+  .work-design-interactive__content {
+    width: 100%;
+
+    min-height: 0;
+
+    padding: 38px 0 45px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #0561c9;
+  }
+
+  /* =========================================
+     TEXT CONTAINER
+  ========================================= */
+
+  .work-design-interactive__heading,
+  .work-design-interactive__slide-content {
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
+
+  /* =========================================
+     HEADER
+  ========================================= */
+
+  .work-design-interactive__heading {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .work-design-interactive__heading strong {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  /* =========================================
+     TEXT
+  ========================================= */
+
+  .work-design-interactive__paragraph {
+    width: 100%;
+    max-width: 100%;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+    line-height: 1.62;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .work-design-interactive {
+    padding: 38px 0 45px;
+  }
+
+  /* =========================================
+     IMAGE
+  ========================================= */
+
+  .work-design-interactive__visual {
+    min-height: 220px;
+  }
+
+  .work-design-interactive__image-wrapper {
+    width: calc(100% - 28px);
+    max-width: 100%;
+  }
+
+  .work-design-interactive__image-wrapper .image-zoom-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* =========================================
+     BLUE SECTION
+  ========================================= */
+
+  .work-design-interactive__content {
+    padding: 30px 0 36px;
+  }
+
+  /* =========================================
+     TEXT WIDTH
+  ========================================= */
+
+  .work-design-interactive__heading,
+  .work-design-interactive__slide-content {
+    width: calc(100% - 28px);
+  }
+
+  /* =========================================
+     HEADER
+  ========================================= */
+
+  .work-design-interactive__heading {
+    margin-bottom: 18px;
+
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .work-design-interactive__heading strong {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* =========================================
+     TEXT
+  ========================================= */
+
+  .work-design-interactive__paragraph {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .work-design-interactive__image-wrapper,
+  .work-design-interactive__content {
+    transition: none;
+  }
+}

@@ -1,0 +1,678 @@
+/* =========================================================
+   RESEARCH CARDS
+========================================================= */
+
+.industryCards {
+  width: 100%;
+
+  padding: 70px 0 80px;
+
+  background: #051c2c;
+
+  box-sizing: border-box;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.industryCardsContainer {
+  width: 1200px;
+
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FOUR CARD GRID
+========================================================= */
+
+.industryCardsGrid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 24px;
+
+  align-items: stretch;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD
+   SAME HEIGHT
+========================================================= */
+
+.industryCard {
+  width: 100%;
+
+  min-width: 0;
+
+  height: 500px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.industryCard:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.industryCardImage {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  height: 175px;
+
+  flex: 0 0 175px;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.industryCardImage img {
+  width: 100% !important;
+
+  height: 100% !important;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.6s ease;
+}
+
+.industryCard:hover .industryCardImage img {
+  transform: scale(1.035);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.industryCardContent {
+  width: 100%;
+
+  flex: 1;
+
+  min-height: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding:
+    22px
+    20px
+    20px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.industryCardTitle {
+  width: 100%;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin: 0;
+
+  color: #111111;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 1.25;
+
+  box-sizing: border-box;
+}
+
+.industryCardTitle:hover {
+  color: #2468d7;
+}
+
+.industryCardTitle span:first-child {
+  min-width: 0;
+
+  color: #111111;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+.industryCardTitle:hover span:first-child {
+  color: #2468d7;
+}
+
+
+/* =========================================================
+   TITLE ARROW
+========================================================= */
+
+.industryCardArrow {
+  flex: 0 0 auto;
+
+  color: #2f64db;
+
+  font-size: 30px;
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  transform: translateY(2px);
+}
+
+
+/* =========================================================
+   CAROUSEL VIEWPORT
+   THIS IS THE SAME CONTENT CONTAINER
+========================================================= */
+
+.cardCarouselViewport {
+  width: 100%;
+
+  flex: 1;
+
+  min-height: 0;
+
+  margin-top: 18px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CAROUSEL TRACK
+========================================================= */
+
+.cardCarouselTrack {
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: row;
+
+  transition:
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   EACH SLIDE
+========================================================= */
+
+.cardSlide {
+  height: 100%;
+
+  min-width: 0;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.cardSlide p {
+  width: 100%;
+
+  margin: 0;
+
+  color: #304765;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.industryCardReadMore {
+  flex: 0 0 auto;
+
+  align-self: flex-start;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 16px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #2468d7;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.industryCardReadMore:hover {
+  transform: translateX(4px);
+
+  opacity: 0.85;
+}
+
+
+/* =========================================================
+   READ MORE ARROW
+========================================================= */
+
+.industryCardReadMoreArrow {
+  display: inline-block;
+
+  font-size: 18px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+  .industryCards {
+    padding: 80px 0 90px;
+  }
+
+  .industryCardsContainer {
+    width: 1200px;
+  }
+
+  .industryCardsGrid {
+    gap: 28px;
+  }
+
+  .industryCard {
+    height: 520px;
+  }
+
+  .industryCardImage {
+    height: 180px;
+
+    flex-basis: 180px;
+  }
+
+  .industryCardContent {
+    padding:
+      24px
+      21px
+      22px;
+  }
+
+  .industryCardTitle,
+  .industryCardTitle span:first-child {
+    font-size: 21px;
+  }
+
+  .cardSlide p {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .industryCards {
+    padding: 55px 0 65px;
+  }
+
+  .industryCardsContainer {
+    width: calc(100% - 40px);
+
+    max-width: 900px;
+  }
+
+  .industryCardsGrid {
+    gap: 18px;
+  }
+
+  .industryCard {
+    height: 470px;
+  }
+
+  .industryCardImage {
+    height: 150px;
+
+    flex-basis: 150px;
+  }
+
+  .industryCardContent {
+    padding:
+      20px
+      17px
+      20px;
+  }
+
+  .industryCardTitle,
+  .industryCardTitle span:first-child {
+    font-size: 17px;
+  }
+
+  .industryCardArrow {
+    font-size: 27px;
+  }
+
+  .cardCarouselViewport {
+    margin-top: 15px;
+  }
+
+  .cardSlide p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+  .industryCardReadMore {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .industryCardsContainer {
+    width: calc(100% - 32px);
+
+    max-width: 760px;
+  }
+
+  .industryCardsGrid {
+    gap: 15px;
+  }
+
+  .industryCard {
+    height: 450px;
+  }
+
+  .industryCardImage {
+    height: 135px;
+
+    flex-basis: 135px;
+  }
+
+  .industryCardContent {
+    padding:
+      18px
+      15px
+      18px;
+  }
+
+  .industryCardTitle,
+  .industryCardTitle span:first-child {
+    font-size: 16px;
+  }
+
+  .industryCardArrow {
+    font-size: 25px;
+  }
+
+  .cardSlide p {
+    font-size: 12.5px;
+
+    line-height: 1.65;
+  }
+
+  .industryCardReadMore {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .industryCards {
+    padding: 48px 0 58px;
+  }
+
+  .industryCardsContainer {
+    width: calc(100% - 28px);
+
+    max-width: 620px;
+  }
+
+  .industryCardsGrid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 20px 18px;
+  }
+
+  .industryCard {
+    height: 450px;
+  }
+
+  .industryCardImage {
+    height: 145px;
+
+    flex-basis: 145px;
+  }
+
+  .industryCardContent {
+    padding:
+      18px
+      15px
+      20px;
+  }
+
+  .industryCardTitle,
+  .industryCardTitle span:first-child {
+    font-size: 15px;
+
+    line-height: 1.35;
+  }
+
+  .industryCardArrow {
+    font-size: 23px;
+  }
+
+  .cardCarouselViewport {
+    margin-top: 13px;
+  }
+
+  .cardSlide p {
+    font-size: 12px;
+
+    line-height: 1.65;
+  }
+
+  .industryCardReadMore {
+    margin-top: 14px;
+
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .industryCards {
+    padding: 42px 0 52px;
+  }
+
+  .industryCardsContainer {
+    width: calc(100% - 20px);
+
+    max-width: 450px;
+  }
+
+  .industryCardsGrid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .industryCard {
+    height: 440px;
+  }
+
+  .industryCardImage {
+    height: 190px;
+
+    flex-basis: 190px;
+  }
+
+  .industryCardContent {
+    padding:
+      20px
+      17px
+      20px;
+  }
+
+  .industryCardTitle,
+  .industryCardTitle span:first-child {
+    font-size: 17px;
+  }
+
+  .industryCardArrow {
+    font-size: 25px;
+  }
+
+  .cardSlide p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+  .industryCardReadMore {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .industryCard,
+  .industryCardImage img,
+  .cardCarouselTrack,
+  .industryCardReadMore {
+    transition: none;
+  }
+}

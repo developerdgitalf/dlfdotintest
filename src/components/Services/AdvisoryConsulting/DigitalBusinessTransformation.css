@@ -1,0 +1,214 @@
+/* =========================================================
+   DIGITAL BUSINESS TRANSFORMATION
+========================================================= */
+
+.digital-business-transformation {
+  width: 100%;
+  background: linear-gradient(
+    110deg,
+    #0b2f67 0%,
+    #173f9f 52%,
+    #2855f5 100%
+  );
+  padding: 75px 20px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.digital-business-transformation__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.digital-business-transformation__content {
+  background: #ffffff;
+  padding: 72px 72px 68px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.digital-business-transformation__content h2 {
+  margin: 0 0 30px;
+
+  color: #000000;
+
+  font-size: 35px;
+  line-height: 1.18;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.digital-business-transformation__content p {
+  margin: 0 0 26px;
+
+  color: #111111;
+
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.digital-business-transformation__content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.digital-business-transformation__image {
+  width: 100%;
+  min-height: 563px;
+
+  overflow: hidden;
+  background: #07152d;
+}
+
+.digital-business-transformation__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.7s ease;
+}
+
+.digital-business-transformation__image:hover img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+  .digital-business-transformation {
+    padding: 82px 20px;
+  }
+
+  .digital-business-transformation__container {
+    max-width: 1280px;
+  }
+
+  .digital-business-transformation__content {
+    padding: 76px 78px;
+  }
+
+  .digital-business-transformation__content h2 {
+    font-size: 27px;
+  }
+
+  .digital-business-transformation__content p {
+    font-size: 16px;
+  }
+
+  .digital-business-transformation__image {
+    min-height: 563px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .digital-business-transformation {
+    padding: 55px 20px;
+  }
+
+  .digital-business-transformation__content {
+    padding: 48px 42px;
+  }
+
+  .digital-business-transformation__content h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .digital-business-transformation__content p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .digital-business-transformation__image {
+    min-height: 500px;
+  }
+}
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+  .digital-business-transformation {
+    padding: 40px 15px;
+  }
+
+  .digital-business-transformation__container {
+    grid-template-columns: 1fr;
+  }
+
+  .digital-business-transformation__content {
+    padding: 40px 30px;
+  }
+
+  .digital-business-transformation__content h2 {
+    margin-bottom: 22px;
+    font-size: 28px;
+  }
+
+  .digital-business-transformation__content p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .digital-business-transformation__image {
+    min-height: 380px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .digital-business-transformation {
+    padding: 25px 10px;
+  }
+
+  .digital-business-transformation__content {
+    padding: 32px 22px;
+  }
+
+  .digital-business-transformation__content h2 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .digital-business-transformation__content p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .digital-business-transformation__image {
+    min-height: 280px;
+  }
+}

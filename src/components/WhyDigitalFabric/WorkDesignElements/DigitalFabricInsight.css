@@ -1,0 +1,199 @@
+/* =========================================================
+   DIGITAL FABRIC INSIGHT
+========================================================= */
+
+.digital-fabric-insight {
+  width: 100%;
+  padding: 80px 0;
+  background: #f4f4f3;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.digital-fabric-insight-card {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  overflow: hidden;
+
+  background: #ffffff;
+  border-radius: 10px;
+
+  box-shadow: 0 10px 28px rgba(20, 35, 45, 0.06);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.digital-fabric-insight-image {
+  position: relative;
+
+  width: 100%;
+  height: 360px;
+
+  overflow: hidden;
+
+  background: #071820;
+}
+
+/*
+   Important for Next.js <Image fill />
+*/
+.digital-fabric-insight-image-element {
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.45s ease;
+}
+
+
+/* Optional subtle image movement */
+.digital-fabric-insight-card:hover
+.digital-fabric-insight-image-element {
+  transform: scale(1.02);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.digital-fabric-insight-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 42px 44px;
+
+  background: #f5f5f4;
+}
+
+
+/* =========================================================
+   ACCENT LINE
+========================================================= */
+
+.digital-fabric-insight-line {
+  display: block;
+
+  width: 70px;
+  height: 2px;
+
+  margin-bottom: 20px;
+
+  background: #607889;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.digital-fabric-insight-content p {
+  margin: 0;
+
+  color: #3c4e5c;
+
+  font-family: "Inter", Arial, sans-serif;
+
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .digital-fabric-insight {
+    padding: 65px 24px;
+  }
+
+  .digital-fabric-insight-card {
+    max-width: 760px;
+  }
+
+  .digital-fabric-insight-image {
+    height: 320px;
+  }
+
+  .digital-fabric-insight-content {
+    padding: 36px;
+  }
+
+  .digital-fabric-insight-content p {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .digital-fabric-insight {
+    padding: 55px 20px;
+  }
+
+  .digital-fabric-insight-card {
+    grid-template-columns: 1fr;
+
+    max-width: 100%;
+  }
+
+  .digital-fabric-insight-image {
+    height: 260px;
+  }
+
+  .digital-fabric-insight-content {
+    padding: 32px 26px 36px;
+  }
+
+  .digital-fabric-insight-line {
+    width: 60px;
+    margin-bottom: 17px;
+  }
+
+  .digital-fabric-insight-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .digital-fabric-insight {
+    padding: 45px 16px;
+  }
+
+  .digital-fabric-insight-image {
+    height: 220px;
+  }
+
+  .digital-fabric-insight-content {
+    padding: 28px 22px 32px;
+  }
+
+  .digital-fabric-insight-content p {
+    font-size: 13.5px;
+  }
+}

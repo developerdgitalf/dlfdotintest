@@ -1,0 +1,1086 @@
+/* =========================================================
+   DIGITAL BUSINESS TRANSFORMATION
+   4-BOX EDITORIAL GRID
+========================================================= */
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.digitalBusinessTransformation {
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #f4f2ef;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN 2 × 2 GRID
+========================================================= */
+
+.digitalTransformationGrid {
+  width: min(1320px, calc(100% - 160px));
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  /*
+    ROW 1 = Box 1 + Box 2
+    ROW 2 = Box 3 + Box 4
+  */
+
+  grid-template-rows:
+    520px
+    360px;
+
+  gap: 0;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COMMON CONTENT BLOCK
+========================================================= */
+
+.transformationBlock {
+  min-width: 0;
+  min-height: 0;
+
+  padding: 48px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOX 1
+   DIGITAL BUSINESS TRANSFORMATION
+
+   INTERNAL 2 ROW STRUCTURE
+   ROW 1 = TITLE + INTRO
+   ROW 2 = ATTRIBUTES
+========================================================= */
+
+.transformationIntro {
+  background: #030023;
+
+  color: #f5f3ef;
+
+  display: grid;
+
+  grid-template-rows:
+    auto
+    auto;
+
+  align-content: space-between;
+
+  gap: 28px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOX 1 — TOP ROW
+========================================================= */
+
+.introTop {
+  width: 100%;
+
+  max-width: 560px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BLUE ACCENT
+========================================================= */
+
+.transformationAccent {
+  display: block;
+
+  width: 78px;
+  height: 2px;
+
+  margin-bottom: 22px;
+
+  background: #2f80c9;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.transformationIntro h2 {
+  margin: 0 0 20px;
+
+  color: #f5f3ef;
+
+  font-size: clamp(
+    2rem,
+    2.8vw,
+    2.85rem
+  );
+
+  font-weight: 500;
+
+  line-height: 1.07;
+
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================================================
+   INTRO PARAGRAPH
+========================================================= */
+
+.transformationIntro > .introTop > p {
+  width: 100%;
+
+  max-width: 540px;
+
+  margin: 0;
+
+  color: rgba(245, 243, 239, 0.78);
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   BOX 1 — SECOND INTERNAL ROW
+========================================================= */
+
+.introAttributes {
+  width: 100%;
+
+  box-sizing: border-box;
+  padding-bottom: 28px;
+}
+
+
+/* =========================================================
+   ATTRIBUTE GRID
+========================================================= */
+
+.attributeGrid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+
+  align-items: start;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   ATTRIBUTE ITEM
+========================================================= */
+
+.attributeItem {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   ATTRIBUTE CIRCLE
+========================================================= */
+
+.attributeCircle {
+  position: relative;
+
+ width: 80px;
+  height: 80px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ATTRIBUTE ARC
+========================================================= */
+
+.attributeCircle::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+      from -45deg,
+      #ffffff 0deg 270deg,
+      transparent 270deg 360deg
+    );
+
+  -webkit-mask:
+    radial-gradient(
+      farthest-side,
+      transparent calc(100% - 2px),
+      #000 calc(100% - 1px)
+    );
+
+  mask:
+    radial-gradient(
+      farthest-side,
+      transparent calc(100% - 2px),
+      #000 calc(100% - 1px)
+    );
+}
+
+
+/* =========================================================
+   ATTRIBUTE DOT
+========================================================= */
+
+.attributeCircle::after {
+  content: "";
+
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  /*
+    Position at the end of the 75% arc
+  */
+  top: 0;
+  right: 15px;
+
+  box-shadow:
+    0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================================================
+   ATTRIBUTE ICON
+========================================================= */
+
+.attributeIcon {
+  position: relative;
+
+  z-index: 2;
+
+  width: 34px;
+  height: 34px;
+
+  color: #ffffff;
+
+  stroke-width: 1.35;
+}
+
+/* =========================================================
+   ATTRIBUTE TITLE
+========================================================= */
+
+.attributeItem h3 {
+  width: 100%;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 1 rem;
+
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  letter-spacing: 0.04em;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   ATTRIBUTE DESCRIPTION
+========================================================= */
+
+.attributesDescription {
+  color: #ffffffeb;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 37px auto 0;
+  font-size: .94rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   BOX 2 — IMAGE
+========================================================= */
+
+.transformationImage {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  min-height: 520px;
+
+  margin: 0;
+  padding: 0;
+
+  display: block;
+
+  border: 0;
+
+  outline: none;
+
+  border-radius: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  cursor: zoom-in;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.transformationImage img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 520px;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.45s ease;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.transformationImage:hover img {
+  transform: scale(1.015);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.imageOverlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(5, 15, 20, 0.02);
+
+  pointer-events: none;
+
+  transition:
+    background 0.3s ease;
+}
+
+.transformationImage:hover .imageOverlay {
+  background: rgba(5, 15, 20, 0);
+}
+
+
+/* =========================================================
+   BOX 3 — SKY BLUE
+========================================================= */
+
+.transformationTextBox:nth-child(3) {
+  background: #f0fbff;
+
+  color: #102a38;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOX 3 TEXT
+========================================================= */
+
+.transformationTextBox:nth-child(3) p {
+  width: 100%;
+
+  max-width: 560px;
+
+  margin: 0;
+
+  color: #102a38;
+
+  font-size: 1.25rem;
+
+  font-weight: 400;
+
+  line-height: 1.62;
+}
+
+
+/* =========================================================
+   BOX 4 — BLACK 80%
+========================================================= */
+
+.transformationTextBox:nth-child(4) {
+  background: #030023;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOX 4 TEXT
+========================================================= */
+
+.transformationTextBox:nth-child(4) p {
+  width: 100%;
+
+  max-width: 560px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.84);
+
+  font-size: 1.25rem;
+
+  font-weight: 400;
+
+  line-height: 1.62;
+}
+
+
+/* =========================================================
+   IMAGE MODAL
+========================================================= */
+
+.imageModal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.84);
+
+  backdrop-filter: blur(6px);
+
+  -webkit-backdrop-filter: blur(6px);
+
+  box-sizing: border-box;
+
+  cursor: zoom-out;
+}
+
+
+/* =========================================================
+   MODAL CONTENT
+========================================================= */
+
+.imageModalContent {
+  position: relative;
+
+  width: min(92vw, 1400px);
+
+  height: min(90vh, 900px);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: default;
+}
+
+
+/* =========================================================
+   MODAL IMAGE
+========================================================= */
+
+.imageModalContent img {
+  width: auto;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 20px 70px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.imageModalClose {
+  position: absolute;
+
+  top: 24px;
+  right: 28px;
+
+  z-index: 10000;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #142532;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.imageModalClose:hover {
+  background: #f0f3f4;
+
+  transform: scale(1.06);
+}
+
+.imageModalClose svg {
+  width: 21px;
+  height: 21px;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+  .digitalBusinessTransformation {
+    padding: 80px 0;
+  }
+
+  .digitalTransformationGrid {
+    width: calc(100% - 80px);
+
+    grid-template-rows:
+      560px
+      340px;
+  }
+
+  .transformationBlock {
+    padding: 40px;
+  }
+
+  .transformationImage,
+  .transformationImage img {
+    min-height: 560px;
+  }
+
+  .transformationIntro h2 {
+    font-size: 2.2rem;
+  }
+
+  .transformationIntro > .introTop > p,
+  .transformationTextBox p {
+    font-size: 0.76rem;
+  }
+
+  .attributeCircle {
+    width: 82px;
+    height: 82px;
+  }
+
+  .attributeIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/* =========================================================
+   SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1000px) {
+  .digitalTransformationGrid {
+    width: calc(100% - 50px);
+
+    grid-template-rows:
+      500px
+      320px;
+  }
+
+  .transformationBlock {
+    padding: 34px;
+  }
+
+  .transformationImage,
+  .transformationImage img {
+    min-height: 500px;
+  }
+
+  .transformationIntro h2 {
+    font-size: 1.95rem;
+  }
+
+  .transformationIntro > .introTop > p,
+  .transformationTextBox p {
+    font-size: 0.71rem;
+
+    line-height: 1.62;
+  }
+
+  .attributeGrid {
+    gap: 6px;
+  }
+
+  .attributeCircle {
+    width: 76px;
+    height: 76px;
+  }
+
+  .attributeIcon {
+    width: 27px;
+    height: 27px;
+  }
+
+  .attributeItem h3 {
+    font-size: 0.55rem;
+  }
+
+  .attributesDescription {
+    font-size: 0.7rem;
+  }
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .digitalBusinessTransformation {
+    padding: 50px 0;
+  }
+
+  .digitalTransformationGrid {
+    width: calc(100% - 32px);
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: auto;
+
+    gap: 0;
+
+    overflow: hidden;
+  }
+
+
+  /* =========================================
+     BOX 1
+  ========================================= */
+
+  .transformationIntro {
+    min-height: 520px;
+
+    padding: 34px 24px;
+
+    grid-template-rows:
+      auto
+      auto;
+
+    gap: 26px;
+
+    align-content: space-between;
+  }
+
+  .transformationIntro h2 {
+    font-size: 2rem;
+
+    line-height: 1.08;
+  }
+
+  .transformationIntro > .introTop > p {
+    font-size: 0.75rem;
+
+    line-height: 1.62;
+  }
+
+
+  /* =========================================
+     ATTRIBUTES
+  ========================================= */
+
+  .introAttributes {
+    margin-top: 0;
+  }
+
+  .attributeGrid {
+    gap: 5px;
+  }
+
+  .attributeCircle {
+    width: 76px;
+    height: 76px;
+
+    margin-bottom: 9px;
+  }
+
+  .attributeCircle::after {
+    width: 7px;
+    height: 7px;
+  }
+
+  .attributeIcon {
+    width: 27px;
+    height: 27px;
+  }
+
+  .attributeItem h3 {
+    font-size: 0.58rem;
+  }
+
+  .attributesDescription {
+    max-width: 400px;
+
+    margin-top: 17px;
+
+    font-size: 0.74rem;
+  }
+
+
+  /* =========================================
+     BOX 2 — IMAGE
+  ========================================= */
+
+  .transformationImage {
+    width: 100%;
+
+    height: 320px;
+
+    min-height: 320px;
+  }
+
+  .transformationImage img {
+    width: 100%;
+
+    height: 320px;
+
+    min-height: 320px;
+
+    object-fit: contain;
+
+    padding: 0;
+  }
+
+
+  /* =========================================
+     BOX 3 — SKY BLUE
+  ========================================= */
+
+  .transformationTextBox:nth-child(3) {
+    min-height: 320px;
+
+    padding: 34px 24px;
+
+    align-items: flex-start;
+
+    justify-content: center;
+  }
+
+  .transformationTextBox:nth-child(3) p {
+    font-size: 0.75rem;
+
+    line-height: 1.62;
+  }
+
+
+  /* =========================================
+     BOX 4 — BLACK
+  ========================================= */
+
+  .transformationTextBox:nth-child(4) {
+    min-height: 340px;
+
+    padding: 34px 24px;
+
+    align-items: flex-start;
+
+    justify-content: center;
+  }
+
+  .transformationTextBox:nth-child(4) p {
+    font-size: 0.75rem;
+
+    line-height: 1.62;
+  }
+
+
+  /* =========================================
+     IMAGE MODAL
+  ========================================= */
+
+  .imageModal {
+    padding: 20px;
+  }
+
+  .imageModalContent {
+    width: 94vw;
+
+    height: 82vh;
+  }
+
+  .imageModalClose {
+    top: 14px;
+    right: 14px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .imageModalClose svg {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .digitalTransformationGrid {
+    width: calc(100% - 24px);
+  }
+
+
+  /* BOX 1 */
+
+  .transformationIntro {
+    min-height: 500px;
+
+    padding: 30px 20px;
+
+    gap: 22px;
+  }
+
+  .transformationAccent {
+    width: 65px;
+
+    margin-bottom: 18px;
+  }
+
+  .transformationIntro h2 {
+    font-size: 1.7rem;
+
+    line-height: 1.08;
+  }
+
+  .transformationIntro > .introTop > p {
+    font-size: 0.7rem;
+
+    line-height: 1.58;
+  }
+
+
+  /* ATTRIBUTES */
+
+  .attributeGrid {
+    gap: 3px;
+  }
+
+  .attributeCircle {
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 8px;
+  }
+
+  .attributeIcon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .attributeCircle::after {
+    width: 6px;
+    height: 6px;
+  }
+
+  .attributeItem h3 {
+    font-size: 0.52rem;
+  }
+
+  .attributesDescription {
+    margin-top: 14px;
+
+    font-size: 0.68rem;
+
+    line-height: 1.4;
+  }
+
+
+  /* IMAGE */
+
+  .transformationImage,
+  .transformationImage img {
+    height: 250px;
+
+    min-height: 250px;
+  }
+
+
+  /* BOX 3 */
+
+  .transformationTextBox:nth-child(3) {
+    min-height: 300px;
+
+    padding: 30px 20px;
+  }
+
+  .transformationTextBox:nth-child(3) p {
+    font-size: 0.7rem;
+
+    line-height: 1.58;
+  }
+
+
+  /* BOX 4 */
+
+  .transformationTextBox:nth-child(4) {
+    min-height: 320px;
+
+    padding: 30px 20px;
+  }
+
+  .transformationTextBox:nth-child(4) p {
+    font-size: 0.7rem;
+
+    line-height: 1.58;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .transformationImage img,
+  .imageModalClose {
+    transition: none;
+  }
+}

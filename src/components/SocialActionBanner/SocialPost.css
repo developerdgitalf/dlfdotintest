@@ -1,0 +1,1781 @@
+/* =========================================
+   SOCIAL ACTION SECTION
+========================================= */
+
+.social-action-section {
+  width: 100%;
+
+  padding: 65px 0 80px;
+
+  background: #f8f9fb;
+
+  color: #13253c;
+
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  box-sizing: border-box;
+}
+
+
+.social-action-container {
+  width: min(1200px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.social-action-intro {
+  display: grid;
+
+  grid-template-columns:
+    1.45fr 0.7fr;
+
+  align-items: end;
+
+  gap: 60px;
+
+  margin-bottom: 32px;
+}
+
+
+.social-action-eyebrow {
+  display: block;
+
+  margin-bottom: 16px;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 0.22em;
+
+  color: #26384c;
+}
+
+
+.social-action-intro h1 {
+  margin: 0;
+
+  font-size: 43px;
+
+  font-weight: 600;
+
+  line-height: 1.14;
+
+  letter-spacing: -0.045em;
+
+  color: #14263d;
+}
+
+
+.social-action-intro-right {
+  max-width: 320px;
+
+  margin: 0 0 3px auto;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  color: #38485a;
+}
+
+
+/* =========================================
+   FEATURED ARTICLE
+========================================= */
+
+.social-featured-card {
+  display: grid;
+
+  grid-template-columns: 55% 45%;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  margin-bottom: 30px;
+
+  border: 1px solid #dce2e8;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   FEATURED IMAGE
+========================================= */
+
+.social-featured-image {
+  min-height: 392px;
+
+  overflow: hidden;
+
+  background: #e9edf1;
+
+  box-sizing: border-box;
+}
+
+
+.social-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+
+.social-featured-card:hover
+.social-featured-image img {
+  transform: scale(1.015);
+}
+
+
+/* =========================================
+   FEATURED CONTENT
+========================================= */
+
+.social-featured-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 34px 32px;
+
+  box-sizing: border-box;
+}
+
+
+.social-featured-label {
+  margin-bottom: 9px;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  letter-spacing: 0.18em;
+
+  color: #586678;
+}
+
+
+.social-forbes-logo {
+  margin-bottom: 9px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 39px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  color: #111111;
+}
+
+
+.social-featured-content h2 {
+  margin: 0 0 13px;
+
+  font-size: 27px;
+
+  font-weight: 600;
+
+  line-height: 1.18;
+
+  letter-spacing: -0.03em;
+
+  color: #17293f;
+}
+
+
+.social-featured-content p {
+  max-width: 470px;
+
+  margin: 0;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  color: #586677;
+}
+
+
+.social-featured-divider {
+  width: 32px;
+
+  height: 1px;
+
+  margin: 15px 0;
+
+  background: #99a4af;
+}
+
+
+.social-featured-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 16px;
+
+  font-size: 14px;
+
+  line-height: 1.3;
+
+  color: #586677;
+}
+
+
+.social-featured-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  min-height: 42px;
+
+  padding: 0 20px;
+
+  border-radius: 999px;
+
+  background: #12263d;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.social-featured-button:hover {
+  background: #168cff;
+
+  transform: translateY(-2px);
+}
+
+
+.social-featured-button svg {
+  font-size: 13px;
+}
+
+
+/* =========================================
+   THREE RELATED FEATURED ARTICLES
+   BELOW MAIN FORBES ARTICLE
+========================================= */
+
+.social-featured-related-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+
+  width: 100%;
+
+  margin: 0 0 58px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   RELATED FEATURED CARD
+========================================= */
+
+.social-featured-related-card {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #dce2e8;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 16px rgba(15, 38, 62, 0.035);
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.social-featured-related-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 24px rgba(15, 38, 62, 0.08);
+}
+
+
+/* =========================================
+   RELATED IMAGE LINK
+========================================= */
+
+.social-featured-related-image-link {
+  display: block;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   RELATED IMAGE
+========================================= */
+
+.social-featured-related-image {
+  width: 100%;
+
+  aspect-ratio: 1.68 / 1;
+
+  overflow: hidden;
+
+  background: #edf1f4;
+
+  box-sizing: border-box;
+}
+
+
+.social-featured-related-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.35s ease;
+
+  box-sizing: border-box;
+}
+
+
+.social-featured-related-card:hover
+.social-featured-related-image img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   RELATED CONTENT
+========================================= */
+
+.social-featured-related-content {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  min-height: 0;
+
+  padding: 16px 17px 17px;
+
+  box-sizing: border-box;
+}
+
+
+.social-featured-related-category {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #657487;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  letter-spacing: 0.13em;
+}
+
+
+.social-featured-related-content h3 {
+  margin: 0 0 8px;
+
+  color: #17293f;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.015em;
+}
+
+
+.social-featured-related-content p {
+  margin: 0 0 12px;
+
+  color: #617083;
+
+  font-size: 11px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   RELATED META
+========================================= */
+
+.social-featured-related-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: auto;
+
+  margin-bottom: 12px;
+
+  color: #657487;
+
+  font-size: 10px;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   RELATED READ BUTTON
+========================================= */
+
+.social-featured-related-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  width: fit-content;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #17293f;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  text-decoration: none;
+}
+
+
+.social-featured-related-button:hover {
+  color: #168cff;
+}
+
+
+.social-featured-related-button svg {
+  font-size: 10px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.social-featured-related-button:hover svg {
+  transform:
+    translate(2px, -2px);
+}
+
+
+/* =========================================
+   PLATFORM SECTION
+========================================= */
+
+.social-platform-section {
+  width: 100%;
+
+  margin-bottom: 58px;
+
+  box-sizing: border-box;
+}
+
+
+.social-platform-section:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   PLATFORM HEADER
+========================================= */
+
+.social-platform-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  box-sizing: border-box;
+}
+
+
+.social-platform-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+}
+
+
+.social-platform-title h2 {
+  margin: 0;
+
+  font-size: 25px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: -0.025em;
+
+  color: #17293f;
+}
+
+
+/* =========================================
+   PLATFORM ICON
+========================================= */
+
+.social-platform-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 30px;
+
+  height: 30px;
+
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  font-size: 18px;
+}
+
+
+.linkedin-icon {
+  background: #0a66c2;
+}
+
+
+.articles-icon {
+  background: #168cff;
+}
+
+
+/* =========================================
+   VIEW MORE
+========================================= */
+
+.social-platform-view-more {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #17293f;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+.social-platform-view-more svg {
+  font-size: 15px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.social-platform-view-more:hover {
+  color: #168cff;
+}
+
+
+.social-platform-view-more:hover svg {
+  transform:
+    translate(2px, -2px);
+}
+
+
+/* =========================================
+   POSTS GRID
+   DESKTOP = 3 COLUMNS
+========================================= */
+
+.social-posts-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  grid-auto-rows: auto;
+
+  gap: 18px;
+
+  width: 100%;
+
+  height: auto;
+
+  min-height: 0;
+
+  max-height: none;
+
+  align-items: stretch;
+
+  overflow: visible;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   POST CARD
+========================================= */
+
+.social-post-card {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  min-width: 0;
+
+  height: auto;
+
+  min-height: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #dce2e8;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 16px rgba(15, 38, 62, 0.035);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  box-sizing: border-box;
+}
+
+
+.social-post-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 24px rgba(15, 38, 62, 0.08);
+}
+
+
+/* =========================================
+   POST HEADER
+========================================= */
+
+.social-post-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  padding: 15px 15px 9px;
+
+  box-sizing: border-box;
+}
+
+
+.social-post-profile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+}
+
+
+/* =========================================
+   POST AVATAR
+========================================= */
+
+.social-post-avatar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 42px;
+
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: #12263d;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  font-weight: 400;
+
+  box-sizing: border-box;
+}
+
+
+/* Actual avatar image */
+
+.social-post-avatar-image {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   PROFILE INFORMATION
+========================================= */
+
+.social-post-profile-info {
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+
+.social-post-profile-info strong {
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  color: #14263d;
+}
+
+
+.social-post-profile-info span {
+  font-size: 11px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+
+  color: #7b8794;
+}
+
+
+.social-post-meta {
+  color: #7b8794;
+}
+
+
+/* =========================================
+   MORE BUTTON
+========================================= */
+
+.social-post-more {
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #26384c;
+
+  font-size: 17px;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   DESCRIPTION WRAPPER
+========================================= */
+
+.social-post-description-wrap {
+  width: 100%;
+
+  min-height: 90px;
+
+  padding: 0 15px 10px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.social-post-description {
+  display: -webkit-box;
+
+  width: 100%;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+
+  color: #28394c;
+
+  -webkit-box-orient: vertical;
+
+  -webkit-line-clamp: 3;
+}
+
+
+/* =========================================
+   EXPANDED DESCRIPTION
+========================================= */
+
+.social-post-description.is-expanded {
+  display: block;
+
+  overflow: visible;
+
+  -webkit-line-clamp: unset;
+}
+
+
+/* =========================================
+   SEE MORE / SEE LESS
+========================================= */
+
+.social-post-see-more {
+  display: inline-block;
+
+  margin: 5px 0 0;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #168cff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease;
+}
+
+
+.social-post-see-more:hover {
+  color: #0b63bd;
+}
+
+
+/* =========================================
+   POST IMAGE LINK
+========================================= */
+
+.social-post-image-link {
+  display: block;
+
+  width: 100%;
+
+  text-decoration: none;
+}
+
+
+/* =========================================
+   POST IMAGE WRAP
+========================================= */
+
+.social-post-image-wrap {
+  width: 100%;
+
+  aspect-ratio: 1.5 / 1;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  background: #edf1f4;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   POST IMAGE
+========================================= */
+
+.social-post-image {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.35s ease;
+}
+
+
+.social-post-card:hover
+.social-post-image {
+  transform: scale(1.02);
+}
+
+
+/* =========================================
+   LINKEDIN POST ACTIONS
+========================================= */
+
+.social-post-actions {
+  display: flex;
+
+  align-items: center;
+
+  min-height: 45px;
+
+  padding: 11px 15px 13px;
+
+  border-top: 1px solid #edf0f2;
+
+  box-sizing: border-box;
+}
+
+
+.social-post-actions button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  min-width: 70px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #667482;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+.social-post-actions button + button {
+  margin-left: 10px;
+}
+
+
+.social-post-actions button svg {
+  font-size: 13px;
+}
+
+
+.social-post-actions button:hover {
+  color: #168cff;
+}
+
+
+/* =========================================
+   ARTICLES - READ ARTICLE BUTTON
+========================================= */
+
+.social-post-read-article {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  min-height: 40px;
+
+  margin: 15px 19px 14px;
+
+  padding: 0 19px;
+
+  border: 1px solid #12263d;
+
+  border-radius: 999px;
+
+  background: #12263d;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* =========================================
+   READ ARTICLE ICON
+========================================= */
+
+.social-post-read-article svg {
+  width: 14px;
+
+  height: 14px;
+
+  flex-shrink: 0;
+
+  color: #ffffff;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+/* =========================================
+   READ ARTICLE HOVER
+========================================= */
+
+.social-post-read-article:hover {
+  background: #168cff;
+
+  border-color: #168cff;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 16px rgba(18, 38, 61, 0.15);
+}
+
+
+.social-post-read-article:hover svg {
+  color: #ffffff;
+
+  transform:
+    translate(2px, -2px);
+}
+
+
+/* =========================================
+   READ ARTICLE ACTIVE
+========================================= */
+
+.social-post-read-article:active {
+  transform: translateY(0);
+
+  box-shadow: none;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .social-action-section {
+    padding: 55px 0 70px;
+  }
+
+
+  .social-action-container {
+    width: min(92%, 900px);
+  }
+
+
+  .social-action-intro {
+    gap: 30px;
+  }
+
+
+  .social-action-intro h1 {
+    font-size: 36px;
+  }
+
+
+  .social-action-intro-right {
+    font-size: 16px;
+  }
+
+
+  .social-featured-card {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+
+  .social-featured-image {
+    min-height: 340px;
+  }
+
+
+  .social-featured-content {
+    padding: 28px;
+  }
+
+
+  .social-featured-content h2 {
+    font-size: 23px;
+  }
+
+
+  .social-featured-content p {
+    font-size: 14px;
+  }
+
+
+  .social-featured-related-grid {
+    gap: 15px;
+  }
+
+
+  .social-featured-related-content {
+    padding: 15px;
+  }
+
+
+  .social-featured-related-content h3 {
+    font-size: 15px;
+  }
+
+
+  .social-posts-grid {
+    gap: 15px;
+  }
+
+
+  .social-post-description {
+    font-size: 13px;
+  }
+
+
+  .social-post-read-article {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .social-action-section {
+    padding: 45px 0 60px;
+  }
+
+
+  .social-action-container {
+    width: calc(100% - 28px);
+  }
+
+
+  /* =======================================
+     INTRO
+  ======================================= */
+
+  .social-action-intro {
+    display: block;
+
+    margin-bottom: 26px;
+  }
+
+
+  .social-action-eyebrow {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+  }
+
+
+  .social-action-intro h1 {
+    font-size: 32px;
+
+    line-height: 1.12;
+  }
+
+
+  .social-action-intro-right {
+    max-width: 100%;
+
+    margin: 20px 0 0;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+  }
+
+
+  /* =======================================
+     FEATURED MAIN ARTICLE
+  ======================================= */
+
+  .social-featured-card {
+    grid-template-columns: 1fr;
+
+    margin-bottom: 24px;
+  }
+
+
+  .social-featured-image {
+    min-height: 250px;
+  }
+
+
+  .social-featured-content {
+    padding: 25px 22px;
+  }
+
+
+  .social-featured-label {
+    font-size: 10px;
+  }
+
+
+  .social-forbes-logo {
+    font-size: 33px;
+  }
+
+
+  .social-featured-content h2 {
+    font-size: 22px;
+  }
+
+
+  .social-featured-content p {
+    font-size: 14px;
+  }
+
+
+  .social-featured-meta {
+    font-size: 12px;
+  }
+
+
+  .social-featured-button {
+    min-height: 40px;
+
+    padding: 0 18px;
+
+    font-size: 12px;
+  }
+
+
+  /* =======================================
+     THREE RELATED ARTICLES
+  ======================================= */
+
+  .social-featured-related-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    margin-bottom: 45px;
+  }
+
+
+  .social-featured-related-image {
+    aspect-ratio: 1.7 / 1;
+  }
+
+
+  .social-featured-related-content {
+    padding: 16px;
+  }
+
+
+  .social-featured-related-content h3 {
+    font-size: 17px;
+  }
+
+
+  .social-featured-related-content p {
+    font-size: 12px;
+  }
+
+
+  /* =======================================
+     PLATFORM
+  ======================================= */
+
+  .social-platform-section {
+    margin-bottom: 45px;
+  }
+
+
+  .social-platform-header {
+    margin-bottom: 16px;
+  }
+
+
+  .social-platform-title {
+    gap: 9px;
+  }
+
+
+  .social-platform-title h2 {
+    font-size: 21px;
+  }
+
+
+  .social-platform-icon {
+    width: 27px;
+
+    height: 27px;
+
+    font-size: 16px;
+  }
+
+
+  .social-platform-view-more {
+    font-size: 12px;
+  }
+
+
+  .social-platform-view-more svg {
+    font-size: 13px;
+  }
+
+
+  /* =======================================
+     POSTS
+  ======================================= */
+
+  .social-posts-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+
+  .social-post-header {
+    padding: 14px 14px 9px;
+  }
+
+
+  .social-post-avatar {
+    width: 40px;
+
+    height: 40px;
+
+    flex-basis: 40px;
+
+    font-size: 19px;
+  }
+
+
+  .social-post-profile-info strong {
+    font-size: 12.5px;
+  }
+
+
+  .social-post-profile-info span {
+    font-size: 10.5px;
+  }
+
+
+  .social-post-description-wrap {
+    min-height: 84px;
+
+    padding: 0 14px 10px;
+  }
+
+
+  .social-post-description {
+    min-height: 0;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    -webkit-line-clamp: 5;
+  }
+
+
+  .social-post-see-more {
+    font-size: 12px;
+  }
+
+
+  .social-post-image-wrap {
+    aspect-ratio: 1.5 / 1;
+  }
+
+
+  /* =======================================
+     LINKEDIN ACTIONS
+  ======================================= */
+
+  .social-post-actions {
+    padding: 10px 14px 12px;
+  }
+
+
+  .social-post-actions button {
+    font-size: 12px;
+  }
+
+
+  /* =======================================
+     ARTICLE BUTTON
+  ======================================= */
+
+  .social-post-read-article {
+    min-height: 38px;
+
+    margin: 0 14px 15px;
+
+    padding: 0 17px;
+
+    gap: 8px;
+
+    font-size: 12px;
+  }
+
+
+  .social-post-read-article svg {
+    width: 13px;
+
+    height: 13px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .social-action-container {
+    width: calc(100% - 22px);
+  }
+
+
+  .social-action-intro h1 {
+    font-size: 29px;
+  }
+
+
+  .social-action-intro-right {
+    font-size: 14px;
+  }
+
+
+  .social-featured-image {
+    min-height: 220px;
+  }
+
+
+  .social-featured-content {
+    padding: 22px 19px;
+  }
+
+
+  .social-forbes-logo {
+    font-size: 30px;
+  }
+
+
+  .social-featured-content h2 {
+    font-size: 20px;
+  }
+
+
+  .social-featured-meta {
+    font-size: 11.5px;
+  }
+
+
+  /* =======================================
+     RELATED ARTICLES
+  ======================================= */
+
+  .social-featured-related-grid {
+    gap: 14px;
+
+    margin-bottom: 40px;
+  }
+
+
+  .social-featured-related-content {
+    padding: 14px;
+  }
+
+
+  .social-featured-related-category {
+    font-size: 7px;
+  }
+
+
+  .social-featured-related-content h3 {
+    font-size: 16px;
+  }
+
+
+  .social-featured-related-content p {
+    font-size: 11px;
+  }
+
+
+  .social-featured-related-meta {
+    font-size: 9px;
+  }
+
+
+  .social-featured-related-button {
+    font-size: 10px;
+  }
+
+
+  .social-post-description-wrap {
+    min-height: 80px;
+  }
+
+
+  .social-post-description {
+    font-size: 13px;
+
+    line-height: 1.45;
+  }
+
+
+  .social-post-see-more {
+    font-size: 12px;
+  }
+
+
+  .social-post-actions button {
+    min-width: 62px;
+  }
+
+
+  /* =======================================
+     ARTICLE BUTTON
+  ======================================= */
+
+  .social-post-read-article {
+    min-height: 37px;
+
+    margin: 0 14px 14px;
+
+    padding: 0 16px;
+
+    font-size: 12px;
+  }
+
+
+  .social-post-read-article svg {
+    width: 13px;
+
+    height: 13px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .social-featured-button,
+  .social-featured-image img,
+  .social-featured-related-card,
+  .social-featured-related-image img,
+  .social-post-card,
+  .social-post-image,
+  .social-platform-view-more svg,
+  .social-post-actions button,
+  .social-post-see-more,
+  .social-post-read-article,
+  .social-post-read-article svg {
+
+    transition: none;
+  }
+}

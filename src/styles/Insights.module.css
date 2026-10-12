@@ -1,0 +1,856 @@
+/* =========================================================
+   INSIGHTS SECTION
+========================================================= */
+
+.insightsSection {
+  position: relative;
+
+  width: 100%;
+  min-height: 640px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   STATIC FULL-WIDTH 50 / 50 BACKGROUND
+========================================================= */
+
+.backgroundLayer {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+/* =========================================================
+   LEFT BACKGROUND
+========================================================= */
+
+.leftBackground {
+  background: #042661;
+}
+
+/* =========================================================
+   RIGHT BACKGROUND
+========================================================= */
+
+.rightBackground {
+  background: #3f6fb8;
+}
+
+/* =========================================================
+   CENTERED CONTENT CONTAINER
+========================================================= */
+
+.insightsContainer {
+  position: relative;
+
+  z-index: 1;
+
+  width: min(92%, 1760px);
+
+  margin: 0 auto;
+
+  min-height: 640px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TWO COLUMN GRID
+========================================================= */
+
+.insightsGrid {
+  width: 100%;
+
+  min-height: 640px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   INSIGHT PANEL
+========================================================= */
+
+.insightPanel {
+  position: relative;
+
+  width: 100%;
+
+  height: 640px;
+  min-height: 640px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   KEEP PANEL BACKGROUND TRANSPARENT
+========================================================= */
+
+.darkPanel,
+.bluePanel {
+  background: transparent;
+}
+
+/* =========================================================
+   PANEL CONTENT
+   FIXED HEIGHT + CENTERED CONTENT
+========================================================= */
+
+.panelContent {
+  width: 100%;
+
+  height: 640px;
+  min-height: 640px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  padding:
+    55px
+    clamp(40px, 5vw, 100px)
+    45px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   LOGO AREA
+========================================================= */
+
+.logoWrap {
+  width: 100%;
+
+  height: 105px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: flex-start;
+
+  margin-bottom: 35px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+  display: block;
+
+  width: auto;
+
+  max-width: 245px;
+
+  height: auto;
+
+  max-height: 100px;
+
+  object-fit: contain;
+
+  object-position: left top;
+}
+
+/* =========================================================
+   DESCRIPTION AREA
+   FIXED HEIGHT
+========================================================= */
+
+.textSlider {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 670px;
+
+  height: 300px;
+
+  min-height: 300px;
+
+  max-height: 250px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.description {
+  width: 100%;
+
+  max-width: 670px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size:
+    clamp(17px, 1.25vw, 21px);
+
+  font-weight: 400;
+
+  line-height: 1.55;
+
+  letter-spacing: 0.01em;
+
+  box-sizing: border-box;
+
+  animation:
+    insightsDescriptionChange
+    0.35s ease;
+}
+
+/* =========================================================
+   DESCRIPTION ANIMATION
+========================================================= */
+
+@keyframes insightsDescriptionChange {
+  from {
+    opacity: 0;
+
+    transform: translateX(12px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+/* =========================================================
+   MANUAL SLIDER CONTROLS
+========================================================= */
+
+.sliderControls {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  width: auto;
+
+  height: 42px;
+
+  margin-top: 14px;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MANUAL ARROW BUTTON
+========================================================= */
+
+.sliderArrow {
+ display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.sliderArrow:hover {
+  opacity: 1;
+}
+
+.sliderArrow:focus-visible {
+  outline: 2px solid #ffffff;
+
+  outline-offset: 4px;
+
+  border-radius: 4px;
+}
+
+/* =========================================================
+   CUSTOM CHEVRON
+========================================================= */
+
+.chevron {
+  display: block;
+
+  width: 14px;
+  height: 14px;
+
+  border-top: 3px solid currentColor;
+
+  border-right: 3px solid currentColor;
+
+  transform: rotate(45deg);
+
+  box-sizing: border-box;
+
+  transition: transform 0.25s ease;
+}
+
+.chevronLeft {
+  transform: rotate(-135deg);
+}
+
+/* =========================================================
+   CHEVRON HOVER
+========================================================= */
+
+.sliderArrow:hover .chevron {
+  transform: translateX(3px) rotate(45deg);
+}
+
+.sliderArrow:hover .chevronLeft {
+  transform: translateX(-3px) rotate(-135deg);
+}
+
+/* =========================================================
+   EXPLORE MORE
+========================================================= */
+
+.exploreButton {
+  width: 138px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  margin-top: 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  background: #ffffff;
+
+  color: #243246;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* =========================================================
+   EXPLORE HOVER
+========================================================= */
+
+.exploreButton:hover {
+  opacity: 0.88;
+
+  transform: translateX(3px);
+}
+
+/* =========================================================
+   EXPLORE ARROW
+========================================================= */
+
+.buttonArrow {
+  display: block;
+
+  width: 9px;
+  height: 9px;
+
+  border-top: 2px solid currentColor;
+
+  border-right: 2px solid currentColor;
+
+  transform: rotate(45deg);
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.25s ease;
+}
+
+/* =========================================================
+   EXPLORE ARROW HOVER
+========================================================= */
+
+.exploreButton:hover .buttonArrow {
+  transform: translateX(3px) rotate(45deg);
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1600px) {
+  .insightsSection,
+  .insightsContainer,
+  .insightsGrid {
+    min-height: 690px;
+  }
+
+  .insightPanel {
+    height: 690px;
+
+    min-height: 690px;
+  }
+
+  .panelContent {
+    height: 690px;
+
+    min-height: 690px;
+
+    padding:
+      65px
+      95px
+      55px;
+  }
+
+  .logoWrap {
+    height: 110px;
+
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    max-width: 270px;
+
+    max-height: 110px;
+  }
+
+  .textSlider {
+    height: 300px;
+
+    min-height: 300px;
+
+    max-height: 300px;
+  }
+
+  .sliderArrow {
+    width: 32px;
+
+    height: 32px;
+  }
+
+  .chevron {
+    width: 15px;
+    height: 15px;
+
+    border-width: 3px;
+  }
+
+  .exploreButton {
+    width: 145px;
+
+    height: 44px;
+  }
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+  .insightsSection,
+  .insightsContainer,
+  .insightsGrid {
+    min-height: 560px;
+  }
+
+  .insightPanel {
+    height: 560px;
+
+    min-height: 560px;
+  }
+
+  .panelContent {
+    height: 560px;
+
+    min-height: 560px;
+
+    padding:
+      50px
+      55px
+      40px;
+  }
+
+  .logoWrap {
+    height: 80px;
+
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    max-width: 200px;
+
+    max-height: 80px;
+  }
+
+  .textSlider {
+    height: 220px;
+
+    min-height: 220px;
+
+    max-height: 220px;
+  }
+
+  .description {
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+  .sliderControls {
+    margin-top: 16px;
+
+    gap: 18px;
+  }
+
+  .sliderArrow {
+    width: 30px;
+
+    height: 30px;
+  }
+
+  .chevron {
+    width: 10px;
+    height: 10px;
+
+    border-width: 3px;
+  }
+
+  .exploreButton {
+    width: 125px;
+
+    height: 38px;
+
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .insightsSection {
+    min-height: auto;
+  }
+
+  .backgroundLayer {
+    display: none;
+  }
+
+  .insightsContainer {
+    width: 100%;
+
+    min-height: auto;
+  }
+
+  .insightsGrid {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+  }
+
+  .insightPanel {
+    width: 100%;
+
+    height: 500px;
+
+    min-height: 500px;
+  }
+
+  .darkPanel {
+    background: #042661;
+  }
+
+  .bluePanel {
+    background: #3f6fb8;
+  }
+
+  .panelContent {
+    width: 100%;
+
+    height: 500px;
+
+    min-height: 500px;
+
+    padding:
+      50px
+      45px
+      40px;
+  }
+
+  .logoWrap {
+    height: 80px;
+
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    max-width: 200px;
+
+    max-height: 80px;
+  }
+
+  .textSlider {
+    height: 190px;
+
+    min-height: 190px;
+
+    max-height: 190px;
+  }
+
+  .description {
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+  .sliderControls {
+    margin-top: 18px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .insightPanel {
+    height: 460px;
+
+    min-height: 460px;
+  }
+
+  .panelContent {
+    height: 460px;
+
+    min-height: 460px;
+
+    padding:
+      40px
+      28px
+      30px;
+  }
+
+  .logoWrap {
+    height: 65px;
+
+    margin-bottom: 25px;
+  }
+
+  .logo {
+    max-width: 170px;
+
+    max-height: 65px;
+  }
+
+  .textSlider {
+    height: 175px;
+
+    min-height: 175px;
+
+    max-height: 175px;
+  }
+
+  .description {
+    font-size: 15px;
+
+    line-height: 1.55;
+  }
+
+  .sliderControls {
+    height: 34px;
+
+    margin-top: 14px;
+
+    gap: 18px;
+  }
+
+  .sliderArrow {
+    width: 31px;
+
+    height: 31px;
+  }
+
+  .chevron {
+    width: 12px;
+    height: 12px;
+
+    border-width: 3px;
+  }
+
+  .exploreButton {
+    width: 118px;
+
+    height: 36px;
+
+    margin-top: 18px;
+
+    font-size: 10px;
+  }
+
+  .buttonArrow {
+    width: 8px;
+    height: 8px;
+
+    border-width: 2px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .insightPanel {
+    height: 455px;
+
+    min-height: 455px;
+  }
+
+  .panelContent {
+    height: 455px;
+
+    min-height: 455px;
+
+    padding:
+      35px
+      22px
+      25px;
+  }
+
+  .logoWrap {
+    height: 60px;
+
+    margin-bottom: 22px;
+  }
+
+  .logo {
+    max-width: 155px;
+
+    max-height: 60px;
+  }
+
+  .textSlider {
+    height: 250px;
+
+    min-height: 240px;
+
+    max-height: 240px;
+  }
+
+  .description {
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+  .sliderControls {
+    height: 32px;
+
+    margin-top: 14px;
+
+    gap: 16px;
+  }
+
+  .sliderArrow {
+    width: 30px;
+
+    height: 30px;
+  }
+
+  .chevron {
+    width: 11px;
+    height: 11px;
+
+    border-width: 3px;
+  }
+
+  .exploreButton {
+    width: 115px;
+
+    height: 35px;
+
+    margin-top: 16px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .description,
+  .sliderArrow,
+  .exploreButton,
+  .buttonArrow,
+  .chevron {
+    animation: none;
+
+    transition: none;
+  }
+}

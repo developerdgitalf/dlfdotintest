@@ -1,0 +1,196 @@
+/* =========================================
+   RESEARCH INSIGHTS SECTION
+========================================= */
+
+.research-insights-section {
+  width: 100%;
+  padding: 80px 24px;
+  background: #ffffff;
+}
+
+.research-insights-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.research-insights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.research-insight-card {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+/* =========================================
+   TEXT CARD
+========================================= */
+
+.research-insight-content {
+  display: flex;
+  align-items: center;
+  padding: 48px 54px;
+  background: #202020;
+}
+
+.research-insight-content-inner {
+  width: 100%;
+  max-width: 440px;
+}
+
+/* Blue accent line */
+
+.research-insight-line {
+  display: block;
+  width: 82px;
+  height: 3px;
+  margin-bottom: 18px;
+  background: #3c9bd3;
+}
+
+/* Title */
+
+.research-insight-content h3 {
+  margin: 0;
+  max-width: 430px;
+  color: #f1f3f4;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+/* =========================================
+   LINK
+========================================= */
+
+.research-insight-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.research-insight-arrow {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #317bb0;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.research-insight-arrow svg {
+  font-size: 13px;
+}
+
+.research-insight-link:hover {
+  color: #ffffff;
+}
+
+.research-insight-link:hover .research-insight-arrow {
+  background: #3c9bd3;
+  transform: translate(3px, -3px);
+}
+
+/* =========================================
+   IMAGE CARD
+========================================= */
+
+.research-insight-image {
+  background-color: #081523;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Professional overlay */
+
+.research-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 15, 27, 0.15),
+    rgba(5, 15, 27, 0.05)
+  );
+  transition: background 0.35s ease;
+}
+
+.research-insight-image:hover .research-image-overlay {
+  background: rgba(5, 15, 27, 0.1);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .research-insights-section {
+    padding: 64px 24px;
+  }
+
+  .research-insight-card {
+    min-height: 270px;
+  }
+
+  .research-insight-content {
+    padding: 38px 36px;
+  }
+
+  .research-insight-content h3 {
+    font-size: 1.35rem;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 680px) {
+  .research-insights-section {
+    padding: 50px 18px;
+  }
+
+  .research-insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-insight-card {
+    min-height: 240px;
+  }
+
+  .research-insight-image {
+    min-height: 230px;
+  }
+
+  .research-insight-content {
+    padding: 38px 28px;
+  }
+
+  .research-insight-content h3 {
+    font-size: 1.3rem;
+  }
+}

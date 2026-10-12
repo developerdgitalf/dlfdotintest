@@ -1,0 +1,777 @@
+/* =========================================
+   ADVISORS TEAM SECTION
+========================================= */
+
+.advisors-team {
+  width: 100%;
+  margin: 0;
+  padding: 55px 0 90px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   GLOBAL CONTAINER
+========================================= */
+
+.advisors-team__container {
+  width: 1200px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN HEAD TEAM CONTAINER
+========================================= */
+
+.advisors-team__container:first-child {
+  width: 1200px;
+  max-width: calc(100% - 48px);
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.advisors-team__heading {
+  width: 100%;
+  margin: 0 0 28px;
+  text-align: center;
+}
+
+.advisors-team__heading h2 {
+  margin: 0;
+  color: #172947;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+
+/* =========================================
+   HEADING LINE
+========================================= */
+
+.advisors-team__heading-line {
+  width: 355px;
+  max-width: 80%;
+  height: 1px;
+  margin: 22px auto 0;
+  background: #c59b62;
+}
+
+
+/* =========================================
+   MAIN ANALYST GRID
+   DESKTOP = 4 CARDS
+========================================= */
+
+.advisors-team__analyst-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 22px;
+  row-gap: 28px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MEMBER CARD
+========================================= */
+
+.advisors-team__card {
+  min-width: 0;
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.advisors-team__card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================
+   IMAGE WRAPPER
+   DARK BACKGROUND
+========================================= */
+
+.advisors-team__image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #202125;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.advisors-team__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 0;
+  transition: transform 0.45s ease;
+}
+
+
+/* =========================================
+   IMAGE HOVER
+========================================= */
+
+.advisors-team__card:hover
+.advisors-team__image {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   IMAGE PLACEHOLDER
+========================================= */
+
+.advisors-team__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      135deg,
+      #09204a 0%,
+      #185a91 100%
+    );
+  color: #ffffff;
+  font-family: Inter, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.advisors-team__placeholder span {
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.advisors-team__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 18px 15px 17px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MEMBER NAME
+========================================= */
+
+.advisors-team__card-content h3 {
+  margin: 0;
+  color: #09204a;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+
+/* =========================================
+   DESIGNATION
+   13PX
+========================================= */
+
+.advisors-team__card-content p {
+  min-height: 36px;
+  margin: 10px auto 14px;
+  max-width: 260px;
+  color: #b58b55;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+/* =========================================
+   SOCIAL BUTTONS
+========================================= */
+
+.advisors-team__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+}
+
+
+/* =========================================
+   SOCIAL BUTTON
+========================================= */
+
+.advisors-team__social {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* =========================================
+   SOCIAL BUTTON HOVER
+========================================= */
+
+.advisors-team__social:hover {
+  transform: translateY(-2px);
+  opacity: 0.82;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.advisors-team__icon {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+
+/* =========================================
+   LINKEDIN
+========================================= */
+
+.advisors-team__social--linkedin {
+  background: #0077b5;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.advisors-team__social--email {
+  background: #172947;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   WEBSITE
+========================================= */
+
+.advisors-team__social--link {
+  background: #eab35e;
+  color: #172947;
+}
+
+
+/* =========================================
+   SECOND CONTAINER
+   SUPPORT TEAM
+========================================= */
+
+.advisors-team__container--second {
+  margin-top: 85px;
+}
+
+
+/* =========================================
+   SUPPORT TEAM DIVISION
+========================================= */
+
+.advisors-team__division {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   SUPPORT TEAM TITLE
+========================================= */
+
+.advisors-team__division-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+.advisors-team__division-title h2 {
+  margin: 0;
+  color: #111111;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+
+/* =========================================
+   SUPPORT TEAM GRID
+   DESKTOP = 3 CARDS
+========================================= */
+
+.advisors-team__division-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.advisors-team__division-cards--support {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 220px));
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   SUPPORT TEAM CARD
+========================================= */
+
+.advisors-team__card--division {
+  width: 220px;
+  max-width: 220px;
+  flex: 0 0 220px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1500px) {
+
+  .advisors-team {
+    padding-top: 65px;
+  }
+
+  .advisors-team__container:first-child {
+    width: 1200px;
+    max-width: calc(100% - 64px);
+  }
+
+  .advisors-team__container:first-child
+  .advisors-team__heading h2 {
+    font-size: 30px;
+  }
+
+  .advisors-team__container:first-child
+  .advisors-team__analyst-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 18px;
+    row-gap: 24px;
+  }
+
+  .advisors-team__container--second {
+    width: 1200px;
+    max-width: calc(100% - 64px);
+    margin-top: 95px;
+  }
+
+  .advisors-team__division-title h2 {
+    font-size: 32px;
+  }
+
+  .advisors-team__division-cards--support {
+    max-width: 750px;
+    grid-template-columns: repeat(3, minmax(0, 230px));
+    gap: 22px;
+  }
+
+  .advisors-team__division-cards--support
+  .advisors-team__card--division {
+    width: 230px;
+    max-width: 230px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .advisors-team {
+    padding: 45px 0 65px;
+  }
+
+  .advisors-team__container {
+    width: min(92%, 900px);
+    max-width: none;
+  }
+
+  .advisors-team__container:first-child {
+    width: min(92%, 900px);
+    max-width: none;
+  }
+
+  .advisors-team__heading h2 {
+    font-size: 27px;
+  }
+
+  .advisors-team__container:first-child
+  .advisors-team__heading h2 {
+    font-size: 23px;
+  }
+
+
+  /* =========================================
+     MAIN TEAM
+     2 + 2
+  ========================================= */
+
+  .advisors-team__analyst-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 18px;
+    row-gap: 24px;
+  }
+
+
+  /* =========================================
+     CARD CONTENT
+  ========================================= */
+
+  .advisors-team__card-content {
+    padding: 15px 12px 15px;
+  }
+
+  .advisors-team__card-content h3 {
+    font-size: 16px;
+  }
+
+  .advisors-team__card-content p {
+    font-size: 11px;
+    max-width: 200px;
+  }
+
+
+  /* =========================================
+     SOCIAL
+  ========================================= */
+
+  .advisors-team__social {
+    width: 30px;
+    height: 30px;
+  }
+
+  .advisors-team__icon {
+    width: 15px;
+    height: 15px;
+  }
+
+
+  /* =========================================
+     SUPPORT TEAM
+     3 PER ROW
+  ========================================= */
+
+  .advisors-team__division-cards--support {
+    max-width: 610px;
+    grid-template-columns: repeat(3, minmax(0, 190px));
+    gap: 16px;
+  }
+
+  .advisors-team__division-cards--support
+  .advisors-team__card--division {
+    width: 190px;
+    max-width: 190px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .advisors-team {
+    padding: 40px 0 55px;
+  }
+
+  .advisors-team__container {
+    width: calc(100% - 32px);
+    max-width: none;
+  }
+
+  .advisors-team__container:first-child {
+    width: calc(100% - 32px);
+    max-width: none;
+  }
+
+
+  /* =========================================
+     HEADING
+  ========================================= */
+
+  .advisors-team__heading {
+    margin-bottom: 22px;
+  }
+
+  .advisors-team__heading h2 {
+    font-size: 23px;
+  }
+
+  .advisors-team__heading-line {
+    width: 260px;
+    margin-top: 17px;
+  }
+
+
+  /* =========================================
+     MAIN TEAM
+     2 + 2
+  ========================================= */
+
+  .advisors-team__analyst-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+    row-gap: 22px;
+  }
+
+
+  /* =========================================
+     CARD
+  ========================================= */
+
+  .advisors-team__card-content {
+    padding: 13px 7px 14px;
+  }
+
+  .advisors-team__card-content h3 {
+    font-size: 14px;
+  }
+
+  .advisors-team__card-content p {
+    font-size: 10.5px;
+    min-height: 38px;
+    max-width: 170px;
+  }
+
+
+  /* =========================================
+     SOCIAL
+  ========================================= */
+
+  .advisors-team__social {
+    width: 27px;
+    height: 27px;
+  }
+
+  .advisors-team__icon {
+    width: 14px;
+    height: 14px;
+  }
+
+
+  /* =========================================
+     SUPPORT TEAM
+  ========================================= */
+
+  .advisors-team__container--second {
+    margin-top: 55px;
+  }
+
+  .advisors-team__division-title {
+    margin-bottom: 25px;
+  }
+
+  .advisors-team__division-title h2 {
+    font-size: 23px;
+  }
+
+  .advisors-team__division-cards--support {
+    width: 100%;
+    max-width: 460px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .advisors-team__division-cards--support
+  .advisors-team__card--division {
+    width: 100%;
+    max-width: none;
+    flex: none;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .advisors-team__container {
+    width: calc(100% - 28px);
+  }
+
+  .advisors-team__container:first-child {
+    width: calc(100% - 28px);
+  }
+
+
+  /* =========================================
+     HEADING
+  ========================================= */
+
+  .advisors-team__heading h2 {
+    font-size: 20px;
+  }
+
+  .advisors-team__heading-line {
+    width: 220px;
+    margin-top: 14px;
+  }
+
+
+  /* =========================================
+     MAIN TEAM
+  ========================================= */
+
+  .advisors-team__analyst-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 9px;
+    row-gap: 18px;
+  }
+
+
+  /* =========================================
+     CARD CONTENT
+  ========================================= */
+
+  .advisors-team__card-content h3 {
+    font-size: 12px;
+  }
+
+  .advisors-team__card-content p {
+    font-size: 9.5px;
+    min-height: 34px;
+    max-width: 145px;
+  }
+
+
+  /* =========================================
+     SOCIAL
+  ========================================= */
+
+  .advisors-team__social {
+    width: 24px;
+    height: 24px;
+  }
+
+  .advisors-team__icon {
+    width: 12px;
+    height: 12px;
+  }
+
+
+  /* =========================================
+     SUPPORT
+  ========================================= */
+
+  .advisors-team__division-cards--support {
+    max-width: 100%;
+    gap: 10px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .advisors-team__card,
+  .advisors-team__image,
+  .advisors-team__social {
+    transition: none;
+  }
+
+  .advisors-team__card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .advisors-team__card:hover
+  .advisors-team__image {
+    transform: none;
+  }
+
+  .advisors-team__social:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,229 @@
+/* =========================================
+   NEW AGE TECH INTRO
+========================================= */
+
+.new-age-tech-intro-section {
+  width: 100%;
+  padding: 78px 24px 88px;
+  background: #f3efef;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.new-age-tech-intro-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   TOP ROW
+========================================= */
+
+.new-age-tech-intro-row {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.new-age-tech-row-top {
+  margin-bottom: 70px;
+  padding: 25px;
+}
+
+
+.new-age-tech-top-text {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.new-age-tech-top-text p {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+font-size: 30px;
+line-height: 1.8rem;
+}
+
+
+
+
+/* =========================================
+   BOTTOM ROW
+   LEFT TEXT / RIGHT IMAGE
+========================================= */
+
+.new-age-tech-intro-row2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 0px 0px 0px 49px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.new-age-tech-bottom-text {
+  width: 100%;
+  max-width: 560px;
+  justify-self: start;
+  text-align: left;
+  box-sizing: border-box;
+
+}
+
+
+.new-age-tech-bottom-text p {
+  width: 100%;
+  max-width: 560px;
+  justify-self: start;
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.new-age-tech-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.new-age-tech-text  {
+color: #2f3942;
+  letter-spacing: .005em;
+  width: 100%;
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.new-age-tech-image {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #09272e;
+  box-sizing: border-box;
+}
+
+.new-age-tech-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.new-age-tech-image:hover img {
+  transform: scale(1.03);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .new-age-tech-intro-section {
+    padding: 65px 24px 75px;
+  }
+
+  .new-age-tech-row-top {
+    margin-bottom: 55px;
+  }
+
+  .new-age-tech-intro-row2 {
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .new-age-tech-text p {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+
+  .new-age-tech-image {
+    height: 280px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .new-age-tech-intro-section {
+    padding: 55px 20px 65px;
+  }
+
+  .new-age-tech-row-top {
+    margin-bottom: 50px;
+    padding: 15px 0;
+  }
+
+  .new-age-tech-intro-row2 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 24px;
+  }
+
+  /* IMAGE AFTER TEXT ON MOBILE */
+
+  .new-age-tech-bottom-text {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .new-age-tech-image {
+    order: 2;
+    height: 260px;
+  }
+
+  .new-age-tech-text p {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .new-age-tech-intro-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .new-age-tech-intro-row2 {
+    padding: 20px;
+  }
+
+  .new-age-tech-text p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .new-age-tech-image {
+    height: 210px;
+  }
+}

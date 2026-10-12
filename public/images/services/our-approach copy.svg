@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1826.83 835.25">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27 {
+        fill: #111;
+      }
+
+      .st0, .st1, .st28, .st29, .st30, .st3, .st31, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st32, .st11, .st33, .st12, .st34, .st13, .st14, .st15, .st35, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st36, .st37, .st25, .st38, .st26, .st27 {
+        isolation: isolate;
+      }
+
+      .st0, .st1, .st28, .st29, .st30, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st32, .st11, .st33, .st12, .st13, .st14, .st35, .st16, .st17, .st18, .st19, .st20, .st22, .st23, .st24, .st37, .st25, .st26, .st27 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .st0, .st8, .st10, .st12, .st15, .st21, .st25 {
+        font-size: 18.64px;
+      }
+
+      .st0, .st21 {
+        letter-spacing: -.07em;
+      }
+
+      .st1 {
+        letter-spacing: -.09em;
+      }
+
+      .st1, .st20 {
+        font-size: 12.38px;
+      }
+
+      .st28, .st29, .st30, .st3, .st32, .st33, .st13, .st35, .st22, .st23, .st37 {
+        font-size: 19.88px;
+      }
+
+      .st28, .st29, .st39 {
+        fill: #0e7da0;
+      }
+
+      .st29 {
+        letter-spacing: -.06em;
+      }
+
+      .st30, .st40 {
+        fill: #167e92;
+      }
+
+      .st3 {
+        letter-spacing: -.04em;
+      }
+
+      .st31 {
+        letter-spacing: -.07em;
+      }
+
+      .st31, .st36 {
+        font-size: 28.04px;
+      }
+
+      .st31, .st36, .st38 {
+        font-family: Arial-ItalicMT, Arial;
+        font-style: italic;
+      }
+
+      .st4 {
+        letter-spacing: -.02em;
+      }
+
+      .st4, .st5, .st16, .st24 {
+        font-size: 24.85px;
+      }
+
+      .st5 {
+        letter-spacing: -.07em;
+      }
+
+      .st6, .st27 {
+        font-size: 23.61px;
+      }
+
+      .st7 {
+        letter-spacing: -.07em;
+      }
+
+      .st7, .st9, .st11, .st14 {
+        font-size: 26.09px;
+      }
+
+      .st41 {
+        fill: #fff;
+      }
+
+      .st42, .st32, .st33, .st37 {
+        fill: #0b3e5f;
+      }
+
+      .st9 {
+        letter-spacing: -.02em;
+      }
+
+      .st10, .st12 {
+        letter-spacing: -.02em;
+      }
+
+      .st10, .st15, .st21 {
+        font-family: ArialMT, Arial;
+      }
+
+      .st43 {
+        fill: #111566;
+        stroke-width: 8px;
+      }
+
+      .st43, .st44, .st45 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .st32 {
+        letter-spacing: -.02em;
+      }
+
+      .st44 {
+        stroke-width: 3px;
+      }
+
+      .st44, .st45, .st46, .st47 {
+        fill: none;
+      }
+
+      .st11 {
+        letter-spacing: -.04em;
+      }
+
+      .st13 {
+        letter-spacing: -.09em;
+      }
+
+      .st35, .st48 {
+        fill: #4dc8f1;
+      }
+
+      .st16 {
+        letter-spacing: -.04em;
+      }
+
+      .st17 {
+        letter-spacing: -.02em;
+      }
+
+      .st17, .st19, .st26 {
+        font-size: 27.34px;
+      }
+
+      .st18 {
+        font-size: 12.44px;
+      }
+
+      .st19 {
+        letter-spacing: -.07em;
+      }
+
+      .st45 {
+        stroke-width: 5px;
+      }
+
+      .st49 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .st46 {
+        stroke: #333;
+        stroke-width: 1.5px;
+      }
+
+      .st22, .st37 {
+        letter-spacing: -.07em;
+      }
+
+      .st25 {
+        letter-spacing: -.02em;
+      }
+
+      .st38 {
+        font-size: 16.35px;
+      }
+
+      .st47 {
+        stroke: #0e7da0;
+        stroke-width: 4px;
+      }
+
+      .st27 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="header-title" class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st36" transform="translate(580.5 826.14)"><tspan x="0" y="0">Copyright © 2026 DIGI</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st31" transform="translate(864.59 826.14)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st36" transform="translate(879.64 826.14)"><tspan x="0" y="0">AL</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st31" transform="translate(913.94 826.14)"><tspan x="0" y="0">F</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st36" transform="translate(928.99 826.14)"><tspan x="0" y="0">ABRIC</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st38" transform="translate(1014.6914 816.8038)"><tspan x="0" y="0">®</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st36" transform="translate(1026.7378 826.1426)"><tspan x="0" y="0">.</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st36" transform="translate(1041.2778 826.1426)"><tspan x="0" y="0">All rights reserved.</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st24" transform="translate(1439.3258 21.3192)"><tspan x="0" y="0">STR</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st5" transform="translate(1489.0258 21.3192)"><tspan x="0" y="0">A</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st24" transform="translate(1505.1259 21.3192)"><tspan x="0" y="0">TEG</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st4" transform="translate(1556.2158 21.3192)"><tspan x="0" y="0">Y</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st24" transform="translate(1578.3258 21.3192)"><tspan x="0" y="0">AS</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st16" transform="translate(1612.8458 21.3192)"><tspan x="0" y="0" xml:space="preserve"> A</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st24" transform="translate(1635.8558 21.3192)"><tspan x="0" y="0" xml:space="preserve"> SE</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st4" transform="translate(1675.9058 21.3192)"><tspan x="0" y="0">R</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st24" transform="translate(1693.4058 21.3192)"><tspan x="0" y="0">VICE</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st6" transform="translate(1408.6431 56.1102)"><tspan x="0" y="0">(MVS – Minimum</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st27" transform="translate(1604.083 56.1102)"><tspan x="0" y="0">V</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st6" transform="translate(1619.4031 56.1102)"><tspan x="0" y="0">iable Strategy)</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st26" transform="translate(101.02 44.92)"><tspan x="0" y="0">DIGI</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st19" transform="translate(157.21 44.92)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st26" transform="translate(171.88 44.92)"><tspan x="0" y="0">A</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st17" transform="translate(191.62 44.92)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st26" transform="translate(207.83 44.92)"><tspan x="0" y="0" xml:space="preserve"> GOVERNANCE &amp; MANAGEMENT</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st33" transform="translate(112.22 98.09)"><tspan x="0" y="0">Experience in driving DIGI</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st37" transform="translate(359.69 98.09)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st33" transform="translate(370.36 98.09)"><tspan x="0" y="0">A</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st32" transform="translate(384.72 98.09)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st33" transform="translate(396.5 98.09)"><tspan x="0" y="0" xml:space="preserve"> business transformation</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st33" transform="translate(327.27 125.42)"><tspan x="0" y="0">initiatives</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st23" transform="translate(224.55 152.76)"><tspan x="0" y="0">(ITSM – R</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st22" transform="translate(315.12 152.76)"><tspan x="0" y="0">P</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st3" transform="translate(326.91 152.76)"><tspan x="0" y="0">A</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st23" transform="translate(340.52 152.76)"><tspan x="0" y="0" xml:space="preserve"> –</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st23" transform="translate(361.89 152.76)"><tspan x="0" y="0">AI –</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st23" transform="translate(403.14 152.76)"><tspan x="0" y="0">ANA</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st13" transform="translate(446.21 152.76)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st23" transform="translate(456.53 152.76)"><tspan x="0" y="0">YTICS)</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st15" transform="translate(254.94 206.19)"><tspan x="0" y="0">CONSU</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st21" transform="translate(322.25 206.19)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st15" transform="translate(331.23 206.19)"><tspan x="0" y="0">TING –</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st15" transform="translate(395.45 206.19)"><tspan x="0" y="0">ADVISO</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st10" transform="translate(465.88 206.19)"><tspan x="0" y="0">RY</tspan></text>
+      </g>
+    </g>
+  </g>
+  <circle class="st2" cx="659.83" cy="93.12" r="4.97"/>
+  <path class="st46" d="M664.8,93.12h83.25l85.74,88.22"/>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st30" transform="translate(1393.734 109.2757)"><tspan x="0" y="0">Organizations adding commercially heavy</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st30" transform="translate(1474.9316 136.6117)"><tspan x="0" y="0">resources &amp; partnerships</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st30" transform="translate(1439.0479 193.7689)"><tspan x="0" y="0">Agile Strategy is the NEW Theme</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(1363.9083 245.9564)"><tspan x="0" y="0">FUNCTIONA</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st12" transform="translate(1473.6583 245.9564)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(1484.6984 245.9564)"><tspan x="0" y="0" xml:space="preserve"> – SE</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st12" transform="translate(1530.2883 245.9564)"><tspan x="0" y="0">R</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(1543.4083 245.9564)"><tspan x="0" y="0">VICE – PRODUCT - CA</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st0" transform="translate(1743.2683 245.9564)"><tspan x="0" y="0">P</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(1754.3184 245.9564)"><tspan x="0" y="0">ABILIT</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st25" transform="translate(1814.3683 245.9564)"><tspan x="0" y="0">Y</tspan></text>
+      </g>
+    </g>
+  </g>
+  <circle class="st2" cx="1317.14" cy="99.33" r="4.97"/>
+  <path class="st46" d="M1312.17,99.33h-156.56l-82.01,82.01"/>
+  <path class="st41" d="M1025.14,337.9l60.88,64.61c27.34,29.82,65.86,39.76,94.43,23.61,11.18-6.21,19.88-16.15,26.09-27.34l14.91,47.22c-13.67,22.37-38.52,36.03-67.1,38.52-41,3.73-80.77-17.4-110.59-50.94l-77.04-83.25,58.4-12.43h.02,0Z"/>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st18" transform="translate(724.2 305.7)"><tspan x="0" y="0">MSM (Micro – small –</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st18" transform="translate(761.55 323.62) rotate(-.58)"><tspan x="0" y="0">Medium)</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st18" transform="translate(743.21 340.94)"><tspan x="0" y="0">ENTERPRISES</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st18" transform="translate(729.06 358.55)"><tspan x="0" y="0">ON-DEMAND TEAM</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st20" transform="translate(1069.4507 318.576)"><tspan x="0" y="0">KNOWLEDGE BODIES</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st20" transform="translate(1086.1812 336.1092)"><tspan x="0" y="0">ANA</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st1" transform="translate(1112.9912 336.1092)"><tspan x="0" y="0">L</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st20" transform="translate(1119.4211 336.1092)"><tspan x="0" y="0">YST FIRMS</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st14" transform="translate(126.19 518.07)"><tspan x="0" y="0">RESEARCH</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st14" transform="translate(278.9 518.07)"><tspan x="0" y="0">AS</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st11" transform="translate(315.15 518.07)"><tspan x="0" y="0" xml:space="preserve"> A</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st14" transform="translate(339.31 518.07)"><tspan x="0" y="0" xml:space="preserve"> SE</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st9" transform="translate(381.37 518.07)"><tspan x="0" y="0">R</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st14" transform="translate(399.74 518.07)"><tspan x="0" y="0">VICE</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st35" transform="translate(35.41 586.41)"><tspan x="0" y="0">The research team plays a critical role in personalized,</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st35" transform="translate(127.14 613.75)"><tspan x="0" y="0">customized ecosystem intelligence</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(0 665.93)"><tspan x="0" y="0">OPEN TECH INSIGHTS – REAL-TIME INPUTS – STUD</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st25" transform="translate(469.11 665.93)"><tspan x="0" y="0">Y</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(481.2 665.93)"><tspan x="0" y="0" xml:space="preserve"> PROJECTS</tspan></text>
+      </g>
+    </g>
+  </g>
+  <circle class="st2" cx="577.82" cy="582.68" r="4.97"/>
+  <path class="st46" d="M582.79,582.68l121.57-6.02,27.64-83.52"/>
+  <path class="st46" d="M1292.12,352.42l20.3,77.41,121.57,6.02"/>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st14" transform="translate(1356.8835 486.8277)"><tspan x="0" y="0">TECHNOLOG</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st9" transform="translate(1523.5835 486.8277)"><tspan x="0" y="0">Y</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st14" transform="translate(1540.5236 486.8277)"><tspan x="0" y="0" xml:space="preserve"> NARR</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st7" transform="translate(1623.1436 486.8277)"><tspan x="0" y="0">A</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st14" transform="translate(1640.0536 486.8277)"><tspan x="0" y="0">TIVE</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st29" transform="translate(1241.3158 551.44)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st28" transform="translate(1252.3658 551.44)"><tspan x="0" y="0">ranslating and articulating the message for all beneficiaries</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st28" transform="translate(1254.6976 592.1427)"><tspan x="0" y="0">W</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st28" transform="translate(1273.2876 592.1427)"><tspan x="0" y="0">ith the new evolving markets, customer configurations,</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st28" transform="translate(1386.0828 664.1427)"><tspan x="0" y="0" xml:space="preserve"> the positioning approach has</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st28" transform="translate(1288.8143 626.3241)"><tspan x="0" y="0">sales, drastically changed and marketing purpose,</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g class="st34">
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(1292.2177 715.457)"><tspan x="0" y="0">BUSINESS – TECHNOLOG</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st25" transform="translate(1527.2976 715.457)"><tspan x="0" y="0">Y</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(1539.3977 715.457)"><tspan x="0" y="0" xml:space="preserve"> – CUS</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st12" transform="translate(1599.4677 715.457)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+    </g>
+    <g class="st34">
+      <g class="st34">
+        <text class="st8" transform="translate(1610.5176 715.457)"><tspan x="0" y="0">OMER - MARKET</tspan></text>
+      </g>
+    </g>
+  </g>
+  <circle class="st2" cx="1438.97" cy="435.11" r="4.97"/>
+  <path class="st41" d="M643.46,344.19l6.63,8.03"/>
+  <path class="st40" d="M1136.93,226.59l-26.26-28.98,26.26-28.98v-21.41c-41.25,5.98-80.82,28.5-114.6,56.95-5.38,4.55-59.26,55.95-59.26,56.67,23.93,25.26,60.69,61.67,60.69,61.67,25.92-25.64,52.91-46.88,80.39-63.24,1.68-.99,3.42-1.99,5.18-2.93,7.21-3.85,14.41-6.83,21.33-8.84,1.11-.34,2.16-.61,3.19-.86h.07c1-.26,2-.49,3-.7v-19.35h.01Z"/>
+  <path class="st39" d="M1291.59,232.13c-13.4-26.65-33.35-48.39-59.28-64.6-4.97-3.1-10.17-5.92-15.46-8.38-24.1-11.25-48.52-14.7-72.46-12.43v25.32l-23.17,25.57,23.17,25.57v21.88c2.41-.31,4.81-.51,7.17-.6,1.11-.04,2.2-.07,3.29-.07,3.09,0,6.23.19,9.35.56,31.54,3.63,55.78,30.76,58.98,65.96,2.85,31.32-4.2,54.07-22.21,71.58-4.67,4.55-9.64,8.06-15.18,10.75-5.82,2.82-12.16,4.68-19.34,5.71-4.15.59-8.63.89-13.32.89-.42,0-.86-.02-1.28-.02v23.32l26.26,28.98-26.26,28.98v17.83c10.75-.19,21.48-1.36,32.01-3.52,50.93-10.44,92.11-40.67,112.97-93.78,9.47-24.11,14.36-50.1,14.52-77.25.24-34.64-6.4-65.68-19.75-92.23v-.02h-.01Z"/>
+  <path class="st48" d="M769.32,481.09l-26.26-28.98,26.26-28.99v-23.84c-4.49-.38-9-1.1-13.49-2.14-3.2-.73-6.39-1.78-9.47-3.1-5.87-2.5-11.36-5.97-16.32-10.33l-.29-.26c-14.22-12.67-22.97-31.42-24.01-51.48-2.07-40.26,13.26-71.1,40.96-82.48,10.42-4.29,20.43-5.88,30.07-5.43v-20.89l23.17-25.57-23.17-25.57v-25.62c-26.37-1.45-53.05,4.18-79.02,19.46-22.3,13.12-50.12,36.59-64.75,62.45-27.36,48.38-30.99,100.62-13.34,160.54,11.51,39.03,41.09,68.75,69.11,85.55,24.77,14.85,52.54,22.25,80.55,23.11v-16.43h0Z"/>
+  <path class="st40" d="M962.49,389.57c-7.17,7.98-15.15,16.71-23.45,25.24-34.28,35.22-71.81,65.28-118.19,77.02-14.41,3.65-29.25,5.62-44.07,5.77v-19.92l-23.17-25.57,23.17-25.59v-26.92h.73c5.32,0,10.75-.47,16.17-1.4,11.68-2.03,23.53-6.29,35.21-12.66,26.43-14.4,49.07-35.21,69.62-56.42h.01c-.34-.33-.68-.66-1.02-.99.5.47,1.03.96,1.57,1.47,4.45,4.22,10.47,9.94,17.42,16.51.73.69,1.48,1.38,2.24,2.1,2.4,2.28,4.9,4.65,7.46,7.08.63.59,1.29,1.21,1.94,1.82,5.47,5.16,11.17,10.54,16.91,15.95.58.56,1.17,1.11,1.76,1.67l15.69,14.84h0Z"/>
+  <path class="st42" d="M1144.39,426.53v-27.38c-22.43-1.58-44.78-11.45-70.04-31-1.15-.89-2.32-1.81-3.5-2.75-16.97-13.59-33.02-28.85-47.09-42.85,0,0-36.76-36.41-60.69-61.67-.29-.31-.6-.66-.9-1.05-.01-.03-.04-.06-.07-.09-11.14-13.12-23.42-26.13-36.64-38.41-40.79-37.96-90.28-68.91-141.23-74.25v21.55l26.26,28.98-26.26,28.98v18.31c35.2,5.56,65.37,37.38,92.14,63.11.56.53,1.1,1.05,1.64,1.58,4.24,4.05,8.63,8.25,13.14,12.57,0,0,.6.57,1.71,1.62.2.19.42.39.65.63.36.32.74.7,1.17,1.1.15.13.29.28.44.42.31.28.61.57.94.89.23.22.46.44.7.67.24.22.49.45.74.7.49.47,1.02.97,1.56,1.48,4.44,4.21,10.47,9.93,17.42,16.5.73.69,1.47,1.39,2.23,2.11,2.4,2.27,4.9,4.64,7.46,7.07.64.6,1.29,1.21,1.94,1.83,5.46,5.15,11.18,10.55,16.92,15.95.58.56,1.17,1.11,1.76,1.67,7.12,6.69,14.22,13.36,20.83,19.51.89.82,1.76,1.64,2.63,2.46,1.29,1.2,2.56,2.37,3.79,3.53.52.48,1.03.97,1.55,1.45,1.74,1.59,3.41,3.15,5.01,4.64.76.7,1.51,1.39,2.24,2.06,1.1.99,2.17,1.99,3.25,2.97.09.1.19.19.29.28.56.5,1.11,1.01,1.67,1.51,1.95,1.78,3.86,3.53,5.74,5.24.41.38.82.73,1.21,1.08.03.01.04.04.07.04,23.46,21.23,41.33,36.47,54.14,46.23,27.91,21.26,61.43,31.95,95.18,32.78v-20.88l23.17-25.57-23.17-25.57v-.03h0Z"/>
+  <g>
+    <rect class="st41" x="847.07" y="224.36" width="18.64" height="24.85" transform="translate(-30.52 183.23) rotate(-12)"/>
+    <circle class="st41" cx="878.13" cy="228.09" r="11.18"/>
+    <path class="st41" d="M876.89,241.76l12.43,23.61h-22.37l9.94-23.61h0Z"/>
+  </g>
+  <circle class="st45" cx="668.7" cy="374.55" r="24.85"/>
+  <path class="st43" d="M687.34,393.19l22.37,22.37"/>
+  <path class="st44" d="M651.3,375.79c3.73-8.7,7.46,9.94,11.18-1.24,3.73-11.18,6.21,11.18,11.18,0,4.97-9.94,7.46,2.49,13.67,0"/>
+  <path class="st41" d="M1235.35,301.46h53.69v34.17h-25.22l-8.95,8.95v-8.95h-19.53v-34.17h.01Z"/>
+  <path class="st47" d="M1241.86,318.55h13.02M1260.57,318.55h13.02M1279.29,318.55h5.69"/>
+  <path class="st47" d="M1241.86,327.5h8.14M1254.88,327.5h10.58M1270.34,327.5h14.64"/>
+  <path class="st41" d="M1047.42,376.14l.78.39,8.37,8.37c.26.26.75.36,1.04.24.33-.13.47-.48.61-.86.95-2.54,3.61-4.03,6.28-3.68s4.68,2.43,5.03,5.03-1.13,5.33-3.68,6.28c-.38.14-.72.28-.86.61-.12.3-.03.77.24,1.04l8.37,8.37.39.8v.82l-.39.78-8.37,8.37c-.25.25-.73.36-1.01.26-.33-.12-.49-.46-.63-.83-.93-2.57-3.6-4.09-6.29-3.72-2.6.35-4.69,2.44-5.04,5.04-.36,2.69,1.16,5.36,3.72,6.29.37.14.71.29.83.63.09.27,0,.74-.26.99l-8.37,8.37-.8.39h-.82l-.78-.39-8.38-8.37c-.27-.27-.74-.36-1.04-.24-.33.13-.47.48-.61.86-.95,2.55-3.61,4.04-6.28,3.68s-4.69-2.43-5.04-5.03c-.36-2.67,1.13-5.33,3.68-6.28.37-.14.72-.28.86-.61.12-.28.02-.77-.24-1.04l-8.37-8.38-.39-.8v-.82l.39-.78,8.37-8.37c.25-.25.72-.36.99-.26.34.12.5.45.63.83.93,2.56,3.6,4.08,6.29,3.72,2.6-.35,4.68-2.44,5.03-5.04.36-2.68-1.16-5.36-3.72-6.28-.38-.14-.71-.29-.83-.64-.1-.27,0-.74.26-.99l8.37-8.37.8-.39h.87Z"/>
+  <g>
+    <path class="st41" d="M1047.81,211.22c2.84.39,5.16,2.39,5.83,5.23l3.54.02c1.84,0,3.15,1.67,2.91,3.52l3.28.03c4.03.04,7.32,3.48,7.32,7.56v30.46c0,.57-.53.88-.93.84-.48-.05-.81-.38-.81-.93v-30.34c0-3.17-2.56-5.83-5.69-5.84h-3.15c.18,1.74-1.09,3.41-2.95,3.41h-20.19c-1.91,0-3.25-1.59-3.06-3.43l-3.14.02c-3.39.02-5.93,3.01-5.69,6.37.04.62-.35,1.1-.91,1.08-.6-.02-.83-.46-.86-1.08-.23-4.28,3.02-8.09,7.34-8.13l3.27-.03c-.25-1.85,1.07-3.51,2.91-3.52l3.54-.02c.67-2.84,3-4.83,5.83-5.23h1.61ZM1057.09,223.43c.75,0,1.27-.6,1.27-1.24v-2.7c.01-.73-.57-1.28-1.29-1.28h-4.1c-.5,0-.87-.32-.94-.83-.33-2.59-2.53-4.46-5.08-4.43s-4.65,1.88-4.97,4.43c-.06.5-.43.83-.94.83h-4.1c-.72,0-1.3.55-1.3,1.28v2.7c.01.72.6,1.25,1.33,1.25h20.12,0Z"/>
+    <path class="st41" d="M1063.93,271.05h-33.86c-3.85-.57-6.75-3.68-6.75-7.61v-31.03c0-.56.53-.88.93-.85.46.04.81.37.82.92v30.94c0,3.29,2.66,5.88,5.93,5.88h32.01c3.25,0,5.89-2.54,5.92-5.76v-1.38c.02-.56.38-.94.93-.94.37,0,.83.35.83.84v1.49c0,3.89-2.97,6.95-6.77,7.49h0Z"/>
+    <path class="st41" d="M1055.02,257.47c1.63-1.95,4.42-2.43,6.56-1.04,2.15,1.4,2.9,4.22,1.68,6.5s-3.94,3.25-6.32,2.24-3.61-3.63-2.77-6.16l-15.19-8.37c-1.92,2.36-5.46,2.47-7.51.23-2.06-2.24-1.62-5.79.9-7.48,2.55-1.71,6.06-.74,7.32,2.17l12.67-2.92c-.09-2.49,1.57-4.65,4.09-5.13v-6.7l-1.87,1.99c-.32.4-.84.46-1.23.17-.34-.25-.52-.84-.17-1.22l3.41-3.73c.33-.36.94-.58,1.34-.14l3.52,3.83c.34.37.24.94-.1,1.24-.32.27-.83.28-1.19-.05l-1.95-2.1v6.72c2.39.44,4.02,2.48,4.08,4.76.06,2.38-1.59,4.43-3.79,4.96-2.39.57-4.74-.63-5.74-2.87l-12.64,2.91c-.04.62-.12,1.18-.27,1.85l15.17,8.36v-.02h0ZM1060.54,242.39c0-1.77-1.44-3.21-3.21-3.21s-3.21,1.44-3.21,3.21,1.44,3.21,3.21,3.21,3.21-1.44,3.21-3.21ZM1038.34,247.51c0-1.77-1.44-3.21-3.21-3.21s-3.21,1.44-3.21,3.21,1.44,3.21,3.21,3.21,3.21-1.44,3.21-3.21ZM1062.1,260.59c0-1.77-1.44-3.21-3.21-3.21s-3.21,1.44-3.21,3.21,1.44,3.21,3.21,3.21,3.21-1.44,3.21-3.21Z"/>
+    <path class="st41" d="M1046.69,235.84c1.01,1.05.86,2.7-.13,3.71s-2.62,1.2-3.67.2l-.94-.89-.78.74c-1.19,1.14-3.04.97-4.03-.24-1.02-1.26-.77-3.05.57-4.04l.27-.35c.07-.09-.22-.33-.29-.41-1.26-.97-1.55-2.63-.68-3.87.89-1.25,2.71-1.6,3.94-.58l.98.93.85-.82c1.07-1.03,2.8-.89,3.81.14,1.03,1.06,1.03,2.78-.04,3.87l-.71.72.85.88h0ZM1045.32,236.92l-1.32-1.32c-.39-.39-.37-.95.01-1.33l1.29-1.28c.41-.4.38-1,.04-1.38s-1-.48-1.4-.09l-1.42,1.4c-.33.33-.88.33-1.22,0l-1.35-1.35c-.42-.42-1.08-.37-1.45.05s-.32,1,.1,1.42l1.24,1.23c.3.29.43.89.11,1.21l-1.4,1.41c-.4.41-.4,1.01-.02,1.41.29.31.92.48,1.31.11l1.48-1.45c.31-.31.87-.32,1.19,0l1.48,1.45c.39.38,1.01.21,1.32-.09.36-.37.41-.99,0-1.39h.01Z"/>
+    <path class="st41" d="M1043.73,262.13c1.1,1.12,1.07,2.82.04,3.88s-2.74,1.15-3.85.09l-.81-.77-.73.72c-1.12,1.1-2.87,1.03-3.91-.05-1.05-1.08-1.04-2.81.07-3.91l.67-.67-.74-.76c-1.06-1.09-1.02-2.78,0-3.84,1.01-1.04,2.72-1.15,3.82-.11l.83.78.74-.72c1.09-1.06,2.79-1.02,3.84-.01,1.05,1.01,1.16,2.73.11,3.84l-.77.82.69.7h0ZM1042.48,263.37l-1.44-1.46c-.18-.18-.17-.8,0-.98l1.46-1.49c.41-.42.33-1.07-.05-1.42-.41-.37-1-.35-1.41.07l-1.29,1.3c-.27.27-.85.38-1.14.09l-1.48-1.45c-.42-.41-1.07-.32-1.41.05s-.38.96,0,1.35l1.44,1.48c.33.34.15.92-.14,1.21l-1.24,1.23c-.42.42-.45,1.01-.07,1.42s1,.46,1.42.05l1.49-1.46c.23-.23.83-.17,1.05.05l1.43,1.41c.42.42,1.07.34,1.43-.05s.38-.97-.04-1.4h-.01Z"/>
+    <path class="st41" d="M1050,218.02c0,1.65-1.34,2.99-2.99,2.99s-2.99-1.34-2.99-2.99,1.34-2.99,2.99-2.99,2.99,1.34,2.99,2.99ZM1048.24,218.02c0-.68-.55-1.23-1.23-1.23s-1.23.55-1.23,1.23.55,1.23,1.23,1.23,1.23-.55,1.23-1.23Z"/>
+  </g>
+  <g>
+    <g>
+      <polygon class="st41" points="844.95 454.85 811.71 454.85 811.7 450.46 844.98 450.46 844.95 454.85"/>
+      <path class="st41" d="M827.33,416.72c-.2,2.93.71,5.88,3.06,7.67.14,1.95.57,3.79,1.46,5.54.95,1.75,2.2,3.21,3.74,4.49,4.01,3.32,6.04,8.42,5.26,13.65h-24.95c.98-3.48,1.1-6.96.46-10.47-.57-3.09-.95-6.08-1.07-9.23-.12-4.42.28-8.88,2.13-12.89,2.46-5.33,7.17-8.04,12.92-8.65.41-.04.72-.23,1.01-.52,2.02-2.04,4.87-3.09,7.73-2.77l-2.55,4.25c-.28.47-.22.99.11,1.42l4.11,4.51,4.01,4.42c1.4,1.54,2.6,3.15,3.76,4.86,1.35,2-.65,3.61-2.46,4.76-.73.46-1.59.52-2.34.05l-6.14-3.88c-.51-.32-2.22.17-4.59-.92-2.26-1.05-3.54-3.27-3.25-5.78.08-.69-.24-1.31-.9-1.48s-1.33.21-1.49.98h-.02,0ZM838.09,414.4l-1-1.05c-.38-.4-1.01-.29-1.34.05-.37.38-.35.96.03,1.36l.89.92c.38.4.98.37,1.36,0,.3-.28.44-.88.06-1.28h0Z"/>
+      <path class="st41" d="M829.76,404.47c-13.48,1.7-17.74,11.51-17.03,24.24-1.78-.61-3.23-2.39-3.04-4.36.33-3.45,1.63-10.06,3.4-12.81,3.64-5.64,10.83-8.09,17.35-7.73l-.68.66Z"/>
+    </g>
+    <g>
+      <path class="st41" d="M879.19,421.92c.72-.09,1.11-.59,1.11-1.23v-3.46h-23.47l.02,3.66c0,.63.64,1.05,1.25,1.03h21.1-.01ZM878.52,440.69c-2.31-5.19-2.79-10.78-2.88-16.43h-14.15c-.1,5.7-.59,11.3-2.89,16.43h19.92ZM881.41,447.74c.74,0,1.23-.54,1.23-1.17v-2.43c0-.61-.54-1.1-1.18-1.1h-25.79c-.68,0-1.19.51-1.19,1.15v2.32c0,.66.47,1.23,1.2,1.23h25.74-.01Z"/>
+      <path class="st41" d="M860.7,403.14c.39.23.81.57.81,1.11v3.59h3.53v-3.69c.09-.48.43-.77.85-1.01h5.31c.54.21.93.67.89,1.31v3.39h3.52v-3.28c0-.67.23-1.16.87-1.41h5.31c.56.23.87.68.87,1.33v9.3c-.01.62-.57,1.11-1.19,1.11h-25.79c-.67,0-1.2-.5-1.2-1.16v-9.54c0-.53.52-.84.91-1.03h5.31v-.02h0Z"/>
+      <path class="st41" d="M884.05,454.78h-31.12c-.32-.22-.79-.54-.79-1.01v-2.53c-.01-.61.5-1.16,1.15-1.16h30.55c.66,0,1.14.55,1.14,1.16v2.23c.02.64-.32,1.1-.93,1.31h0Z"/>
+      <path class="st41" d="M878.52,440.69h-19.92c2.29-5.13,2.79-10.73,2.89-16.43h14.15c.1,5.65.57,11.24,2.88,16.43h0Z"/>
+      <path class="st41" d="M881.41,447.74h-25.74c-.72,0-1.21-.57-1.2-1.23v-2.32c0-.64.52-1.15,1.2-1.15h25.79c.64,0,1.17.48,1.17,1.1v2.43c0,.63-.48,1.17-1.22,1.17h0Z"/>
+      <path class="st41" d="M879.19,421.92h-21.1c-.61.02-1.24-.4-1.25-1.03l-.02-3.66h23.46v3.46c0,.64-.38,1.14-1.11,1.23h.02,0Z"/>
+    </g>
+  </g>
+  <text class="st49" transform="translate(188.55 180.34)"><tspan x="0" y="0">sdfsdfsdfsd</tspan></text>
+</svg>

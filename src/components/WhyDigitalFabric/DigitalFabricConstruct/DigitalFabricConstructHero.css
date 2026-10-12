@@ -1,0 +1,73 @@
+.digital-construct-hero {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  overflow: hidden;
+  background-image: url("/images/why-digital-fabric/digital-construct-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay for better text readability */
+.digital-construct-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 9, 15, 0.2) 0%,
+    rgba(3, 9, 15, 0.05) 55%,
+    rgba(3, 9, 15, 0.15) 100%
+  );
+}
+
+.digital-construct-hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 48px 9%;
+}
+
+.digital-construct-hero__content h1 {
+  margin: 0;
+  color: #f4f2ec;
+  font-size: clamp(28px, 3vw, 52px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.digital-construct-hero__content p {
+  max-width: 440px;
+  margin: 18px 0 0;
+  color: rgba(244, 242, 236, 0.85);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .digital-construct-hero {
+    min-height: 240px;
+  }
+
+  .digital-construct-hero__content {
+    padding: 40px 7%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .digital-construct-hero {
+    min-height: 220px;
+  }
+
+  .digital-construct-hero__content {
+    padding: 35px 24px;
+  }
+
+  .digital-construct-hero__content p {
+    font-size: 13px;
+  }
+}

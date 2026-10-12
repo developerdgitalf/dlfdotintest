@@ -1,0 +1,703 @@
+/* ===============================
+   OUR EXPERTISE SECTION
+================================ */
+
+.expertise-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 63px 20px 40px;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(39, 89, 185, 0.08),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(39, 89, 185, 0.06),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fafc 0%,
+      #ffffff 50%,
+      #f4f7fc 100%
+    );
+}
+
+/* ===============================
+   DECORATIVE BACKGROUND
+================================ */
+
+.expertise-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 540px;
+  height: 540px;
+
+  left: -315px;
+  bottom: -405px;
+
+  border: 1px solid rgba(30, 73, 150, 0.06);
+
+  border-radius: 50%;
+}
+
+.expertise-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 288px;
+  height: 288px;
+
+  right: -162px;
+  bottom: -225px;
+
+  background: rgba(30, 73, 150, 0.03);
+
+  transform: rotate(20deg);
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+
+.expertise-container {
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+
+  max-width: 1280px;
+
+  margin: 0 auto;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+.expertise-header {
+  max-width: 810px;
+
+  margin: 0 auto 32px;
+
+  text-align: center;
+}
+
+.expertise-label {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 11px;
+
+  color: #162846;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 4.5px;
+}
+
+.expertise-label span {
+  width: 40px;
+  height: 1px;
+
+  background: #285db8;
+}
+
+.expertise-header h2 {
+  margin: 0;
+
+  color: #14223b;
+
+  font-size: clamp(40px, 4.5vw, 53px);
+
+  font-weight: 700;
+
+  line-height: 1.1;
+}
+
+.expertise-header h2 strong {
+  display: block;
+
+  margin: 0;
+
+  color: #172b3c;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 40px;
+
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.04em;
+}
+
+.expertise-header p {
+  max-width: 720px;
+
+  margin: 13px auto 0;
+
+  color: #4b5565;
+
+  font-size: clamp(16px, 1.25vw, 20px);
+
+  line-height: 1.5;
+}
+
+/* ===============================
+   EXPERTISE CARDS
+================================ */
+
+.expertise-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  margin-bottom: 20px;
+}
+
+.expertise-card {
+  min-height: 290px;
+
+  padding: 27px;
+
+  border: 1px solid rgba(30, 73, 150, 0.18);
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 9px 32px rgba(20, 34, 59, 0.06);
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+/* ===============================
+   TOP CARD BACKGROUNDS
+   KEPT AS YOUR EXISTING DESIGN
+================================ */
+
+.expertise-card--1 {
+  background: none;
+}
+
+.expertise-card--2 {
+  background: none;
+}
+
+.expertise-card--3 {
+  background: none;
+}
+
+.expertise-card--4 {
+  background:  none ;
+}
+
+/* ===============================
+   HOVER
+================================ */
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(36, 87, 181, 0.35);
+
+  box-shadow:
+    0 16px 40px rgba(20, 34, 59, 0.14);
+}
+
+/* ===============================
+   CARD HEADINGS
+================================ */
+
+.expertise-card h3 {
+  min-height: 63px;
+
+  margin: 0 0 25px;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  line-height: 1.35;
+
+  letter-spacing: -0.01em;
+
+  color: #14223b;
+}
+
+/* Light cards */
+
+.expertise-card--1 h3,
+.expertise-card--2 h3 {
+  color: #14223b;
+}
+
+/* Dark cards */
+
+.expertise-card--3 h3,
+.expertise-card--4 h3 {
+  color:#14223b;
+}
+
+/* ===============================
+   BULLET POINTS
+================================ */
+
+.expertise-card ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 13px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.expertise-card li {
+  position: relative;
+
+  padding-left: 24px;
+
+  font-size: clamp(15px, 1.05vw, 18px);
+
+  line-height: 1.45;
+}
+
+/* Light cards */
+
+.expertise-card--1 li,
+.expertise-card--2 li {
+ color:#14223b;
+}
+
+/* Dark cards */
+
+.expertise-card--3 li,
+.expertise-card--4 li {
+  color:#14223b;
+}
+
+/* ===============================
+   BULLETS
+================================ */
+
+.expertise-card li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0.62em;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #2457b5;
+}
+
+/* Dark card bullets */
+
+.expertise-card--3 li::before,
+.expertise-card--4 li::before {
+  color:#14223b;
+}
+
+/* ===============================
+   BOTTOM INFORMATION BAR
+================================ */
+
+.expertise-bottom {
+  display: grid;
+
+  grid-template-columns:
+    2.8fr
+    0.7fr
+    0.7fr
+    1.6fr;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(30, 73, 150, 0.16);
+
+  border-radius: 10px;
+
+  box-sizing: border-box;
+}
+
+/* ===============================
+   1ST AREA
+   TECHNOLOGY / AI ECONOMICS
+   LIGHT - 20%
+================================ */
+
+.economics {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  min-height: 72px;
+
+  padding: 20px 36px;
+
+  background: #dce6f3;
+
+  color: #14223b;
+
+  font-size: clamp(16px, 1.15vw, 21px);
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+/* ===============================
+   2ND AREA
+   GCC
+   40%
+================================ */
+
+.bottom-link-item {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 72px;
+
+  padding: 15px 18px;
+
+  font-size: clamp(14px, 1vw, 18px);
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.bottom-link-gcc {
+  background: #b4c5db;
+
+  color: #14223b;
+}
+
+/* ===============================
+   3RD AREA
+   GSI
+   60%
+================================ */
+
+.bottom-link-gsi {
+  background: #758aa7;
+
+  color: #ffffff;
+}
+
+/* ===============================
+   4TH AREA
+   TECHNOLOGY PLATFORM
+   80% - NAVY
+================================ */
+
+.bottom-link-platform {
+  background: #355377;
+
+  color: #ffffff;
+}
+
+/* ===============================
+   SEPARATORS
+================================ */
+
+.bottom-link-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.bottom-link-gcc {
+  border-left: none;
+}
+
+/* ===============================
+   EXPLORE MORE BUTTON
+================================ */
+
+.expertise-button-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 27px;
+}
+
+.explore-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  min-width: 234px;
+
+  padding: 15px 27px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  background-color: #05234f;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 9px 23px rgba(36, 87, 181, 0.20);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.explore-button:hover {
+  transform: translateY(-3px);
+
+  background-color: #0a326c;
+
+  box-shadow:
+    0 14px 28px rgba(36, 87, 181, 0.3);
+}
+
+.explore-button span {
+  font-size: 21px;
+
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+.explore-button:hover span {
+  transform: translateX(4px);
+}
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 1100px) {
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expertise-card {
+    min-height: auto;
+  }
+
+  .expertise-bottom {
+    grid-template-columns:
+      1.8fr
+      0.7fr
+      0.7fr
+      1.2fr;
+  }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .expertise-section {
+    padding: 50px 16px 32px;
+  }
+
+  .expertise-header {
+    margin-bottom: 28px;
+  }
+
+  .expertise-label {
+    gap: 10px;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .expertise-label span {
+    width: 25px;
+  }
+
+  .expertise-header h2 {
+    font-size: 42px;
+  }
+
+  .expertise-header h2 strong {
+    font-size: 34px;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .expertise-card {
+    padding: 25px 22px;
+  }
+
+  .expertise-card h3 {
+    min-height: auto;
+
+    margin-bottom: 20px;
+  }
+
+  .expertise-card li {
+    font-size: 16px;
+  }
+
+  /* =======================================
+     MOBILE BOTTOM BAR
+  ======================================= */
+
+  .expertise-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .economics {
+    justify-content: center;
+
+    min-height: auto;
+
+    padding: 20px;
+
+    text-align: center;
+  }
+
+  .bottom-link-item {
+    min-height: 58px;
+
+    padding: 16px;
+  }
+
+  .bottom-link-item {
+    border-left: none;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .bottom-link-gcc {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .economics {
+    border-bottom: none;
+  }
+
+  .explore-button {
+    width: 100%;
+
+    min-width: auto;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .expertise-header h2 {
+    font-size: 36px;
+  }
+
+  .expertise-header h2 strong {
+    font-size: 30px;
+  }
+
+  .expertise-header p {
+    font-size: 16px;
+  }
+
+  .expertise-card {
+    padding: 22px 19px;
+  }
+
+  .expertise-card h3 {
+    font-size: 16px;
+  }
+
+  .expertise-card li {
+    font-size: 15px;
+  }
+
+  .economics {
+    font-size: 15px;
+  }
+
+  .bottom-link-item {
+    font-size: 15px;
+  }
+}
+
+/* ===============================
+   REDUCED MOTION
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .expertise-card,
+  .explore-button,
+  .explore-button span {
+    transition: none;
+  }
+}

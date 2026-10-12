@@ -1,0 +1,151 @@
+/* =========================================
+   ENTERPRISE BLUEPRINT INTRO SECTION
+========================================= */
+
+.it-governance-intro-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.it-governance-intro-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+
+/* =========================================
+   ROW 1 — HEADING
+========================================= */
+
+.it-governance-heading {
+  width: 100%;
+}
+
+.it-governance-heading h1 {
+  margin: 0;
+  font-size: clamp(30px, 6vw, 30px);
+  line-height: 0.95;
+text-align: center;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: #181a1c;;
+}
+
+.it-governance-heading h1 span {
+  color: #294968;
+}
+
+
+/* =========================================
+   ROW 2 — BLUEPRINT IMAGE
+========================================= */
+
+.enterprise-blueprint {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enterprise-blueprint-image {
+  width: 100%;
+  max-width: 1200px;
+
+  height: auto;
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   ROW 3 — DESCRIPTION
+========================================= */
+
+.it-governance-description {
+  width: 100%;
+}
+
+.it-governance-description p {
+color: #262829;
+  letter-spacing: .01em;
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  background-color: white;
+ font-size: clamp(20px, 2vw, 23px);
+  font-weight: 500;
+  line-height: 1.1;
+  padding: 25px;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+  .it-governance-intro-section {
+    padding: 70px 30px;
+  }
+
+  .it-governance-intro-container {
+    gap: 50px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .it-governance-intro-section {
+    padding: 50px 20px;
+  }
+
+  .it-governance-intro-container {
+    gap: 40px;
+  }
+
+  .it-governance-heading h1 {
+    font-size: clamp(42px, 12vw, 65px);
+  }
+
+  .it-governance-description p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .it-governance-intro-section {
+    padding: 40px 16px;
+  }
+
+  .it-governance-intro-container {
+    gap: 30px;
+  }
+
+  .it-governance-heading h1 {
+    font-size: 42px;
+  }
+
+  .it-governance-description p {
+    font-size: 17px;
+  }
+}

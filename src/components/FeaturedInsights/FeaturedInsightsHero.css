@@ -1,0 +1,64 @@
+/* =========================================
+   FEATURED INSIGHTS HERO
+========================================= */
+
+.featured-insights-hero {
+  width: 100%;
+    color: #f5f2ec;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 17, 26, 0.88) 0%,
+      rgba(8, 17, 26, 0.72) 05%,
+      rgba(8, 17, 26, 0.45) 20%
+    ),
+    url("/images/featured-insights-hero.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Uses the same global .container as PageHeader */
+.featured-insights-hero__content {
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.featured-insights-hero__content h1 {
+  margin: 0;
+  color: #f5f2ec;
+  font-size: clamp(2.5rem, 4vw, 70px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+  .featured-insights-hero__content {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-insights-hero__content {
+    min-height: 260px;
+  }
+
+  .featured-insights-hero__content h1 {
+    font-size: clamp(2.5rem, 9vw, 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-insights-hero__content {
+    min-height: 220px;
+  }
+}

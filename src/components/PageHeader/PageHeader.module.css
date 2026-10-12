@@ -1,0 +1,195 @@
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.pageHeader {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 390px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(5, 20, 29, 0.42);
+
+  z-index: 1;
+}
+
+
+/* =========================================
+   CONTENT CONTAINER
+========================================= */
+
+.container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1600px;
+
+  margin: 0 auto;
+
+  padding: 80px 84px 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.container h1 {
+  margin: 0;
+
+  color: #f4f1eb;
+
+  font-size: clamp(48px, 5vw, 65px);
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.description {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 18px auto 0;
+
+  color: #f4f1eb;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   TABLET / LAPTOP
+========================================= */
+
+@media (max-width: 1024px) {
+  .pageHeader {
+    min-height: 350px;
+  }
+
+  .container {
+    padding:
+      75px 48px 35px;
+  }
+
+  .container h1 {
+    font-size: clamp(44px, 6vw, 64px);
+  }
+
+  .description {
+    max-width: 760px;
+
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .pageHeader {
+    min-height: 300px;
+  }
+
+  .container {
+    padding:
+      80px 24px 30px;
+  }
+
+  .container h1 {
+    font-size: clamp(38px, 10vw, 56px);
+
+    line-height: 1.08;
+  }
+
+  .description {
+    max-width: 100%;
+
+    margin-top: 16px;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .pageHeader {
+    min-height: 280px;
+  }
+
+  .container {
+    padding:
+      110px 18px 25px;
+  }
+
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 14px;
+
+    line-height: 1.45;
+  }
+}

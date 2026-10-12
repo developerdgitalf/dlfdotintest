@@ -1,0 +1,243 @@
+/* =========================================
+   NEW AGE TECHNOLOGY PERSPECTIVE
+========================================= */
+
+.new-age-perspective-section {
+  width: 100%;
+  min-height: 500px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.new-age-perspective-left {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 72px 70px;
+background-color: #001a30;;
+
+  color: #ffffff;
+}
+
+.new-age-perspective-left-content {
+  width: 100%;
+  max-width: 520px;
+}
+
+.new-age-perspective-left-content p {
+  margin: 0 0 20px;
+
+  color: rgba(255, 255, 255, 0.96);
+
+  font-size: 1.50rem;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 0.005em;
+}
+
+.new-age-perspective-left-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.new-age-perspective-right {
+ color: #fff;
+  letter-spacing: .005em;
+  width: 100%;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.1;
+   background-color: #062433;
+  padding: 64px;
+}
+
+.new-age-perspective-right-content {
+  width: 100%;
+  max-width: 570px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* =========================================
+   RIGHT HEADING
+========================================= */
+
+.new-age-perspective-heading {
+  width: 100%;
+
+  text-align: center;
+}
+
+.new-age-perspective-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: inter, serif;
+
+  font-size: clamp(1.35rem, 2.25vw, 1.0rem);
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: 0.08em;
+}
+
+.new-age-perspective-line {
+  width: 78%;
+  height: 1px;
+
+  margin: 16px auto 24px;
+
+  background: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.new-age-perspective-image {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 300px;
+
+  overflow: hidden;
+}
+
+.new-age-perspective-image img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .new-age-perspective-left {
+    padding: 58px 45px;
+  }
+
+  .new-age-perspective-right {
+    padding: 45px 38px;
+  }
+
+  .new-age-perspective-left-content p {
+    font-size: 1rem;
+    line-height: 1.16;
+  }
+
+  .new-age-perspective-heading h2 {
+    font-size: 1.45rem;
+  }
+
+  .new-age-perspective-image {
+    min-height: 270px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 720px) {
+  .new-age-perspective-section {
+    grid-template-columns: 1fr;
+  }
+
+  .new-age-perspective-left {
+    min-height: auto;
+
+    padding: 55px 24px;
+  }
+
+  .new-age-perspective-right {
+    min-height: auto;
+
+    padding: 48px 24px 55px;
+  }
+
+  .new-age-perspective-left-content {
+    max-width: 650px;
+  }
+
+  .new-age-perspective-left-content p {
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
+
+  .new-age-perspective-right-content {
+    max-width: 650px;
+  }
+
+  .new-age-perspective-heading h2 {
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  .new-age-perspective-line {
+    width: 75%;
+    margin-bottom: 18px;
+  }
+
+  .new-age-perspective-image {
+    min-height: 220px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .new-age-perspective-left {
+    padding: 45px 18px;
+  }
+
+  .new-age-perspective-right {
+    padding: 40px 18px 45px;
+  }
+
+  .new-age-perspective-left-content p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .new-age-perspective-heading h2 {
+    font-size: 1.12rem;
+    letter-spacing: 0.055em;
+  }
+
+  .new-age-perspective-image {
+    min-height: 180px;
+  }
+}

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #0b3e5f;
+      }
+
+      .cls-5 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-7 {
+        fill: #84cdb9;
+      }
+
+      .cls-8 {
+        fill: #f4f4f4;
+        font-size: 54.48px;
+      }
+
+      .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14 {
+        isolation: isolate;
+      }
+
+      .cls-8, .cls-9, .cls-11, .cls-15 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-9 {
+        font-size: 27.33px;
+      }
+
+      .cls-16 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-17 {
+        letter-spacing: 0em;
+      }
+
+      .cls-17, .cls-18, .cls-13 {
+        font-family: Arial-ItalicMT, Arial;
+        font-size: 28.04px;
+        font-style: italic;
+      }
+
+      .cls-19 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-20, .cls-21 {
+        stroke: #fff;
+        stroke-width: 8px;
+      }
+
+      .cls-20, .cls-21, .cls-15, .cls-14 {
+        fill: #fff;
+      }
+
+      .cls-21 {
+        stroke-linecap: round;
+      }
+
+      .cls-22 {
+        fill: #167e92;
+      }
+
+      .cls-23 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-24 {
+        letter-spacing: 0em;
+      }
+
+      .cls-25 {
+        fill: #4dc8f1;
+      }
+
+      .cls-26 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-27 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-28 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-11, .cls-15 {
+        font-size: 23.92px;
+      }
+
+      .cls-12 {
+        font-size: 26.19px;
+      }
+
+      .cls-12, .cls-14 {
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-29 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-30 {
+        letter-spacing: 0em;
+      }
+
+      .cls-31 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-32 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-33 {
+        letter-spacing: 0em;
+      }
+
+      .cls-34 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        font-size: 36.44px;
+      }
+    </style>
+  </defs>
+  <rect id="header" class="cls-4" x="-7.6" y="-9.34" width="1931.49" height="194.75"/>
+  <text id="header-title" class="cls-13" transform="translate(613.5 1073.4254)"><tspan x="0" y="0">Copyright © 2026 DIGI</tspan><tspan class="cls-5" x="284.09" y="0">T</tspan><tspan x="299.14" y="0">AL</tspan><tspan class="cls-5" x="333.44" y="0">F</tspan><tspan x="348.49" y="0">ABRIC</tspan></text>
+  <text class="cls-17" transform="translate(1047.6919 1064.087) scale(.583)"><tspan x="0" y="0">®</tspan></text>
+  <text class="cls-18" transform="translate(1059.7378 1073.4254)"><tspan x="0" y="0">.</tspan><tspan class="cls-6" x="7.79" y="0"> </tspan><tspan class="cls-1" x="14.54" y="0">All rights reserved.</tspan></text>
+  <rect id="content-bg" class="cls-22" x="-7.85" y="191.85" width="1933.79" height="355.28"/>
+  <g id="left-column">
+    <text class="cls-14" transform="translate(98.42 258.3) scale(1.03 1)"><tspan x="0" y="0">•</tspan></text>
+    <text class="cls-14" transform="translate(133.68 258.3) scale(1.03 1)"><tspan x="0" y="0">Business process re-engineering</tspan></text>
+    <text class="cls-14" transform="translate(98.42 333.46) scale(1.03 1)"><tspan x="0" y="0">•</tspan></text>
+    <text class="cls-14" transform="translate(133.68 333.46) scale(1.03 1)"><tspan class="cls-32" x="0" y="0">T</tspan><tspan x="18.22" y="0">echnology Onboarding</tspan></text>
+    <text class="cls-14" transform="translate(98.42 408.63) scale(1.03 1)"><tspan x="0" y="0">•</tspan></text>
+    <text class="cls-14" transform="translate(133.68 408.63) scale(1.03 1)"><tspan x="0" y="0">Market Research &amp; Evaluation</tspan></text>
+    <text class="cls-14" transform="translate(98.42 483.8) scale(1.03 1)"><tspan x="0" y="0">•</tspan></text>
+    <text class="cls-14" transform="translate(133.68 483.8) scale(1.03 1)"><tspan x="0" y="0">Service/Product: Opportunity &amp; refinement</tspan></text>
+  </g>
+  <g id="right-column">
+    <text class="cls-14" transform="translate(1052.4969 258.2975) scale(1.032 1)"><tspan x="0" y="0">•</tspan></text>
+    <text class="cls-14" transform="translate(1087.7556 258.2975) scale(1.032 1)"><tspan x="0" y="0">Maturity assessment &amp; evaluation</tspan></text>
+    <text class="cls-14" transform="translate(1052.4969 333.4639) scale(1.032 1)"><tspan x="0" y="0">•</tspan></text>
+    <text class="cls-14" transform="translate(1087.7556 333.4639) scale(1.032 1)"><tspan x="0" y="0">Entity journey mapping &amp; design experience</tspan></text>
+    <text class="cls-14" transform="translate(1052.4969 408.6304) scale(1.032 1)"><tspan x="0" y="0">•</tspan></text>
+    <text class="cls-14" transform="translate(1087.7556 408.6304) scale(1.032 1)"><tspan class="cls-28" x="0" y="0">T</tspan><tspan class="cls-33" x="20.91" y="0">ransition &amp; competency building plan</tspan></text>
+    <text class="cls-14" transform="translate(1052.4969 483.7967) scale(1.032 1)"><tspan x="0" y="0">•</tspan></text>
+    <text class="cls-14" transform="translate(1087.7556 483.7967) scale(1.032 1)"><tspan x="0" y="0">Service &amp; Program Mgmt. &amp; governance</tspan></text>
+  </g>
+  <g id="integration-band">
+    <rect class="cls-25" x="-7.6" y="557.82" width="1931.49" height="149.19"/>
+    <text class="cls-9" transform="translate(614.55 624.15) scale(1.1 1)"><tspan x="0" y="0">TECHNOLOGIES &amp; CA</tspan><tspan class="cls-29" x="293.09" y="0">P</tspan><tspan class="cls-24" x="309.29" y="0">ABILITIES INTEGR</tspan><tspan class="cls-29" x="552.26" y="0">A</tspan><tspan class="cls-30" x="569.97" y="0">TION</tspan></text>
+    <text class="cls-12" transform="translate(648.62 667.68) scale(1.1 1)"><tspan x="0" y="0">(CA</tspan><tspan class="cls-19" x="45.11" y="0">P</tspan><tspan class="cls-3" x="60.64" y="0">ABILIT</tspan><tspan class="cls-27" x="140.7" y="0">Y</tspan><tspan x="157.7" y="0" xml:space="preserve"> BUILDING – ROADMA</tspan><tspan class="cls-27" x="432.8" y="0">P</tspan><tspan x="449.79" y="0" xml:space="preserve"> – SCALE)</tspan></text>
+  </g>
+  <g id="transformation-band">
+    <rect class="cls-25" x="-7.6" y="718.41" width="1931.49" height="149.19"/>
+    <text class="cls-9" transform="translate(734.59 774.21) scale(1.1 1)"><tspan x="0" y="0">BUSINESS TRANSFORM</tspan><tspan class="cls-29" x="321.94" y="0">A</tspan><tspan x="339.65" y="0">TION</tspan></text>
+    <text class="cls-12" transform="translate(602.15 812.93) scale(1.1 1)"><tspan x="0" y="0">(DIGI</tspan><tspan class="cls-19" x="62.57" y="0">T</tspan><tspan x="76.63" y="0">A</tspan><tspan class="cls-16" x="94.1" y="0">L</tspan><tspan x="107.69" y="0" xml:space="preserve"> STR</tspan><tspan class="cls-19" x="167.36" y="0">A</tspan><tspan x="182.89" y="0">TEG</tspan><tspan class="cls-26" x="236.73" y="0">Y</tspan><tspan class="cls-34" x="253.73" y="0" xml:space="preserve"> – RESILIENC</tspan><tspan class="cls-27" x="421.14" y="0">Y</tspan><tspan x="438.14" y="0" xml:space="preserve"> – EXPERIENCE)</tspan></text>
+  </g>
+  <g id="bottom-segments">
+    <rect class="cls-7" x="-7.6" y="876.84" width="477.63" height="160.58"/>
+    <rect class="cls-7" x="488.16" y="876.84" width="476.34" height="160.58"/>
+    <rect class="cls-7" x="982.61" y="876.84" width="476.34" height="160.58"/>
+    <rect class="cls-7" x="1475.78" y="876.84" width="447.86" height="160.58"/>
+    <g class="cls-10">
+      <text class="cls-11" transform="translate(15.62 949.73) scale(1.14 1)"><tspan class="cls-23" x="0" y="0">T</tspan><tspan x="12.83" y="0">echnology – Product – Solution</tspan></text>
+      <text class="cls-15" transform="translate(437.97 949.73) scale(1.14 1)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(159.57 981.62) scale(1.14 1)"><tspan x="0" y="0">companies</tspan></text>
+    </g>
+    <g class="cls-10">
+      <text class="cls-11" transform="translate(526.14 949.73) scale(1.14 1)"><tspan x="0" y="0">Enterprise across all business</tspan></text>
+      <text class="cls-15" transform="translate(918.96 949.73) scale(1.14 1)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-11" transform="translate(605.45 981.62) scale(1.14 1)"><tspan x="0" y="0">verticals &amp; sectors</tspan></text>
+    </g>
+    <text class="cls-11" transform="translate(1012.3308 967.9534) scale(1.1365 1)"><tspan x="0" y="0">GCC – Global Capability centers</tspan></text>
+    <text class="cls-11" transform="translate(1531.4988 964.5367) scale(1.1365 1)"><tspan x="0" y="0">ITS</tspan><tspan class="cls-31" x="37.21" y="0">P</tspan><tspan x="52.73" y="0" xml:space="preserve"> – IT Service Provider</tspan></text>
+  </g>
+  <g>
+    <text id="header-title-2" data-name="header-title" class="cls-8" transform="translate(451.74 114.95) scale(1.03 1)"><tspan x="0" y="0">BUSINESS &amp; TECHNOLOG</tspan><tspan class="cls-2" x="696.21" y="0">Y</tspan><tspan x="731.56" y="0" xml:space="preserve"> ENABLEMENT</tspan></text>
+    <g>
+      <g>
+        <ellipse class="cls-20" cx="362.32" cy="48.68" rx="10.58" ry="10.25"/>
+        <ellipse class="cls-20" cx="314.14" cy="94.23" rx="10.58" ry="10.25"/>
+        <ellipse class="cls-20" cx="409.34" cy="94.23" rx="10.58" ry="10.25"/>
+        <ellipse class="cls-20" cx="362.32" cy="139.79" rx="10.58" ry="10.25"/>
+      </g>
+      <g>
+        <path class="cls-21" d="M348.22,50.95c-14.1,4.56-22.33,12.53-28.21,23.92"/>
+        <path class="cls-21" d="M376.43,50.95c14.1,4.56,22.33,12.53,28.21,23.92"/>
+        <path class="cls-21" d="M318.84,113.59c5.88,12.53,15.28,20.5,29.38,23.92"/>
+        <path class="cls-21" d="M405.81,113.59c-5.88,12.53-15.28,20.5-29.38,23.92"/>
+      </g>
+    </g>
+  </g>
+</svg>

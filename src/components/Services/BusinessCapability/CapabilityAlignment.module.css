@@ -1,0 +1,133 @@
+/* =========================================
+   CAPABILITY ALIGNMENT
+========================================= */
+
+.capabilitySection {
+  width: 100%;
+  background: #fff;
+  padding: 82px 24px 90px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.heading h2 {
+  margin: 0 0 8px;
+  color: rgba(17, 24, 39, 0.82);
+  font-size: clamp(2.5rem, 2vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.heading h3 {
+  margin: 0;
+  color: #285fa8;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   DIAGRAM
+========================================= */
+
+.diagramWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diagram {
+  display: block;
+  width: min(100%, 900px);
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+  .capabilitySection {
+    padding: 70px 32px 78px;
+  }
+
+  .heading {
+    margin-bottom: 32px;
+  }
+
+  .diagram {
+    width: min(100%, 820px);
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .capabilitySection {
+    padding: 58px 20px 65px;
+  }
+
+  .heading {
+    margin-bottom: 28px;
+  }
+
+  .heading h2 {
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+  }
+
+  .heading h3 {
+    font-size: 0.95rem;
+  }
+
+  .diagramWrapper {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+  }
+
+  /* Keeps the detailed diagram readable on mobile */
+  .diagram {
+    min-width: 650px;
+    max-width: none;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+  .capabilitySection {
+    padding: 50px 16px 58px;
+  }
+
+  .heading h2 {
+    font-size: 0.9rem;
+  }
+
+  .heading h3 {
+    font-size: 0.85rem;
+  }
+}

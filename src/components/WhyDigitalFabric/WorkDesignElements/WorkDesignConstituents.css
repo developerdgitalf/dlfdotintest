@@ -1,0 +1,208 @@
+/* =========================================================
+   WORK DESIGN CONSTITUENTS
+========================================================= */
+
+.work-design-constituents {
+  width: 100%;
+  padding: 48px 20px 54px;
+  background: #f6f7f9;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.work-design-constituents__container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN FEATURED CARD
+========================================================= */
+
+.work-design-constituents__featured {
+  width: min(100%, 1060px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  /* Reduced overall height */
+  height: 300px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 14px;
+  box-sizing: border-box;
+  
+  transition: box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.work-design-constituents__featured:hover {
+  box-shadow: 0 12px 30px rgba(26, 43, 69, 0.1);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.work-design-constituents__content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 34px;
+
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.work-design-constituents__content h3 {
+  max-width: 390px;
+  margin: 0;
+
+  color: #142b5d;
+
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  font-size: clamp(1.55rem, 1.4vw, 1.9rem);
+
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+.work-design-constituents__line {
+  width: 34px;
+  height: 2px;
+  margin: 18px 0;
+  background: #2288d0;
+}
+
+.work-design-constituents__content p {
+  max-width: 410px;
+  margin: 0;
+
+  color: #506079;
+
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.work-design-constituents__image {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #e8edf3;
+  box-sizing: border-box;
+}
+
+.work-design-constituents__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .work-design-constituents {
+    padding: 42px 18px 48px;
+  }
+
+  .work-design-constituents__featured {
+    height: 350px;
+  }
+
+  .work-design-constituents__content {
+    padding: 30px;
+  }
+
+  .work-design-constituents__content h3 {
+    font-size: 1.7rem;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+  .work-design-constituents {
+    padding: 38px 14px 44px;
+  }
+
+  .work-design-constituents__featured {
+    grid-template-columns: 1fr;
+
+    height: auto;
+    min-height: auto;
+
+    border-radius: 10px;
+  }
+
+  .work-design-constituents__image {
+    height: 240px;
+    order: 1;
+  }
+
+  .work-design-constituents__content {
+    order: 2;
+    padding: 28px 22px 32px;
+  }
+
+  .work-design-constituents__content h3 {
+    font-size: 1.55rem;
+  }
+
+  .work-design-constituents__content p {
+    font-size: 0.86rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .work-design-constituents__content {
+    padding: 24px 18px 28px;
+  }
+
+  .work-design-constituents__content h3 {
+    font-size: 1.4rem;
+  }
+
+  .work-design-constituents__image {
+    height: 220px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .work-design-constituents__featured {
+    transition: none;
+  }
+}

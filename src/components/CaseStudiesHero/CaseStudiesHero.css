@@ -1,0 +1,248 @@
+/* =========================================
+   CASE STUDIES HERO
+========================================= */
+
+.case-studies-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 450px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/images/case-studies/case-studies-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* =========================================
+   DARK OVERLAY
+========================================= */
+
+.case-studies-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(3, 5, 7, 0.88) 0%,
+    rgba(3, 5, 7, 0.62) 48%,
+    rgba(3, 5, 7, 0.25) 100%
+  );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.case-studies-hero > .site-container {
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.case-studies-hero__content {
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.case-studies-hero__label {
+  margin: 0 0 16px;
+
+  color: #69c7ef;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.case-studies-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: clamp(
+    48px,
+    5vw,
+    76px
+  );
+
+  font-weight: 500;
+
+  line-height: 1.03;
+
+  letter-spacing: -0.035em;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.case-studies-hero__description {
+  width: 100%;
+
+  max-width: 680px;
+
+  margin: 24px auto 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 16px;
+
+  line-height: 1.65;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+  .case-studies-hero {
+    min-height: 420px;
+  }
+
+  .case-studies-hero__content {
+    max-width: 850px;
+  }
+
+  .case-studies-hero h1 {
+    font-size: clamp(
+      42px,
+      7vw,
+      62px
+    );
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .case-studies-hero {
+    min-height: 380px;
+
+    background-position: 65% center;
+  }
+
+  .case-studies-hero__content {
+    max-width: 100%;
+
+    padding: 0 20px;
+  }
+
+  .case-studies-hero h1 {
+    font-size: clamp(
+      40px,
+      11vw,
+      58px
+    );
+
+    line-height: 1.08;
+  }
+
+  .case-studies-hero__description {
+    max-width: 560px;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    line-height: 1.55;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .case-studies-hero {
+    min-height: 320px;
+  }
+
+  .case-studies-hero__content {
+    padding: 0 16px;
+  }
+
+  .case-studies-hero h1 {
+    font-size: 36px;
+  }
+
+  .case-studies-hero__description {
+    font-size: 14px;
+  }
+}

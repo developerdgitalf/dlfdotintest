@@ -1,0 +1,718 @@
+/* =========================================================
+   DIGITAL FABRIC CONSTRUCT
+========================================================= */
+
+.digital-fabric-construct {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: #ffffff;
+  color: #111111;
+
+  box-sizing: border-box;
+
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.digital-fabric-construct__intro {
+  width: 100%;
+
+  padding: 55px 0 25px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+.digital-fabric-construct__intro-container {
+  width: min(900px, calc(100% - 48px));
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+.digital-fabric-construct__intro-text {
+  margin: 0;
+
+  color: #111111;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 0;
+
+  text-align: center;
+}
+
+/* =========================================================
+   IMAGE SECTION
+   FULL WIDTH WHITE
+========================================================= */
+
+.digital-fabric-construct__image-section {
+  width: 100%;
+
+  padding: 15px 0 60px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   IMAGE CONTAINER
+   MAX WIDTH 1200PX
+========================================================= */
+
+.digital-fabric-construct__image-container {
+  width: min(1200px, calc(100% - 48px));
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   IMAGE BOX
+   NO BORDER
+   SHADOW ONLY
+========================================================= */
+
+.digital-fabric-construct__image-box {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 0;
+  outline: 0;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
+
+  transition: box-shadow 0.3s ease;
+}
+
+/* =========================================================
+   IMAGE BOX HOVER
+   SHADOW ONLY
+========================================================= */
+
+.digital-fabric-construct__image-box:hover {
+  transform: none !important;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.13);
+}
+
+/* =========================================================
+   IMAGEZOOM COMPONENT WRAPPER
+========================================================= */
+
+.digital-fabric-construct__image {
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  box-shadow: none;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   NORMAL IMAGE
+========================================================= */
+
+.digital-fabric-construct__image .image-zoom-image {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  background: #ffffff;
+
+  object-fit: contain;
+  object-position: center;
+
+  transform: none !important;
+
+  transition: none !important;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   PREVENT IMAGE HOVER SCALE
+========================================================= */
+
+.digital-fabric-construct__image:hover .image-zoom-image {
+  transform: none !important;
+}
+
+/* =========================================================
+   REMOVE IMAGEZOOM OVERLAY ON THIS PAGE
+========================================================= */
+
+.digital-fabric-construct__image .image-zoom-overlay {
+  display: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  background: transparent !important;
+
+  opacity: 0 !important;
+
+  pointer-events: none !important;
+}
+
+/* =========================================================
+   BUTTON RESET
+   IMAGEZOOM TRIGGER
+========================================================= */
+
+.digital-fabric-construct__image.image-zoom-trigger {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background: #ffffff !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  box-shadow: none;
+
+  cursor: zoom-in;
+
+  transform: none !important;
+
+  appearance: none;
+}
+
+/* =========================================================
+   BUTTON HOVER RESET
+========================================================= */
+
+.digital-fabric-construct__image.image-zoom-trigger:hover {
+  background: #ffffff !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  box-shadow: none;
+
+  transform: none !important;
+}
+
+/* =========================================================
+   BLUE CONTENT SECTION
+   FULL WIDTH
+========================================================= */
+
+.digital-fabric-construct__content {
+  width: 100%;
+
+  padding: 65px 0 75px;
+
+  background: #01336d;
+
+  color: #ffffff;
+
+  box-sizing: border-box;
+
+  transition: box-shadow 0.3s ease;
+}
+
+/* =========================================================
+   BLUE SECTION HOVER
+   SHADOW ONLY
+========================================================= */
+
+.digital-fabric-construct__content:hover {
+  box-shadow:
+    0 14px 38px rgba(0, 0, 0, 0.14);
+}
+
+/* =========================================================
+   CONTENT CONTAINER
+   MAX WIDTH 1200PX
+========================================================= */
+
+.digital-fabric-construct__content-container {
+  width: min(1200px, calc(100% - 48px));
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADING BOX
+   NO BORDER
+   SHADOW ONLY
+========================================================= */
+
+.digital-fabric-construct__heading-box {
+  width: 100%;
+
+  margin: 0 0 34px;
+  padding: 18px 24px;
+
+
+  border: 0;
+  outline: 0;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.10);
+
+  box-sizing: border-box;
+
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* =========================================================
+   HEADING BOX HOVER
+   SHADOW ONLY
+========================================================= */
+
+.digital-fabric-construct__heading-box:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.digital-fabric-construct__title {
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 23px;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 0;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TEXT CONTENT
+========================================================= */
+
+.digital-fabric-construct__text {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.digital-fabric-construct__text p {
+  width: 100%;
+
+  margin: 0 0 24px;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 17px;
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  letter-spacing: 0;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+.digital-fabric-construct__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+  .digital-fabric-construct__intro {
+    padding: 65px 0 30px;
+  }
+
+  .digital-fabric-construct__intro-text {
+    font-size: 25px;
+  }
+
+  .digital-fabric-construct__image-section {
+    padding: 15px 0 70px;
+  }
+
+  .digital-fabric-construct__image-box {
+    padding: 28px;
+  }
+
+  .digital-fabric-construct__content {
+    padding: 75px 0 85px;
+  }
+
+  .digital-fabric-construct__heading-box {
+    padding: 20px 0px;
+
+    margin-bottom: 38px;
+  }
+
+  .digital-fabric-construct__title {
+    font-size: 33px;
+  }
+
+  .digital-fabric-construct__text p {
+    font-size: 18px;
+  }
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .digital-fabric-construct__intro {
+    padding: 50px 0 25px;
+  }
+
+  .digital-fabric-construct__intro-text {
+    font-size: 17px;
+  }
+
+  .digital-fabric-construct__image-section {
+    padding: 15px 0 55px;
+  }
+
+  .digital-fabric-construct__image-box {
+    padding: 22px;
+  }
+
+  .digital-fabric-construct__content {
+    padding: 58px 0 68px;
+  }
+
+  .digital-fabric-construct__heading-box {
+    padding: 17px 22px;
+
+    margin-bottom: 30px;
+  }
+
+  .digital-fabric-construct__title {
+    font-size: 22px;
+  }
+
+  .digital-fabric-construct__text p {
+    font-size: 17px;
+    line-height: 1.62;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .digital-fabric-construct__intro {
+    padding: 45px 0 20px;
+  }
+
+  .digital-fabric-construct__intro-container {
+    width: calc(100% - 40px);
+    max-width: 900px;
+  }
+
+  .digital-fabric-construct__intro-text {
+    font-size: 16px;
+  }
+
+  /* IMAGE */
+
+  .digital-fabric-construct__image-section {
+    padding-bottom: 45px;
+  }
+
+  .digital-fabric-construct__image-container {
+    width: calc(100% - 40px);
+    max-width: 900px;
+  }
+
+  .digital-fabric-construct__image-box {
+    padding: 16px;
+  }
+
+  /* BLUE */
+
+  .digital-fabric-construct__content {
+    padding: 48px 0 58px;
+  }
+
+  .digital-fabric-construct__content-container {
+    width: calc(100% - 40px);
+    max-width: 900px;
+  }
+
+  /* HEADING */
+
+  .digital-fabric-construct__heading-box {
+    padding: 15px 20px;
+
+    margin-bottom: 25px;
+  }
+
+  .digital-fabric-construct__title {
+    font-size: 20px;
+  }
+
+  /* TEXT */
+
+  .digital-fabric-construct__text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .digital-fabric-construct__intro {
+    padding: 35px 0 15px;
+  }
+
+  .digital-fabric-construct__intro-container {
+    width: calc(100% - 32px);
+  }
+
+  .digital-fabric-construct__intro-text {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  /* =======================================================
+     IMAGE SECTION
+  ======================================================= */
+
+  .digital-fabric-construct__image-section {
+    padding: 10px 0 35px;
+  }
+
+  .digital-fabric-construct__image-container {
+    width: calc(100% - 28px);
+  }
+
+  .digital-fabric-construct__image-box {
+    width: 100%;
+
+    padding: 12px;
+
+    box-shadow:
+      0 7px 22px rgba(0, 0, 0, 0.08);
+  }
+
+  .digital-fabric-construct__image-box:hover {
+    transform: none !important;
+
+    box-shadow:
+      0 7px 22px rgba(0, 0, 0, 0.08);
+  }
+
+  /* =======================================================
+     BLUE SECTION
+  ======================================================= */
+
+  .digital-fabric-construct__content {
+    padding: 40px 0 48px;
+  }
+
+  .digital-fabric-construct__content-container {
+    width: calc(100% - 32px);
+  }
+
+  /* =======================================================
+     HEADING BOX
+  ======================================================= */
+
+  .digital-fabric-construct__heading-box {
+    padding: 14px 16px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+      0 7px 22px rgba(0, 0, 0, 0.10);
+  }
+
+  .digital-fabric-construct__heading-box:hover {
+    transform: none;
+
+    box-shadow:
+      0 7px 22px rgba(0, 0, 0, 0.10);
+  }
+
+  .digital-fabric-construct__title {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  /* =======================================================
+     TEXT
+  ======================================================= */
+
+  .digital-fabric-construct__text p {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .digital-fabric-construct__intro {
+    padding: 28px 0 12px;
+  }
+
+  .digital-fabric-construct__intro-container {
+    width: calc(100% - 24px);
+  }
+
+  .digital-fabric-construct__intro-text {
+    font-size: 13px;
+  }
+
+  /* IMAGE */
+
+  .digital-fabric-construct__image-section {
+    padding-bottom: 28px;
+  }
+
+  .digital-fabric-construct__image-container {
+    width: calc(100% - 20px);
+  }
+
+  .digital-fabric-construct__image-box {
+    padding: 10px;
+  }
+
+  /* BLUE */
+
+  .digital-fabric-construct__content {
+    padding: 30px 0 36px;
+  }
+
+  .digital-fabric-construct__content-container {
+    width: calc(100% - 24px);
+  }
+
+  /* HEADING */
+
+  .digital-fabric-construct__heading-box {
+    padding: 12px 14px;
+
+    margin-bottom: 20px;
+  }
+
+  .digital-fabric-construct__title {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* TEXT */
+
+  .digital-fabric-construct__text p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .digital-fabric-construct__image-box,
+  .digital-fabric-construct__heading-box,
+  .digital-fabric-construct__content {
+    transition: none;
+  }
+}

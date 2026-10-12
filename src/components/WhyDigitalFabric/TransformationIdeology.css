@@ -1,0 +1,196 @@
+/* =========================================
+   DIGITAL TRANSFORMATION IDEOLOGY
+========================================= */
+
+.transformation-ideology {
+  position: relative;
+
+  width: 100%;
+  margin: 0;
+
+  min-height: 320px;
+
+  overflow: hidden;
+
+  background-image:
+    url("/images/why/tech-handout-bg.jpg");
+
+  background-repeat: no-repeat;
+
+  background-position: center center;
+
+  background-size: cover;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   50% DARK OVERLAY
+========================================= */
+
+.transformation-ideology::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 18, 35, 0.84);
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+/* =========================================
+   1200px CONTENT CONTAINER
+========================================= */
+
+.ideology-container {
+  position: relative;
+
+  z-index: 1;
+
+  width: 1200px;
+  max-width: calc(100% - 48px);
+
+  min-height: 320px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   IDEOLOGY TEXT
+========================================= */
+
+.ideology-text {
+  width: 100%;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 31px;
+
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  letter-spacing: -0.015em;
+
+  text-align: center;
+}
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1500px) {
+
+  .transformation-ideology {
+    min-height: 360px;
+  }
+
+  .ideology-container {
+    width: 1200px;
+
+    min-height: 360px;
+  }
+
+  .ideology-text {
+    max-width: 1180px;
+
+    font-size: 34px;
+
+    line-height: 1.45;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .transformation-ideology {
+    min-height: 300px;
+  }
+
+  .ideology-container {
+    width: min(92%, 900px);
+
+    max-width: none;
+
+    min-height: 300px;
+  }
+
+  .ideology-text {
+    max-width: 850px;
+
+    font-size: 27px;
+
+    line-height: 1.5;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .transformation-ideology {
+    min-height: 280px;
+  }
+
+  .ideology-container {
+    width: calc(100% - 32px);
+
+    min-height: 280px;
+
+    max-width: none;
+  }
+
+  .ideology-text {
+    max-width: 100%;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .transformation-ideology {
+    min-height: 250px;
+  }
+
+  .ideology-container {
+    width: calc(100% - 28px);
+
+    min-height: 250px;
+  }
+
+  .ideology-text {
+    font-size: 19px;
+
+    line-height: 1.5;
+  }
+}

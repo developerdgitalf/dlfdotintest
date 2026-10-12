@@ -1,0 +1,252 @@
+/* =========================================
+   DIGITAL TRANSFORMATION ROADMAP
+========================================= */
+
+.digital-roadmap-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.digital-roadmap-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.digital-roadmap-left {
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 70px 58px 70px 0;
+
+  background: #e0e5e9;
+}
+
+.digital-roadmap-text {
+  width: 100%;
+  max-width: 515px;
+}
+
+.digital-roadmap-text p {
+  margin: 0;
+
+  color: #2e3033;
+
+  font-size: 1.5rem;
+  font-weight: 650;
+  line-height: 1.17;
+  letter-spacing: -0.008em;
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.digital-roadmap-right {
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 45px 0 45px 52px;
+
+  background: #ffffff;
+}
+
+.digital-roadmap-image {
+  width: 100%;
+  max-width: 490px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digital-roadmap-image img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   FULL-WIDTH BACKGROUNDS
+========================================= */
+
+/*
+   Extend the left and right background colors
+   outside the 1200px content container.
+*/
+
+.digital-roadmap-left,
+.digital-roadmap-right {
+  position: relative;
+}
+
+.digital-roadmap-left::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 100%;
+  bottom: 0;
+
+  width: 100vw;
+
+  background: #e0e5e9;
+
+  z-index: -1;
+}
+
+.digital-roadmap-right::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 100%;
+  bottom: 0;
+
+  width: 100vw;
+
+  background: #ffffff;
+
+  z-index: -1;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .digital-roadmap-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .digital-roadmap-left {
+    min-height: 390px;
+
+    padding: 55px 38px 55px 0;
+  }
+
+  .digital-roadmap-right {
+    min-height: 390px;
+
+    padding: 40px 0 40px 38px;
+  }
+
+  .digital-roadmap-text p {
+    font-size: 1rem;
+    line-height: 1.28;
+  }
+
+  .digital-roadmap-image {
+    max-width: 430px;
+  }
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 800px) {
+  .digital-roadmap-left {
+    padding-right: 28px;
+  }
+
+  .digital-roadmap-right {
+    padding-left: 28px;
+  }
+
+  .digital-roadmap-text p {
+    font-size: 0.92rem;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .digital-roadmap-container {
+    grid-template-columns: 1fr;
+  }
+
+  .digital-roadmap-left,
+  .digital-roadmap-right {
+    min-height: auto;
+
+    width: 100%;
+  }
+
+  .digital-roadmap-left {
+    padding: 55px 24px;
+
+    background: #d8d8d8;
+  }
+
+  .digital-roadmap-right {
+    padding: 42px 24px 55px;
+
+    background: #ffffff;
+  }
+
+  .digital-roadmap-left::before,
+  .digital-roadmap-right::after {
+    display: none;
+  }
+
+  .digital-roadmap-text {
+    max-width: 100%;
+  }
+
+  .digital-roadmap-text p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .digital-roadmap-image {
+    max-width: 580px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .digital-roadmap-left {
+    padding: 45px 18px;
+  }
+
+  .digital-roadmap-right {
+    padding: 35px 18px 45px;
+  }
+
+  .digital-roadmap-text p {
+    font-size: 0.84rem;
+    line-height: 1.52;
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1842.6 562">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 32px;
+      }
+
+      .st1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="22.8" y1="45.4" x2="361.5" y2="500.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#003a48"/>
+      <stop offset=".9" stop-color="#0c1627"/>
+    </linearGradient>
+  </defs>
+  <image width="565" height="562" transform="translate(1277.6277)" xlink:href="coming-soon-1.png"/>
+  <rect class="st1" y="76.4" width="366.8" height="369.9"/>
+  <text class="st0" transform="translate(34.6 261.6)"><tspan x="0" y="0">Updates coming soon...</tspan></text>
+</svg>

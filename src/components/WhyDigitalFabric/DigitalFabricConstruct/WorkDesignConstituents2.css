@@ -1,0 +1,423 @@
+/* =========================================================
+   WORK DESIGN CONSTITUENTS — INTERACTIVE SECTION
+========================================================= */
+
+.work-constituents-section {
+  width: 100%;
+  padding: 72px 0;
+  background: #1d4557;
+}
+
+.work-constituents-container {
+  width: min(100% - 80px, 1440px);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   MAIN TWO COLUMN LAYOUT
+========================================================= */
+
+.work-constituents-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 520px;
+  background: #f4f3f1;
+  overflow: hidden;
+}
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.constituents-visual {
+  position: relative;
+  padding: 34px;
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(52, 109, 166, 0.35),
+      transparent 50%
+    ),
+    linear-gradient(135deg, #143c55 0%, #244f6d 100%);
+}
+
+.diagram-card {
+  position: relative;
+  background: #f7f6f4;
+  padding: 22px 20px 12px;
+  overflow: hidden;
+}
+
+.diagram-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #283b4b;
+}
+
+.diagram-title sup {
+  font-size: 10px;
+}
+
+.fabric-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  overflow: visible;
+}
+
+/* =========================================================
+   SVG WAVES
+========================================================= */
+
+.wave-group {
+  cursor: pointer;
+}
+
+.fabric-wave {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition:
+    stroke-width 0.35s ease,
+    opacity 0.35s ease,
+    filter 0.35s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Individual wave colours */
+
+.wave-people {
+  stroke: #299ed2;
+}
+
+.wave-process {
+  stroke: #2c5b7b;
+}
+
+.wave-platform {
+  stroke: #172f4d;
+}
+
+.wave-product {
+  stroke: #1d587d;
+}
+
+.wave-partnership {
+  stroke: #4bb8aa;
+}
+
+/* Default: subtle */
+
+.wave-group:not(.is-active) .fabric-wave {
+  opacity: 0.72;
+}
+
+/* =========================================================
+   ACTIVE WAVE — ZOOM + RISE EFFECT
+========================================================= */
+
+.wave-group.is-active .fabric-wave {
+  opacity: 1;
+  stroke-width: 6;
+  filter: drop-shadow(0 10px 10px rgba(22, 116, 170, 0.3));
+
+  /*
+    Slight zoom and upward movement.
+    This makes the selected line feel like
+    it comes forward without changing layout.
+  */
+  transform: translateY(-10px) scale(1.08);
+}
+
+.wave-group.is-active .wave-label {
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* Extra emphasis for selected category */
+
+.wave-group.people .fabric-wave {
+  stroke: #18a9e0;
+}
+
+.wave-group.process .fabric-wave {
+  stroke: #2c6f9a;
+}
+
+.wave-group.platform .fabric-wave {
+  stroke: #183c63;
+}
+
+.wave-group.product .fabric-wave {
+  stroke: #2877a8;
+}
+
+.wave-group.partnership .fabric-wave {
+  stroke: #38c5b2;
+}
+
+/* =========================================================
+   SVG TEXT
+========================================================= */
+
+.wave-label {
+  fill: #31566c;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  transition: opacity 0.3s ease;
+}
+
+.support-label {
+  fill: #355366;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.diagram-core {
+  fill: rgba(59, 83, 101, 0.2);
+  stroke: rgba(36, 82, 112, 0.35);
+  stroke-width: 1.5;
+}
+
+/* =========================================================
+   CATEGORY BUTTONS
+========================================================= */
+
+.constituent-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.constituent-link {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.94);
+  padding: 16px 12px;
+  color: #26465b;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.constituent-link:nth-child(4) {
+  grid-column: 1 / 2;
+  margin-left: 50%;
+  width: 100%;
+}
+
+.constituent-link:nth-child(5) {
+  grid-column: 2 / 3;
+  margin-left: 25%;
+  width: 125%;
+}
+
+.constituent-link:hover,
+.constituent-link:focus-visible,
+.constituent-link.active {
+  outline: none;
+  color: #ffffff;
+  background: #1d5b7c;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
+.interaction-hint {
+  margin: 24px 0 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+}
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.constituents-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 68px;
+  background: #f4f3f1;
+}
+
+.content-line {
+  display: block;
+  width: 120px;
+  height: 2px;
+  margin-bottom: 30px;
+  background: #315b74;
+}
+
+.content-copy {
+  max-width: 660px;
+}
+
+.main-paragraph {
+  margin: 0;
+  color: #2d4558;
+  font-size: clamp(19px, 1.5vw, 27px);
+  line-height: 1.38;
+  font-weight: 500;
+}
+
+/* =========================================================
+   SECOND PARAGRAPH — CHANGES ON HOVER
+========================================================= */
+
+.dynamic-paragraph {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(37, 72, 94, 0.16);
+  animation: paragraphReveal 0.45s ease both;
+}
+
+.dynamic-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #327a9c;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.dynamic-paragraph p {
+  margin: 0;
+  color: #63717b;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+@keyframes paragraphReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.read-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  margin-top: 34px;
+  color: #244b63;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.25s ease;
+}
+
+.read-more-link:hover {
+  gap: 18px;
+}
+
+.read-more-link span {
+  font-size: 20px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1024px) {
+  .work-constituents-container {
+    width: min(100% - 48px, 100%);
+  }
+
+  .work-constituents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .constituents-content {
+    padding: 52px 42px;
+  }
+}
+
+@media (max-width: 640px) {
+  .work-constituents-section {
+    padding: 40px 0;
+  }
+
+  .work-constituents-container {
+    width: min(100% - 28px, 100%);
+  }
+
+  .constituents-visual {
+    padding: 16px;
+  }
+
+  .diagram-card {
+    padding: 18px 10px 8px;
+  }
+
+  .diagram-title {
+    font-size: 18px;
+  }
+
+  .constituent-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Reset the desktop stagger effect on mobile */
+  .constituent-link:nth-child(4),
+  .constituent-link:nth-child(5) {
+    grid-column: auto;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .constituent-link:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .constituent-link {
+    padding: 13px 8px;
+    font-size: 15px;
+  }
+
+  .constituents-content {
+    padding: 42px 26px;
+  }
+
+  .main-paragraph {
+    font-size: 18px;
+  }
+
+  .dynamic-paragraph p {
+    font-size: 14px;
+  }
+
+  /*
+    The SVG labels become too crowded on small screens.
+    Keep the waves clean and use the buttons as navigation.
+  */
+  .wave-label,
+  .support-label {
+    font-size: 9px;
+  }
+}

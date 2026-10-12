@@ -1,0 +1,489 @@
+/* =========================================================
+   ANECDOTAL & EXPERIENTIAL PERSPECTIVE
+========================================================= */
+
+.anecdotal-perspective-section {
+  width: 100%;
+
+  padding: 72px 24px 80px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   1200PX CONTAINER
+========================================================= */
+
+.anecdotal-perspective-container {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CENTERED HEADING
+========================================================= */
+
+.anecdotal-perspective-heading {
+  width: 100%;
+
+  margin: 0 0 42px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.anecdotal-perspective-heading h2 {
+  margin: 0;
+
+  color: #15191d;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.02em;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   FULL WIDTH 4 CARD GRID
+========================================================= */
+
+.anecdotal-perspective-cards {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 10px;
+
+  align-items: stretch;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.anecdotal-perspective-card {
+  width: 100%;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: #071d43;
+
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 6px 18px rgba(19, 44, 79, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.anecdotal-perspective-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 25px rgba(19, 44, 79, 0.15);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.anecdotal-perspective-image {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 1 / 0.82;
+
+  overflow: hidden;
+
+  background: #0b234d;
+
+  box-sizing: border-box;
+}
+
+.anecdotal-perspective-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.45s ease;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.anecdotal-perspective-card:hover
+  .anecdotal-perspective-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.anecdotal-perspective-card-content {
+  min-height: 78px;
+
+  padding:
+    12px
+    14px
+    11px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.anecdotal-perspective-card-content h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   LINK
+========================================================= */
+
+.anecdotal-perspective-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  width: fit-content;
+
+  margin-top: 8px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  text-decoration: none;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 400;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.anecdotal-perspective-link:hover {
+  color: #ffffff;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1401px) {
+
+  .anecdotal-perspective-section {
+    padding: 82px 24px 90px;
+  }
+
+  .anecdotal-perspective-heading {
+    margin-bottom: 48px;
+  }
+
+  .anecdotal-perspective-heading h2 {
+    font-size: 34px;
+  }
+
+  .anecdotal-perspective-cards {
+    gap: 12px;
+  }
+
+  .anecdotal-perspective-card-content {
+    min-height: 82px;
+
+    padding:
+      13px
+      15px
+      12px;
+  }
+
+  .anecdotal-perspective-card-content h3 {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .anecdotal-perspective-section {
+    padding: 65px 20px 75px;
+  }
+
+  .anecdotal-perspective-heading {
+    margin-bottom: 38px;
+  }
+
+  .anecdotal-perspective-heading h2 {
+    font-size: 28px;
+  }
+
+  .anecdotal-perspective-cards {
+    gap: 8px;
+  }
+
+  .anecdotal-perspective-card-content {
+    min-height: 72px;
+
+    padding:
+      11px
+      12px
+      9px;
+  }
+
+  .anecdotal-perspective-card-content h3 {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 820px) {
+
+  .anecdotal-perspective-section {
+    padding: 58px 18px 68px;
+  }
+
+  .anecdotal-perspective-heading {
+    margin-bottom: 32px;
+  }
+
+  .anecdotal-perspective-heading h2 {
+    font-size: 26px;
+  }
+
+  .anecdotal-perspective-cards {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .anecdotal-perspective-image {
+    aspect-ratio: 1 / 0.78;
+  }
+
+  .anecdotal-perspective-card-content {
+    min-height: 72px;
+  }
+
+  .anecdotal-perspective-card-content h3 {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .anecdotal-perspective-section {
+    padding: 52px 18px 62px;
+  }
+
+  .anecdotal-perspective-heading {
+    margin-bottom: 28px;
+  }
+
+  .anecdotal-perspective-heading h2 {
+    font-size: 23px;
+
+    line-height: 1.25;
+  }
+
+  .anecdotal-perspective-cards {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+  .anecdotal-perspective-card-content {
+    min-height: 68px;
+
+    padding:
+      10px
+      11px
+      9px;
+  }
+
+  .anecdotal-perspective-card-content h3 {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .anecdotal-perspective-section {
+    padding:
+      45px
+      14px
+      55px;
+  }
+
+  .anecdotal-perspective-heading {
+    margin-bottom: 25px;
+  }
+
+  .anecdotal-perspective-heading h2 {
+    font-size: 21px;
+  }
+
+  .anecdotal-perspective-cards {
+    gap: 8px;
+  }
+
+  .anecdotal-perspective-card-content {
+    min-height: 64px;
+
+    padding: 9px;
+  }
+
+  .anecdotal-perspective-card-content h3 {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .anecdotal-perspective-heading h2 {
+    font-size: 19px;
+  }
+
+  .anecdotal-perspective-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .anecdotal-perspective-image {
+    aspect-ratio: 16 / 10;
+  }
+
+  .anecdotal-perspective-card-content {
+    min-height: 68px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .anecdotal-perspective-card,
+  .anecdotal-perspective-image img,
+  .anecdotal-perspective-link {
+    transition: none;
+  }
+}

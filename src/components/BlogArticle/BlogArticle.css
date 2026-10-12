@@ -1,0 +1,916 @@
+/* =========================================================
+   BLOG ARTICLE PAGE
+========================================================= */
+
+.blogArticlePage {
+  width: 100%;
+
+  background: #ffffff;
+
+  padding: 65px 0 100px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.blogArticleContainer {
+  width: min(100% - 80px, 1280px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    245px;
+
+  gap: 48px;
+
+  align-items: start;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN ARTICLE
+========================================================= */
+
+.blogArticleMain {
+  width: 100%;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+   SLIGHTLY REDUCED
+========================================================= */
+
+.blogHeroImage {
+  position: relative;
+
+  width: 92%;
+
+  margin: 0 auto;
+
+  aspect-ratio: 16 / 8.8;
+
+  overflow: hidden;
+
+  background: #111111;
+}
+
+.blogHeroImage img {
+  object-fit: cover;
+}
+
+.blogHeroOverlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  padding: 28px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(0, 0, 0, 0.62) 100%
+    );
+}
+
+.blogHeroOverlay span {
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.15rem;
+
+  letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.blogMeta {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 14px;
+
+  color: #8f8f8f;
+
+  font-size: 0.58rem;
+
+  line-height: 1.5;
+}
+
+.metaSeparator {
+  color: #c4ad84;
+}
+
+
+/* =========================================================
+   ARTICLE HEADER
+========================================================= */
+
+.blogArticleHeader {
+  padding: 14px 0 20px;
+
+  border-bottom: 1px solid #dadada;
+}
+
+.blogArticleCategory {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #9f8660;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.72rem;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.blogArticleHeader h1 {
+  margin: 0;
+
+  color: #17395a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(
+    2rem,
+    3.2vw,
+    2.7rem
+  );
+
+  font-weight: 500;
+
+  line-height: 1.15;
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+   INCREASED FONT SIZE
+========================================================= */
+
+.blogArticleContent {
+  padding-top: 28px;
+
+  color: #52585e;
+
+  font-size: 0.92rem;
+
+  font-weight: 400;
+
+  line-height: 1.85;
+}
+
+.blogArticleContent p {
+  margin: 0 0 24px;
+}
+
+
+/* =========================================================
+   ARTICLE HEADINGS
+========================================================= */
+
+.blogArticleContent h2 {
+  margin: 38px 0 15px;
+
+  color: #17395a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.35rem;
+
+  font-weight: 500;
+
+  line-height: 1.3;
+}
+
+.blogArticleContent h3 {
+  margin: 0 0 10px;
+
+  color: #17395a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.1rem;
+
+  font-weight: 500;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   ARTICLE IMAGES
+   REDUCED SIZE
+========================================================= */
+
+.blogContentFigure {
+  width: 82%;
+
+  margin: 32px auto;
+
+  padding: 0;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.blogContentFigure img {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+.blogContentFigure figcaption {
+  margin-top: 8px;
+
+  color: #7b7f83;
+
+  font-size: 0.58rem;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HIGHLIGHT
+========================================================= */
+
+.blogHighlight {
+  margin: 32px 0;
+
+  padding: 20px 25px;
+
+  border-left: 3px solid #a99069;
+
+  background: #f5f2ed;
+
+  color: #374b5c;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   INTELLIGENCE SECTIONS
+========================================================= */
+
+.blogIntelligenceList {
+  margin: 28px 0;
+}
+
+.blogIntelligenceItem {
+  margin-bottom: 28px;
+
+  padding-left: 18px;
+
+  border-left: 2px solid #d9c5a5;
+}
+
+.blogIntelligenceItem h3 {
+  margin-bottom: 9px;
+}
+
+.blogIntelligenceItem p {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LEAD STATEMENT
+========================================================= */
+
+.blogLeadStatement {
+  color: #17395a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.98rem;
+
+  font-weight: 500;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   FINAL STATEMENT
+========================================================= */
+
+.blogFinalStatement {
+  margin: 38px 0;
+
+  padding: 24px 26px;
+
+  border-top: 1px solid #d8d8d8;
+
+  border-bottom: 1px solid #d8d8d8;
+
+  color: #17395a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.08rem;
+
+  line-height: 1.65;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   POST NAVIGATION
+========================================================= */
+
+.blogPostNavigation {
+  margin-top: 38px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #dddddd;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.blogPostNavigation a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #17395a;
+
+  font-size: 0.66rem;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.blogPostNavigation a:hover {
+  color: #a18963;
+}
+
+.blogPostNavigation span {
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   REPLY
+========================================================= */
+
+.blogReply {
+  margin-top: 42px;
+
+  padding-top: 26px;
+
+  border-top: 1px solid #dddddd;
+}
+
+.blogReply h3 {
+  margin: 0 0 9px;
+
+  color: #17395a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.08rem;
+}
+
+.blogReply p {
+  margin: 0;
+
+  color: #818181;
+
+  font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.blogSidebar {
+  position: sticky;
+
+  top: 105px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   SIDEBAR BLOCK
+========================================================= */
+
+.blogSidebarBlock {
+  margin-bottom: 32px;
+
+  padding-bottom: 26px;
+
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.blogSidebarBlock:last-child {
+  border-bottom: 0;
+}
+
+.blogSidebarBlock h3 {
+  margin: 0 0 16px;
+
+  color: #17395a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1rem;
+
+  font-weight: 500;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.blogSearch {
+  position: relative;
+
+  width: 100%;
+}
+
+.blogSearch input {
+  width: 100%;
+
+  height: 38px;
+
+  padding: 0 32px 0 0;
+
+  border: 0;
+
+  border-bottom: 1px solid #cfcfcf;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #454545;
+
+  font-family: inherit;
+
+  font-size: 0.78rem;
+
+  box-sizing: border-box;
+}
+
+.blogSearch input::placeholder {
+  color: #999999;
+}
+
+.blogSearch button {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 28px;
+  height: 38px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #17395a;
+
+  cursor: pointer;
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   CATEGORIES
+========================================================= */
+
+.blogSidebarList {
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.blogSidebarList li {
+  margin-bottom: 10px;
+}
+
+.blogSidebarList a {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  color: #62707a;
+
+  font-size: 0.72rem;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.blogSidebarList a:hover {
+  color: #17395a;
+}
+
+.blogSidebarList span {
+  color: #a88e68;
+
+  font-size: 0.7rem;
+}
+
+
+/* =========================================================
+   RECENT POST
+========================================================= */
+
+.blogRecentPost {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.recentDate {
+  color: #a88e68;
+
+  font-size: 0.62rem;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.04em;
+}
+
+.blogRecentPost a {
+  color: #465661;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.78rem;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+}
+
+.blogRecentPost a:hover {
+  color: #17395a;
+}
+
+.recentCategory {
+  color: #8b9398;
+
+  font-size: 0.61rem;
+
+  line-height: 1.4;
+}
+
+.recentAuthor {
+  color: #8b9398;
+
+  font-size: 0.61rem;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   THE IDEOLOGY
+========================================================= */
+
+.blogIdeologyLink {
+  color: #465661;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.78rem;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+}
+
+.blogIdeologyLink:hover {
+  color: #17395a;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.blogTags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.blogTags span {
+  padding: 6px 9px;
+
+  border: 1px solid #d3d3d3;
+
+  color: #727272;
+
+  font-size: 0.61rem;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .blogArticlePage {
+    padding: 50px 0 80px;
+  }
+
+  .blogArticleContainer {
+    width: calc(100% - 48px);
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      210px;
+
+    gap: 30px;
+  }
+
+  .blogHeroImage {
+    width: 94%;
+  }
+
+  .blogContentFigure {
+    width: 88%;
+  }
+
+  .blogArticleContent {
+    font-size: 0.86rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+  .blogArticlePage {
+    padding: 35px 0 60px;
+  }
+
+  .blogArticleContainer {
+    width: calc(100% - 32px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 45px;
+  }
+
+  .blogArticleMain {
+    width: 100%;
+  }
+
+
+  /* HERO */
+
+  .blogHeroImage {
+    width: 100%;
+
+    aspect-ratio: 4 / 2.8;
+  }
+
+  .blogHeroOverlay {
+    padding: 18px;
+  }
+
+  .blogHeroOverlay span {
+    font-size: 0.95rem;
+  }
+
+
+  /* HEADER */
+
+  .blogArticleHeader h1 {
+    font-size: 1.85rem;
+  }
+
+
+  /* BODY */
+
+  .blogArticleContent {
+    font-size: 0.82rem;
+
+    line-height: 1.75;
+  }
+
+  .blogArticleContent h2 {
+    font-size: 1.15rem;
+  }
+
+  .blogArticleContent h3 {
+    font-size: 1rem;
+  }
+
+
+  /* IMAGES */
+
+  .blogContentFigure {
+    width: 100%;
+
+    margin: 28px auto;
+  }
+
+
+  /* HIGHLIGHT */
+
+  .blogHighlight {
+    padding: 17px 19px;
+
+    font-size: 0.86rem;
+  }
+
+
+  /* FINAL */
+
+  .blogFinalStatement {
+    font-size: 0.9rem;
+  }
+
+
+  /* SIDEBAR */
+
+  .blogSidebar {
+    position: static;
+
+    width: 100%;
+  }
+
+
+  /* NAVIGATION */
+
+  .blogPostNavigation {
+    flex-direction: column;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .blogArticleContainer {
+    width: calc(100% - 24px);
+  }
+
+  .blogMeta {
+    font-size: 0.48rem;
+  }
+
+  .blogArticleHeader h1 {
+    font-size: 1.55rem;
+  }
+
+  .blogArticleContent {
+    font-size: 0.78rem;
+
+    line-height: 1.72;
+  }
+
+  .blogArticleContent h2 {
+    font-size: 1.05rem;
+  }
+
+  .blogArticleContent h3 {
+    font-size: 0.94rem;
+  }
+
+  .blogHighlight {
+    font-size: 0.8rem;
+  }
+
+  .blogFinalStatement {
+    font-size: 0.84rem;
+  }
+
+  .blogContentFigure figcaption {
+    font-size: 0.5rem;
+  }
+}

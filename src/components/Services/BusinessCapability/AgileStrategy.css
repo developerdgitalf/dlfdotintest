@@ -1,0 +1,536 @@
+/* =========================================================
+   AGILE STRATEGY
+========================================================= */
+
+.agileStrategy {
+  width: 100%;
+
+  background:  white;
+
+  padding: 80px 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   1200PX CONTENT CONTAINER
+========================================================= */
+
+.agileStrategy .site-container-small {
+  width: 1200px;
+
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.agileStrategyGrid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.82fr)
+    minmax(0, 1.18fr);
+
+  align-items: stretch;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT CONTENT PANEL
+========================================================= */
+
+.agileStrategyContent {
+  width: 100%;
+
+  min-height: 560px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 0px 0px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.agileStrategyContent h2 {
+  margin: 0;
+
+  color: #05234f;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 58px;
+
+  font-weight: 700;
+
+  line-height: 1.08;
+
+  letter-spacing: 0.055em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.agileStrategyLine {
+  display: block;
+  width: 92px;
+  height: 2px;
+  margin: 10px 0 16px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COPY
+========================================================= */
+
+.agileStrategyCopy {
+  width: 100%;
+  max-width: 500px;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.agileStrategyCopy p {
+  margin: 0 0 24px;
+
+  color: #26394a;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  letter-spacing: 0;
+
+  text-align: left;
+}
+
+.agileStrategyCopy p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE AREA
+========================================================= */
+
+.agileStrategyImageWrap {
+  width: 100%;
+
+  min-height: 560px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 42px 38px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SVG
+========================================================= */
+
+.agileStrategyImage {
+  display: block;
+
+  width: 100%;
+
+  max-width: 720px;
+
+  height: auto;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.agileStrategyImageWrap:hover .agileStrategyImage {
+  transform: scale(1.015);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1401px) {
+
+  .agileStrategy {
+    padding: 0px 0;
+  }
+
+  .agileStrategy .site-container-small {
+    width: 1200px;
+
+    max-width: calc(100% - 60px);
+  }
+
+  .agileStrategyContent,
+  .agileStrategyImageWrap {
+    min-height: 600px;
+  }
+
+  .agileStrategyContent {
+    padding: 75px 70px;
+  }
+
+  .agileStrategyContent h2 {
+    font-size: 55px;
+  }
+
+  .agileStrategyCopy {
+    max-width: 520px;
+  }
+
+  .agileStrategyCopy p {
+    font-size: 18px;
+
+    line-height: 1.5;
+  }
+
+  .agileStrategyImageWrap {
+    padding: 45px 40px;
+  }
+
+  .agileStrategyImage {
+    max-width: 760px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (max-width: 1400px) and (min-width: 1025px) {
+
+  .agileStrategyContent,
+  .agileStrategyImageWrap {
+    min-height: 540px;
+  }
+
+  .agileStrategyContent {
+    padding: 60px 55px;
+  }
+
+  .agileStrategyContent h2 {
+    font-size: 52px;
+  }
+
+  .agileStrategyCopy p {
+    font-size: 17px;
+
+    line-height: 1.65;
+  }
+
+  .agileStrategyImageWrap {
+    padding: 35px 30px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .agileStrategy {
+    padding: 70px 0;
+  }
+
+  .agileStrategy .site-container-small {
+    width: calc(100% - 40px);
+
+    max-width: 900px;
+  }
+
+  .agileStrategyGrid {
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(0, 1.1fr);
+  }
+
+  .agileStrategyContent,
+  .agileStrategyImageWrap {
+    min-height: 480px;
+  }
+
+  .agileStrategyContent {
+    padding: 48px 40px;
+  }
+
+  .agileStrategyContent h2 {
+    font-size: 44px;
+  }
+
+  .agileStrategyLine {
+    width: 78px;
+
+    margin: 26px 0 30px;
+  }
+
+  .agileStrategyCopy p {
+    font-size: 16px;
+
+    line-height: 1.62;
+
+    margin-bottom: 20px;
+  }
+
+  .agileStrategyImageWrap {
+    padding: 30px 24px;
+  }
+
+  .agileStrategyImage {
+    max-width: 520px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .agileStrategy .site-container-small {
+    width: calc(100% - 32px);
+
+    max-width: 760px;
+  }
+
+  .agileStrategyGrid {
+    grid-template-columns:
+      minmax(0, 0.92fr)
+      minmax(0, 1.08fr);
+  }
+
+  .agileStrategyContent,
+  .agileStrategyImageWrap {
+    min-height: 430px;
+  }
+
+  .agileStrategyContent {
+    padding: 38px 30px;
+  }
+
+  .agileStrategyContent h2 {
+    font-size: 37px;
+  }
+
+  .agileStrategyLine {
+    width: 70px;
+
+    margin: 22px 0 26px;
+  }
+
+  .agileStrategyCopy p {
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+  .agileStrategyImageWrap {
+    padding: 22px 18px;
+  }
+
+  .agileStrategyImage {
+    max-width: 440px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .agileStrategy {
+    padding: 55px 0;
+  }
+
+  .agileStrategy .site-container-small {
+    width: calc(100% - 28px);
+
+    max-width: 620px;
+  }
+
+  .agileStrategyGrid {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+
+  /* LEFT */
+
+  .agileStrategyContent {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 42px 28px;
+  }
+
+  .agileStrategyContent h2 {
+    font-size: 38px;
+
+    line-height: 1.08;
+  }
+
+  .agileStrategyLine {
+    width: 70px;
+
+    margin: 24px 0 30px;
+  }
+
+  .agileStrategyCopy {
+    max-width: 100%;
+  }
+
+  .agileStrategyCopy p {
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    margin-bottom: 22px;
+  }
+
+
+  /* RIGHT */
+
+  .agileStrategyImageWrap {
+    width: 100%;
+
+    min-height: 0;
+
+    padding: 28px 18px;
+  }
+
+  .agileStrategyImage {
+    width: 100%;
+
+    max-width: 520px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .agileStrategy {
+    padding: 45px 0;
+  }
+
+  .agileStrategy .site-container-small {
+    width: calc(100% - 20px);
+
+    max-width: 450px;
+  }
+
+  .agileStrategyContent {
+    padding: 35px 22px;
+  }
+
+  .agileStrategyContent h2 {
+    font-size: 32px;
+  }
+
+  .agileStrategyLine {
+    width: 62px;
+
+    margin: 20px 0 25px;
+  }
+
+  .agileStrategyCopy p {
+    font-size: 15px;
+
+    line-height: 1.68;
+
+    margin-bottom: 20px;
+  }
+
+  .agileStrategyImageWrap {
+    padding: 22px 14px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .agileStrategyImage {
+    transition: none;
+  }
+}

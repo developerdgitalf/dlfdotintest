@@ -1,0 +1,228 @@
+/* =========================================
+   DIGITALFABRIC — HERO SECTION
+========================================= */
+
+.container {
+  width: 100%;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 60px;
+  min-height: 660px;
+    transform: translateY(55px);
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background-image: url("/images/");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Dark overlay for better text readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 5, 10, 0.22);
+  pointer-events: none;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.content {
+  max-width: 760px;
+}
+
+.content h1 {
+  margin: 0;
+  max-width: 760px;
+
+  font-size: clamp(2.8em, 4.6vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.content p {
+  max-width: 620px;
+  margin: 30px 0 0;
+
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.button {
+  width: fit-content;
+  margin-top: 36px;
+  padding: 15px 28px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+
+  background: #ffffff;
+  color: #151515;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.button span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* =========================================
+   RIGHT VISUAL SPACE
+   (Reserved for future image/video/animation)
+========================================= */
+.visual {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual img {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  display: block;
+
+  border-radius: 15px;
+  overflow: hidden;
+
+  /* Professional soft shadow */
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.45),
+    0 8px 25px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.visual img:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 35px 80px rgba(0, 0, 0, 0.55),
+    0 12px 30px rgba(0, 0, 0, 0.3);
+}
+/* =========================================
+   LARGE SCREENS
+========================================= */
+
+@media (min-width: 1920px) {
+  .container {
+    width: min(100% - 160px, 1900px);
+  }
+}
+
+/* =========================================
+   LAPTOP / TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+  .container {
+    width: min(100% - 80px, 1600px);
+    gap: 60px;
+  }
+
+  .content h1 {
+    font-size: clamp(2.2rem, 3.4vw, 4.4rem);
+  }
+}
+
+/* =========================================
+   TABLET / MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .container {
+    width: min(100% - 64px, 1600px);
+    min-height: 100vh;
+
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  /* Hide reserved visual space on smaller screens */
+  .visual {
+    display: none;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 40px);
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .content h1 {
+    font-size: clamp(2.6rem, 12vw, 4rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+  }
+
+  .content p {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .button {
+    margin-top: 28px;
+    padding: 14px 24px;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .heroInner {
+    transform: translateY(20px);
+  }
+}

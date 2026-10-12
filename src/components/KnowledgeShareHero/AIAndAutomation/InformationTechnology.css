@@ -1,0 +1,55 @@
+/* =========================================
+   INFORMATION TECHNOLOGY
+========================================= */
+
+.information-technology-section {
+  width: 100%;
+  padding: 70px 24px;
+  background: #020d1c;
+  overflow: hidden;
+}
+
+.information-technology-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.information-technology-image-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.information-technology-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .information-technology-section {
+    padding: 55px 20px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .information-technology-section {
+    padding: 40px 16px;
+  }
+}

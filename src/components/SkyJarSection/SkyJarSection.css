@@ -1,0 +1,473 @@
+/* =========================================================
+   SKY IN A JAR SECTION
+   CONCEPT:
+   - Background remains static
+   - Jar remains static
+   - Hand remains static
+   - ONLY the sky falls into the jar
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.sky-jar-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #03111a;
+  background-image: url("/images/galaxy.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   BACKGROUND STARS / EXISTING BACKGROUND
+   ========================================================= */
+
+/*
+IMPORTANT BUDDY:
+
+If you already had a background image before, keep your
+existing background-image here.
+
+For example:
+
+background-image: url("/images/your-background-image.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+I am NOT adding a new image filename here because I don't
+want to accidentally break your existing background path.
+*/
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.sky-jar-container {
+  position: relative;
+  width: min(100%, 1600px);
+  margin: 0 auto;
+
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 48% 52%;
+  align-items: stretch;
+
+  padding: 80px clamp(40px, 8vw, 140px) 0;
+}
+
+
+/* =========================================================
+   LEFT TEXT CONTENT
+   ========================================================= */
+
+.sky-jar-content {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-bottom: 80px;
+}
+
+
+.sky-line {
+  width: 64px;
+  height: 2px;
+
+  background: #8ed8ec;
+
+  margin-bottom: 42px;
+
+  opacity: 0.9;
+}
+
+
+.sky-jar-content h1 {
+  margin: 0;
+
+  color: #f4f0e9;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(52px, 5vw, 55px);
+  font-weight: 700;
+
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+}
+
+.sky-jar-content h2 {
+  margin: 0;
+
+  color: #6bdaf8;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(52px, 5vw, 50px);
+  font-weight: 700;
+
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  padding-top: 15px;
+}
+
+
+.sky-jar-content p {
+  margin: 60px 0 0;
+
+  color: #91cde0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(20px, 1.8vw, 32px);
+  font-weight: 500;
+
+  line-height: 1.45;
+  letter-spacing: 0.06em;
+}
+
+
+/* =========================================================
+   JAR VISUAL CONTAINER
+   ========================================================= */
+
+.jar-visual {
+  position: relative;
+  width: 100%;
+
+
+  min-height: 720px;
+
+  overflow: visible;
+
+  isolation: isolate;
+
+ 
+  left: -3%;
+}
+
+.sky-jar-content h1 span {
+  white-space: nowrap;
+}
+
+
+@media (max-width: 600px) {
+  .sky-jar-content h1 {
+    font-size: clamp(30px, 8.5vw, 38px);
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+
+  .sky-jar-content h1 span {
+    white-space: normal;
+  }
+
+  .sky-jar-content h2 {
+    font-size: clamp(30px, 8.5vw, 38px);
+    line-height: 1.15;
+  }
+}
+/* =========================================================
+   SKY WINDOW
+   ========================================================= */
+
+.jar-sky-window {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+
+  width: 48%;
+  height: 52%;
+
+  /* Move ONLY the sky area 5px to the right */
+  margin-left: 5px;
+
+  overflow: hidden;
+  z-index: 1;
+
+  border-radius:
+    12% 12% 10% 10%
+    / 8% 8% 7% 7%;
+
+  pointer-events: none;
+}
+
+.falling-sky {
+  position: absolute;
+  width: clamp(180px, 18vw, 300px);
+  height: auto;
+}
+
+
+/* =========================================================
+   FALLING SKY
+
+   ONLY UPDATE:
+   The sky is moved 5px to the RIGHT.
+   ========================================================= */
+
+.falling-sky-image {
+  position: absolute;
+  width: 100%;
+  height: 160%;
+  left: 0;
+  top: 0;
+
+  object-fit: cover;
+
+  /* Sky starts above the jar and 5px to the right */
+  transform: translate(5px, -75%);
+
+  transition: transform 2.2s cubic-bezier(0.22, 1, 0.36, 1);
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   WHEN SECTION ENTERS SCREEN
+
+   ONLY THE SKY MOVES.
+   Jar and hand remain completely static.
+   ========================================================= */
+
+.sky-animation-active .falling-sky-image {
+  transform: translate(5px, -18%);
+}
+
+
+/* =========================================================
+   STATIC GLASS JAR
+   ========================================================= */
+
+.glass-jar-image {
+  position: absolute;
+
+  width: 68%;
+  height: auto;
+
+  top: 6%;
+  left: 15%;
+
+  z-index: 3;
+
+  pointer-events: none;
+
+  user-select: none;
+
+  display: block;
+}
+
+
+/* =========================================================
+   STATIC HAND / JAR IMAGE
+   ========================================================= */
+
+.jar-image {
+  position: absolute;
+  width: 78%;
+  height: auto;
+  left: 8%;
+  bottom: 0;
+  z-index: 4;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1700px) {
+  .sky-jar-container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .jar-visual {
+    min-height: 800px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP / TABLET LANDSCAPE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .sky-jar-container {
+    grid-template-columns: 50% 50%;
+
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .jar-visual {
+    min-height: 650px;
+  }
+
+  .sky-jar-content h1 {
+    font-size: clamp(46px, 5.5vw, 72px);
+  }
+
+  .sky-jar-content p {
+    margin-top: 45px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .sky-jar-section {
+    min-height: auto;
+  }
+
+  .sky-jar-container {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    padding:
+      100px 40px
+      0;
+  }
+
+  .sky-jar-content {
+    padding-bottom: 40px;
+  }
+
+  .jar-visual {
+    width: min(100%, 620px);
+
+    min-height: 700px;
+
+    margin: 0 auto;
+  }
+
+  .sky-jar-content h1 {
+    font-size: clamp(46px, 9vw, 68px);
+  }
+
+  .sky-jar-content p {
+    font-size: clamp(20px, 3vw, 28px);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .sky-jar-section {
+    min-height: auto;
+  }
+
+  .sky-jar-container {
+    display: flex;
+    flex-direction: column;
+
+    padding:
+      80px 24px
+      0;
+  }
+
+  .sky-jar-content {
+    padding-bottom: 20px;
+  }
+
+  .sky-line {
+    width: 48px;
+    margin-bottom: 28px;
+  }
+
+  .sky-jar-content h1 {
+    font-size: clamp(38px, 11vw, 56px);
+    line-height: 1.13;
+  }
+
+  .sky-jar-content p {
+    margin-top: 35px;
+
+    font-size: clamp(18px, 5vw, 24px);
+
+    line-height: 1.4;
+  }
+
+  .jar-visual {
+    width: 100%;
+
+    min-height: 0;
+
+    aspect-ratio: 0.82 / 1;
+
+    margin-top: 10px;
+  }
+
+  .jar-sky-window {
+    top: 20%;
+    left: 25%;
+
+    width: 48%;
+    height: 52%;
+  }
+
+  .glass-jar-image {
+    width: 68%;
+
+    top: 6%;
+    left: 15%;
+  }
+
+  .jar-image {
+    width: 78%;
+
+    left: 8%;
+    bottom: 0;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 390px) {
+  .sky-jar-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .sky-jar-content h1 {
+    font-size: 38px;
+  }
+
+  .sky-jar-content p {
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .falling-sky-image {
+    transition: none;
+    transform: translate(5px, -18%);
+  }
+}

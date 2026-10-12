@@ -1,0 +1,189 @@
+/* =========================================================
+   SERVICES INTRODUCTION
+========================================================= */
+
+.services-introduction {
+  width: 100%;
+  padding: 48px 20px 54px;
+  background: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.services-introduction__container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN FEATURED CARD
+========================================================= */
+
+.services-introduction__featured {
+  width: min(100%, 1060px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  min-height: 390px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 14px;
+  box-sizing: border-box;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.services-introduction__featured:hover {
+  box-shadow: 0 18px 40px rgba(26, 43, 69, 0.16);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.services-introduction__content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.services-introduction__content h3 {
+  max-width: 390px;
+  margin: 0;
+  color: #142b5d;
+  font-family: Inter, Arial,  sans-serif;
+  font-size:  clamp(1.2rem, 1.3vw, 0.9rem);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0;
+}
+
+.services-introduction__line {
+  width: 34px;
+  height: 2px;
+  margin: 18px 0;
+  background: #2288d0;
+}
+
+.services-introduction__content p {
+  max-width: 410px;
+  margin: 0;
+  color: #506079;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.services-introduction__image {
+  position: relative;
+  width: 100%;
+  min-height: 390px;
+  overflow: hidden;
+  background: #e8edf3;
+  box-sizing: border-box;
+}
+
+.services-introduction__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .services-introduction {
+    padding: 42px 18px 48px;
+  }
+
+  .services-introduction__featured {
+    min-height: 350px;
+  }
+
+  .services-introduction__image {
+    min-height: 350px;
+  }
+
+  .services-introduction__content {
+    padding: 32px;
+  }
+
+  .services-introduction__content h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+  .services-introduction {
+    padding: 38px 14px 44px;
+  }
+
+  .services-introduction__featured {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    border-radius: 10px;
+  }
+
+  .services-introduction__image {
+    min-height: 240px;
+    order: 1;
+  }
+
+  .services-introduction__content {
+    order: 2;
+    padding: 28px 22px 32px;
+  }
+
+  .services-introduction__content h3 {
+    font-size: 1.55rem;
+  }
+
+  .services-introduction__content p {
+    font-size: 0.86rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .services-introduction__content {
+    padding: 24px 18px 28px;
+  }
+
+  .services-introduction__content h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .services-introduction__featured {
+    transition: none;
+  }
+}

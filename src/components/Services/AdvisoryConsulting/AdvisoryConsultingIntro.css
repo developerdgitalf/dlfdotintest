@@ -1,0 +1,634 @@
+/* =========================================================
+   ADVISORY + CONSULTING SECTION
+========================================================= */
+
+.advisory-intro-section {
+  width: 100%;
+
+  padding: 0;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WRAPPER
+========================================================= */
+
+.advisory-intro-wrapper {
+  width: 100%;
+
+  padding: 80px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef4f8 0%,
+      #ffffff 100%
+    );
+
+  box-sizing: border-box;
+}
+
+
+.advisory-intro-wrapper--dark {
+  background:
+    linear-gradient(
+      135deg,
+      #06284a 0%,
+      #0b3d6c 55%,
+      #123f76 100%
+    );
+}
+
+
+/* =========================================================
+   SINGLE PANEL
+========================================================= */
+
+.advisory-intro-panel {
+  width: min(
+    1200px,
+    calc(100% - 48px)
+  );
+
+  min-height: 560px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 18px 45px
+    rgba(8, 30, 52, 0.16);
+}
+
+
+/* =========================================================
+   WHITE ADVISORY PANEL
+========================================================= */
+
+.advisory-intro-panel--light {
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   DARK CONSULTING PANEL
+========================================================= */
+
+.advisory-intro-panel--dark {
+  background:
+    linear-gradient(
+      135deg,
+      #06294a 0%,
+      #0b3a68 100%
+    );
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.advisory-intro-image {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 560px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ADVISORY IMAGE
+========================================================= */
+
+.advisory-intro-panel--light
+.advisory-intro-image {
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   CONSULTING IMAGE
+========================================================= */
+
+.advisory-intro-panel--dark
+.advisory-intro-image {
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   IMAGEZOOM
+========================================================= */
+
+.advisory-zoom-image,
+.consulting-zoom-image {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: 0;
+
+  outline: 0;
+
+  box-shadow: none;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGEZOOM IMAGE
+========================================================= */
+
+.advisory-zoom-image
+.image-zoom-image,
+.consulting-zoom-image
+.image-zoom-image {
+  width: 100% !important;
+
+  height: 100% !important;
+
+  display: block !important;
+
+  margin: 0 !important;
+
+  padding: 34px !important;
+
+  object-fit: contain !important;
+
+  object-position: center !important;
+
+  border: 0 !important;
+
+  box-shadow: none !important;
+
+  transform: none !important;
+
+  transition: none !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   ADVISORY IMAGE BACKGROUND
+========================================================= */
+
+.advisory-zoom-image
+.image-zoom-image {
+  background: #ffffff !important;
+}
+
+
+/* =========================================================
+   CONSULTING IMAGE BACKGROUND
+========================================================= */
+
+.consulting-zoom-image
+.image-zoom-image {
+  background: #ffffff !important;
+}
+
+
+/* =========================================================
+   DISABLE IMAGE SCALE
+========================================================= */
+
+.advisory-zoom-image:hover
+.image-zoom-image,
+.consulting-zoom-image:hover
+.image-zoom-image {
+  transform: none !important;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.advisory-intro-content {
+  width: 100%;
+
+  min-height: 560px;
+
+  padding:
+    75px
+    65px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ADVISORY CONTENT
+========================================================= */
+
+.advisory-intro-content:not(
+  .advisory-intro-content--dark
+) {
+  background: #ffffff;
+
+  color: #172d4d;
+}
+
+
+/* =========================================================
+   CONSULTING CONTENT
+========================================================= */
+
+.advisory-intro-content--dark {
+  background:
+    linear-gradient(
+      135deg,
+      #06294a 0%,
+      #0b3a68 100%
+    );
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.advisory-intro-content h2 {
+  margin: 0 0 26px;
+
+  font-family:
+    Inter,
+    Arial,
+    sans-serif;
+
+  font-size: 44px;
+
+  font-weight: 700;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================================================
+   ADVISORY HEADING
+========================================================= */
+
+.advisory-intro-content:not(
+  .advisory-intro-content--dark
+) h2 {
+  color: #172d4d;
+}
+
+
+/* =========================================================
+   CONSULTING HEADING
+========================================================= */
+
+.advisory-intro-content--dark h2 {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.advisory-intro-content p {
+  width: 100%;
+
+  max-width: 600px;
+
+  margin: 0;
+
+  font-family:
+    Inter,
+    Arial,
+    sans-serif;
+
+  font-size: 19px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  letter-spacing: -0.005em;
+}
+
+
+/* =========================================================
+   ADVISORY TEXT
+========================================================= */
+
+.advisory-intro-content:not(
+  .advisory-intro-content--dark
+) p {
+  color: #303d4c;
+}
+
+
+/* =========================================================
+   CONSULTING TEXT
+========================================================= */
+
+.advisory-intro-content--dark p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .advisory-intro-wrapper {
+    padding: 70px 0;
+  }
+
+
+  .advisory-intro-panel {
+    min-height: 520px;
+  }
+
+
+  .advisory-intro-image {
+    min-height: 520px;
+  }
+
+
+  .advisory-intro-content {
+    min-height: 520px;
+
+    padding:
+      60px
+      52px;
+  }
+
+
+  .advisory-zoom-image
+  .image-zoom-image,
+  .consulting-zoom-image
+  .image-zoom-image {
+    padding: 28px !important;
+  }
+
+
+  .advisory-intro-content h2 {
+    font-size: 40px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .advisory-intro-content p {
+    font-size: 17px;
+
+    line-height: 1.62;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .advisory-intro-wrapper {
+    padding: 60px 0;
+  }
+
+
+  .advisory-intro-panel {
+    width:
+      calc(100% - 48px);
+
+    min-height: 480px;
+  }
+
+
+  .advisory-intro-image {
+    min-height: 480px;
+  }
+
+
+  .advisory-intro-content {
+    min-height: 480px;
+
+    padding:
+      45px
+      38px;
+  }
+
+
+  .advisory-zoom-image
+  .image-zoom-image,
+  .consulting-zoom-image
+  .image-zoom-image {
+    padding: 23px !important;
+  }
+
+
+  .advisory-intro-content h2 {
+    font-size: 34px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .advisory-intro-content p {
+    font-size: 16px;
+
+    line-height: 1.58;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .advisory-intro-wrapper {
+    padding: 50px 0;
+  }
+
+
+  .advisory-intro-panel {
+    width:
+      calc(100% - 32px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 0;
+  }
+
+
+  /* =======================================================
+     IMAGE
+  ======================================================= */
+
+  .advisory-intro-image {
+    order: 1;
+
+    width: 100%;
+
+    height: 310px;
+
+    min-height: 310px;
+  }
+
+
+  .advisory-zoom-image
+  .image-zoom-image,
+  .consulting-zoom-image
+  .image-zoom-image {
+    padding: 20px !important;
+  }
+
+
+  /* =======================================================
+     CONTENT
+  ======================================================= */
+
+  .advisory-intro-content {
+    order: 2;
+
+    width: 100%;
+
+    min-height: 0;
+
+    padding:
+      40px
+      26px;
+  }
+
+
+  .advisory-intro-content h2 {
+    font-size: 32px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .advisory-intro-content p {
+    max-width: 100%;
+
+    font-size: 15px;
+
+    line-height: 1.62;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .advisory-intro-wrapper {
+    padding: 42px 0;
+  }
+
+
+  .advisory-intro-panel {
+    width:
+      calc(100% - 24px);
+  }
+
+
+  .advisory-intro-image {
+    height: 270px;
+
+    min-height: 270px;
+  }
+
+
+  .advisory-zoom-image
+  .image-zoom-image,
+  .consulting-zoom-image
+  .image-zoom-image {
+    padding: 17px !important;
+  }
+
+
+  .advisory-intro-content {
+    padding:
+      32px
+      21px;
+  }
+
+
+  .advisory-intro-content h2 {
+    font-size: 28px;
+
+    margin-bottom: 16px;
+  }
+
+
+  .advisory-intro-content p {
+    font-size: 14px;
+
+    line-height: 1.64;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .advisory-zoom-image
+  .image-zoom-image,
+  .consulting-zoom-image
+  .image-zoom-image {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,578 @@
+/* =========================================
+   GLOBAL EXPERTISE SECTION
+========================================= */
+
+.globalExpertise {
+  position: relative;
+
+  width: 100%;
+  min-height: 560px;
+
+  padding: 90px 8%;
+
+  overflow: hidden;
+
+  background-color: #070029;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   WORLD MAP BACKGROUND
+========================================= */
+
+.globalExpertise::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image: url("/images/world-map.png");
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-size: min(75%, 1000px);
+
+  opacity: 0.28;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 100px;
+}
+
+/* =========================================
+   LEFT SIDE - CIRCLES
+========================================= */
+
+.circles {
+  position: relative;
+
+  width: 500px;
+  height: 370px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   COMMON CIRCLE
+========================================= */
+
+.circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1.35;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   CIRCLE 1
+   DOMAIN CONSULTANTS
+   WARM BEIGE / TAN
+========================================= */
+
+.circleOne {
+  width: 190px;
+  height: 190px;
+
+  top: 15px;
+  left: 25px;
+
+  background: #bea277;
+
+  color: #ffffff;
+}
+
+/* =========================================
+   CIRCLE 2
+   BUSINESS LEADERS
+   BRIGHT CYAN
+========================================= */
+
+.circleTwo {
+  width: 190px;
+  height: 190px;
+
+  top: 15px;
+  left: 230px;
+
+  background: #29b9e3;
+
+  color: #111111;
+}
+
+/* =========================================
+   CIRCLE 3
+   INDUSTRY & TECHNOLOGY ANALYSTS
+   TEAL
+========================================= */
+
+.circleThree {
+  width: 155px;
+  height: 155px;
+
+  top: 190px;
+  left: 130px;
+
+  background: #11798d;
+
+  color: #ffffff;
+
+  font-size: 15px;
+}
+
+/* =========================================
+   RIGHT SIDE - STATISTICS
+========================================= */
+
+.stats {
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+/* =========================================
+   LEADING
+========================================= */
+
+.leading {
+  margin: 0 0 8px;
+
+  color: #7ca3b6;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: clamp(28px, 2.5vw, 40px);
+
+  font-weight: 600;
+
+  line-height: 1.1;
+}
+
+/* =========================================
+   REPORT ROW
+========================================= */
+
+.reportRow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+
+  margin-bottom: 25px;
+}
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.number {
+  display: block;
+
+  color: #78cadd;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: clamp(90px, 9vw, 145px);
+
+  font-weight: 700;
+
+  line-height: 0.85;
+
+  letter-spacing: -5px;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   REPORT TITLE
+========================================= */
+
+.reportTitle {
+  display: block;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: clamp(26px, 2.5vw, 40px);
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   REGION BADGES
+========================================= */
+
+.badges {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 14px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   BADGE
+========================================= */
+
+.badge {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 95px;
+
+  height: 52px;
+
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  background: #1d6578;
+
+  color: #ffffff;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  text-align: center;
+}
+
+/* =========================================
+   MARKET
+========================================= */
+
+.market {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 430px;
+
+  max-width: 100%;
+
+  height: 58px;
+
+  padding: 0 25px;
+
+  box-sizing: border-box;
+
+  background: #77d2ff;
+
+  color: #ffffff;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  text-align: center;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .globalExpertise {
+    padding: 80px 6%;
+  }
+
+  .globalExpertise::before {
+    background-size: 90%;
+  }
+
+  .container {
+    gap: 50px;
+  }
+
+  .circles {
+    width: 420px;
+
+    transform: scale(0.9);
+
+    transform-origin: left center;
+  }
+
+  .reportTitle {
+    white-space: normal;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .globalExpertise {
+    min-height: auto;
+
+    padding: 75px 24px;
+  }
+
+  .globalExpertise::before {
+    background-size: 140%;
+
+    background-position: center;
+
+    opacity: 0.18;
+  }
+
+  .container {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 60px;
+  }
+
+  /* =========================================
+     MOBILE CIRCLES
+  ========================================= */
+
+  .circles {
+    width: 330px;
+
+    height: 290px;
+
+    transform: none;
+  }
+
+  .circle {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    padding: 18px;
+  }
+
+  /* =========================================
+     MOBILE CIRCLE 1
+  ========================================= */
+
+  .circleOne {
+    width: 145px;
+    height: 145px;
+
+    top: 0;
+    left: 0;
+  }
+
+  /* =========================================
+     MOBILE CIRCLE 2
+  ========================================= */
+
+  .circleTwo {
+    width: 145px;
+    height: 145px;
+
+    top: 0;
+    left: 170px;
+  }
+
+  /* =========================================
+     MOBILE CIRCLE 3
+  ========================================= */
+
+  .circleThree {
+    width: 125px;
+    height: 125px;
+
+    top: 150px;
+    left: 102px;
+
+    font-size: 13px;
+  }
+
+  /* =========================================
+     MOBILE STATISTICS
+  ========================================= */
+
+  .stats {
+    width: 100%;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .leading {
+    font-size: 28px;
+  }
+
+  .reportRow {
+    justify-content: center;
+
+    gap: 12px;
+  }
+
+  .number {
+    font-size: 82px;
+
+    letter-spacing: -3px;
+  }
+
+  .reportTitle {
+    max-width: 190px;
+
+    font-size: 23px;
+
+    text-align: left;
+
+    white-space: normal;
+  }
+
+  /* =========================================
+     MOBILE BADGES
+  ========================================= */
+
+  .badges {
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 8px;
+  }
+
+  .badge {
+    min-width: 70px;
+
+    height: 46px;
+
+    padding: 0 12px;
+
+    font-size: 11px;
+  }
+
+  .market {
+    width: 100%;
+
+    max-width: 360px;
+
+    height: 52px;
+
+    font-size: 12px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .globalExpertise {
+    padding: 65px 18px;
+  }
+
+  .circles {
+    width: 290px;
+
+    height: 260px;
+  }
+
+  .circleOne,
+  .circleTwo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .circleTwo {
+    left: 150px;
+  }
+
+  .circleThree {
+    width: 115px;
+    height: 115px;
+
+    top: 135px;
+    left: 85px;
+  }
+
+  .number {
+    font-size: 70px;
+  }
+
+  .reportTitle {
+    font-size: 19px;
+  }
+}

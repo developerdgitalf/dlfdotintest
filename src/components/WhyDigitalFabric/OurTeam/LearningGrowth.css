@@ -1,0 +1,109 @@
+/* =========================================
+   LEARNING & GROWTH SECTION
+========================================= */
+
+.learning-growth {
+  width: 100%;
+  margin: 0;
+
+  padding: 38px 0 42px;
+
+  background: #080021;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   1200px CONTENT
+========================================= */
+
+.learning-growth__container {
+  width: 1200px;
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   SINGLE PARAGRAPH
+========================================= */
+
+.learning-growth__container p {
+  width: 100%;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  line-height: 1.55;
+
+  text-align: center;
+
+
+
+
+
+  text-decoration-thickness: 2px;
+
+ 
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .learning-growth {
+    padding: 34px 0 38px;
+  }
+
+  .learning-growth__container {
+    width: min(92%, 900px);
+  }
+
+  .learning-growth__container p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .learning-growth {
+    padding: 30px 0 34px;
+  }
+
+  .learning-growth__container {
+    width: calc(100% - 32px);
+  }
+
+  .learning-growth__container p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .learning-growth__container {
+    width: calc(100% - 28px);
+  }
+
+  .learning-growth__container p {
+    font-size: 13px;
+  }
+}

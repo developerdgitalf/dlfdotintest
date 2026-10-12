@@ -1,0 +1,1023 @@
+/* =========================================================
+   DIGITALFABRIC INNER PAGE HEADER
+========================================================= */
+
+.innerHeader {
+  background: #0d2631;
+}
+
+/* Inner pages: light navigation */
+.innerHeader .navButton,
+.innerHeader .navLink {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.innerHeader .menuButton span {
+  background: #ffffff;
+}
+
+/* Keep logo in its original colors */
+.innerHeader .logo {
+  filter: none;
+}
+
+/* =========================================================
+   MAIN HEADER
+========================================================= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: transparent;
+
+  border-bottom: 1px solid transparent;
+
+  transition:
+    background-color 0.45s ease,
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+}
+
+/* =========================================================
+   SCROLLED WHITE HEADER
+========================================================= */
+
+.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+
+  box-shadow:
+    0 6px 30px rgba(12, 24, 32, 0.08);
+
+  border-bottom:
+    1px solid rgba(20, 42, 55, 0.08);
+}
+
+/* =========================================================
+   ARTICLE / BLOG HEADER
+========================================================= */
+
+.articleHeader {
+  background: rgba(255, 255, 255, 0.98);
+
+  border-bottom:
+    1px solid rgba(20, 42, 55, 0.08);
+
+  box-shadow:
+    0 6px 30px rgba(12, 24, 32, 0.08);
+}
+
+/* Article navigation */
+.articleHeader .navButton,
+.articleHeader .navLink {
+  color: #1b303d;
+}
+
+.articleHeader .navButton:hover,
+.articleHeader .navLink:hover {
+  color: #247d91;
+}
+
+.articleHeader .activeNav {
+  color: #247d91;
+}
+
+/* Article chevron */
+.articleHeader .chevron {
+  color: #1b303d;
+}
+
+.articleHeader .dropdownToggle:hover .chevron {
+  color: #247d91;
+}
+
+/* Article hamburger */
+.articleHeader .menuButton span {
+  background: #1b303d;
+}
+
+/* Article dropdown */
+.articleHeader .dropdown {
+  background: #ffffff;
+
+  border:
+    1px solid rgba(18, 42, 55, 0.1);
+
+  box-shadow:
+    0 18px 45px rgba(18, 42, 55, 0.14);
+}
+
+.articleHeader .dropdownLink {
+  color: #30414a;
+}
+
+.articleHeader .dropdownLink:hover {
+  color: #247d91;
+
+  background:
+    rgba(36, 125, 145, 0.06);
+}
+
+/* =========================================================
+   HEADER CONTAINER
+========================================================= */
+
+.headerContainer {
+  width: 100%;
+  max-width: 1800px;
+
+  min-height: 110px;
+
+  margin: 0 auto;
+
+  padding: 0 64px;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  transition:
+    min-height 0.35s ease;
+}
+
+.scrolled .headerContainer {
+  min-height: 82px;
+}
+
+/* Article header keeps compact professional height */
+.articleHeader .headerContainer {
+  min-height: 82px;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logoLink {
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  padding: 13px 14px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+
+  object-fit: contain;
+
+  display: block;
+
+  opacity: 1;
+
+  filter: none;
+
+  mix-blend-mode: normal;
+
+  transition:
+    transform 0.35s ease;
+}
+
+/*
+   IMPORTANT:
+
+   Do NOT invert or recolor the logo.
+
+   The TSX switches between the two
+   original logo assets.
+*/
+
+.scrolled .logo {
+  filter: none;
+  opacity: 1;
+}
+
+.articleHeader .logo {
+  filter: none;
+  opacity: 1;
+}
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.desktopNav {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: clamp(
+    24px,
+    2.4vw,
+    46px
+  );
+}
+
+/* =========================================================
+   NAV ITEM
+========================================================= */
+
+.navItem {
+  position: relative;
+}
+
+/* =========================================================
+   MENU + CHEVRON
+========================================================= */
+
+.navWithDropdown {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.navButton,
+.navLink {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 12px 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.01em;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease;
+}
+
+/* =========================================================
+   SCROLLED NAVIGATION
+========================================================= */
+
+.scrolled .navButton,
+.scrolled .navLink {
+  color: #1b303d;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.navButton:hover,
+.navLink:hover {
+  color: #ffffff;
+}
+
+.scrolled .navButton:hover,
+.scrolled .navLink:hover {
+  color: #247d91;
+}
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+.navButton::after,
+.navLink::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 3px;
+  left: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #43a3ae;
+
+  transition:
+    width 0.3s ease;
+}
+
+.navButton:hover::after,
+.navLink:hover::after,
+.activeNav::after {
+  width: 100%;
+}
+
+.activeNav {
+  color: #ffffff;
+}
+
+.scrolled .activeNav {
+  color: #247d91;
+}
+
+/* =========================================================
+   ARTICLE NAVIGATION OVERRIDES
+========================================================= */
+
+.articleHeader .navButton,
+.articleHeader .navLink {
+  color: #1b303d;
+}
+
+.articleHeader .navButton:hover,
+.articleHeader .navLink:hover {
+  color: #247d91;
+}
+
+.articleHeader .activeNav {
+  color: #247d91;
+}
+
+/* =========================================================
+   DROPDOWN TOGGLE
+========================================================= */
+
+.dropdownToggle {
+  width: 22px;
+  height: 38px;
+
+  padding: 0;
+  margin: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   CHEVRON
+========================================================= */
+
+.chevron {
+  width: 8px;
+  height: 8px;
+
+  display: block;
+
+  border-right:
+    2px solid currentColor;
+
+  border-bottom:
+    2px solid currentColor;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  transform:
+    rotate(45deg)
+    translateY(-2px);
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.scrolled .chevron {
+  color: #1b303d;
+}
+
+.dropdownToggle:hover .chevron {
+  color: #43a3ae;
+}
+
+.chevronOpen {
+  transform:
+    rotate(225deg)
+    translateY(-2px);
+}
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.dropdown {
+  position: absolute;
+
+  top: calc(100% + 8px);
+
+  left: 50%;
+
+  width: max-content;
+
+  min-width: 245px;
+
+  padding: 12px;
+
+  background:
+    rgba(8, 17, 24, 0.98);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 18px 45px
+    rgba(0, 0, 0, 0.28);
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform:
+    translateX(-50%)
+    translateY(-10px);
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.28s ease,
+    transform 0.28s ease,
+    visibility 0.28s ease;
+
+  z-index: 1100;
+}
+
+/* Show dropdown */
+
+.dropdownOpen {
+  opacity: 1;
+
+  visibility: visible;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+
+  pointer-events: auto;
+}
+
+/* =========================================================
+   SCROLLED DROPDOWN
+========================================================= */
+
+.scrolled .dropdown {
+  background: #ffffff;
+
+  border:
+    1px solid
+    rgba(18, 42, 55, 0.1);
+
+  box-shadow:
+    0 18px 45px
+    rgba(18, 42, 55, 0.14);
+}
+
+/* =========================================================
+   ARTICLE DROPDOWN
+========================================================= */
+
+.articleHeader .dropdown {
+  background: #ffffff;
+
+  border:
+    1px solid
+    rgba(18, 42, 55, 0.1);
+
+  box-shadow:
+    0 18px 45px
+    rgba(18, 42, 55, 0.14);
+}
+
+/* =========================================================
+   DROPDOWN LINKS
+========================================================= */
+
+.dropdownLink {
+  display: block;
+
+  padding: 13px 16px;
+
+  color:
+    rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+.dropdownLink:hover {
+  padding-left: 20px;
+
+  color: #ffffff;
+
+  background:
+    rgba(255, 255, 255, 0.06);
+}
+
+.scrolled .dropdownLink {
+  color: #30414a;
+}
+
+.scrolled .dropdownLink:hover {
+  color: #247d91;
+
+  background:
+    rgba(36, 125, 145, 0.06);
+}
+
+/* Article dropdown links */
+
+.articleHeader .dropdownLink {
+  color: #30414a;
+}
+
+.articleHeader .dropdownLink:hover {
+  color: #247d91;
+
+  background:
+    rgba(36, 125, 145, 0.06);
+}
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
+
+.menuButton {
+  width: 44px;
+  height: 44px;
+
+  margin-left:
+    clamp(
+      28px,
+      3vw,
+      58px
+    );
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: flex-end;
+
+  gap: 5px;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+.menuButton span {
+  display: block;
+
+  height: 2px;
+
+  background: #ffffff;
+
+  transition:
+    width 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.menuButton span:nth-child(1) {
+  width: 27px;
+}
+
+.menuButton span:nth-child(2) {
+  width: 19px;
+}
+
+.menuButton span:nth-child(3) {
+  width: 27px;
+}
+
+.menuButton:hover span:nth-child(2) {
+  width: 27px;
+}
+
+.scrolled .menuButton span {
+  background: #1b303d;
+}
+
+.articleHeader .menuButton span {
+  background: #1b303d;
+}
+
+/* =========================================================
+   MOBILE FULL SCREEN MENU
+========================================================= */
+
+.mobileOverlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 2000;
+
+  background:
+    linear-gradient(
+      135deg,
+      #07121a 0%,
+      #0d2430 100%
+    );
+
+  padding:
+    28px
+    7vw
+    50px;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform:
+    translateY(-10px);
+
+  overflow-y: auto;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease,
+    transform 0.35s ease;
+}
+
+.mobileOverlayOpen {
+  opacity: 1;
+
+  visibility: visible;
+
+  transform:
+    translateY(0);
+
+  pointer-events: auto;
+}
+
+/* =========================================================
+   MOBILE MENU HEADER
+========================================================= */
+
+.mobileMenuHeader {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 45px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+}
+
+.mobileLogo {
+  width: 120px;
+
+  height: auto;
+
+  display: block;
+
+  filter: none;
+}
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.closeButton {
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.2);
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 32px;
+
+  font-weight: 300;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.closeButton:hover {
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  transform:
+    rotate(90deg);
+}
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+.mobileNav {
+  max-width: 720px;
+
+  margin: 45px auto 0;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.mobileNavItem {
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+}
+
+.mobileNavTop {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.mobileNavButton,
+.mobileSingleLink {
+  width: 100%;
+
+  padding: 22px 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size:
+    clamp(
+      20px,
+      4vw,
+      30px
+    );
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   MOBILE ARROW
+========================================================= */
+
+.mobileArrowButton {
+  width: 55px;
+  height: 55px;
+
+  margin-left: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   MOBILE CHEVRON
+========================================================= */
+
+.mobileChevron {
+  width: 11px;
+  height: 11px;
+
+  display: block;
+
+  border-right:
+    2px solid #ffffff;
+
+  border-bottom:
+    2px solid #ffffff;
+
+  transform:
+    rotate(45deg)
+    translateY(-3px);
+
+  transition:
+    transform 0.3s ease;
+}
+
+.mobileChevronOpen {
+  transform:
+    rotate(225deg)
+    translateY(-3px);
+}
+
+/* =========================================================
+   MOBILE ACCORDION
+========================================================= */
+
+.mobileSubmenu {
+  max-height: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    padding 0.3s ease;
+}
+
+.mobileSubmenuOpen {
+  max-height: 500px;
+
+  opacity: 1;
+
+  padding-bottom: 22px;
+}
+
+.mobileSubmenu a {
+  display: block;
+
+  padding:
+    11px
+    0
+    11px
+    20px;
+
+  color:
+    rgba(255, 255, 255, 0.65);
+
+  font-size: 16px;
+
+  text-decoration: none;
+
+  border-left:
+    2px solid
+    rgba(67, 163, 174, 0.5);
+
+  transition:
+    color 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+.mobileSubmenu a:hover {
+  padding-left: 28px;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1250px) {
+  .headerContainer {
+    padding: 0 40px;
+  }
+
+  .desktopNav {
+    gap: 24px;
+  }
+
+  .navButton,
+  .navLink {
+    font-size: 14px;
+  }
+
+  .menuButton {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .menuButton {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    min-height: 82px;
+
+    padding:
+      0 24px;
+  }
+
+  .scrolled .headerContainer {
+    min-height: 72px;
+  }
+
+  .articleHeader .headerContainer {
+    min-height: 72px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .mobileOverlay {
+    padding:
+      24px
+      28px
+      40px;
+  }
+
+  .mobileMenuHeader {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerContainer {
+    padding:
+      0 18px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .mobileOverlay {
+    padding:
+      20px
+      20px
+      35px;
+  }
+
+  .mobileNavButton,
+  .mobileSingleLink {
+    padding: 19px 0;
+
+    font-size: 20px;
+  }
+}

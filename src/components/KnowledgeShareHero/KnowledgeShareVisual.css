@@ -1,0 +1,112 @@
+/* =========================================================
+   KNOWLEDGE SHARE VISUAL
+========================================================= */
+
+.knowledge-share-visual {
+  width: 100%;
+
+  padding: 55px 0 60px;
+
+  background: #023352;;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.knowledge-share-visual__container {
+  width: 1200px;
+
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.knowledge-share-visual__image {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  object-fit: contain;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .knowledge-share-visual {
+    padding: 45px 0 50px;
+  }
+
+  .knowledge-share-visual__container {
+    width: calc(100% - 40px);
+
+    max-width: 900px;
+  }
+
+  .knowledge-share-visual__image {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .knowledge-share-visual {
+    padding: 35px 0 40px;
+  }
+
+  .knowledge-share-visual__container {
+    width: calc(100% - 28px);
+
+    max-width: 620px;
+  }
+
+  .knowledge-share-visual__image {
+    width: 100%;
+
+    height: auto;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .knowledge-share-visual {
+    padding: 28px 0 32px;
+  }
+
+  .knowledge-share-visual__container {
+    width: calc(100% - 20px);
+  }
+}

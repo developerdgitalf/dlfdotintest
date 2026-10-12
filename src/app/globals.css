@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap");
+
+/* ================================
+   RESET
+================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #090912;
+  color: #f4f1eb;
+  font-family: "Inter", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   GLOBAL ELEMENTS
+================================ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ================================
+   GLOBAL CONTAINERS
+================================ */
+
+/*
+   SMALL CONTAINER – 1200px
+   Use for:
+   - Text-heavy content
+   - Focused sections
+   - Smaller layouts
+*/
+
+.site-container-small {
+  width: min(100% - 128px, 1200px);
+  margin-inline: auto;
+}
+
+
+.site-container-medium {
+  width: min(100% - 128px, 1280px);
+  margin-inline: auto;
+}
+/*
+   DEFAULT CONTAINER – 1400px
+   Use for:
+   - Most website sections
+   - Standard layouts
+
+   THIS IS OUR DEFAULT CONTAINER
+*/
+
+.site-container {
+  width: min(100% - 128px, 1400px);
+  margin-inline: auto;
+}
+
+
+/*
+   WIDE CONTAINER – 1600px
+   Use for:
+   - Large visual layouts
+   - Wide grids
+   - Sections that need more horizontal space
+*/
+
+.site-container-wide {
+  width: min(100% - 128px, 1600px);
+  margin-inline: auto;
+}
+
+
+/* ================================
+   RESPONSIVE CONTAINERS
+================================ */
+
+@media (max-width: 1200px) {
+  .site-container-small,
+  .site-container,
+  .site-container-wide {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 768px) {
+  .site-container-small,
+  .site-container,
+  .site-container-wide {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 600px) {
+  .site-container-small,
+  .site-container,
+  .site-container-wide {
+    width: calc(100% - 40px);
+  }
+}

@@ -1,0 +1,467 @@
+/* =========================================================
+   KNOWLEDGE ARTICLES
+========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.knowledge-articles-section {
+  width: 100%;
+  padding: 72px 24px 88px;
+  background: #ffffff;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.knowledge-articles-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.knowledge-articles-header {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.knowledge-articles-header-line {
+  display: block;
+  width: 72px;
+  height: 2px;
+  margin: 0 auto 18px;
+  background: #2f73aa;
+}
+
+.knowledge-articles-header h2 {
+  margin: 0;
+  color: #173b67;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.7rem, 2.8vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+
+}
+
+/* =========================================================
+   ARTICLE LIST
+========================================================= */
+
+.knowledge-articles-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* =========================================================
+   ARTICLE
+========================================================= */
+
+.knowledge-article {
+  width: 100%;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(13, 31, 65, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.knowledge-article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px rgba(13, 31, 65, 0.13);
+}
+
+/* =========================================================
+   DEFAULT
+   TEXT LEFT | PDF RIGHT
+========================================================= */
+
+.knowledge-article-content {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  padding: 58px 56px;
+}
+
+.knowledge-article-pdf {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* =========================================================
+   REVERSED
+   PDF LEFT | TEXT RIGHT
+========================================================= */
+
+.knowledge-article-reverse .knowledge-article-content {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.knowledge-article-reverse .knowledge-article-pdf {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* =========================================================
+   BEIGE / LIGHT BLUE THEME
+========================================================= */
+
+.knowledge-article-beige .knowledge-article-content {
+  background: #f3f6f9;
+  color: #173b67;
+}
+
+/* =========================================================
+   NAVY THEME
+========================================================= */
+
+.knowledge-article-navy .knowledge-article-content {
+  background: #173b67;
+  color: #ffffff;
+}
+
+/* =========================================================
+   CONTENT INNER
+========================================================= */
+
+.knowledge-article-content-inner {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.knowledge-article-number {
+  display: block;
+  margin-bottom: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  opacity: 0.7;
+}
+
+.knowledge-article-beige .knowledge-article-number {
+  color: #173b67;
+}
+
+.knowledge-article-navy .knowledge-article-number {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================================================
+   ACCENT LINE
+========================================================= */
+
+.knowledge-article-line {
+  display: block;
+  width: 62px;
+  height: 2px;
+  margin-bottom: 24px;
+  background: #4b92c9;
+}
+
+.knowledge-article-navy .knowledge-article-line {
+  background: #8fc2e8;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.knowledge-article-content h3 {
+  margin: 0;
+  max-width: 500px;
+  font-family: "Inter", sans-serif;
+ font-size: 38px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.knowledge-article-navy .knowledge-article-content h3 {
+  color: #ffffff;
+}
+
+.knowledge-article-beige .knowledge-article-content h3 {
+  color: #173b67;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.knowledge-article-content p {
+  max-width: 500px;
+  margin: 26px 0 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.knowledge-article-navy .knowledge-article-content p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.knowledge-article-beige .knowledge-article-content p {
+  color: #4f6075;
+}
+
+/* =========================================================
+   VIEW / DOWNLOAD BUTTON
+========================================================= */
+
+.knowledge-article-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  margin-top: 34px;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 4px;
+  background: #173b67;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.knowledge-article-button::after {
+  content: "→";
+  margin-left: 12px;
+  font-size: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.knowledge-article-navy .knowledge-article-button {
+  background: #ffffff;
+  color: #173b67;
+}
+
+.knowledge-article-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(10, 35, 70, 0.18);
+}
+
+.knowledge-article-button:hover::after {
+  transform: translateX(4px);
+}
+
+.knowledge-article-beige .knowledge-article-button:hover {
+  background: #0f2d52;
+}
+
+.knowledge-article-navy .knowledge-article-button:hover {
+  background: #eaf2f8;
+}
+
+/* =========================================================
+   PDF AREA
+========================================================= */
+
+.knowledge-article-pdf {
+  position: relative;
+  min-width: 0;
+  min-height: 500px;
+  background: #e8edf2;
+  overflow: hidden;
+}
+
+.knowledge-article-pdf iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border: none;
+  background: #ffffff;
+}
+
+/* =========================================================
+   PDF OVERLAY
+========================================================= */
+
+.knowledge-article-pdf-overlay {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.knowledge-article-pdf:hover .knowledge-article-pdf-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.knowledge-article-pdf-overlay a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 4px;
+  background: rgba(23, 59, 103, 0.95);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.knowledge-article-pdf-overlay a:hover {
+  background: #0f2d52;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .knowledge-articles-section {
+    padding: 58px 20px 70px;
+  }
+
+  .knowledge-article {
+    min-height: 430px;
+    border-radius: 16px;
+  }
+
+  .knowledge-article-content {
+    padding: 42px 38px;
+  }
+
+  .knowledge-article-pdf {
+    min-height: 430px;
+  }
+
+  .knowledge-article-pdf iframe {
+    min-height: 430px;
+  }
+
+  .knowledge-article-content h3 {
+    font-size: 2rem;
+  }
+
+  .knowledge-article-content p {
+    font-size: 0.92rem;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .knowledge-articles-section {
+    padding: 48px 16px 60px;
+  }
+
+  .knowledge-articles-header {
+    margin-bottom: 32px;
+  }
+
+  .knowledge-articles-header h2 {
+    font-size: 1.55rem;
+  }
+
+  .knowledge-article,
+  .knowledge-article-reverse {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  /* Always put PDF above text on mobile */
+
+  .knowledge-article-pdf,
+  .knowledge-article-reverse .knowledge-article-pdf {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 380px;
+  }
+
+  .knowledge-article-content,
+  .knowledge-article-reverse .knowledge-article-content {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 38px 28px 44px;
+  }
+
+  .knowledge-article-pdf iframe {
+    min-height: 380px;
+  }
+
+  .knowledge-article-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .knowledge-article-content p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .knowledge-article-button {
+    width: 100%;
+  }
+
+  .knowledge-article-pdf-overlay {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .knowledge-article-pdf,
+  .knowledge-article-pdf iframe {
+    min-height: 320px;
+  }
+
+  .knowledge-article-content {
+    padding: 32px 22px 38px;
+  }
+
+  .knowledge-article-content h3 {
+    font-size: 1.55rem;
+  }
+
+  .knowledge-article-button {
+    min-width: 100%;
+  }
+}

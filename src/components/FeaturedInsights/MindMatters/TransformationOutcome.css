@@ -1,0 +1,385 @@
+/* =========================================
+   TRANSFORMATION OUTCOME
+========================================= */
+
+.transformation-outcome-section {
+  width: 100%;
+
+  padding: 86px 24px 92px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061f2d 0%,
+      #092936 48%,
+      #061e2b 100%
+    );
+
+  overflow: hidden;
+}
+
+.transformation-outcome-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.92fr)
+    minmax(0, 1.08fr);
+
+  align-items: center;
+
+  gap: 54px;
+}
+
+
+/* =========================================
+   LEFT IMAGE
+========================================= */
+
+.transformation-outcome-image {
+  width: 100%;
+  max-width: 535px;
+
+  justify-self: start;
+
+  overflow: hidden;
+
+  background: #091a2d;
+}
+
+.transformation-outcome-image img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   RIGHT CARD
+========================================= */
+
+.transformation-outcome-card {
+  position: relative;
+
+  width: 100%;
+  max-width: 570px;
+
+  min-height: 390px;
+
+  justify-self: end;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 36px 44px 34px;
+
+  background: #ffffff;
+
+  color: #172d4e;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.12);
+
+  outline: none;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.transformation-outcome-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 20px 42px rgba(0, 0, 0, 0.17);
+}
+
+.transformation-outcome-card:focus-visible {
+  outline: 2px solid #2a73cf;
+  outline-offset: 4px;
+}
+
+
+/* =========================================
+   BLUE TOP LINE
+========================================= */
+
+.transformation-outcome-card-line {
+  width: 175px;
+  height: 2px;
+
+  margin-bottom: 24px;
+
+  background: #174c7e;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.transformation-outcome-card-content {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.transformation-outcome-copy {
+  width: 100%;
+
+  animation:
+    transformationOutcomeFade 0.35s ease;
+}
+
+@keyframes transformationOutcomeFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.transformation-outcome-copy h2 {
+  margin: 0 0 16px;
+
+  color: #18324f;
+
+  font-size: clamp(1.35rem, 2.1vw, 1.8rem);
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.018em;
+}
+
+
+/* =========================================
+   PARAGRAPH
+========================================= */
+
+.transformation-outcome-copy p {
+  margin: 0;
+
+  color: #182d42;
+
+  font-size: 1.02rem;
+
+  font-weight: 400;
+
+  line-height: 1.16;
+
+  letter-spacing: 0.002em;
+}
+
+
+/* =========================================
+   READ MORE
+========================================= */
+
+.transformation-outcome-read-more {
+  margin-top: 18px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: #29445f;
+
+  text-decoration: none;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
+
+  transition:
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+.transformation-outcome-read-more svg {
+  width: 17px;
+  height: 17px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+.transformation-outcome-read-more:hover {
+  color: #155fae;
+
+  gap: 12px;
+}
+
+.transformation-outcome-read-more:hover svg {
+  transform: translateX(2px);
+}
+
+
+/* =========================================
+   HOVER INDICATOR
+========================================= */
+
+.transformation-outcome-hover-indicator {
+  margin-top: 25px;
+
+  color: #7b8794;
+
+  font-size: 0.68rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.03em;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .transformation-outcome-section {
+    padding: 70px 24px 78px;
+  }
+
+  .transformation-outcome-container {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr);
+
+    gap: 35px;
+  }
+
+  .transformation-outcome-card {
+    min-height: 360px;
+
+    padding: 32px 34px;
+  }
+
+  .transformation-outcome-copy p {
+    font-size: 0.94rem;
+
+    line-height: 1.28;
+  }
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 800px) {
+  .transformation-outcome-container {
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+  }
+
+  .transformation-outcome-image,
+  .transformation-outcome-card {
+    max-width: 650px;
+
+    justify-self: center;
+  }
+
+  .transformation-outcome-image {
+    width: 100%;
+  }
+
+  .transformation-outcome-card {
+    width: 100%;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .transformation-outcome-section {
+    padding: 55px 18px 65px;
+  }
+
+  .transformation-outcome-container {
+    gap: 25px;
+  }
+
+  .transformation-outcome-card {
+    min-height: 330px;
+
+    padding: 28px 24px 24px;
+  }
+
+  .transformation-outcome-card-line {
+    width: 130px;
+
+    margin-bottom: 21px;
+  }
+
+  .transformation-outcome-copy h2 {
+    font-size: 1.3rem;
+
+    line-height: 1.18;
+  }
+
+  .transformation-outcome-copy p {
+    font-size: 0.9rem;
+
+    line-height: 1.45;
+  }
+
+  .transformation-outcome-hover-indicator {
+    margin-top: 20px;
+
+    font-size: 0.62rem;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .transformation-outcome-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .transformation-outcome-card {
+    min-height: 310px;
+
+    padding: 24px 20px;
+  }
+
+  .transformation-outcome-copy p {
+    font-size: 0.84rem;
+
+    line-height: 1.5;
+  }
+
+  .transformation-outcome-read-more {
+    font-size: 0.74rem;
+  }
+}

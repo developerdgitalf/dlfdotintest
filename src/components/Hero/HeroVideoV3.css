@@ -1,0 +1,454 @@
+.hero-v3 {
+  position: relative;
+
+  width: 100%;
+  height: 300px;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  background: #050505;
+}
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.hero-v3__background {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+}
+
+.hero-v3__video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+
+  background: #050505;
+}
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.hero-v3__overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(0, 0, 0, 0.44) 50%,
+      rgba(0, 0, 0, 0.32) 100%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================================
+   1400px CONTENT CONTAINER
+   KEEP THIS UNCHANGED
+========================================= */
+
+.hero-v3__container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1400px, calc(100% - 48px));
+
+  height: 100%;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   CONTENT GRID
+========================================= */
+
+.hero-v3__content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  width: 100%;
+  height: 100%;
+
+  padding-top: 62px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.hero-v3__left {
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  padding: 0;
+}
+
+.hero-v3__title {
+  margin: 0;
+
+  max-width: 530px;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  line-height: 0.96;
+
+  letter-spacing: -0.035em;
+
+  color: #ffffff;
+}
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.hero-v3__quote {
+  position: absolute;
+
+  left: 2px;
+  bottom: 17px;
+
+  font-family: Georgia, serif;
+
+  font-size: 18px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  color: #ffffff;
+}
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.hero-v3__right {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  padding-left: 45px;
+  padding-top: 25px;
+}
+
+/* =========================================
+   BLUE LINE
+========================================= */
+
+.hero-v3__line {
+  display: block;
+
+  width: 70px;
+  height: 3px;
+
+  margin-bottom: 14px;
+
+  background: #0d8cff;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-v3__description {
+  width: 100%;
+
+  max-width: 310px;
+
+  margin: 0 0 14px;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.28;
+
+  letter-spacing: -0.005em;
+
+  color: rgba(255, 255, 255, 0.94);
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.hero-v3__cta {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  transition: opacity 0.2s ease;
+}
+
+.hero-v3__cta:hover {
+  opacity: 0.78;
+}
+
+/* =========================================
+   BLUE ARROW
+========================================= */
+
+.hero-v3__arrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 17px;
+  height: 17px;
+
+  background: #0d8cff;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+/* =========================================
+   BOTTOM BLUE ACCENT
+========================================= */
+
+.hero-v3__accent {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  z-index: 4;
+
+  width: 80px;
+  height: 2px;
+
+  background: #0d8cff;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .hero-v3 {
+    height: 320px;
+  }
+
+  .hero-v3__container {
+    width: min(92%, 900px);
+  }
+
+  .hero-v3__content {
+    grid-template-columns: 1fr 1fr;
+
+    padding-top: 68px;
+  }
+
+  .hero-v3__title {
+    max-width: 470px;
+
+    font-size: 35px;
+
+    line-height: 0.97;
+  }
+
+  .hero-v3__right {
+    padding-left: 30px;
+    padding-top: 25px;
+  }
+
+  .hero-v3__line {
+    width: 65px;
+    height: 3px;
+
+    margin-bottom: 13px;
+  }
+
+  .hero-v3__description {
+    max-width: 300px;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+  }
+
+  .hero-v3__cta {
+    font-size: 10px;
+  }
+
+  .hero-v3__arrow {
+    width: 17px;
+    height: 17px;
+
+    font-size: 10px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .hero-v3 {
+    height: auto;
+
+    min-height: 520px;
+  }
+
+  .hero-v3__container {
+    width: calc(100% - 36px);
+  }
+
+  .hero-v3__content {
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    height: auto;
+
+    padding-top: 95px;
+    padding-bottom: 45px;
+  }
+
+  .hero-v3__left {
+    width: 100%;
+  }
+
+  .hero-v3__title {
+    max-width: 100%;
+
+    font-size: 34px;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+  }
+
+  .hero-v3__quote {
+    position: static;
+
+    display: block;
+
+    margin-top: 12px;
+
+    font-size: 18px;
+  }
+
+  .hero-v3__right {
+    width: 100%;
+
+    padding: 45px 0 0;
+  }
+
+  .hero-v3__line {
+    width: 65px;
+
+    height: 3px;
+
+    margin-bottom: 14px;
+  }
+
+  .hero-v3__description {
+    max-width: 420px;
+
+    font-size: 14px;
+
+    line-height: 1.42;
+  }
+
+  .hero-v3__cta {
+    font-size: 11px;
+  }
+
+  .hero-v3__arrow {
+    width: 19px;
+    height: 19px;
+
+    font-size: 11px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .hero-v3 {
+    min-height: 540px;
+  }
+
+  .hero-v3__container {
+    width: calc(100% - 28px);
+  }
+
+  .hero-v3__content {
+    padding-top: 85px;
+    padding-bottom: 45px;
+  }
+
+  .hero-v3__title {
+    font-size: 30px;
+  }
+
+  .hero-v3__right {
+    padding-top: 42px;
+  }
+
+  .hero-v3__description {
+    font-size: 13px;
+  }
+
+  .hero-v3__cta {
+    font-size: 10px;
+  }
+}

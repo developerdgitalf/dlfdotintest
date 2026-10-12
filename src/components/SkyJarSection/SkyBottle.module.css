@@ -1,0 +1,979 @@
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.bottle-perspective {
+  position: relative;
+
+  width: 100%;
+  min-height: 760px;
+
+  overflow: hidden;
+
+  background: #031017;
+  color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.bottle-perspective__container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, calc(100% - 48px));
+
+  min-height: 760px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.bottle-perspective__content {
+  position: relative;
+
+  min-height: 760px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.bottle-perspective__intro {
+  position: absolute;
+
+  left: 0;
+  top: 195px;
+
+  z-index: 5;
+
+  width: 400px;
+  max-width: 400px;
+
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+
+  border: 0;
+  border-radius: 0;
+
+  box-shadow: none;
+
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   INTRO HEADING
+========================================= */
+
+.bottle-perspective__intro h1 {
+  margin: 0;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 52px;
+
+  font-weight: 600;
+
+  line-height: 0.97;
+
+  letter-spacing: -0.045em;
+
+  color: #ffffff;
+}
+
+.bottle-perspective__intro h1 span {
+  color: #168cff;
+}
+
+
+/* =========================================
+   INTRO DESCRIPTION
+========================================= */
+
+.bottle-perspective__intro p {
+  margin: 20px 0 0;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 19px;
+
+  font-weight: 400;
+
+  line-height: 1.23;
+
+  letter-spacing: -0.025em;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   BOTTLE WRAPPER
+   MOBILE DIRECT IMAGE
+========================================= */
+
+.bottle-perspective__bottle {
+  position: absolute;
+
+  left: 50%;
+  top: 105px;
+
+  z-index: 3;
+
+  width: 420px;
+  height: 560px;
+
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  transform: translateX(-50%);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BOTTLE IMAGE
+========================================= */
+
+.bottle-perspective__bottle-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  object-fit: contain;
+  object-position: center bottom;
+
+  border: 0;
+  outline: 0;
+
+  filter: none;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BUSINESS DETAILS
+========================================= */
+
+.bottle-perspective__details {
+  position: absolute;
+
+  right: 0;
+  top: 180px;
+
+  z-index: 5;
+
+  width: 445px;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BUSINESS CHALLENGES
+========================================= */
+
+.bottle-perspective__block {
+  width: 100%;
+  max-width: 445px;
+
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+
+  border: 0;
+  border-radius: 0;
+
+  box-shadow: none;
+
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BUSINESS HEADING
+========================================= */
+
+.bottle-perspective__block h2 {
+  margin: 0;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   LIST
+========================================= */
+
+.bottle-perspective__block ul {
+  list-style: none;
+
+  margin: 17px 0 0;
+
+  padding: 0;
+}
+
+
+/* =========================================
+   LIST ITEM
+========================================= */
+
+.bottle-perspective__block li {
+  position: relative;
+
+  margin: 0 0 9px;
+
+  padding-left: 18px;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1.42;
+
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+}
+
+.bottle-perspective__block li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   BLUE BULLETS
+========================================= */
+
+.bottle-perspective__block li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0.55em;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #168cff;
+
+  box-shadow:
+    0 0 7px rgba(22, 140, 255, 0.45);
+}
+
+
+/* =========================================
+   BLUE ACCENT
+========================================= */
+
+.bottle-perspective__accent {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  z-index: 4;
+
+  width: 80px;
+  height: 2px;
+
+  background: #168cff;
+}
+
+
+/* =========================================================
+   DESKTOP
+   FULL BACKGROUND IMAGE
+========================================================= */
+
+@media (min-width: 1001px) {
+
+  .bottle-perspective {
+    min-height: 760px;
+
+    background:
+      #031017
+      url("/images/sky-bottle-desktop.jpg")
+      center center
+      / cover
+      no-repeat;
+  }
+
+
+  /* =======================================
+     FULL BACKGROUND IMAGE
+     Keep the complete jar composition visible
+  ======================================= */
+
+  .bottle-perspective__bottle {
+    display: none;
+  }
+
+
+  /* =======================================
+     MAIN CONTAINER
+  ======================================= */
+
+  .bottle-perspective__container {
+    width: min(1450px, calc(100% - 64px));
+
+    min-height: 760px;
+  }
+
+  .bottle-perspective__content {
+    min-height: 760px;
+  }
+
+
+  /* =======================================
+     INTRO GLASS PANEL
+  ======================================= */
+
+  .bottle-perspective__intro {
+    left: 0;
+
+    top: 185px;
+
+    width: 500px;
+    max-width: 500px;
+
+    padding: 38px 46px 40px;
+
+    background: rgba(6, 35, 50, 0.38);
+
+    border: 1px solid rgba(150, 210, 235, 0.23);
+
+    border-radius: 11px;
+
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+
+    box-sizing: border-box;
+  }
+
+
+  .bottle-perspective__intro h1 {
+    font-size: 62px;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.05em;
+  }
+
+
+  .bottle-perspective__intro p {
+    margin-top: 23px;
+
+    font-size: 20px;
+
+    line-height: 1.22;
+  }
+
+
+  /* =======================================
+     BUSINESS DETAILS
+  ======================================= */
+
+  .bottle-perspective__details {
+    right: 0;
+
+    top: 178px;
+
+    width: 500px;
+
+    box-sizing: border-box;
+  }
+
+
+  /* =======================================
+     BUSINESS GLASS PANEL
+  ======================================= */
+
+  .bottle-perspective__block {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 35px 38px 37px;
+
+    background: rgba(6, 35, 50, 0.34);
+
+    border: 1px solid rgba(150, 210, 235, 0.23);
+
+    border-radius: 11px;
+
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+
+    box-sizing: border-box;
+  }
+
+
+  .bottle-perspective__block h2 {
+    font-size: 30px;
+
+    line-height: 1.06;
+
+    letter-spacing: -0.03em;
+  }
+
+
+  .bottle-perspective__block ul {
+    margin-top: 20px;
+  }
+
+
+  .bottle-perspective__block li {
+    margin-bottom: 12px;
+
+    padding-left: 21px;
+
+    font-size: 14px;
+
+    line-height: 1.43;
+  }
+
+
+  .bottle-perspective__block li::before {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .bottle-perspective {
+    min-height: 700px;
+  }
+
+  .bottle-perspective__container {
+    width: min(92%, 900px);
+
+    min-height: 700px;
+  }
+
+  .bottle-perspective__content {
+    min-height: 700px;
+  }
+
+  .bottle-perspective__intro {
+    top: 155px;
+
+    width: 340px;
+    max-width: 340px;
+  }
+
+  .bottle-perspective__intro h1 {
+    font-size: 41px;
+  }
+
+  .bottle-perspective__intro p {
+    font-size: 17px;
+  }
+
+  .bottle-perspective__bottle {
+    top: 100px;
+
+    width: 360px;
+    height: 500px;
+  }
+
+  .bottle-perspective__details {
+    top: 145px;
+
+    width: 340px;
+  }
+
+  .bottle-perspective__block h2 {
+    font-size: 21px;
+  }
+
+  .bottle-perspective__block li {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   KEEP CURRENT MOBILE DESIGN
+========================================= */
+
+@media (max-width: 700px) {
+
+  .bottle-perspective {
+    min-height: auto;
+
+    background: #031017;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================
+     CONTAINER
+  ======================================= */
+
+  .bottle-perspective__container {
+    width: calc(100% - 24px);
+
+    min-height: auto;
+
+    margin: 0 auto;
+  }
+
+
+  /* =======================================
+     CONTENT
+     INTRO → BOTTLE → DETAILS
+  ======================================= */
+
+  .bottle-perspective__content {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+
+    padding: 35px 0 45px;
+
+    box-sizing: border-box;
+  }
+
+
+  /* =======================================
+     INTRO GLASS PANEL
+  ======================================= */
+
+  .bottle-perspective__intro {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    z-index: 5;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+
+    padding: 22px 20px 24px;
+
+    background: rgba(6, 35, 50, 0.42);
+
+    border: 1px solid rgba(150, 210, 235, 0.24);
+
+    border-radius: 11px;
+
+    box-shadow:
+      0 10px 28px rgba(0, 0, 0, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-sizing: border-box;
+  }
+
+
+  /* =======================================
+     INTRO HEADING
+  ======================================= */
+
+  .bottle-perspective__intro h1 {
+    margin: 0;
+
+    font-size: 38px;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.045em;
+  }
+
+
+  /* =======================================
+     INTRO DESCRIPTION
+  ======================================= */
+
+  .bottle-perspective__intro p {
+    margin: 17px 0 0;
+
+    font-size: 17px;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.025em;
+  }
+
+
+  /* =======================================
+     MOBILE BOTTLE IMAGE
+  ======================================= */
+
+  .bottle-perspective__bottle {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 390px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px auto 10px;
+
+    padding: 0;
+
+    transform: none;
+
+    box-sizing: border-box;
+  }
+
+
+  .bottle-perspective__bottle-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* =======================================
+     DETAILS
+  ======================================= */
+
+  .bottle-perspective__details {
+    position: relative;
+
+    right: auto;
+    top: auto;
+
+    z-index: 5;
+
+    width: 100%;
+
+    margin: 10px 0 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+
+
+  /* =======================================
+     BUSINESS GLASS PANEL
+  ======================================= */
+
+  .bottle-perspective__block {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+
+    padding: 24px 20px 25px;
+
+    background: rgba(6, 35, 50, 0.42);
+
+    border: 1px solid rgba(150, 210, 235, 0.24);
+
+    border-radius: 11px;
+
+    box-shadow:
+      0 10px 28px rgba(0, 0, 0, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-sizing: border-box;
+  }
+
+
+  /* =======================================
+     BUSINESS HEADING
+  ======================================= */
+
+  .bottle-perspective__block h2 {
+    margin: 0;
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    line-height: 1.06;
+
+    letter-spacing: -0.03em;
+  }
+
+
+  /* =======================================
+     LIST
+  ======================================= */
+
+  .bottle-perspective__block ul {
+    margin: 16px 0 0;
+
+    padding: 0;
+  }
+
+
+  .bottle-perspective__block li {
+    margin: 0 0 10px;
+
+    padding-left: 17px;
+
+    font-size: 12.5px;
+
+    line-height: 1.43;
+
+    letter-spacing: -0.01em;
+  }
+
+
+  .bottle-perspective__block li::before {
+    width: 6px;
+    height: 6px;
+
+    top: 0.55em;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .bottle-perspective__container {
+    width: calc(100% - 20px);
+  }
+
+  .bottle-perspective__content {
+    padding-top: 30px;
+
+    padding-bottom: 38px;
+  }
+
+
+  .bottle-perspective__intro {
+    padding: 20px 17px 21px;
+
+    background: rgba(6, 35, 50, 0.42);
+
+    border: 1px solid rgba(150, 210, 235, 0.24);
+
+    border-radius: 10px;
+
+    box-shadow:
+      0 10px 26px rgba(0, 0, 0, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .bottle-perspective__intro h1 {
+    font-size: 34px;
+  }
+
+  .bottle-perspective__intro p {
+    margin-top: 15px;
+
+    font-size: 16px;
+  }
+
+
+  .bottle-perspective__bottle {
+    height: 350px;
+
+    margin-top: 5px;
+
+    margin-bottom: 5px;
+  }
+
+
+  .bottle-perspective__details {
+    margin-top: 8px;
+  }
+
+
+  .bottle-perspective__block {
+    padding: 21px 17px 22px;
+
+    background: rgba(6, 35, 50, 0.42);
+
+    border: 1px solid rgba(150, 210, 235, 0.24);
+
+    border-radius: 10px;
+
+    box-shadow:
+      0 10px 26px rgba(0, 0, 0, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .bottle-perspective__block h2 {
+    font-size: 19px;
+  }
+
+  .bottle-perspective__block ul {
+    margin-top: 15px;
+  }
+
+  .bottle-perspective__block li {
+    font-size: 12px;
+
+    line-height: 1.42;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+  .bottle-perspective__content {
+    padding-top: 26px;
+  }
+
+
+  .bottle-perspective__intro {
+    padding: 18px 15px 20px;
+  }
+
+  .bottle-perspective__intro h1 {
+    font-size: 30px;
+  }
+
+  .bottle-perspective__intro p {
+    font-size: 14px;
+  }
+
+
+  .bottle-perspective__bottle {
+    height: 300px;
+  }
+
+
+  .bottle-perspective__block {
+    padding: 18px 15px 19px;
+  }
+
+  .bottle-perspective__block h2 {
+    font-size: 17px;
+  }
+
+  .bottle-perspective__block li {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .bottle-perspective__bottle-image {
+    transition: none;
+  }
+}

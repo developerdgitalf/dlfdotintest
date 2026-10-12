@@ -1,0 +1,127 @@
+/* =========================================
+   KNOWLEDGE SHARE – CTQ / CTP SECTION
+========================================= */
+
+.knowledgeShareCTQ {
+  width: 100%;
+  padding: 0;
+  background: #f4f3f1;
+}
+
+/* FULL WIDTH BACKGROUND */
+.knowledgeShareCTQCard {
+  position: relative;
+
+  width: 100%;
+  min-height: 190px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+background-color: radial-gradient(circle at 92%, #f3f3ff2e 0%, #130c2d1a 25%, #ffe9e900 48%), #fff;
+
+
+}
+
+/* DOT PATTERN ON RIGHT */
+.knowledgeShareCTQCard::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 250px;
+  height: 100%;
+
+  pointer-events: none;
+
+  background-image: radial-gradient(
+    rgba(105, 87, 255, 0.5) 1px,
+    transparent 1px
+  );
+
+  background-size: 7px 7px;
+  opacity: 0.35;
+
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    transparent
+  );
+}
+
+/* TEXT INSIDE CONTAINER */
+.knowledgeShareCTQCard .site-container {
+  position: relative;
+  z-index: 1;
+padding: 100px;
+  width: min(100% - 80px, 1200px);
+  margin: 0 auto;
+}
+
+.knowledgeShareCTQCard p {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #0a0a0b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(18px, 1.5vw, 22px);
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+ padding: 5px 24px 44px
+}
+
+
+.knowledgeShareCTQCard h3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #0a0a0b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(23px, 1.5vw, 22px);
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+  .knowledgeShareCTQCard {
+    min-height: 180px;
+    padding: 40px 0;
+  }
+
+  .knowledgeShareCTQCard .site-container {
+    width: calc(100% - 48px);
+  }
+
+  .knowledgeShareCTQCard p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 560px) {
+  .knowledgeShareCTQCard {
+    min-height: auto;
+    padding: 35px 0;
+  }
+
+  .knowledgeShareCTQCard .site-container {
+    width: calc(100% - 32px);
+  }
+
+  .knowledgeShareCTQCard p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

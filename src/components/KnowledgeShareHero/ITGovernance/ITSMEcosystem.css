@@ -1,0 +1,87 @@
+/* =========================================================
+   ITSM ECOSYSTEM
+   IMAGE ONLY
+========================================================= */
+
+.itsm-ecosystem-section {
+  width: 100%;
+  padding: 80px 24px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.itsm-ecosystem-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.itsm-ecosystem-image {
+  display: block;
+
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+  .itsm-ecosystem-section {
+    padding: 90px 24px;
+  }
+
+  .itsm-ecosystem-image {
+    max-width: 1280px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+  .itsm-ecosystem-section {
+    padding: 65px 24px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .itsm-ecosystem-section {
+    padding: 50px 20px;
+  }
+
+  .itsm-ecosystem-image {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .itsm-ecosystem-section {
+    padding: 40px 16px;
+  }
+}

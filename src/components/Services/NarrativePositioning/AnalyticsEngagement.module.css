@@ -1,0 +1,578 @@
+/* =========================================================
+   ANALYST RELATIONS & ENGAGEMENT
+========================================================= */
+
+.analyticsSection {
+  width: 100%;
+
+  padding: 72px 0 80px;
+
+  background: #06152c;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   1200PX CONTAINER
+========================================================= */
+
+.container {
+  width: 1200px;
+
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(0, 1.05fr);
+
+  gap: 65px;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.intro {
+  width: 100%;
+
+  max-width: 550px;
+
+  padding: 20px 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.intro h1 {
+  margin: 0 0 28px;
+
+  color: #6ea5ff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 58px;
+
+  font-weight: 600;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.6px;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUPPORTING TEXT
+========================================================= */
+
+.intro h4 {
+  width: 100%;
+
+  max-width: 500px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 27px;
+
+  font-weight: 400;
+
+  line-height: 1.42;
+
+  letter-spacing: 0;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.visualContent {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FEATURE PANEL
+========================================================= */
+
+.robotCard {
+  position: relative;
+
+  width: 100%;
+
+  height: 285px;
+
+  overflow: hidden;
+
+  background: #10213a;
+
+  border-radius: 2px;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   PANEL IMAGE
+========================================================= */
+
+.robotCard img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+/* =========================================================
+   DARK LEFT GRADIENT
+========================================================= */
+
+.robotCard::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 15, 35, 0.94) 0%,
+      rgba(4, 15, 35, 0.78) 36%,
+      rgba(4, 15, 35, 0.25) 68%,
+      rgba(4, 15, 35, 0.04) 100%
+    );
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   PANEL TEXT
+========================================================= */
+
+.robotOverlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  width: 62%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: flex-start;
+
+  padding: 38px 30px;
+
+  box-sizing: border-box;
+}
+
+
+.robotOverlay h4 {
+  width: 100%;
+  max-width: 410px;
+  margin: 0;
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 25px;
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.2px;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.robotCard:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.22);
+}
+
+.robotCard:hover img {
+  transform: scale(1.015);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1401px) {
+
+  .container {
+    width: 1200px;
+
+    gap: 75px;
+  }
+
+  .intro h1 {
+    font-size: 62px;
+  }
+
+  .intro h4 {
+    font-size: 22px;
+  }
+
+  .robotCard {
+    height: 300px;
+  }
+
+  .robotOverlay {
+    padding: 42px 34px;
+  }
+
+  .robotOverlay h4 {
+    font-size: 24px;
+  }
+}
+
+
+/* =========================================================
+   1025px – 1400px
+========================================================= */
+
+@media (max-width: 1400px) and (min-width: 1025px) {
+
+  .container {
+    width: 1200px;
+
+    max-width: calc(100% - 64px);
+
+    gap: 60px;
+  }
+
+  .intro h1 {
+    font-size: 54px;
+  }
+
+  .intro h4 {
+    font-size: 24px;
+  }
+
+  .robotCard {
+    height: 270px;
+  }
+
+  .robotOverlay {
+    width: 65%;
+
+    padding: 34px 28px;
+  }
+
+  .robotOverlay h4 {
+    font-size: 23px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .analyticsSection {
+    padding: 60px 0 70px;
+  }
+
+  .container {
+    width: calc(100% - 48px);
+
+    max-width: 900px;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 42px;
+  }
+
+  .intro {
+    max-width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 44px;
+
+    letter-spacing: -1px;
+  }
+
+  .intro h4 {
+    max-width: 100%;
+
+    font-size: 21px;
+
+    line-height: 1.45;
+  }
+
+  .visualContent {
+    gap: 16px;
+  }
+
+  .robotCard {
+    height: 230px;
+  }
+
+  .robotOverlay {
+    width: 68%;
+
+    padding: 28px 24px;
+  }
+
+  .robotOverlay h4 {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .container {
+    width: calc(100% - 40px);
+
+    max-width: 760px;
+
+    gap: 30px;
+  }
+
+  .intro h1 {
+    font-size: 38px;
+  }
+
+  .intro h4 {
+    font-size: 18px;
+  }
+
+  .robotCard {
+    height: 205px;
+  }
+
+  .robotOverlay {
+    width: 72%;
+
+    padding: 24px 20px;
+  }
+
+  .robotOverlay h4 {
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .analyticsSection {
+    padding: 50px 0 60px;
+  }
+
+  .container {
+    width: calc(100% - 28px);
+
+    max-width: 620px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+
+  /* LEFT */
+
+  .intro {
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 0;
+  }
+
+  .intro h1 {
+    margin-bottom: 20px;
+
+    font-size: 38px;
+
+    line-height: 1.1;
+  }
+
+  .intro h4 {
+    max-width: 100%;
+
+    font-size: 19px;
+
+    line-height: 1.55;
+  }
+
+
+  /* RIGHT */
+
+  .visualContent {
+    width: 100%;
+
+    gap: 16px;
+  }
+
+  .robotCard {
+    width: 100%;
+
+    height: 240px;
+  }
+
+  .robotOverlay {
+    width: 78%;
+
+    padding: 26px 20px;
+  }
+
+  .robotOverlay h4 {
+    max-width: 360px;
+
+    font-size: 18px;
+
+    line-height: 1.35;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .analyticsSection {
+    padding: 42px 0 50px;
+  }
+
+  .container {
+    width: calc(100% - 20px);
+
+    max-width: 450px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+
+    letter-spacing: -0.6px;
+  }
+
+  .intro h4 {
+    font-size: 17px;
+
+    line-height: 1.55;
+  }
+
+  .robotCard {
+    height: 220px;
+  }
+
+  .robotOverlay {
+    width: 84%;
+
+    padding: 22px 18px;
+  }
+
+  .robotOverlay h4 {
+    font-size: 15px;
+
+    line-height: 1.4;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .robotCard,
+  .robotCard img {
+    transition: none;
+  }
+}

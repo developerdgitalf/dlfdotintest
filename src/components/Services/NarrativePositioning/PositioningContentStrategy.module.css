@@ -1,0 +1,87 @@
+/* =========================================================
+   POSITIONING & CONTENT STRATEGY
+========================================================= */
+
+.strategySection {
+  width: 100%;
+  padding: 80px 0;
+  background: #fff;
+}
+
+/* Shared Container */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================================================
+   IMAGE WRAPPER
+========================================================= */
+
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.strategyImage {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+  .strategySection {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .strategySection {
+    padding: 48px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .strategyImage {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .strategySection {
+    padding: 36px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}

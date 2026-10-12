@@ -1,0 +1,266 @@
+/* =========================================
+   TRANSFORMATION OVERVIEW
+========================================= */
+
+.transformation-overview-section {
+  width: 100%;
+  padding: 72px 24px 85px;
+  background: #ffffff;
+  color: #17365f;
+  overflow: hidden;
+}
+
+.transformation-overview-section *,
+.transformation-overview-section *::before,
+.transformation-overview-section *::after {
+  box-sizing: border-box;
+}
+
+.transformation-overview-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.transformation-overview-header {
+  max-width: 1100px;
+  margin: 0 auto 0px;
+  text-align: center;
+}
+
+.transformation-overview-eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: #2862b0;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.transformation-overview-header h1 {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  color: #163762;
+
+  /* Increased size + weight */
+  font-size:clamp(2rem, 4.2vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.transformation-overview-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin: 18px auto 16px;
+}
+
+.transformation-overview-divider span {
+  width: 34px;
+  height: 3px;
+  display: block;
+
+  background: #2864b5;
+  border-radius: 999px;
+}
+
+.transformation-overview-divider i {
+  width: 6px;
+  height: 6px;
+  display: block;
+
+  border-radius: 50%;
+  background: #2864b5;
+}
+
+.transformation-overview-header p {
+  max-width: 930px;
+  margin: 0 auto;
+
+  color: #48627f;
+
+  /* Increased paragraph size */
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+}
+
+.transformation-overview-header strong {
+  color: #225a9d;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   CHANGE MANAGEMENT
+========================================= */
+
+.transformation-change-card {
+  width: 100%;
+  max-width: 1080px;
+  min-height: 96px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 15px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #cddaea;
+  border-left: 3px solid #155bc0;
+
+  box-shadow:
+    0 8px 25px rgba(26, 58, 98, 0.055);
+}
+
+.transformation-change-icon {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2364b8;
+  background: #edf3fb;
+  border-radius: 7px;
+}
+
+.transformation-change-content {
+  min-width: 0;
+}
+
+.transformation-change-content p {
+  margin: 0;
+
+  color: #46617e;
+
+  /* Larger + stronger */
+  font-size: 0.94rem;
+  font-weight: 400;
+  line-height: 1.62;
+}
+
+.transformation-change-content strong {
+  color: #1f579a;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   EXACT DIAGRAM IMAGE
+========================================= */
+
+.transformation-diagram-image {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 34px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.transformation-diagram-image img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .transformation-overview-section {
+    padding: 64px 24px 75px;
+  }
+
+  .transformation-overview-header h1 {
+    font-size: clamp(2.5rem, 6vw, 3.6rem);
+  }
+
+  .transformation-overview-header p {
+    font-size: 1rem;
+  }
+
+  .transformation-change-content p {
+    font-size: 0.88rem;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .transformation-overview-section {
+    padding: 55px 18px 65px;
+  }
+
+  .transformation-overview-header {
+    margin-bottom: 30px;
+  }
+
+  .transformation-overview-eyebrow {
+    font-size: 0.67rem;
+  }
+
+  .transformation-overview-header h1 {
+    font-size: 2.35rem;
+    line-height: 1.1;
+  }
+
+  .transformation-overview-header p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .transformation-change-card {
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .transformation-change-icon {
+    width: 45px;
+    height: 45px;
+    flex-basis: 45px;
+  }
+
+  .transformation-change-content p {
+    font-size: 0.78rem;
+    line-height: 1.55;
+  }
+
+  .transformation-diagram-image {
+    margin-top: 24px;
+  }
+}

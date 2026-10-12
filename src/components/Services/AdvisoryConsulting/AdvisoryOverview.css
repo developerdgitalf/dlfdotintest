@@ -1,0 +1,258 @@
+/* =========================================
+   ADVISORY OVERVIEW SECTION
+========================================= */
+
+.advisory-overview-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 24px;
+}
+
+.advisory-overview-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 80px;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.advisory-overview-content {
+  max-width: 540px;
+}
+
+.advisory-overview-content h2 {
+  margin: 0 0 16px;
+  color: #263a49;
+
+  /* Similar sizing to the previous intro section */
+  font-size: clamp(1.7rem, 2.5vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.advisory-overview-content p {
+  margin: 0;
+  color: #3f4850;
+
+  /* Professional and readable paragraph size */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+}
+
+/* =========================================
+   RIGHT VISUAL
+========================================= */
+
+.advisory-overview-visual {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  background: #0d2026;
+}
+
+.advisory-overview-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  min-height: 280px;
+  object-fit: cover;
+}
+
+/* =========================================
+   CONSULTING DESIGN
+   Default visual when no image is provided
+========================================= */
+
+.advisory-consulting-visual {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Subtle professional background */
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(62, 130, 143, 0.18) 0%,
+      rgba(13, 32, 38, 0) 55%
+    ),
+    #0d2026;
+}
+
+/* =========================================
+   CONNECTING LINES
+========================================= */
+
+.advisory-line {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(111, 198, 207, 0.4),
+    transparent
+  );
+
+  transform-origin: center;
+}
+
+.advisory-line-one {
+  width: 210px;
+  transform: rotate(-25deg);
+}
+
+.advisory-line-two {
+  width: 190px;
+  transform: rotate(30deg);
+}
+
+.advisory-line-three {
+  width: 150px;
+  transform: rotate(90deg);
+}
+
+/* =========================================
+   CENTER
+========================================= */
+
+.advisory-center {
+  position: relative;
+  z-index: 2;
+
+  width: 122px;
+  height: 122px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(111, 198, 207, 0.45);
+  border-radius: 50%;
+
+  background: rgba(19, 48, 56, 0.96);
+  box-shadow: 0 0 40px rgba(61, 175, 190, 0.14);
+
+  color: #e7eeee;
+  text-align: center;
+}
+
+.advisory-center span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.advisory-center strong {
+  margin: 4px 0;
+  color: #78cfd6;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* =========================================
+   SUPPORTING NODES
+========================================= */
+
+.advisory-node {
+  position: absolute;
+  z-index: 3;
+
+  padding: 7px 13px;
+  border: 1px solid rgba(120, 207, 214, 0.25);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+}
+
+.advisory-node-one {
+  top: 48px;
+  left: 12%;
+}
+
+.advisory-node-two {
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+.advisory-node-three {
+  bottom: 45px;
+  left: 20%;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .advisory-overview-container {
+    gap: 50px;
+  }
+
+  .advisory-overview-visual,
+  .advisory-overview-image {
+    min-height: 250px;
+  }
+
+  .advisory-consulting-visual {
+    height: 250px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .advisory-overview-section {
+    padding: 60px 20px;
+  }
+
+  .advisory-overview-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .advisory-overview-content {
+    max-width: 100%;
+  }
+
+  .advisory-overview-content h2 {
+    font-size: 1.65rem;
+  }
+
+  .advisory-overview-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .advisory-overview-visual,
+  .advisory-overview-image {
+    min-height: 230px;
+  }
+
+  .advisory-consulting-visual {
+    height: 230px;
+  }
+}

@@ -1,0 +1,254 @@
+/* WhoWeAre.module.css */
+
+.who-we-are-section {
+  width: 100%;
+  background: #f5f5f3;
+  padding: 80px 0;
+}
+
+.who-we-are-container {
+  width: min(1280px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.who-we-are-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  min-height: 300px;
+  margin-bottom: 70px;
+}
+
+.who-we-are-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Image */
+.who-we-are-image {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.who-we-are-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Content */
+.who-we-are-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px;
+  background: #ffffff;
+  text-align: left;
+}
+
+.who-we-are-eyebrow {
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #17365d;
+}
+
+.who-we-are-line {
+  width: 55px;
+  height: 3px;
+  margin-bottom: 22px;
+  background: #17365d;
+}
+
+.who-we-are-content h2 {
+  margin: 0 0 20px;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.who-we-are-content p {
+  max-width: 560px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #555555;
+}
+
+/* Reverse row
+   Content left / image right */
+.who-we-are-row-reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+.who-we-are-row-reverse .who-we-are-image {
+  order: 2;
+}
+
+.who-we-are-row-reverse .who-we-are-content {
+  order: 1;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* --------------------------------------------------
+   Tablet
+-------------------------------------------------- */
+
+@media (max-width: 1000px) {
+  .who-we-are-section {
+    padding: 65px 0;
+  }
+
+  .who-we-are-container {
+    width: min(100% - 32px, 900px);
+  }
+
+  .who-we-are-row {
+    min-height: 380px;
+    margin-bottom: 55px;
+  }
+
+  .who-we-are-image {
+    min-height: 380px;
+  }
+
+  .who-we-are-content {
+    padding: 45px;
+  }
+
+  .who-we-are-eyebrow {
+    font-size: 14px;
+  }
+
+  .who-we-are-line {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 18px;
+  }
+
+  .who-we-are-content h2 {
+    margin-bottom: 16px;
+    font-size: 32px;
+  }
+
+  .who-we-are-content p {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+}
+
+/* --------------------------------------------------
+   Mobile
+-------------------------------------------------- */
+
+@media (max-width: 700px) {
+  .who-we-are-section {
+    padding: 50px 0;
+  }
+
+  .who-we-are-container {
+    width: calc(100% - 28px);
+  }
+
+  .who-we-are-row,
+  .who-we-are-row-reverse {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    margin-bottom: 45px;
+  }
+
+  /* Always image first on mobile */
+  .who-we-are-image,
+  .who-we-are-row-reverse .who-we-are-image {
+    order: 1;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .who-we-are-content,
+  .who-we-are-row-reverse .who-we-are-content {
+    order: 2;
+    width: 100%;
+    padding: 35px 28px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .who-we-are-eyebrow {
+    margin-bottom: 13px;
+    font-size: 13px;
+  }
+
+  .who-we-are-line {
+    width: 45px;
+    height: 3px;
+    margin-bottom: 18px;
+  }
+
+  .who-we-are-content h2 {
+    margin-bottom: 15px;
+    font-size: 29px;
+    line-height: 1.2;
+  }
+
+  .who-we-are-content p {
+    max-width: none;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+}
+
+/* --------------------------------------------------
+   Small Mobile
+-------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .who-we-are-section {
+    padding: 40px 0;
+  }
+
+  .who-we-are-container {
+    width: calc(100% - 22px);
+  }
+
+  .who-we-are-row {
+    margin-bottom: 35px;
+  }
+
+  .who-we-are-image {
+    min-height: 250px;
+  }
+
+  .who-we-are-content {
+    padding: 28px 22px;
+  }
+
+  .who-we-are-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  .who-we-are-line {
+    width: 40px;
+    margin-bottom: 15px;
+  }
+
+  .who-we-are-content h2 {
+    margin-bottom: 13px;
+    font-size: 27px;
+  }
+
+  .who-we-are-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,196 @@
+/* =========================================
+   AI & AUTOMATION INTRO
+========================================= */
+
+.ai-automation-intro-section {
+  width: 100%;
+  padding: 78px 24px 88px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.ai-automation-intro-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   ROW
+========================================= */
+
+.ai-automation-intro-row {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+ padding: 15px 15px 15px 15px;
+  align-items: center;
+  gap: 72px;
+}
+
+
+/* =========================================
+   TOP / BOTTOM SPACING
+========================================= */
+
+.ai-automation-row-top {
+  margin-bottom: 42px;
+}
+
+.ai-automation-row-bottom {
+  margin-top: 0;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.ai-automation-intro-content {
+  max-width: 520px;
+}
+
+.ai-automation-intro-content p {
+  margin: 0;
+
+  color: #323c45;
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.32;
+  letter-spacing: 0.005em;
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.ai-automation-intro-image {
+  position: relative;
+
+  width: 100%;
+  min-height: 215px;
+
+  overflow: hidden;
+
+  border-radius: 6px;
+
+  background: #0b252c;
+}
+
+
+/* Optional image */
+
+.ai-automation-intro-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   TOP IMAGE
+========================================= */
+
+.ai-automation-row-top .ai-automation-intro-image {
+  max-width: 100%;
+  justify-self: end;
+}
+
+
+/* =========================================
+   BOTTOM IMAGE
+========================================= */
+
+.ai-automation-row-bottom .ai-automation-intro-image {
+  max-width: 510px;
+  justify-self: start;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .ai-automation-intro-section {
+    padding: 65px 24px 75px;
+  }
+
+  .ai-automation-intro-row {
+    gap: 45px;
+  }
+
+  .ai-automation-intro-content p {
+    font-size: 0.96rem;
+    line-height: 1.42;
+  }
+
+  .ai-automation-intro-image {
+    min-height: 190px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .ai-automation-intro-section {
+    padding: 55px 20px 65px;
+  }
+
+  .ai-automation-intro-row {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+  .ai-automation-row-top {
+    margin-bottom: 42px;
+  }
+
+  .ai-automation-row-top .ai-automation-intro-image,
+  .ai-automation-row-bottom .ai-automation-intro-image {
+    max-width: 100%;
+    justify-self: stretch;
+  }
+
+  /* Keep image/content order logical on mobile */
+
+  .ai-automation-row-top .ai-automation-intro-content {
+    order: 1;
+  }
+
+  .ai-automation-row-top .ai-automation-intro-image {
+    order: 2;
+  }
+
+  .ai-automation-row-bottom .ai-automation-intro-image {
+    order: 1;
+  }
+
+  .ai-automation-row-bottom .ai-automation-intro-content {
+    order: 2;
+  }
+
+  .ai-automation-intro-content {
+    max-width: 100%;
+  }
+
+  .ai-automation-intro-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .ai-automation-intro-image {
+    min-height: 220px;
+  }
+}

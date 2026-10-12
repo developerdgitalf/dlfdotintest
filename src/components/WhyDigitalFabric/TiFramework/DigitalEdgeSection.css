@@ -1,0 +1,720 @@
+/* =========================================================
+   DIGITAL EDGE SECTION
+========================================================= */
+
+.digital-edge-section {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background: #052635;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   1200PX CENTERED CONTAINER
+========================================================= */
+
+.digital-edge-section__container {
+  width: min(1200px, calc(100% - 48px));
+
+  max-width: 1200px;
+
+  min-height: 500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: stretch;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   LEFT TEXT AREA
+========================================================= */
+
+.digital-edge-section__text {
+  width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  padding: 45px 30px 45px 20px;
+
+  background: #052635;
+
+  color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TEXT INNER
+========================================================= */
+
+.digital-edge-section__text-inner {
+  width: 100%;
+
+  max-width: 520px;
+
+  margin: 0;
+}
+
+/* =========================================================
+   TEXT
+   INCREASED BY APPROX. 15%
+========================================================= */
+
+.digital-edge-section__text-inner p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 34.5px;
+
+  font-weight: 500;
+
+  line-height: 1.28;
+
+  letter-spacing: -0.025em;
+}
+
+/* =========================================================
+   HIGHLIGHT
+========================================================= */
+
+.digital-edge-section__text-inner p span {
+  color: #67b5c4;
+
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/* =========================================================
+   RIGHT VISUAL AREA
+========================================================= */
+
+.digital-edge-section__visual {
+  position: relative;
+
+  width: 100%;
+
+  min-width: 0;
+
+  height: 500px;
+
+  min-height: 500px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background: #052635;
+
+  border: 0;
+
+  outline: 0;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  cursor: zoom-in;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   IMAGE
+   APPROX. 15% LARGER
+========================================================= */
+
+.digital-edge-section__image {
+  display: block;
+
+  width: 115%;
+
+  height: 115%;
+
+  max-width: none;
+
+  max-height: none;
+
+  margin: 0;
+
+  padding: 25px;
+
+  object-fit: contain;
+
+  object-position: center center;
+
+  transform: scale(1);
+
+  transform-origin: center center;
+
+  transition:
+    transform 0.45s ease,
+    filter 0.3s ease;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.digital-edge-section__visual:hover
+.digital-edge-section__image {
+  transform: scale(1.025);
+
+  filter: brightness(1.03);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.digital-edge-section__image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  background: transparent;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   FULL SCREEN IMAGE MODAL
+========================================================= */
+
+.digital-edge-image-modal {
+  position: fixed !important;
+
+  top: 0 !important;
+
+  right: 0 !important;
+
+  bottom: 0 !important;
+
+  left: 0 !important;
+
+  z-index: 2147483647 !important;
+
+  width: 100vw !important;
+
+  height: 100vh !important;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 24px;
+
+  margin: 0;
+
+  background: rgba(0, 0, 0, 0.9);
+
+  box-sizing: border-box;
+
+  cursor: zoom-out;
+
+  animation:
+    digitalEdgeModalOpen
+    0.4s ease forwards;
+}
+
+/* =========================================================
+   MODAL CONTENT
+========================================================= */
+
+.digital-edge-image-modal__content {
+  position: relative;
+
+  width: min(94vw, 1600px);
+
+  height: min(92vh, 950px);
+
+  max-width: 100%;
+
+  max-height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  cursor: default;
+
+  animation:
+    digitalEdgeImageOpen
+    0.5s ease forwards;
+}
+
+/* =========================================================
+   MODAL IMAGE
+========================================================= */
+
+.digital-edge-image-modal__image {
+  display: block;
+
+  width: auto;
+
+  height: auto;
+
+  max-width: 100%;
+
+  max-height: 92vh;
+
+  margin: 0;
+
+  padding: 0;
+
+  object-fit: contain;
+
+  border: none;
+
+  outline: none;
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.5);
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.digital-edge-image-modal__close {
+  position: fixed;
+
+  top: 22px;
+
+  right: 26px;
+
+  z-index: 2147483648;
+
+  width: 50px;
+
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0;
+
+  margin: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #14263d;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 32px;
+
+  font-weight: 300;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+/* =========================================================
+   CLOSE HOVER
+========================================================= */
+
+.digital-edge-image-modal__close:hover {
+  background: #f1f3f5;
+
+  transform: scale(1.06);
+}
+
+/* =========================================================
+   MODAL ANIMATIONS
+========================================================= */
+
+@keyframes digitalEdgeModalOpen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes digitalEdgeImageOpen {
+  from {
+    opacity: 0;
+
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .digital-edge-section__container {
+    width: min(100% - 36px, 1000px);
+
+    min-height: 460px;
+  }
+
+  .digital-edge-section__text {
+    padding: 38px 25px 38px 10px;
+  }
+
+  .digital-edge-section__text-inner {
+    max-width: 430px;
+  }
+
+  .digital-edge-section__text-inner p {
+    font-size: 29px;
+
+    line-height: 1.3;
+  }
+
+  .digital-edge-section__visual {
+    height: 460px;
+
+    min-height: 460px;
+  }
+
+  .digital-edge-section__image {
+    width: 112%;
+
+    height: 112%;
+
+    max-width: none;
+
+    max-height: none;
+  }
+}
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+  .digital-edge-section__container {
+    min-height: 420px;
+  }
+
+  .digital-edge-section__text {
+    padding: 32px 20px 32px 5px;
+  }
+
+  .digital-edge-section__text-inner p {
+    font-size: 25px;
+
+    line-height: 1.3;
+  }
+
+  .digital-edge-section__visual {
+    height: 420px;
+
+    min-height: 420px;
+  }
+
+  .digital-edge-section__image {
+    width: 110%;
+
+    height: 110%;
+
+    max-width: none;
+
+    max-height: none;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .digital-edge-section__container {
+    width: calc(100% - 28px);
+
+    min-height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  /* =======================================================
+     TEXT
+  ======================================================= */
+
+  .digital-edge-section__text {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 38px 20px;
+
+    order: 1;
+
+    background: #063b3b;
+  }
+
+  .digital-edge-section__text-inner {
+    max-width: 100%;
+  }
+
+  .digital-edge-section__text-inner p {
+    font-size: 26px;
+
+    line-height: 1.3;
+
+    text-align: left;
+  }
+
+  /* =======================================================
+     IMAGE
+  ======================================================= */
+
+  .digital-edge-section__visual {
+    width: 100%;
+
+    height: 350px;
+
+    min-height: 350px;
+
+    padding: 0;
+
+    order: 2;
+
+    background: #063b3b;
+  }
+
+  .digital-edge-section__image {
+    width: 108%;
+
+    height: 108%;
+
+    max-width: none;
+
+    max-height: none;
+
+    object-fit: contain;
+
+    object-position: center;
+  }
+
+  .digital-edge-section__visual:hover
+  .digital-edge-section__image {
+    transform: scale(1.015);
+  }
+
+  /* =======================================================
+     MODAL
+  ======================================================= */
+
+  .digital-edge-image-modal {
+    padding: 12px;
+  }
+
+  .digital-edge-image-modal__content {
+    width: 100%;
+
+    height: 88vh;
+  }
+
+  .digital-edge-image-modal__image {
+    max-width: 100%;
+
+    max-height: 88vh;
+  }
+
+  .digital-edge-image-modal__close {
+    top: 12px;
+
+    right: 12px;
+
+    width: 44px;
+
+    height: 44px;
+
+    font-size: 28px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .digital-edge-section__container {
+    width: calc(100% - 20px);
+  }
+
+  .digital-edge-section__text {
+    padding: 32px 18px;
+  }
+
+  .digital-edge-section__text-inner p {
+    font-size: 23px;
+
+    line-height: 1.32;
+  }
+
+  .digital-edge-section__visual {
+    height: 310px;
+
+    min-height: 310px;
+
+    padding: 0;
+  }
+
+  .digital-edge-section__image {
+    width: 106%;
+
+    height: 106%;
+  }
+
+  .digital-edge-image-modal {
+    padding: 8px;
+  }
+
+  .digital-edge-image-modal__content {
+    height: 86vh;
+  }
+
+  .digital-edge-image-modal__image {
+    max-height: 86vh;
+  }
+
+  .digital-edge-image-modal__close {
+    top: 10px;
+
+    right: 10px;
+
+    width: 42px;
+
+    height: 42px;
+
+    font-size: 26px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+  .digital-edge-section__text {
+    padding: 28px 16px;
+  }
+
+  .digital-edge-section__text-inner p {
+    font-size: 21px;
+  }
+
+  .digital-edge-section__visual {
+    height: 280px;
+
+    min-height: 280px;
+  }
+
+  .digital-edge-section__image {
+    width: 105%;
+
+    height: 105%;
+  }
+
+  .digital-edge-image-modal__content {
+    height: 84vh;
+  }
+
+  .digital-edge-image-modal__image {
+    max-height: 84vh;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .digital-edge-section__image,
+  .digital-edge-image-modal,
+  .digital-edge-image-modal__content,
+  .digital-edge-image-modal__close {
+    animation: none;
+
+    transition: none;
+  }
+
+  .digital-edge-section__visual:hover
+  .digital-edge-section__image {
+    transform: none;
+  }
+}

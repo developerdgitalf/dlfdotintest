@@ -1,0 +1,390 @@
+/* =========================================
+   BUSINESS TRANSFORMATION
+========================================= */
+
+.business-transformation-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #f7f8fa;
+  padding: 72px 24px 60px;
+  isolation: isolate;
+}
+
+/* =========================================
+   OPTIONAL BACKGROUND IMAGE
+========================================= */
+
+.business-transformation-bg-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.22;
+}
+
+.business-transformation-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 248, 250, 1) 0%,
+    rgba(247, 248, 250, 0.96) 43%,
+    rgba(247, 248, 250, 0.7) 70%,
+    rgba(247, 248, 250, 0.25) 100%
+  );
+  pointer-events: none;
+}
+
+/* =========================================
+   1200PX CONTAINER
+========================================= */
+
+.business-transformation-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   TWO COLUMN GRID
+   LEFT CONTENT + RIGHT IMAGE
+========================================= */
+
+.business-transformation-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 70px;
+  align-items: center;
+}
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.business-transformation-content {
+  width: 100%;
+  max-width: 650px;
+}
+
+.business-transformation-eyebrow {
+  color: #315c89;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.business-transformation-heading-line {
+  width: 30px;
+  height: 2px;
+  margin: 8px 0 14px;
+  background: #3567a0;
+}
+
+.business-transformation-content h2 {
+  margin: 0;
+  color: #263a52;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.business-transformation-title-line {
+  width: 24px;
+  height: 2px;
+  margin: 14px 0 20px;
+  background: #3567a0;
+}
+
+.business-transformation-intro {
+  max-width: 610px;
+  margin: 0;
+  color: #394957;
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.business-transformation-intro strong,
+.business-transformation-highlight strong {
+  color: #315c89;
+  font-weight: 700;
+}
+
+/* =========================================
+   FEATURED SERVICE
+========================================= */
+
+.business-transformation-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 30px;
+  max-width: 650px;
+}
+
+.business-transformation-feature-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  background: rgba(53, 103, 160, 0.08);
+  border: 1px solid rgba(53, 103, 160, 0.1);
+  color: #315c89;
+}
+
+.business-transformation-feature-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.business-transformation-feature-content h3 {
+  margin: 2px 0 10px;
+  color: #34475b;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.business-transformation-feature-content p {
+  margin: 0;
+  color: #4b5966;
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+
+.business-transformation-highlight {
+  max-width: 630px;
+  margin: 20px 0 0;
+  color: #3d4c59;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+/* =========================================
+   RIGHT SIDE IMAGE
+========================================= */
+
+.business-transformation-image-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.business-transformation-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+.business-transformation-image-placeholder {
+  width: 100%;
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(49, 92, 137, 0.08);
+  border: 1px dashed rgba(49, 92, 137, 0.3);
+
+  color: #315c89;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* =========================================
+   TRANSFORMATION PILLARS
+   Optional – Kept from your old CSS
+========================================= */
+
+.business-transformation-pillars {
+  width: 100%;
+  max-width: 920px;
+  margin: 30px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(49, 92, 137, 0.08);
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(38, 58, 82, 0.06);
+  overflow: hidden;
+}
+
+.transformation-pillar {
+  position: relative;
+  min-height: 112px;
+  padding: 20px 42px 18px 20px;
+
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+
+  border-right: 1px solid rgba(49, 92, 137, 0.1);
+}
+
+.transformation-pillar:last-child {
+  border-right: none;
+}
+
+.transformation-pillar-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(53, 103, 160, 0.08);
+  color: #3567a0;
+}
+
+.transformation-pillar-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.transformation-pillar h4 {
+  margin: 0 0 6px;
+  color: #31506d;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.transformation-pillar p {
+  margin: 0;
+  color: #5a6773;
+  font-size: 0.66rem;
+  line-height: 1.55;
+}
+
+.transformation-pillar-arrow {
+  position: absolute;
+  right: 15px;
+  bottom: 18px;
+
+  width: 15px;
+  height: 15px;
+
+  color: #4773a3;
+  opacity: 0.8;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .business-transformation-section {
+    padding: 64px 24px 50px;
+  }
+
+  .business-transformation-grid {
+    gap: 45px;
+  }
+
+  .business-transformation-image-wrapper,
+  .business-transformation-image,
+  .business-transformation-image-placeholder {
+    min-height: 430px;
+  }
+
+  .business-transformation-pillars {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+
+  .transformation-pillar {
+    border-right: none;
+    border-bottom: 1px solid rgba(49, 92, 137, 0.1);
+  }
+
+  .transformation-pillar:last-child {
+    border-bottom: none;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .business-transformation-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .business-transformation-content {
+    max-width: 100%;
+  }
+
+  .business-transformation-image-wrapper,
+  .business-transformation-image,
+  .business-transformation-image-placeholder {
+    min-height: 350px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .business-transformation-section {
+    padding: 56px 20px 40px;
+  }
+
+  .business-transformation-content h2 {
+    font-size: 2rem;
+  }
+
+  .business-transformation-intro {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .business-transformation-feature {
+    gap: 12px;
+  }
+
+  .business-transformation-feature-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .business-transformation-feature-content h3 {
+    font-size: 0.88rem;
+  }
+
+  .business-transformation-image-wrapper,
+  .business-transformation-image,
+  .business-transformation-image-placeholder {
+    min-height: 280px;
+  }
+
+  .business-transformation-pillars {
+    margin-top: 28px;
+  }
+
+  .transformation-pillar {
+    min-height: 105px;
+    padding: 18px 40px 18px 16px;
+  }
+}

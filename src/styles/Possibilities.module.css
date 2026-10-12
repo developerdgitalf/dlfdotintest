@@ -1,0 +1,216 @@
+/* =========================================================
+   IMPOSSIBLE SECTION
+   Full-width two-column layout
+   ========================================================= */
+
+.impossible-section {
+  width: 100%;
+  height: 820px;
+  min-height: 820px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT SIDE - FULL BACKGROUND
+   ========================================================= */
+
+.impossible-content-side {
+  width: 100%;
+  height: 820px;
+  min-height: 820px;
+  background: #294852;
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   TEXT CONTAINER
+   Background is NOT restricted by this container
+   ========================================================= */
+
+.impossible-content-container {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  padding: 80px 80px 80px 15%;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SMALL HEADING
+   ========================================================= */
+
+.impossible-eyebrow {
+  margin: 0 0 32px 0;
+  padding: 0;
+
+  color: #afc1c9;
+
+  font-size: clamp(16px, 1.3vw, 21px);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+.impossible-title {
+  max-width: 700px;
+  margin: 0;
+  padding: 0;
+
+  color: #f5f3ef;
+
+  font-size: clamp(48px, 4.2vw, 76px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================================================
+   RIGHT SIDE - IMAGE
+   ========================================================= */
+
+.impossible-image-side {
+  width: 100%;
+  height: 820px;
+  min-height: 820px;
+  position: relative;
+  overflow: hidden;
+  background: #0b2730;
+}
+
+
+/* Normal image */
+.impossible-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+
+/* =========================================================
+   NEXT.JS IMAGE SUPPORT
+   For <Image fill />
+   ========================================================= */
+
+.impossible-image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1600px) {
+  .impossible-section,
+  .impossible-content-side,
+  .impossible-image-side {
+    height: 900px;
+    min-height: 900px;
+  }
+
+  .impossible-content-container {
+    padding-left: 18%;
+    padding-right: 100px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .impossible-section,
+  .impossible-content-side,
+  .impossible-image-side {
+    height: 720px;
+    min-height: 720px;
+  }
+
+  .impossible-content-container {
+    padding: 70px 60px;
+  }
+
+  .impossible-title {
+    font-size: clamp(44px, 5vw, 64px);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .impossible-section {
+    height: auto;
+    min-height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .impossible-content-side {
+    height: 520px;
+    min-height: 520px;
+  }
+
+  .impossible-image-side {
+    height: 620px;
+    min-height: 620px;
+  }
+
+  .impossible-content-container {
+    max-width: 100%;
+    padding: 70px 50px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .impossible-content-side {
+    height: 450px;
+    min-height: 450px;
+  }
+
+  .impossible-image-side {
+    height: 520px;
+    min-height: 520px;
+  }
+
+  .impossible-content-container {
+    padding: 60px 28px;
+  }
+
+  .impossible-eyebrow {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .impossible-title {
+    font-size: clamp(38px, 11vw, 52px);
+    line-height: 1.1;
+  }
+}

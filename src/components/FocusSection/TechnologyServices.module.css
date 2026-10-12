@@ -1,0 +1,445 @@
+/* =========================================
+   SECTION
+========================================= */
+
+.section {
+  width: 100%;
+  margin: 0;
+  padding: 80px 0 60px;
+  background: #f4f4f4;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   FIXED 1200px CONTAINER
+========================================= */
+
+.container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   SERVICE GRID
+========================================= */
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 42px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.serviceCard {
+  min-width: 0;
+}
+
+/* =========================================
+   SERVICE TITLE
+========================================= */
+
+.serviceCard h3 {
+  margin: 0 0 22px;
+  max-width: 220px;
+
+  color: #3e3e46;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+/* =========================================
+   SERVICE LIST
+========================================= */
+
+.serviceCard ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.serviceCard li {
+  margin: 0 0 5px;
+
+  color: #202020;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 18px;
+  font-weight: 400;
+
+  line-height: 1.35;
+}
+
+/* =========================================
+   READ MORE
+========================================= */
+
+.readMore {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 12px;
+
+  color: #0074c8;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.readMore:hover {
+  opacity: 0.72;
+}
+
+/* =========================================
+   ARROW
+========================================= */
+
+.arrow {
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* =========================================
+   TECHNOLOGY BAR
+========================================= */
+
+.technologyBar {
+  display: grid;
+
+  grid-template-columns: 1.05fr 1.15fr;
+
+  width: 100%;
+
+  min-height: 49px;
+
+  margin-top: 40px;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   TECHNOLOGY LABEL
+========================================= */
+
+.technologyLabel {
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 18px;
+
+  color: #1c144d;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+/* =========================================
+   OPTIONS AREA
+========================================= */
+
+.technologyOptions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: stretch;
+
+  margin: 7px 12px 7px 0;
+
+  min-height: 35px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   OPTION
+========================================= */
+
+.option {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex: 0 0 80px;
+
+  height: 100%;
+
+  color: #0c214a;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+/* =========================================
+   WIDE OPTION
+========================================= */
+
+.optionWide {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex: 1;
+
+  height: 100%;
+
+  color: #0c214a;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.divider {
+  width: 1px;
+
+  height: 22px;
+
+  background: #1c2633;
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .section {
+    padding: 50px 0 55px;
+  }
+
+  .container {
+    width: min(92%, 900px);
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px 30px;
+  }
+
+  .serviceCard h3 {
+    max-width: 100%;
+
+    font-size: 30px;
+  }
+
+  .serviceCard li {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .readMore {
+    font-size: 16px;
+  }
+
+  .arrow {
+    font-size: 22px;
+  }
+
+  .technologyBar {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    padding: 10px;
+  }
+
+  .technologyLabel {
+    justify-content: center;
+
+    padding: 8px;
+
+    font-size: 20px;
+
+    text-align: center;
+  }
+
+  .technologyOptions {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .option,
+  .optionWide {
+    font-size: 20px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .section {
+    padding: 45px 0 50px;
+  }
+
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .serviceCard h3 {
+    max-width: 100%;
+
+    font-size: 30px;
+
+    line-height: 1.1;
+  }
+
+  .serviceCard li {
+    font-size: 18px;
+
+    line-height: 1.4;
+  }
+
+  .readMore {
+    font-size: 16px;
+  }
+
+  .arrow {
+    font-size: 22px;
+  }
+
+  .technologyBar {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 35px;
+
+    padding: 12px;
+  }
+
+  .technologyLabel {
+    justify-content: flex-start;
+
+    padding: 6px 4px 12px;
+
+    font-size: 20px;
+
+    text-align: left;
+  }
+
+  .technologyOptions {
+    display: grid;
+
+    grid-template-columns:
+      1fr 1px 1fr 1px 1.6fr;
+
+    margin: 0;
+
+    min-height: 40px;
+  }
+
+  .option {
+    width: 100%;
+
+    flex: none;
+
+    font-size: 20px;
+  }
+
+  .optionWide {
+    width: 100%;
+
+    flex: none;
+
+    font-size: 20px;
+  }
+
+  .divider {
+    height: 24px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .serviceCard h3 {
+    font-size: 28px;
+  }
+
+  .serviceCard li {
+    font-size: 18px;
+  }
+
+  .readMore {
+    font-size: 16px;
+  }
+
+  .arrow {
+    font-size: 22px;
+  }
+
+  .technologyLabel {
+    font-size: 18px;
+  }
+
+  .option,
+  .optionWide {
+    font-size: 18px;
+  }
+}

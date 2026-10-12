@@ -1,0 +1,483 @@
+.strength {
+  width: 100%;
+
+  margin: 0;
+  padding: 70px 0 78px;
+
+  background: #eef0f1;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   1200px MAIN CONTAINER
+========================================= */
+
+.container {
+  width: min(1200px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   CENTERED HEADING
+========================================= */
+
+.heading {
+  width: 100%;
+
+  margin: 0 0 42px;
+
+  text-align: center;
+}
+
+.heading h2 {
+  margin: 0;
+
+  color: #172b3c;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 40px;
+
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.04em;
+
+  text-align: center;
+}
+
+/* =========================================
+   FOUR CARDS
+========================================= */
+
+.cards {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 10px;
+
+  align-items: stretch;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+  position: relative;
+
+  width: 100%;
+  height: 375px;
+
+  overflow: hidden;
+
+  background: #071a2d;
+
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.cardImage {
+  position: absolute !important;
+
+  inset: 0;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.55s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.035);
+}
+
+/* =========================================
+   DARK IMAGE OVERLAY
+========================================= */
+
+.overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02) 8%,
+      rgba(0, 0, 0, 0.22) 40%,
+      rgba(0, 0, 0, 0.88) 100%
+    );
+
+  opacity: 1;
+
+  transition:
+    opacity 0.3s ease;
+}
+
+/* =========================================
+   NORMAL CARD CONTENT
+========================================= */
+
+.cardContent {
+  position: absolute;
+
+  z-index: 2;
+
+  left: 35px;
+  right: 35px;
+
+  bottom: 18px;
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.cardContent h3 {
+  max-width: 95%;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 23px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.01em;
+}
+
+/* =========================================
+   HOVER WHITE PANEL
+========================================= */
+
+.hoverContent {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 5;
+
+  padding: 34px 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform: translateY(8px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+}
+
+/* =========================================
+   HOVER ACTIVE
+========================================= */
+
+.card:hover .hoverContent {
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+.card:hover .cardContent {
+  opacity: 0;
+
+  transform: translateY(-8px);
+}
+
+.card:hover .overlay {
+  opacity: 0;
+}
+
+/* =========================================
+   HOVER LINE
+========================================= */
+
+.hoverLine {
+  width: 42px;
+  height: 2px;
+
+  margin-bottom: 22px;
+
+  flex-shrink: 0;
+
+  background: #1683df;
+}
+
+/* =========================================
+   HOVER DESCRIPTION
+========================================= */
+
+.hoverContent p {
+  margin: 0;
+
+  color: #212528;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+/* =========================================
+   READ MORE
+========================================= */
+
+.hoverReadMore {
+  margin-top: 22px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #172b3b;
+
+  font-family: Inter, Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.25s ease;
+}
+
+.hoverReadMore:hover {
+  color: #1683df;
+}
+
+.hoverReadMore svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .strength {
+    padding: 60px 0 68px;
+  }
+
+  .container {
+    width: min(92%, 900px);
+  }
+
+  .heading {
+    margin-bottom: 34px;
+  }
+
+  .heading h2 {
+    font-size: 36px;
+  }
+
+  .cards {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .card {
+    height: 330px;
+  }
+
+  .cardContent {
+    left: 16px;
+    right: 16px;
+
+    bottom: 16px;
+  }
+
+  .cardContent h3 {
+    font-size: 17px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .strength {
+    padding: 48px 0 58px;
+  }
+
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .heading {
+    margin-bottom: 28px;
+  }
+
+  .heading h2 {
+    font-size: 32px;
+
+    line-height: 1.08;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .card {
+    height: 300px;
+
+    border-radius: 4px;
+  }
+
+  .cardContent {
+    left: 16px;
+    right: 16px;
+
+    bottom: 16px;
+  }
+
+  .cardContent h3 {
+    font-size: 18px;
+
+    line-height: 1.22;
+  }
+
+  .hoverContent {
+    padding: 28px 22px;
+  }
+
+  .hoverContent p {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+  .hoverReadMore {
+    margin-top: 18px;
+
+    font-size: 11px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .strength {
+    padding: 42px 0 52px;
+  }
+
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .heading {
+    margin-bottom: 24px;
+  }
+
+  .heading h2 {
+    font-size: 29px;
+  }
+
+  .card {
+    height: 280px;
+  }
+
+  .cardContent h3 {
+    font-size: 17px;
+  }
+
+  .hoverContent {
+    padding: 24px 20px;
+  }
+
+  .hoverContent p {
+    font-size: 12px;
+
+    line-height: 1.48;
+  }
+
+  .hoverReadMore {
+    font-size: 10px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .cardImage,
+  .cardContent,
+  .hoverContent,
+  .overlay,
+  .hoverReadMore {
+    transition: none;
+  }
+}

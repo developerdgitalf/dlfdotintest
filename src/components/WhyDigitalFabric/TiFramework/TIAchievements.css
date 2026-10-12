@@ -1,0 +1,656 @@
+/* =========================================================
+   SECTION
+========================================================= */
+
+.ti-achievements {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 70px 0 75px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #05234f 0%,
+      #102f88 45%,
+      #214ff9 100%
+    );
+}
+
+
+/* =========================================================
+   COMMON 1200PX CONTAINER
+========================================================= */
+
+.ti-achievements__container {
+  width: 1200px;
+  max-width: calc(100% - 48px);
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TOP FEATURE
+========================================================= */
+
+.ti-achievements__feature {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  align-items: stretch;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT FEATURE PANEL
+========================================================= */
+
+.ti-achievements__feature-content {
+  width: 100%;
+
+  min-height: 380px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT INNER CONTENT
+========================================================= */
+
+.ti-achievements__feature-inner {
+  width: 100%;
+
+  padding: 55px 60px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FEATURE HEADING
+========================================================= */
+
+.ti-achievements__feature-content h2 {
+  margin: 0 0 22px;
+
+  color: #000000;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 23px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   FEATURE BODY
+========================================================= */
+
+.ti-achievements__feature-content p {
+  width: 100%;
+
+  margin: 0 0 20px;
+
+  color: #000000;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  text-align: left;
+}
+
+.ti-achievements__feature-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+========================================================= */
+
+.ti-achievements__feature-image {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 380px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+.ti-achievements__image {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.ti-achievements__feature-image {
+  transition: box-shadow 0.3s ease;
+}
+
+.ti-achievements__feature-image:hover {
+  box-shadow:
+    0 10px 25px rgba(23, 63, 104, 0.12);
+}
+
+.ti-achievements__feature-image:hover
+.ti-achievements__image {
+  transform: scale(1.015);
+}
+
+
+/* =========================================================
+   ACHIEVEMENT CARDS GRID
+========================================================= */
+
+/*
+   6-column grid:
+
+   Row 1:
+   ┌──────┐ ┌──────┐ ┌──────┐
+      2       2       2
+
+   Row 2:
+        ┌──────┐ ┌──────┐
+           2       2
+
+   This allows the bottom two cards
+   to be perfectly centered.
+*/
+
+.ti-achievements__grid {
+  width: 100%;
+
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 24px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.ti-achievements__card {
+  width: 100%;
+
+  min-height: 135px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 28px 30px;
+
+  background: #ffffff;
+
+  border-radius: 7px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  /*
+    Each card occupies 2 columns
+    out of the 6-column grid.
+  */
+  grid-column: span 2;
+}
+
+
+/* =========================================================
+   CENTER SECOND ROW
+========================================================= */
+
+/*
+   Card 4:
+   starts at column 2
+*/
+
+.ti-achievements__card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+
+/*
+   Card 5:
+   starts at column 4
+*/
+
+.ti-achievements__card:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.ti-achievements__card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.ti-achievements__card p {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  color: #111111;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1401px) {
+
+  .ti-achievements {
+    padding: 80px 0 85px;
+  }
+
+  .ti-achievements__container {
+    width: 1200px;
+  }
+
+  .ti-achievements__feature-content,
+  .ti-achievements__feature-image {
+    min-height: 400px;
+  }
+
+  .ti-achievements__feature-inner {
+    padding: 60px 70px;
+  }
+
+  .ti-achievements__feature-content h2 {
+    font-size: 25px;
+  }
+
+  .ti-achievements__feature-content p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .ti-achievements__grid {
+    margin-top: 55px;
+    gap: 26px;
+  }
+
+  .ti-achievements__card {
+    min-height: 145px;
+    padding: 30px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .ti-achievements {
+    padding: 65px 0 75px;
+  }
+
+  .ti-achievements__container {
+    width: calc(100% - 40px);
+    max-width: 900px;
+  }
+
+  .ti-achievements__feature-content,
+  .ti-achievements__feature-image {
+    min-height: 340px;
+  }
+
+  .ti-achievements__feature-inner {
+    padding: 42px 45px;
+  }
+
+  .ti-achievements__feature-content h2 {
+    font-size: 21px;
+  }
+
+  .ti-achievements__feature-content p {
+    font-size: 14px;
+  }
+
+
+  /* 3-column tablet grid */
+
+  .ti-achievements__grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    margin-top: 45px;
+
+    gap: 18px;
+  }
+
+  /*
+    Reset desktop positioning
+    before changing to tablet layout.
+  */
+
+  .ti-achievements__card {
+    grid-column: auto;
+    min-height: 120px;
+
+    padding: 22px 20px;
+  }
+
+  .ti-achievements__card:nth-child(4),
+  .ti-achievements__card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .ti-achievements__card p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .ti-achievements__container {
+    width: calc(100% - 32px);
+    max-width: 760px;
+  }
+
+  .ti-achievements__feature-content,
+  .ti-achievements__feature-image {
+    min-height: 310px;
+  }
+
+  .ti-achievements__feature-inner {
+    padding: 32px;
+  }
+
+  .ti-achievements__feature-content h2 {
+    font-size: 19px;
+  }
+
+  .ti-achievements__feature-content p {
+    font-size: 13px;
+  }
+
+  .ti-achievements__grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+
+  .ti-achievements__card {
+    grid-column: auto;
+
+    min-height: 110px;
+
+    padding: 20px 17px;
+  }
+
+  .ti-achievements__card:nth-child(4),
+  .ti-achievements__card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .ti-achievements__card p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .ti-achievements {
+    padding: 55px 0 65px;
+  }
+
+  .ti-achievements__container {
+    width: calc(100% - 28px);
+    max-width: 620px;
+  }
+
+
+  /* =======================================================
+     FEATURE
+  ======================================================= */
+
+  .ti-achievements__feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ti-achievements__feature-content {
+    min-height: auto;
+  }
+
+  .ti-achievements__feature-inner {
+    padding: 38px 28px;
+  }
+
+  .ti-achievements__feature-content h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+
+  .ti-achievements__feature-content p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+
+  /* =======================================================
+     IMAGE
+  ======================================================= */
+
+  .ti-achievements__feature-image {
+    min-height: 0;
+
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+  }
+
+
+  /* =======================================================
+     CARDS
+  ======================================================= */
+
+  .ti-achievements__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 32px;
+  }
+
+  .ti-achievements__card {
+    grid-column: auto;
+
+    min-height: 110px;
+
+    padding: 20px 16px;
+  }
+
+  .ti-achievements__card:nth-child(4),
+  .ti-achievements__card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .ti-achievements__card p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .ti-achievements {
+    padding: 45px 0 55px;
+  }
+
+  .ti-achievements__container {
+    width: calc(100% - 20px);
+    max-width: 450px;
+  }
+
+  .ti-achievements__feature-inner {
+    padding: 32px 22px;
+  }
+
+  .ti-achievements__feature-content h2 {
+    font-size: 19px;
+  }
+
+  .ti-achievements__feature-content p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .ti-achievements__feature-image {
+    aspect-ratio: 16 / 10;
+  }
+
+
+  /* =======================================================
+     SINGLE COLUMN CARDS
+  ======================================================= */
+
+  .ti-achievements__grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    margin-top: 26px;
+  }
+
+  .ti-achievements__card {
+    grid-column: auto;
+
+    min-height: 90px;
+
+    padding: 18px;
+  }
+
+  .ti-achievements__card:nth-child(4),
+  .ti-achievements__card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .ti-achievements__card p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ti-achievements__feature-image,
+  .ti-achievements__image,
+  .ti-achievements__card {
+    transition: none;
+  }
+}

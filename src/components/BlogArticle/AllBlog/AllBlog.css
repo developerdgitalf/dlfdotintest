@@ -1,0 +1,631 @@
+/* =========================================================
+   ALL BLOG
+========================================================= */
+
+.all-blog-section {
+  width: 100%;
+  background: #f7f6f3;
+  color: #17283a;
+  padding-bottom: 110px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.all-blog-container {
+  width: min(100% - 100px, 1440px);
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.all-blog-hero {
+  padding: 120px 0 90px;
+  border-bottom: 1px solid rgba(23, 40, 58, 0.12);
+}
+
+.all-blog-eyebrow {
+  display: inline-block;
+  margin-bottom: 24px;
+
+  color: #a36f2a;
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.all-blog-hero h1 {
+  max-width: 850px;
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -3px;
+
+  color: #17283a;
+}
+
+.all-blog-hero h1 span {
+  color: #9c6b2f;
+}
+
+.all-blog-hero p {
+  max-width: 600px;
+  margin: 32px 0 0;
+
+  color: #647080;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.all-blog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  padding: 45px 0;
+
+  border-bottom: 1px solid rgba(23, 40, 58, 0.1);
+}
+
+
+/* =========================================================
+   CATEGORIES
+========================================================= */
+
+.all-blog-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+
+  max-width: 950px;
+}
+
+.all-blog-category {
+  position: relative;
+
+  padding: 10px 0;
+
+  border: none;
+  background: transparent;
+
+  color: #6d7580;
+
+  cursor: pointer;
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  transition:
+    color 0.25s ease;
+}
+
+.all-blog-category::after {
+  content: "";
+
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: #9c6b2f;
+
+  transition:
+    width 0.3s ease;
+}
+
+.all-blog-category:hover {
+  color: #17283a;
+}
+
+.all-blog-category:hover::after,
+.all-blog-category.active::after {
+  width: 100%;
+}
+
+.all-blog-category.active {
+  color: #9c6b2f;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.all-blog-search {
+  display: flex;
+  align-items: center;
+
+  width: 260px;
+
+  border-bottom: 1px solid #17283a;
+
+  padding-bottom: 8px;
+
+  flex-shrink: 0;
+}
+
+.all-blog-search > svg {
+  color: #9c6b2f;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.all-blog-search input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #17283a;
+
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.all-blog-search input::placeholder {
+  color: #9098a1;
+}
+
+.all-blog-search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: #17283a;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.all-blog-results {
+  padding: 30px 0 20px;
+}
+
+.all-blog-results p {
+  margin: 0;
+
+  color: #7a838d;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.all-blog-results strong {
+  color: #9c6b2f;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.all-blog-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 70px 30px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.all-blog-card {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.all-blog-image {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 1.28 / 1;
+
+  overflow: hidden;
+
+  background: #17283a;
+}
+
+.all-blog-image img {
+  object-fit: cover;
+
+  transition:
+    transform 0.7s cubic-bezier(
+      0.2,
+      0.8,
+      0.2,
+      1
+    );
+}
+
+.all-blog-image-overlay {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #17283a;
+
+  opacity: 0;
+  transform: translateY(10px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.all-blog-image-overlay svg {
+  font-size: 18px;
+}
+
+.all-blog-card:hover
+.all-blog-image img {
+  transform: scale(1.07);
+}
+
+.all-blog-card:hover
+.all-blog-image-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.all-blog-content {
+  padding-top: 24px;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.all-blog-meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 12px;
+
+  color: #a36f2a;
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.all-blog-dot {
+  color: #9a9fa5;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.all-blog-post-category {
+  display: block;
+
+  margin-bottom: 16px;
+
+  color: #647080;
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.all-blog-card h2 {
+  margin: 0;
+
+  font-size: clamp(21px, 1.8vw, 29px);
+  font-weight: 400;
+  line-height: 1.28;
+
+  letter-spacing: -0.5px;
+}
+
+.all-blog-card h2 a {
+  color: #17283a;
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease;
+}
+
+.all-blog-card h2 a:hover {
+  color: #9c6b2f;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.all-blog-card p {
+  display: -webkit-box;
+
+  margin: 20px 0 24px;
+
+  overflow: hidden;
+
+  color: #68727e;
+
+  font-size: 13px;
+  line-height: 1.75;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.all-blog-read-more {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #17283a;
+  text-decoration: none;
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.all-blog-read-more svg {
+  width: 15px;
+  height: 15px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.all-blog-read-more:hover {
+  color: #9c6b2f;
+}
+
+.all-blog-read-more:hover svg {
+  transform: translateX(6px);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.all-blog-empty {
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 100px 20px;
+
+  text-align: center;
+}
+
+.all-blog-empty > svg {
+  margin-bottom: 20px;
+
+  color: #9c6b2f;
+
+  font-size: 32px;
+}
+
+.all-blog-empty h3 {
+  margin: 0 0 10px;
+
+  color: #17283a;
+
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.all-blog-empty p {
+  margin: 0 0 25px;
+
+  color: #707984;
+}
+
+.all-blog-empty button {
+  padding: 13px 24px;
+
+  border: 1px solid #17283a;
+  background: transparent;
+
+  color: #17283a;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 1px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.all-blog-empty button:hover {
+  background: #17283a;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .all-blog-container {
+    width: min(100% - 60px, 1100px);
+  }
+
+  .all-blog-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .all-blog-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .all-blog-search {
+    width: 100%;
+    max-width: 400px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .all-blog-hero {
+    padding: 90px 0 70px;
+  }
+
+  .all-blog-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 60px 24px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .all-blog-section {
+    padding-bottom: 70px;
+  }
+
+  .all-blog-container {
+    width: min(100% - 32px, 100%);
+  }
+
+  .all-blog-hero {
+    padding: 70px 0 55px;
+  }
+
+  .all-blog-eyebrow {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .all-blog-hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .all-blog-hero p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .all-blog-toolbar {
+    padding: 30px 0;
+  }
+
+  .all-blog-categories {
+    gap: 6px 18px;
+  }
+
+  .all-blog-category {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .all-blog-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .all-blog-card h2 {
+    font-size: 26px;
+  }
+
+  .all-blog-image-overlay {
+    opacity: 1;
+    transform: translateY(0);
+
+    width: 38px;
+    height: 38px;
+  }
+
+}

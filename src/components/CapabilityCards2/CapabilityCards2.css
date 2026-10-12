@@ -1,0 +1,543 @@
+/* =========================================
+   CAPABILITY CARDS 2 SECTION
+========================================= */
+
+.capability-cards2-section {
+  width: 100%;
+  padding: 64px 24px;
+  background: #ffffff;
+}
+
+.capability-cards2-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   3 EQUAL CARDS
+========================================= */
+
+.capability-cards2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+  align-items: stretch;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.capability-card2 {
+  min-width: 0;
+  background: #0d2026;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(15, 23, 42, 0.12);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.capability-card2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.16);
+}
+
+.capability-card2-inner {
+  min-height: 175px;
+  padding: 28px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.capability-card2 h4 {
+  margin: 0;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f2;
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+/* =========================================
+   EXPANDABLE DESCRIPTION
+========================================= */
+
+.capability-card2-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  width: 100%;
+  margin-top: 0;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.35s ease,
+    opacity 0.25s ease,
+    margin-top 0.35s ease;
+}
+
+.capability-card2-details > p {
+  min-height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.capability-card2-details.is-open {
+  grid-template-rows: 1fr;
+  margin-top: 14px;
+  opacity: 1;
+}
+
+.capability-card2-details p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.capability-card2-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+/* =========================================
+   READ MORE PILL
+========================================= */
+
+.capability-read-more {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+  padding: 0 20px;
+
+  width: 198px;
+  height: 66px;
+
+  background: #f4f4f2;
+  color: #293038;
+
+  border-radius: 999px;
+
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.capability-read-more:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+}
+
+.capability-read-more span {
+  white-space: nowrap;
+}
+
+.capability-read-more svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.capability-chevron-open {
+  transform: rotate(180deg);
+}
+
+/* =========================================
+   SEPARATE CIRCULAR ARROW
+========================================= */
+
+.capability-arrow-button {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.capability-arrow-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(3px);
+}
+
+.capability-arrow-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .capability-cards2-container {
+    max-width: 700px;
+  }
+
+  .capability-cards2-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .capability-card2:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 11px);
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .capability-cards2-section {
+    padding: 52px 20px;
+  }
+
+  .capability-cards2-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .capability-card2:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .capability-card2-inner {
+    min-height: 165px;
+    padding: 26px 20px 22px;
+  }
+
+  .capability-card2 h4 {
+    min-height: auto;
+    font-size: 1.05rem;
+  }
+
+  .capability-read-more {
+    width: 180px;
+    height: 60px;
+    padding: 0 18px;
+  }
+
+  .capability-arrow-button {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+}/* =========================================
+   CAPABILITY CARDS 2 SECTION
+========================================= */
+
+.capability-cards2-section {
+  width: 100%;
+  padding: 64px 24px;
+  background: #ffffff;
+}
+
+.capability-cards2-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   3 EQUAL CARDS
+========================================= */
+
+.capability-cards2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+  align-items: stretch;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.capability-card2 {
+  min-width: 0;
+  background: #0d2026;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(15, 23, 42, 0.12);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.capability-card2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.16);
+}
+
+.capability-card2-inner {
+  min-height: 175px;
+  padding: 28px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.capability-card2 h4 {
+  margin: 0;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f2;
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+/* =========================================
+   EXPANDABLE DESCRIPTION
+========================================= */
+
+.capability-card2-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  width: 100%;
+  margin-top: 0;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.35s ease,
+    opacity 0.25s ease,
+    margin-top 0.35s ease;
+}
+
+.capability-card2-details > p {
+  min-height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.capability-card2-details.is-open {
+  grid-template-rows: 1fr;
+  margin-top: 14px;
+  opacity: 1;
+}
+
+.capability-card2-details p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.capability-card2-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+/* =========================================
+   READ MORE PILL
+========================================= */
+
+.capability-read-more {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+  padding: 0 20px;
+
+  width: 144px;
+  height: 44px;
+
+  background: #f4f4f2;
+  color: #293038;
+
+  border-radius: 999px;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.capability-read-more:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+}
+
+.capability-read-more span {
+  white-space: nowrap;
+}
+
+.capability-read-more svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.capability-chevron-open {
+  transform: rotate(180deg);
+}
+
+/* =========================================
+   SEPARATE CIRCULAR ARROW
+========================================= */
+
+.capability-arrow-button {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.capability-arrow-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(3px);
+}
+
+.capability-arrow-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .capability-cards2-container {
+    max-width: 700px;
+  }
+
+  .capability-cards2-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .capability-card2:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 11px);
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .capability-cards2-section {
+    padding: 52px 20px;
+  }
+
+  .capability-cards2-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .capability-card2:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .capability-card2-inner {
+    min-height: 165px;
+    padding: 26px 20px 22px;
+  }
+
+  .capability-card2 h4 {
+    min-height: auto;
+    font-size: 1.05rem;
+  }
+
+  .capability-read-more {
+    width: 180px;
+    height: 60px;
+    padding: 0 18px;
+  }
+
+  .capability-arrow-button {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+}

@@ -1,0 +1,407 @@
+/* =========================================================
+   INFO BYTES SECTION
+========================================================= */
+
+.info-bytes-section {
+  width: 100%;
+
+  padding: 80px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #06294a 0%,
+      #123b76 52%,
+      #2456e8 100%
+    );
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.info-bytes-container {
+  width: min(
+    1200px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SINGLE WHITE PANEL
+========================================================= */
+
+.info-bytes-panel {
+  width: 100%;
+
+  min-height: 510px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 45px
+    rgba(0, 20, 50, 0.18);
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT IMAGE AREA
+========================================================= */
+
+.info-bytes-image {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  min-height: 510px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGEZOOM WRAPPER
+========================================================= */
+
+.info-bytes-image-zoom {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  background: #ffffff;
+
+  border: 0;
+  outline: 0;
+
+  box-shadow: none;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ACTUAL IMAGE
+========================================================= */
+
+.info-bytes-image-zoom
+.image-zoom-image {
+  width: 100% !important;
+  height: 100% !important;
+
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 32px !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  background: #ffffff !important;
+
+  border: 0 !important;
+
+  transform: none !important;
+
+  transition: none !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   NO IMAGE SCALE
+========================================================= */
+
+.info-bytes-image-zoom:hover
+.image-zoom-image {
+  transform: none !important;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.info-bytes-content {
+  width: 100%;
+
+  min-height: 510px;
+
+  padding:
+    70px
+    65px;
+
+  display: flex;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.info-bytes-content p {
+  width: 100%;
+
+  max-width: 520px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Inter,
+    Arial,
+    sans-serif;
+
+  font-size: 21px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  letter-spacing: -0.01em;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   RIGHT SIDE BLUE BACKGROUND
+========================================================= */
+
+.info-bytes-content {
+  background:
+    linear-gradient(
+      135deg,
+      #072b4c 0%,
+      #0e3f73 100%
+    );
+}
+
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .info-bytes-section {
+    padding: 70px 0;
+  }
+
+  .info-bytes-container {
+    width:
+      min(
+        1100px,
+        calc(100% - 48px)
+      );
+  }
+
+  .info-bytes-panel {
+    min-height: 470px;
+  }
+
+  .info-bytes-image {
+    min-height: 470px;
+  }
+
+  .info-bytes-content {
+    min-height: 470px;
+
+    padding:
+      55px
+      50px;
+  }
+
+  .info-bytes-content p {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .info-bytes-section {
+    padding: 60px 0;
+  }
+
+  .info-bytes-panel {
+    min-height: 430px;
+  }
+
+  .info-bytes-image {
+    min-height: 430px;
+  }
+
+  .info-bytes-content {
+    min-height: 430px;
+
+    padding:
+      45px
+      38px;
+  }
+
+  .info-bytes-image-zoom
+  .image-zoom-image {
+    padding: 24px !important;
+  }
+
+  .info-bytes-content p {
+    font-size: 17px;
+
+    line-height: 1.58;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .info-bytes-section {
+    padding: 50px 0;
+  }
+
+  .info-bytes-container {
+    width:
+      calc(100% - 32px);
+  }
+
+  .info-bytes-panel {
+    grid-template-columns: 1fr;
+
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Image first */
+  .info-bytes-image {
+    order: 1;
+
+    width: 100%;
+
+    height: 320px;
+    min-height: 320px;
+  }
+
+  /* Text second */
+  .info-bytes-content {
+    order: 2;
+
+    width: 100%;
+
+    min-height: 0;
+
+    padding:
+      36px
+      26px;
+  }
+
+  .info-bytes-image-zoom
+  .image-zoom-image {
+    padding: 22px !important;
+  }
+
+  .info-bytes-content p {
+    max-width: 100%;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .info-bytes-section {
+    padding: 42px 0;
+  }
+
+  .info-bytes-container {
+    width:
+      calc(100% - 24px);
+  }
+
+  .info-bytes-image {
+    height: 270px;
+    min-height: 270px;
+  }
+
+  .info-bytes-content {
+    padding:
+      30px
+      21px;
+  }
+
+  .info-bytes-image-zoom
+  .image-zoom-image {
+    padding: 18px !important;
+  }
+
+  .info-bytes-content p {
+    font-size: 14.5px;
+
+    line-height: 1.62;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .info-bytes-image-zoom
+  .image-zoom-image {
+    transition: none !important;
+  }
+}

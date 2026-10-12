@@ -1,0 +1,90 @@
+/* =========================================================
+   SUCCESS STATEMENT
+========================================================= */
+
+.success-statement-section {
+  width: 100%;
+  
+
+  background: #f7f6f5;
+  padding: 87px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.success-statement-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* =========================================================
+   STATEMENT
+========================================================= */
+
+.success-statement-container p {
+  margin: 0;
+
+  color: #202020;
+
+  font-size: clamp(1.95rem, 2.2vw, 2.15rem);
+  font-weight: 700;
+
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1024px) {
+  .success-statement-section {
+    padding: 52px 24px;
+  }
+
+  .success-statement-container p {
+    font-size: 1rem;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+  .success-statement-section {
+    padding: 46px 20px;
+  }
+
+  .success-statement-container p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .success-statement-section {
+    padding: 38px 16px;
+  }
+
+  .success-statement-container p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+}

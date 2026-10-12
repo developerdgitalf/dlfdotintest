@@ -1,0 +1,276 @@
+/* =========================================================
+   WHY DIGITALFABRIC
+========================================================= */
+
+.why-digital-fabric {
+  width: 100%;
+
+  padding: 48px 0 54px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   1280PX SITE CONTAINER
+========================================================= */
+
+.why-digital-fabric__container {
+  width: min(1280px, calc(100% - 48px));
+
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN FEATURED CARD
+========================================================= */
+
+.why-digital-fabric__featured {
+  width: 100%;
+
+  margin: 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 500px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-sizing: border-box;
+
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.why-digital-fabric__content {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 55px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+.why-digital-fabric__content h3 {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: #142b5d;
+
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  font-size: 42px;
+
+  font-weight: 500;
+
+  line-height: 1.14;
+
+  letter-spacing: -0.025em;
+}
+
+/* =========================================================
+   OPTIONAL LINE
+========================================================= */
+
+.why-digital-fabric__line {
+  width: 34px;
+
+  height: 2px;
+
+  margin: 18px 0;
+
+  background: #2288d0;
+}
+
+/* =========================================================
+   OPTIONAL DESCRIPTION
+========================================================= */
+
+.why-digital-fabric__content p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: #506079;
+
+  font-family: Inter, Arial, Helvetica, sans-serif;
+
+  font-size: 0.9rem;
+
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.why-digital-fabric__image {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 500px;
+
+  overflow: hidden;
+
+  background: #e8edf3;
+
+  box-sizing: border-box;
+}
+
+.why-digital-fabric__image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .why-digital-fabric {
+    padding: 42px 0 48px;
+  }
+
+  .why-digital-fabric__container {
+    width: min(1280px, calc(100% - 36px));
+  }
+
+  .why-digital-fabric__featured {
+    min-height: 420px;
+  }
+
+  .why-digital-fabric__content {
+    padding: 42px;
+  }
+
+  .why-digital-fabric__content h3 {
+    max-width: 100%;
+
+    font-size: 34px;
+  }
+
+  .why-digital-fabric__image {
+    min-height: 420px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+  .why-digital-fabric {
+    padding: 38px 0 44px;
+  }
+
+  .why-digital-fabric__container {
+    width: calc(100% - 28px);
+  }
+
+  .why-digital-fabric__featured {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    border-radius: 10px;
+  }
+
+  .why-digital-fabric__image {
+    min-height: 300px;
+
+    order: 1;
+  }
+
+  .why-digital-fabric__content {
+    order: 2;
+
+    padding: 32px 24px 38px;
+  }
+
+  .why-digital-fabric__content h3 {
+    max-width: 100%;
+
+    font-size: 30px;
+
+    line-height: 1.15;
+  }
+
+  .why-digital-fabric__content p {
+    font-size: 0.86rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .why-digital-fabric {
+    padding: 32px 0 38px;
+  }
+
+  .why-digital-fabric__container {
+    width: calc(100% - 22px);
+  }
+
+  .why-digital-fabric__content {
+    padding: 26px 20px 32px;
+  }
+
+  .why-digital-fabric__content h3 {
+    font-size: 26px;
+  }
+
+  .why-digital-fabric__image {
+    min-height: 260px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .why-digital-fabric__featured {
+    transition: none;
+  }
+}

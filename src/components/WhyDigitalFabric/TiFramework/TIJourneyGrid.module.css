@@ -1,0 +1,174 @@
+/* =====================================================
+
+   BUSINESS – CUSTOMER – JOURNEY GRID
+
+===================================================== */
+
+.section {
+  width: 100%;
+  background: #f5f4f2;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+
+/* =====================================================
+
+   STANDARD DIGITALFABRIC CONTENT CONTAINER
+
+===================================================== */
+
+.container {
+  width: min(1200px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+
+   SECTION TITLE
+
+===================================================== */
+
+.headingWrapper {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  color: #1d2939;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+
+/* =====================================================
+
+   JOURNEY GRID IMAGE
+
+===================================================== */
+
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* =====================================================
+
+   LARGE DESKTOP / 4K
+
+   Keep the diagram at a controlled maximum width.
+
+===================================================== */
+
+@media (min-width: 1920px) {
+  .section {
+    padding: 96px 0;
+  }
+
+  .headingWrapper {
+    margin-bottom: 60px;
+  }
+}
+
+
+/* =====================================================
+
+   LAPTOP / TABLET
+
+===================================================== */
+
+@media (max-width: 1100px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .container {
+    width: min(1200px, calc(100% - 64px));
+  }
+
+  .headingWrapper {
+    margin-bottom: 42px;
+  }
+
+  .title {
+    font-size: clamp(28px, 4vw, 40px);
+  }
+}
+
+
+/* =====================================================
+
+   MOBILE
+
+===================================================== */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .container {
+    width: calc(100% - 40px);
+  }
+
+  .headingWrapper {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  /* Keep detailed diagram readable on small screens */
+
+  .imageWrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .image {
+    min-width: 700px;
+    max-width: none;
+  }
+}
+
+
+/* =====================================================
+
+   SMALL MOBILE
+
+===================================================== */
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .headingWrapper {
+    margin-bottom: 26px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+}

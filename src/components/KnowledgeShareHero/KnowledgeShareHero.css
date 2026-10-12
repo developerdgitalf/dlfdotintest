@@ -1,0 +1,203 @@
+/* =========================================================
+   KNOWLEDGE SHARE – HERO BANNER
+========================================================= */
+
+.knowledgeShareHero {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 410px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background-color: #050d16;
+
+  background-image: url("/images/knowledge-share-banner.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.knowledgeShareHero::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(3, 10, 18, 0.45) 0%,
+    rgba(3, 10, 18, 0.18) 55%,
+    rgba(3, 10, 18, 0.05) 100%
+  );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.knowledgeShareHero .site-container {
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.knowledgeShareHeroContent {
+  width: 100%;
+
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.knowledgeShareHero h1 {
+  margin: 0;
+
+  max-width: 100%;
+
+  color: #f4f1eb;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: clamp(
+    3rem,
+    5vw,
+    5.5rem
+  );
+
+  font-weight: 600;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.025em;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   LARGE SCREENS
+========================================================= */
+
+@media (min-width: 1920px) {
+
+  .knowledgeShareHero {
+    min-height: 520px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .knowledgeShareHero {
+    min-height: 400px;
+  }
+
+  .knowledgeShareHero h1 {
+    font-size: clamp(
+      2.5rem,
+      6vw,
+      4rem
+    );
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .knowledgeShareHero {
+    min-height: 360px;
+
+    background-position: center;
+  }
+
+  .knowledgeShareHero h1 {
+    width: 100%;
+
+    font-size: clamp(
+      2.3rem,
+      10vw,
+      3.5rem
+    );
+
+    line-height: 1.1;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .knowledgeShareHero {
+    min-height: 320px;
+  }
+
+  .knowledgeShareHero h1 {
+    font-size: 2.2rem;
+  }
+}

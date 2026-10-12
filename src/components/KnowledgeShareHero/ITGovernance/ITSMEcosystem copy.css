@@ -1,0 +1,737 @@
+/* =========================================
+   ITSM ECOSYSTEM
+========================================= */
+
+.itsm-ecosystem-section {
+  width: 100%;
+  padding: 82px 24px 88px;
+  background: #ffffff;
+  color: #17365d;
+  overflow: hidden;
+}
+
+.itsm-ecosystem-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.itsm-ecosystem-header {
+  max-width: 720px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.itsm-eyebrow {
+  display: block;
+  margin-bottom: 9px;
+
+  color: #2d6ec7;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.itsm-ecosystem-header h1 {
+  margin: 0;
+
+  color: #162f58;
+
+  font-size: clamp(2.4rem, 4vw, 3.3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+
+.itsm-title-line {
+  display: flex;
+  justify-content: center;
+
+  margin: 13px 0 12px;
+}
+
+.itsm-title-line span {
+  width: 34px;
+  height: 2px;
+
+  background: #246bd0;
+  border-radius: 999px;
+}
+
+.itsm-ecosystem-header p {
+  max-width: 610px;
+  margin: 0 auto;
+
+  color: #64748a;
+
+  font-size: 0.83rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.itsm-ecosystem-layout {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 245px minmax(390px, 1fr) 245px;
+
+  align-items: center;
+
+  column-gap: 38px;
+
+  min-height: 385px;
+}
+
+
+/* =========================================
+   LEFT / RIGHT COLUMNS
+========================================= */
+
+.itsm-capabilities-column,
+.itsm-frameworks-column {
+  display: grid;
+  gap: 10px;
+}
+
+.itsm-capabilities-column {
+  grid-column: 1;
+}
+
+.itsm-frameworks-column {
+  grid-column: 3;
+}
+
+
+/* =========================================
+   LEFT CARD
+========================================= */
+
+.itsm-capability-row,
+.itsm-framework-row {
+  position: relative;
+}
+
+.itsm-capability-card {
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  min-height: 63px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 8px 11px;
+
+  border: 1px solid #e0e7ef;
+  border-left: 3px solid #2c70d5;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 7px 20px rgba(31, 57, 91, 0.055);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.itsm-capability-card:hover {
+  transform: translateX(3px);
+
+  box-shadow:
+    0 12px 26px rgba(31, 57, 91, 0.09);
+}
+
+
+/* =========================================
+   CAPABILITY ICON
+========================================= */
+
+.itsm-capability-icon {
+  width: 39px;
+  height: 39px;
+
+  flex: 0 0 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2469cf;
+  background: #edf3fd;
+
+  border-radius: 9px;
+}
+
+.itsm-capability-icon svg {
+  display: block;
+}
+
+
+/* =========================================
+   CAPABILITY TEXT
+========================================= */
+
+.itsm-capability-content {
+  min-width: 0;
+}
+
+.itsm-capability-content h3 {
+  margin: 0 0 3px;
+
+  color: #27415f;
+
+  font-size: 0.71rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.itsm-capability-content p {
+  margin: 0;
+
+  color: #66778d;
+
+  font-size: 0.55rem;
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   CENTER AREA
+========================================= */
+
+.itsm-center-area {
+  grid-column: 2;
+
+  position: relative;
+
+  min-height: 370px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================
+   VENN
+========================================= */
+
+.itsm-venn {
+  position: relative;
+
+  width: 405px;
+  height: 300px;
+}
+
+
+/* =========================================
+   CIRCLES
+========================================= */
+
+.itsm-circle {
+  position: absolute;
+
+  top: 0;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+}
+
+
+/* LEFT */
+
+.itsm-circle-left {
+  left: 0;
+
+  background:
+    radial-gradient(
+      circle at 48% 50%,
+      rgba(192, 226, 249, 0.88),
+      rgba(229, 246, 255, 0.9)
+    );
+
+  border: 1px solid #82c4f0;
+}
+
+
+/* RIGHT */
+
+.itsm-circle-right {
+  right: 0;
+
+  background:
+    radial-gradient(
+      circle at 52% 50%,
+      rgba(231, 224, 249, 0.86),
+      rgba(248, 246, 255, 0.92)
+    );
+
+  border: 1px solid #b6a9ef;
+}
+
+
+/* =========================================
+   CIRCLE CONTENT
+========================================= */
+
+.itsm-circle-content {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: grid;
+  gap: 21px;
+
+  width: 115px;
+}
+
+.itsm-left-content {
+  left: 55px;
+}
+
+.itsm-right-content {
+  right: 45px;
+}
+
+
+/* =========================================
+   CIRCLE ITEMS
+========================================= */
+
+.itsm-circle-item {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: #2b4564;
+
+  font-size: 0.67rem;
+  font-weight: 600;
+
+  line-height: 1.25;
+}
+
+.itsm-circle-item svg {
+  width: 20px;
+  height: 20px;
+
+  flex: 0 0 20px;
+
+  color: #2269cf;
+}
+
+
+/* =========================================
+   ITSM CENTER
+========================================= */
+
+.itsm-overlap {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 92px;
+  height: 180px;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #1878ec 0%,
+      #2863d2 100%
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 16px 35px rgba(35, 101, 207, 0.28);
+
+  z-index: 10;
+}
+
+.itsm-overlap span {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   DOTS / CONNECTOR LINES
+========================================= */
+
+.itsm-side-dot {
+  position: absolute;
+
+  top: 50%;
+
+  width: 5px;
+  height: 5px;
+
+  transform: translateY(-50%);
+
+  background: #2372de;
+
+  border-radius: 50%;
+
+  z-index: 7;
+}
+
+.itsm-left-dot {
+  right: -19px;
+}
+
+.itsm-right-dot {
+  left: -19px;
+}
+
+
+/* dotted connector */
+
+.itsm-dotted-connector {
+  position: absolute;
+
+  top: 50%;
+
+  height: 1px;
+
+  transform: translateY(-50%);
+
+  background-image:
+    linear-gradient(
+      to right,
+      #4990e7 35%,
+      transparent 35%
+    );
+
+  background-size: 6px 1px;
+
+  z-index: 2;
+}
+
+
+/* LEFT */
+
+.itsm-left-connector {
+  left: calc(100% + 18px);
+
+  width: 50px;
+}
+
+
+/* RIGHT */
+
+.itsm-right-connector {
+  right: calc(100% + 18px);
+
+  width: 50px;
+
+  background-image:
+    linear-gradient(
+      to left,
+      #4990e7 35%,
+      transparent 35%
+    );
+}
+
+
+/* =========================================
+   FRAMEWORK CARDS
+========================================= */
+
+.itsm-framework-card {
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  min-height: 63px;
+
+  display: grid;
+
+  grid-template-columns: 80px minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 8px 11px;
+
+  border: 1px solid #e0e7ef;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 7px 20px rgba(31, 57, 91, 0.055);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.itsm-framework-card:hover {
+  transform: translateX(-3px);
+
+  box-shadow:
+    0 12px 26px rgba(31, 57, 91, 0.09);
+}
+
+
+/* =========================================
+   FRAMEWORK LOGOS
+========================================= */
+
+.itsm-framework-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 36px;
+
+  text-align: center;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.itsm-framework-logo.itil {
+  color: #7336a0;
+  font-size: 1rem;
+}
+
+.itsm-framework-logo.devops {
+  color: #e64a25;
+  font-size: 0.63rem;
+}
+
+.itsm-framework-logo.devops-small {
+  color: #2670ce;
+  font-size: 0.67rem;
+}
+
+.itsm-framework-logo.verism {
+  color: #7237a8;
+  font-size: 0.75rem;
+}
+
+.itsm-framework-logo.it4it {
+  color: #2aa5bb;
+  font-size: 0.82rem;
+}
+
+
+/* =========================================
+   FRAMEWORK DESCRIPTION
+========================================= */
+
+.itsm-framework-content {
+  min-width: 0;
+}
+
+.itsm-framework-content p {
+  margin: 0;
+
+  color: #617289;
+
+  font-size: 0.55rem;
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+  .itsm-ecosystem-layout {
+    grid-template-columns: 215px minmax(330px, 1fr) 215px;
+    column-gap: 25px;
+  }
+
+  .itsm-venn {
+    transform: scale(0.9);
+  }
+
+  .itsm-capability-content p,
+  .itsm-framework-content p {
+    font-size: 0.52rem;
+  }
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 850px) {
+  .itsm-ecosystem-layout {
+    grid-template-columns: 1fr;
+
+    gap: 34px;
+  }
+
+  .itsm-center-area {
+    grid-column: 1;
+    grid-row: 1;
+
+    min-height: 330px;
+  }
+
+  .itsm-capabilities-column {
+    grid-column: 1;
+    grid-row: 2;
+
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .itsm-frameworks-column {
+    grid-column: 1;
+    grid-row: 3;
+
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .itsm-dotted-connector,
+  .itsm-side-dot {
+    display: none;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .itsm-ecosystem-section {
+    padding: 58px 18px 68px;
+  }
+
+  .itsm-ecosystem-header {
+    margin-bottom: 32px;
+  }
+
+  .itsm-ecosystem-header h1 {
+    font-size: 2.15rem;
+  }
+
+  .itsm-ecosystem-header p {
+    font-size: 0.77rem;
+  }
+
+  .itsm-center-area {
+    min-height: 270px;
+  }
+
+  .itsm-venn {
+    width: 315px;
+    height: 235px;
+
+    transform: scale(0.76);
+  }
+
+  .itsm-circle {
+    width: 235px;
+    height: 235px;
+  }
+
+  .itsm-overlap {
+    width: 72px;
+    height: 145px;
+  }
+
+  .itsm-overlap span {
+    font-size: 1rem;
+  }
+
+  .itsm-left-content {
+    left: 37px;
+  }
+
+  .itsm-right-content {
+    right: 28px;
+  }
+
+  .itsm-circle-content {
+    width: 100px;
+    gap: 15px;
+  }
+
+  .itsm-circle-item {
+    font-size: 0.57rem;
+  }
+
+  .itsm-circle-item svg {
+    width: 17px;
+    height: 17px;
+    flex-basis: 17px;
+  }
+
+  .itsm-capability-card,
+  .itsm-framework-card {
+    min-height: 68px;
+  }
+
+  .itsm-framework-card {
+    grid-template-columns: 82px minmax(0, 1fr);
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .itsm-ecosystem-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .itsm-venn {
+    transform: scale(0.68);
+  }
+
+  .itsm-center-area {
+    min-height: 245px;
+  }
+
+  .itsm-ecosystem-header h1 {
+    font-size: 1.95rem;
+  }
+}

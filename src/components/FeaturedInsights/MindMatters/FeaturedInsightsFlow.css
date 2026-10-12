@@ -1,0 +1,1362 @@
+/* =========================================================
+   FEATURED INSIGHTS FLOW
+========================================================= */
+
+.featured-insights-flow-section {
+  width: 100%;
+
+  padding: 78px 24px 90px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.featured-insights-flow-container {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+}
+
+
+/* =========================================================
+   MAIN BLOCK
+========================================================= */
+
+.featured-insights-flow-block {
+  width: 100%;
+
+  height: 500px;
+
+  min-height: 500px;
+
+  max-height: 500px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 0;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SPACE AFTER EVERY 2 BLOCKS
+========================================================= */
+
+.featured-insights-flow-block:nth-child(2n) {
+  margin-bottom: 52px;
+}
+
+.featured-insights-flow-block:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   NORMAL
+   CONTENT LEFT | IMAGE RIGHT
+========================================================= */
+
+.featured-insights-flow-panel {
+  order: 1;
+}
+
+.featured-insights-flow-image {
+  order: 2;
+}
+
+
+/* =========================================================
+   REVERSE
+   IMAGE LEFT | CONTENT RIGHT
+========================================================= */
+
+.featured-insights-flow-block.is-reverse
+.featured-insights-flow-panel {
+  order: 2;
+}
+
+.featured-insights-flow-block.is-reverse
+.featured-insights-flow-image {
+  order: 1;
+}
+
+
+/* =========================================================
+   CONTENT PANEL
+========================================================= */
+
+.featured-insights-flow-panel {
+  position: relative;
+
+  width: 100%;
+
+  height: 500px;
+
+  min-height: 500px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 45px 58px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LIGHT PANEL
+========================================================= */
+
+.featured-insights-flow-block.is-light
+.featured-insights-flow-panel {
+  background: #effffe;
+
+  color: #172d4d;
+}
+
+
+/* =========================================================
+   BLUE PANEL
+========================================================= */
+
+.featured-insights-flow-block.is-blue
+.featured-insights-flow-panel {
+  background: #effffe;
+
+  color: #172d4d;
+}
+
+
+/* =========================================================
+   CONTENT INNER
+========================================================= */
+
+.featured-insights-flow-panel-inner {
+  width: 100%;
+
+  max-width: 540px;
+
+  margin: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   REVERSE ALIGNMENT
+========================================================= */
+
+.featured-insights-flow-block.is-reverse
+.featured-insights-flow-panel-inner {
+  margin-left: auto;
+}
+
+
+/* =========================================================
+   DECORATIVE LINE
+========================================================= */
+
+.featured-insights-flow-line {
+  width: 125px;
+
+  height: 3px;
+
+  flex-shrink: 0;
+
+  margin-bottom: 22px;
+
+  border-radius: 999px;
+
+  background: #2e91df;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.featured-insights-flow-panel h2 {
+  width: 100%;
+
+  margin: 0 0 18px;
+
+  color: #141415;
+
+  font-size: 1.6rem;
+
+  font-weight: 700;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.025em;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   DESCRIPTION FIXED VIEWPORT
+========================================================= */
+
+.featured-insights-flow-description-wrap {
+  width: 100%;
+
+  max-width: 530px;
+
+  height: 250px;
+
+  min-height: 250px;
+
+  max-height: 250px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.featured-insights-flow-description {
+  width: 100%;
+
+  max-width: 530px;
+
+  margin: 0;
+
+  color: #303d4c;
+
+  font-size: 1.1rem;
+
+  font-weight: 400;
+
+  line-height: 1.55;
+
+  animation:
+    featuredInsightsFade
+    0.35s ease;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BLUE DESCRIPTION
+========================================================= */
+
+.featured-insights-flow-block.is-blue
+.featured-insights-flow-description {
+  color: #303d4c;
+}
+
+
+/* =========================================================
+   BR SUPPORT
+========================================================= */
+
+.featured-insights-flow-description br {
+  display: block;
+}
+
+
+/* =========================================================
+   MANUAL CONTROLS
+========================================================= */
+
+.featured-insights-flow-controls {
+  width: 100%;
+
+  height: 40px;
+
+  flex-shrink: 0;
+
+  margin-top: 26px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BLUE SQUARE CHEVRON BUTTON
+========================================================= */
+
+.featured-insights-flow-chevron {
+  width: 40px;
+
+  height: 40px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 0;
+
+  background: #238be2;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 5px 16px
+    rgba(15, 45, 75, 0.14);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   WHITE CHEVRON
+========================================================= */
+
+.featured-insights-flow-chevron svg {
+  width: 21px;
+
+  height: 21px;
+
+  color: #ffffff;
+
+  stroke: #ffffff;
+
+  stroke-width: 2.4;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   CHEVRON HOVER
+========================================================= */
+
+.featured-insights-flow-chevron:hover {
+  background: #1267bb;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 22px
+    rgba(35, 139, 226, 0.28);
+}
+
+
+.featured-insights-flow-chevron:hover svg {
+  color: #ffffff;
+
+  stroke: #ffffff;
+}
+
+
+/* =========================================================
+   CHEVRON ACTIVE
+========================================================= */
+
+.featured-insights-flow-chevron:active {
+  background: #0d5fae;
+}
+
+
+/* =========================================================
+   CHEVRON FOCUS
+========================================================= */
+
+.featured-insights-flow-chevron:focus-visible {
+  outline: 2px solid #238be2;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   IMAGE CONTAINER
+========================================================= */
+
+.featured-insights-flow-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 500px;
+
+  min-height: 500px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #041329;
+
+  box-sizing: border-box;
+
+  cursor: zoom-in;
+}
+
+
+/* =========================================================
+   IMAGE
+   KEEP COMPLETE INFOGRAPHIC VISIBLE
+========================================================= */
+
+.featured-insights-flow-image > img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  padding: 20px;
+
+  margin: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #013745 0%,
+      #062231 45%,
+      #0a1525 100%
+    );
+
+  box-sizing: border-box;
+
+  transform: none;
+
+  transition: none;
+}
+
+
+/* =========================================================
+   IMAGE WRAPPED BY IMAGEZOOM
+========================================================= */
+
+.featured-insights-flow-image
+.image-zoom-trigger {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: 0;
+
+  outline: 0;
+
+  box-shadow: none;
+
+  cursor: zoom-in;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGEZOOM INNER IMAGE
+========================================================= */
+
+.featured-insights-flow-image
+.image-zoom-trigger
+.image-zoom-image {
+  width: 100% !important;
+
+  height: 100% !important;
+
+  display: block !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  object-fit: contain !important;
+
+  object-position: center !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      #013745 0%,
+      #062231 45%,
+      #0a1525 100%
+    ) !important;
+
+  transform: none !important;
+
+  transition: none !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   DISABLE PAGE HOVER SCALE
+========================================================= */
+
+.featured-insights-flow-image:hover > img {
+  transform: none;
+}
+
+.featured-insights-flow-image:hover
+.image-zoom-trigger
+.image-zoom-image {
+  transform: none !important;
+}
+
+
+/* =========================================================
+   ZOOM LABEL
+========================================================= */
+
+.featured-insights-flow-zoom-label {
+  position: absolute;
+
+  right: 18px;
+
+  bottom: 18px;
+
+  z-index: 5;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 9px 13px;
+
+  background:
+    rgba(4, 19, 41, 0.82);
+
+  color: #ffffff;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  pointer-events: none;
+
+  opacity: 0;
+
+  transform: translateY(8px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* =========================================================
+   SHOW ZOOM LABEL
+========================================================= */
+
+.featured-insights-flow-image:hover
+.featured-insights-flow-zoom-label {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   ZOOM ICON
+========================================================= */
+
+.featured-insights-flow-zoom-label svg {
+  width: 15px;
+
+  height: 15px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   DESCRIPTION FADE
+========================================================= */
+
+@keyframes featuredInsightsFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   STATIC BLOCK
+========================================================= */
+
+.featured-insights-flow-block.is-static
+.featured-insights-flow-description {
+  animation: none;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.featured-insights-flow-lightbox {
+  position: fixed !important;
+
+  inset: 0 !important;
+
+  z-index: 2147483646 !important;
+
+  width: 100vw !important;
+
+  height: 100vh !important;
+
+  min-width: 100vw !important;
+
+  min-height: 100vh !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  padding: 30px !important;
+
+  background:
+    rgba(0, 0, 0, 0.92) !important;
+
+  overflow: hidden !important;
+
+  box-sizing: border-box !important;
+
+  animation:
+    featuredInsightsLightboxFade
+    0.25s ease;
+}
+
+
+/* =========================================================
+   LIGHTBOX CONTENT
+========================================================= */
+
+.featured-insights-flow-lightbox-content {
+  position: relative !important;
+
+  width: 100% !important;
+
+  height: 100% !important;
+
+  max-width: 1800px !important;
+
+  max-height: calc(100vh - 60px) !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   LIGHTBOX IMAGE
+========================================================= */
+
+.featured-insights-flow-lightbox-content > img {
+  display: block !important;
+
+  width: auto !important;
+
+  height: auto !important;
+
+  max-width: calc(100vw - 60px) !important;
+
+  max-height: calc(100vh - 60px) !important;
+
+  min-width: 0 !important;
+
+  min-height: 0 !important;
+
+  margin: 0 auto !important;
+
+  padding: 0 !important;
+
+  object-fit: contain !important;
+
+  object-position: center !important;
+
+  border: 0 !important;
+
+  outline: 0 !important;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+
+  transform: none !important;
+
+  box-sizing: border-box !important;
+
+  animation:
+    featuredInsightsLightboxZoom
+    0.3s ease;
+}
+
+
+/* =========================================================
+   LIGHTBOX CLOSE BUTTON
+========================================================= */
+
+.featured-insights-flow-lightbox-close {
+  position: fixed !important;
+
+  top: 20px !important;
+
+  right: 20px !important;
+
+  z-index: 2147483647 !important;
+
+  width: 48px !important;
+
+  height: 48px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  outline: 0 !important;
+
+  border-radius: 50% !important;
+
+  background:
+    rgba(4, 19, 41, 0.90) !important;
+
+  color: #ffffff !important;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 30px
+    rgba(0, 0, 0, 0.40);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON HOVER
+========================================================= */
+
+.featured-insights-flow-lightbox-close:hover {
+  background:
+    rgba(4, 19, 41, 1) !important;
+
+  transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   CLOSE ICON
+========================================================= */
+
+.featured-insights-flow-lightbox-close svg {
+  width: 23px !important;
+
+  height: 23px !important;
+
+  color: #ffffff !important;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   LIGHTBOX ANIMATIONS
+========================================================= */
+
+@keyframes featuredInsightsLightboxFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes featuredInsightsLightboxZoom {
+  from {
+    opacity: 0;
+
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+
+/* =========================================================
+   KEYBOARD ACCESSIBILITY
+========================================================= */
+
+.featured-insights-flow-image:focus-visible {
+  outline: 2px solid #238be2;
+
+  outline-offset: -2px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .featured-insights-flow-section {
+    padding: 65px 20px 75px;
+  }
+
+
+  .featured-insights-flow-block {
+    height: 460px;
+
+    min-height: 460px;
+
+    max-height: 460px;
+  }
+
+
+  .featured-insights-flow-block:nth-child(2n) {
+    margin-bottom: 42px;
+  }
+
+
+  .featured-insights-flow-panel {
+    height: 460px;
+
+    min-height: 460px;
+
+    padding: 38px;
+  }
+
+
+  .featured-insights-flow-image {
+    height: 460px;
+
+    min-height: 460px;
+  }
+
+
+  .featured-insights-flow-panel h2 {
+    font-size: 1.85rem;
+  }
+
+
+  .featured-insights-flow-description-wrap {
+    height: 175px;
+
+    min-height: 175px;
+
+    max-height: 175px;
+  }
+
+
+  .featured-insights-flow-description {
+    font-size: 0.88rem;
+
+    line-height: 1.55;
+  }
+
+
+  .featured-insights-flow-controls {
+    margin-top: 20px;
+  }
+
+
+  .featured-insights-flow-chevron {
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 0;
+  }
+
+
+  .featured-insights-flow-chevron svg {
+    width: 20px;
+
+    height: 20px;
+  }
+
+
+  .featured-insights-flow-lightbox {
+    padding: 25px !important;
+  }
+
+
+  .featured-insights-flow-lightbox-content {
+    max-width: 100% !important;
+
+    max-height:
+      calc(100vh - 50px) !important;
+  }
+
+
+  .featured-insights-flow-lightbox-content > img {
+    max-width:
+      calc(100vw - 50px) !important;
+
+    max-height:
+      calc(100vh - 50px) !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 720px) {
+
+  .featured-insights-flow-section {
+    padding: 55px 18px 65px;
+  }
+
+
+  .featured-insights-flow-block,
+  .featured-insights-flow-block.is-reverse {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 0;
+
+    max-height: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+  }
+
+
+  .featured-insights-flow-block:nth-child(2n) {
+    margin-bottom: 34px;
+  }
+
+
+  /* =======================================================
+     MOBILE IMAGE
+  ======================================================= */
+
+  .featured-insights-flow-image,
+  .featured-insights-flow-block.is-reverse
+  .featured-insights-flow-image {
+
+    order: 1;
+
+    width: 100%;
+
+    height: 230px;
+
+    min-height: 230px;
+  }
+
+
+  .featured-insights-flow-image
+  .image-zoom-trigger {
+
+    width: 100% !important;
+
+    height: 100% !important;
+  }
+
+
+  .featured-insights-flow-image
+  .image-zoom-trigger
+  .image-zoom-image {
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    object-fit: contain !important;
+  }
+
+
+  /* =======================================================
+     MOBILE CONTENT
+  ======================================================= */
+
+  .featured-insights-flow-panel,
+  .featured-insights-flow-block.is-reverse
+  .featured-insights-flow-panel {
+
+    order: 2;
+
+    width: 100%;
+
+    height: 340px;
+
+    min-height: 340px;
+
+    padding: 36px 26px;
+  }
+
+
+  .featured-insights-flow-panel-inner {
+    width: 100%;
+
+    max-width: 100%;
+
+    margin: 0;
+  }
+
+
+  .featured-insights-flow-panel h2 {
+    font-size: 1.65rem;
+
+    line-height: 1.12;
+  }
+
+
+  .featured-insights-flow-description-wrap {
+    height: 145px;
+
+    min-height: 145px;
+
+    max-height: 145px;
+  }
+
+
+  .featured-insights-flow-description {
+    font-size: 0.88rem;
+
+    line-height: 1.58;
+  }
+
+
+  .featured-insights-flow-controls {
+    margin-top: 24px;
+  }
+
+
+  /* =======================================================
+     MOBILE CHEVRON BUTTON
+  ======================================================= */
+
+  .featured-insights-flow-chevron {
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 0;
+
+    background: #238be2;
+
+    color: #ffffff;
+
+    box-shadow:
+      0 5px 16px
+      rgba(15, 45, 75, 0.16);
+  }
+
+
+  .featured-insights-flow-chevron svg {
+    width: 20px;
+
+    height: 20px;
+
+    color: #ffffff;
+
+    stroke: #ffffff;
+  }
+
+
+  .featured-insights-flow-chevron:hover {
+    background: #1267bb;
+
+    color: #ffffff;
+  }
+
+
+  /* =======================================================
+     MOBILE ZOOM LABEL
+  ======================================================= */
+
+  .featured-insights-flow-zoom-label {
+    right: 12px;
+
+    bottom: 12px;
+
+    padding: 8px 11px;
+
+    font-size: 11px;
+
+    opacity: 1;
+
+    transform: none;
+  }
+
+
+  /* =======================================================
+     MOBILE LIGHTBOX
+  ======================================================= */
+
+  .featured-insights-flow-lightbox {
+    padding: 15px !important;
+  }
+
+
+  .featured-insights-flow-lightbox-content {
+    width: 100% !important;
+
+    height: 100% !important;
+
+    max-width: 100% !important;
+
+    max-height:
+      calc(100vh - 30px) !important;
+  }
+
+
+  .featured-insights-flow-lightbox-content > img {
+    max-width:
+      calc(100vw - 30px) !important;
+
+    max-height:
+      calc(100vh - 30px) !important;
+  }
+
+
+  .featured-insights-flow-lightbox-close {
+    top: 12px !important;
+
+    right: 12px !important;
+
+    width: 42px !important;
+
+    height: 42px !important;
+  }
+
+
+  .featured-insights-flow-lightbox-close svg {
+    width: 20px !important;
+
+    height: 20px !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .featured-insights-flow-section {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .featured-insights-flow-block:nth-child(2n) {
+    margin-bottom: 28px;
+  }
+
+
+  .featured-insights-flow-image,
+  .featured-insights-flow-block.is-reverse
+  .featured-insights-flow-image {
+
+    height: 195px;
+
+    min-height: 195px;
+  }
+
+
+  .featured-insights-flow-panel,
+  .featured-insights-flow-block.is-reverse
+  .featured-insights-flow-panel {
+
+    height: 350px;
+
+    min-height: 350px;
+
+    padding: 30px 21px;
+  }
+
+
+  .featured-insights-flow-line {
+    width: 100px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .featured-insights-flow-panel h2 {
+    font-size: 1.45rem;
+  }
+
+
+  .featured-insights-flow-description-wrap {
+    height: 145px;
+
+    min-height: 145px;
+
+    max-height: 145px;
+  }
+
+
+  .featured-insights-flow-description {
+    font-size: 0.82rem;
+  }
+
+
+  .featured-insights-flow-chevron {
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: 0;
+  }
+
+
+  .featured-insights-flow-chevron svg {
+    width: 19px;
+
+    height: 19px;
+  }
+
+
+  .featured-insights-flow-zoom-label {
+    right: 10px;
+
+    bottom: 10px;
+
+    padding: 7px 10px;
+
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .featured-insights-flow-image img,
+  .featured-insights-flow-chevron,
+  .featured-insights-flow-description,
+  .featured-insights-flow-zoom-label,
+  .featured-insights-flow-lightbox,
+  .featured-insights-flow-lightbox-content > img,
+  .featured-insights-flow-lightbox-close {
+
+    transition: none;
+
+    animation: none;
+  }
+}
