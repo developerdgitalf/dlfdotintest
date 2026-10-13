@@ -32,9 +32,9 @@ const mainHeadTeam = [
   },
 
   {
-    name: "Gaurang Pagdi",
+    name: "Saraswathi Patra",
     role: "Research Partner",
-    image: "/images/our-team/Gaurang-Padgi.png",
+    image: "/images/our-team/Saraswathi_Patra.jpg",
     linkedin: "#",
   },
 ];
