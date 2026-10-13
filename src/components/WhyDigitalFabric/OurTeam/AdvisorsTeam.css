@@ -76,7 +76,7 @@
 .advisors-team__analyst-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 22px;
   row-gap: 28px;
   box-sizing: border-box;
@@ -383,16 +383,15 @@
 }
 
 .advisors-team__division-cards--support {
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 220px));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: center;
-  gap: 20px;
-  box-sizing: border-box;
+  gap: 28px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
 }
-
 
 /* =========================================
    SUPPORT TEAM CARD
@@ -426,12 +425,14 @@
     font-size: 30px;
   }
 
-  .advisors-team__container:first-child
-  .advisors-team__analyst-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    column-gap: 18px;
-    row-gap: 24px;
-  }
+.advisors-team__analyst-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 288px));
+  justify-content: center;
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
   .advisors-team__container--second {
     width: 1200px;
@@ -444,8 +445,8 @@
   }
 
   .advisors-team__division-cards--support {
-    max-width: 750px;
-    grid-template-columns: repeat(3, minmax(0, 230px));
+    max-width: 1000px;
+    grid-template-columns: repeat(4, minmax(0, 230px));
     gap: 22px;
   }
 
@@ -455,7 +456,6 @@
     max-width: 230px;
   }
 }
-
 
 /* =========================================
    TABLET

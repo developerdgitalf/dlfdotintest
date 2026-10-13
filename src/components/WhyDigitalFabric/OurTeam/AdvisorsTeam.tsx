@@ -31,13 +31,7 @@ const mainHeadTeam = [
     linkedin: "#",
   },
 
-   {
-    name: "LALITHA",
-    role: " LEAD ANALYST",
-    image: "/images/our-team/Lalitha-Yanamandra.jpg",
-    linkedin: "#",
-  },
-
+ 
  
 ];
 
@@ -62,12 +56,22 @@ const supportTeam = [
     linkedin: "#",
   },
 
+  
+
+    {
+    name: "LALITHA",
+    role: " LEAD ANALYST",
+    image: "/images/our-team/Lalitha-Yanamandra.jpg",
+    linkedin: "#",
+  },
+
    {
     name: "Saraswathi Patra",
-    role: "Research Partner",
+    role: "Quality Analyst",
     image: "/images/our-team/Saraswathi_Patra.jpg",
     linkedin: "#",
   },
+
 
 
 
