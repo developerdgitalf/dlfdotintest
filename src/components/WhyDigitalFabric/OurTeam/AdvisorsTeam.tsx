@@ -59,6 +59,15 @@ const supportTeam = [
     image: "/images/our-team/Apoorva-Rao.png",
     linkedin: "#",
   },
+ {
+    name: "LALITHA",
+    role: " LEAD ANALYST          ",
+    image: "/images/our-team/Lalitha-Yanamandra.jpg",
+    linkedin: "#",
+  },
+
+
+
 ];
 
 
