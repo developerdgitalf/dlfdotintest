@@ -31,12 +31,14 @@ const mainHeadTeam = [
     linkedin: "#",
   },
 
-  {
-    name: "Saraswathi Patra",
-    role: "Research Partner",
-    image: "/images/our-team/Saraswathi_Patra.jpg",
+   {
+    name: "LALITHA",
+    role: " LEAD ANALYST",
+    image: "/images/our-team/Lalitha-Yanamandra.jpg",
     linkedin: "#",
   },
+
+ 
 ];
 
 
@@ -59,10 +61,11 @@ const supportTeam = [
     image: "/images/our-team/Apoorva-Rao.png",
     linkedin: "#",
   },
- {
-    name: "LALITHA",
-    role: " LEAD ANALYST          ",
-    image: "/images/our-team/Lalitha-Yanamandra.jpg",
+
+   {
+    name: "Saraswathi Patra",
+    role: "Research Partner",
+    image: "/images/our-team/Saraswathi_Patra.jpg",
     linkedin: "#",
   },
 
