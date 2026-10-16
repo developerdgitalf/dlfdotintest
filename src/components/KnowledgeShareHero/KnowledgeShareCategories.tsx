@@ -44,7 +44,7 @@ const categories: CategoryCard[] = [
   },
 
   {
-    id: "it-governance",
+    id: "it-governance-",
     title: "IT Governance",
     description:
       "Abstraction of enterprise service management has changed from a technology-centric and workflow-oriented concept to a comprehensive value-driven and growth accelerator theme.",
@@ -143,7 +143,8 @@ export default function KnowledgeShareCategories() {
 
   const itGovernance =
     categories.find(
-      (item) => item.id === "it-governance"
+      id: "it-governance",
+      
     )!;
 
   return (

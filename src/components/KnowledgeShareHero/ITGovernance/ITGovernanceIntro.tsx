@@ -2,7 +2,7 @@ import "./ITGovernanceIntro.css";
 
 export default function ITGovernanceIntro() {
   return (
-    <section className="it-governance-intro-section">
+    <section   id="it-governance" className="it-governance-intro-section ">
       <div className="it-governance-intro-container">
 
         {/* =========================================
