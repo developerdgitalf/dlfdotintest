@@ -31,7 +31,7 @@ export default function TIFrameworkPage() {
 <NewAgeTechnologyPerspective/>
 
 
-
+{ /*
 
    <CapabilityCards2
         cards={[
@@ -48,7 +48,7 @@ export default function TIFrameworkPage() {
             link: "/knowledge-share/it-governance",
           },
         ]}
-      />
+      />  */ }
      
      <NewAgeTechArticles/>
 
