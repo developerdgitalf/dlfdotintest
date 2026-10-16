@@ -6,7 +6,7 @@ import CapabilityCards2 from "../../../components/CapabilityCards2/CapabilityCar
 
 
 import TransformationProcess from "../../../components/KnowledgeShareHero/Transformation/TransformationProcess";
-import ArticlesKnowledge from "../../../components/KnowledgeShareHero/Transformation/ArticlesKnowledge";
+
 
 import ITGovernanceIntro from "../../../components/KnowledgeShareHero/ITGovernance/ITGovernanceIntro";
 
@@ -17,6 +17,7 @@ import ITSMEcosystem from "../../../components/KnowledgeShareHero/ITGovernance/I
 import AIAndAutomationIntro from "../../../components/KnowledgeShareHero/AIAndAutomation/AIAndAutomationIntro";
 
 import InformationTechnology from "../../../components/KnowledgeShareHero/AIAndAutomation/InformationTechnology";
+import ArticlesKnowledge from "../../../components/KnowledgeShareHero/Transformation/ArticlesKnowledge";
 
 
 export default function TIFrameworkPage() {

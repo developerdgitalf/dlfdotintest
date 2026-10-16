@@ -7,8 +7,10 @@ import KnowledgeShareIntro from "../../components/KnowledgeShareHero/KnowledgeSh
 
 import InfoBytes from "../../components/KnowledgeShareHero/InfoBytes";
 
-import KnowledgeShareCategories from "../../components/KnowledgeShareHero/KnowledgeShareCategories";
+
 import PageHeader from "../../components/PageHeader/PageHeader";
+
+import KnowledgeShareCategories from "../../components/KnowledgeShareHero/KnowledgeShareCategories";
 
 
 export default function KnowledgeSharePage() {

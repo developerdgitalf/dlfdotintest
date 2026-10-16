@@ -19,17 +19,17 @@ const categories: CategoryCard[] = [
     description:
       "Transformation is a self-initiating continuous process that redesigns an entire persona of core business.",
     image: "/images/knowledge-share/transformation.png",
-    href: "/knowledge-share/transformation",
+    href: "/knowledge-share/enterprises-transformation",   
     className: "knowledgeCategoryCard--large",
   },
 
   {
     id: "ai-automation",
-    title: "AI & Automation",
+    title: "Intelligent Automation",
     description:
       "Already....... Paradigms have changed. Expectations have evolved, and technology has progressed.",
     image: "/images/knowledge-share/ai-automation.jpg",
-    href: "/knowledge-share/ai-automation",
+     href: "/knowledge-share/enterprises-transformation#ai-automation",
     className: "knowledgeCategoryCard--wide",
   },
 
@@ -39,7 +39,7 @@ const categories: CategoryCard[] = [
     description:
       "It is important to understand the technology in the right perspective. It is necessary to study the core nature of how and why technology is scaled out in a certain way.",
     image: "/images/knowledge-share/new-age-tech.jpg",
-    href: "/knowledge-share/new-age-tech",
+   href: "/knowledge-share/new-age-tech", 
     className: "knowledgeCategoryCard--small",
   },
 
@@ -49,7 +49,7 @@ const categories: CategoryCard[] = [
     description:
       "Abstraction of enterprise service management has changed from a technology-centric and workflow-oriented concept to a comprehensive value-driven and growth accelerator theme.",
     image: "/images/knowledge-share/it-governance.png",
-    href: "/knowledge-share/it-governance",
+      href: "/knowledge-share/enterprises-transformation#it-governance",
     className: "knowledgeCategoryCard--small",
   },
 ];
