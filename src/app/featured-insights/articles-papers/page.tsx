@@ -65,24 +65,44 @@ async function getWordPressPosts(): Promise<BlogPost[]> {
     return [];
   }
 
-  try {
-    const response = await fetch(
-      `${apiUrl}/posts?per_page=50&_embed`,
-      {
-        next: {
-          revalidate: 300,
-        },
-      }
+try {
+  const response = await fetch(
+    `${apiUrl}/posts?per_page=50&_embed`,
+    {
+      cache: "no-store",
+    }
+  );
+
+  console.log("WordPress API URL:", apiUrl);
+  console.log("WordPress API status:", response.status);
+
+  if (!response.ok) {
+    const errorText = await response.text();
+
+    console.error(
+      "WordPress API response:",
+      errorText
     );
 
-    if (!response.ok) {
-      throw new Error(
-        `WordPress API error: ${response.status}`
-      );
-    }
+    throw new Error(
+      `WordPress API error: ${response.status}`
+    );
+  }
 
-    const posts: WordPressPost[] =
-      await response.json();
+  const posts: WordPressPost[] =
+    await response.json();
+
+  console.log(
+    "WordPress posts received:",
+    posts.length
+  );
+
+  return posts.map((post) => {
+    // Keep your existing mapping code here.
+
+
+
+
 
     return posts.map((post) => {
       const terms =

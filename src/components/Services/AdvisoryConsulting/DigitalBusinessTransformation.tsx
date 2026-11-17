@@ -12,7 +12,7 @@ export default function DigitalBusinessTransformation() {
         ===================================================== */}
         <div className="digital-business-transformation__content">
           <h2 id="digital-business-transformation-title">
-            How Digital Business Transformation (DBX) can miss the target <br/> and lack momentum – TI
+            How Frontier Business Transfomration (FBX) can miss the target  and lack momentum – TI
           
             
           </h2>

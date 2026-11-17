@@ -27,9 +27,9 @@ const industries: IndustryCard[] = [
   },
 
   {
-    title: "ONBOARDING",
+    title: "TECHNOLOGY ONBOARDING",
     shortDescription:
-      "The starting point is to upgrade the founding technology layer and onboard the respective resources to run it. The mapping and rationalization of the right capabilities, technologies, platforms, and components <br/> is crucial. ",
+      "The starting point is to upgrade the founding technology layer and onboard the respective resources to run it. The mapping and rationalization of the right capabilities, technologies, platforms, and components is crucial. ",
     description:
       "This will also include the respective competency building of the resources who will manage it. ",
     image: "/images/services/onboarding.png",
@@ -49,7 +49,7 @@ const industries: IndustryCard[] = [
   },
 
   {
-    title: "OPPORTUNITY",
+    title: "SCALE OPPORTUNITY",
     shortDescription:
       "Every offering changes with time and technology, and there is always a scope to refine and redesign the service – product – solution.",
     description:

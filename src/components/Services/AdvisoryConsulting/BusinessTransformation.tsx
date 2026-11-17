@@ -34,7 +34,7 @@ export default function BusinessTransformation({
           
 
 
-            <h2>Business Transformation</h2>
+            <h2>Frontier Business Transformation</h2>
 
             <div className="business-transformation-title-line" />
 
