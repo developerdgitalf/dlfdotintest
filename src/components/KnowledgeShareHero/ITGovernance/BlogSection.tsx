@@ -1,13 +1,17 @@
+
 "use client";
 
 import { useMemo, useState } from "react";
 import {
   FiArrowRight,
-  FiBookOpen,
   FiSearch,
 } from "react-icons/fi";
 
 import "./BlogSection.css";
+
+// =========================================================
+// BLOG POST INTERFACE
+// =========================================================
 
 export interface BlogPost {
   id: string | number;
@@ -24,68 +28,9 @@ interface BlogSectionProps {
   posts?: BlogPost[];
 }
 
-/*
-=========================================================
-FALLBACK POSTS
-=========================================================
-These are only used if BlogSection is opened without
-WordPress posts being passed from page.tsx.
-*/
-
-const defaultPosts: BlogPost[] = [
-  {
-    id: 1,
-    title: "Business sustenance and scale",
-    description:
-      "It is astonishing to see how every industry has upgraded itself with thorough insight and knowledge about emerging technologies. A keen study of components, technology, and capital.",
-    image: "/images/blog/business-sustenance.jpg",
-    category: "Digital Innovation",
-    date: "July 6, 2020",
-    author: "Ashwin Gaidhan",
-    slug: "business-sustenance-and-scale",
-  },
-  {
-    id: 2,
-    title: "The Business Resiliency Strategy",
-    description:
-      "This document describes the cause, the effect, the action and the method to build a sustainable business service model. Technology has ingrained so intricately with every business function.",
-    image: "/images/blog/business-resiliency.jpg",
-    category: "Digital Innovation",
-    date: "February 28, 2021",
-    author: "Ashwin Gaidhan",
-    slug: "business-resiliency-strategy",
-  },
-  {
-    id: 3,
-    title: "Business sustenance and scale",
-    description:
-      "It is astonishing to see how every industry has upgraded itself with thorough insight and knowledge about emerging technologies. A keen study of components, technology, and capital.",
-    image: "/images/blog/business-sustenance-2.jpg",
-    category: "Strategy Paper",
-    date: "July 6, 2020",
-    author: "Ashwin Gaidhan",
-    slug: "business-sustenance-scale-2",
-  },
-  {
-    id: 4,
-    title:
-      "Comprehensive Change Management... the Pedestal to Transformation",
-    description:
-      "This article explores the role of comprehensive change management in supporting transformation and helping organizations navigate change effectively.",
-    image: "/images/blog/change-management.jpg",
-    category: "Change Management",
-    date: "May 14, 2020",
-    author: "Ashwin Gaidhan",
-    slug: "comprehensive-change-management",
-  },
-];
-
-/*
-=========================================================
-FRONTEND CATEGORIES
-=========================================================
-These are the categories shown to website visitors.
-*/
+// =========================================================
+// FRONTEND CATEGORIES
+// =========================================================
 
 const categories = [
   "All Articles",
@@ -96,21 +41,9 @@ const categories = [
   "Technology",
 ];
 
-/*
-=========================================================
-WORDPRESS → WEBSITE CATEGORY MAPPING
-=========================================================
-
-WordPress categories:
-
-AI & Automation       → Technology
-Case Studies          → Business
-Digital Innovation    → Digital Innovation
-DIGITALFABRIC         → Strategy Paper
-IT Governance         → Strategy Paper
-New Age Tech          → Technology
-POV & INFOBYTES       → Change Management
-*/
+// =========================================================
+// WORDPRESS CATEGORY MAPPING
+// =========================================================
 
 const categoryMap: Record<string, string[]> = {
   "Strategy Paper": [
@@ -136,22 +69,13 @@ const categoryMap: Record<string, string[]> = {
   ],
 };
 
-/*
-=========================================================
-HTML ENTITY DECODER
-=========================================================
-WordPress sometimes returns:
+// =========================================================
+// HTML ENTITY DECODER
+// =========================================================
 
-&#038;
-&amp;
-&hellip;
-&#8217;
-
-This function converts them into normal text.
-*/
-
-function decodeHtmlEntities(value: string): string {
+function decodeHtmlEntities(value: string = ""): string {
   return value
+    .replace(/<[^>]*>/g, "")
     .replace(/&#038;/gi, "&")
     .replace(/&#38;/gi, "&")
     .replace(/&amp;/gi, "&")
@@ -171,70 +95,62 @@ function decodeHtmlEntities(value: string): string {
     .trim();
 }
 
-/*
-=========================================================
-NORMALIZE CATEGORY
-=========================================================
-Makes category comparison safer.
-*/
+// =========================================================
+// NORMALIZE CATEGORY
+// =========================================================
 
-function normalizeCategory(category: string): string {
+function normalizeCategory(category: string = ""): string {
   return decodeHtmlEntities(category)
     .replace(/\s+/g, " ")
     .trim()
     .toLowerCase();
 }
 
+// =========================================================
+// BLOG SECTION COMPONENT
+// =========================================================
+
 export default function BlogSection({
-  posts = defaultPosts,
+  posts = [],
 }: BlogSectionProps) {
   const [activeCategory, setActiveCategory] =
     useState("All Articles");
 
   const [search, setSearch] = useState("");
 
-  /*
-  ========================================================
-  FILTER POSTS
-  ========================================================
-  */
+  // =======================================================
+  // FILTER ARTICLES
+  // =======================================================
 
   const filteredPosts = useMemo(() => {
     const query = search.trim().toLowerCase();
 
     return posts.filter((post) => {
-      const postCategory = normalizeCategory(
-        post.category
-      );
+      // All Articles displays every received post.
+      let categoryMatch = activeCategory === "All Articles";
 
-      /*
-      -----------------------------------------------
-      CATEGORY FILTER
-      -----------------------------------------------
-      */
+      if (!categoryMatch) {
+        const postCategory = normalizeCategory(
+          post.category
+        );
 
-      let categoryMatch = true;
-
-      // All Articles = show everything
-      if (activeCategory === "All Articles") {
-        categoryMatch = true;
-      } else {
         const allowedCategories =
           categoryMap[activeCategory] || [];
 
         categoryMatch = allowedCategories.some(
           (category) =>
-            normalizeCategory(category) ===
-            postCategory
+            normalizeCategory(category) === postCategory
         );
+
+        // Also allow direct category matches.
+        if (!categoryMatch) {
+          categoryMatch =
+            normalizeCategory(activeCategory) ===
+            postCategory;
+        }
       }
 
-      /*
-      -----------------------------------------------
-      SEARCH FILTER
-      -----------------------------------------------
-      */
-
+      // Search across title, description and category.
       const title = decodeHtmlEntities(
         post.title
       ).toLowerCase();
@@ -247,23 +163,30 @@ export default function BlogSection({
         post.category
       ).toLowerCase();
 
+      const author = decodeHtmlEntities(
+        post.author
+      ).toLowerCase();
+
       const searchMatch =
         !query ||
         title.includes(query) ||
         description.includes(query) ||
-        category.includes(query);
+        category.includes(query) ||
+        author.includes(query);
 
       return categoryMatch && searchMatch;
     });
   }, [posts, activeCategory, search]);
 
+  // =======================================================
+  // RENDER
+  // =======================================================
+
   return (
     <section className="blog-section">
       <div className="blog-container">
 
-        {/* =========================================
-            HEADER
-        ========================================= */}
+        {/* HEADER */}
 
         <header className="blog-header">
           <h2>
@@ -277,9 +200,7 @@ export default function BlogSection({
           </p>
         </header>
 
-        {/* =========================================
-            FILTER BAR
-        ========================================= */}
+        {/* CATEGORY FILTER AND SEARCH */}
 
         <div className="blog-toolbar">
 
@@ -320,9 +241,7 @@ export default function BlogSection({
 
         </div>
 
-        {/* =========================================
-            POSTS
-        ========================================= */}
+        {/* ARTICLE GRID */}
 
         <div className="blog-grid">
 
@@ -338,12 +257,12 @@ export default function BlogSection({
 
             const author =
               decodeHtmlEntities(
-                post.author
+                post.author || "DigitalFabric"
               );
 
             const category =
               decodeHtmlEntities(
-                post.category
+                post.category || "Business"
               );
 
             return (
@@ -352,9 +271,7 @@ export default function BlogSection({
                 key={post.id}
               >
 
-                {/* =================================
-                    IMAGE
-                ================================= */}
+                {/* ARTICLE IMAGE */}
 
                 <div className="blog-card-image">
                   <img
@@ -367,18 +284,16 @@ export default function BlogSection({
                   />
                 </div>
 
-                {/* =================================
-                    CONTENT
-                ================================= */}
+                {/* ARTICLE CONTENT */}
 
                 <div className="blog-card-content">
 
-                  {/* META */}
+                  {/* META INFORMATION */}
 
                   <div className="blog-meta">
 
                     <span>
-                      {post.date.toUpperCase()}
+                      {post.date?.toUpperCase() || ""}
                     </span>
 
                     <span>•</span>
@@ -428,25 +343,19 @@ export default function BlogSection({
             );
           })}
 
-          {/* =========================================
-              EMPTY STATE
-          ========================================= */}
+          {/* EMPTY STATE */}
 
           {filteredPosts.length === 0 && (
             <div className="blog-empty">
               <p>
-                No articles found.
+                {posts.length === 0
+                  ? "Articles are currently unavailable. Please try again later."
+                  : "No articles found."}
               </p>
             </div>
           )}
 
         </div>
-
-        {/* =========================================
-            BOTTOM CTA
-        ========================================= */}
-
-      
 
       </div>
     </section>

@@ -5,7 +5,7 @@ interface DigitalTransformationRoadmapProps {
 }
 
 export default function DigitalTransformationRoadmap({
-  image = "/images/thought-leadership/digital-it-roadmap.png",
+  image = "/images/thought-leadership/digital-it-roadmap.svg",
 }: DigitalTransformationRoadmapProps) {
   return (
     <section className="digital-roadmap-section">
