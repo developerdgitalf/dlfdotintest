@@ -1,9 +1,12 @@
 import Header from "../../../components/Header/Header";
 import Footer from "../../../components/Footer/Footer";
 import PageHeader from "../../../components/PageHeader/PageHeader";
+
 import BlogSection, {
   BlogPost,
 } from "../../../components/KnowledgeShareHero/ITGovernance/BlogSection";
+
+export const dynamic = "force-dynamic";
 
 interface WordPressPost {
   id: number;
