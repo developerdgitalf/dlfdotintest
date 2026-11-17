@@ -54,56 +54,47 @@ function fixWordPressImageUrl(
   );
 }
 
+
 async function getWordPressPosts(): Promise<BlogPost[]> {
   const apiUrl = process.env.WORDPRESS_API_URL;
 
   if (!apiUrl) {
-    console.error(
-      "WORDPRESS_API_URL is not configured"
-    );
-
+    console.error("WORDPRESS_API_URL is not configured");
     return [];
   }
 
-try {
-  const response = await fetch(
-    `${apiUrl}/posts?per_page=50&_embed`,
-    {
-      cache: "no-store",
+  try {
+    const response = await fetch(
+      `${apiUrl}/posts?per_page=50&_embed`,
+      {
+        cache: "no-store",
+      }
+    );
+
+    console.log("WordPress API URL:", apiUrl);
+    console.log("WordPress API status:", response.status);
+
+    if (!response.ok) {
+      const errorText = await response.text();
+
+      console.error(
+        "WordPress API response:",
+        errorText
+      );
+
+      throw new Error(
+        `WordPress API error: ${response.status}`
+      );
     }
-  );
 
-  console.log("WordPress API URL:", apiUrl);
-  console.log("WordPress API status:", response.status);
+    const posts: WordPressPost[] = await response.json();
 
-  if (!response.ok) {
-    const errorText = await response.text();
-
-    console.error(
-      "WordPress API response:",
-      errorText
+    console.log(
+      "WordPress posts received:",
+      posts.length
     );
 
-    throw new Error(
-      `WordPress API error: ${response.status}`
-    );
-  }
-
-  const posts: WordPressPost[] =
-    await response.json();
-
-  console.log(
-    "WordPress posts received:",
-    posts.length
-  );
-
-  return posts.map((post) => {
-    // Keep your existing mapping code here.
-
-
-
-
-
+    // Map WordPress posts into BlogPost format
     return posts.map((post) => {
       const terms =
         post._embedded?.["wp:term"]?.flat() || [];
@@ -119,25 +110,15 @@ try {
       return {
         id: post.id,
 
-        title: stripHtml(
-          post.title.rendered
-        ),
+        title: stripHtml(post.title.rendered),
 
-        description: stripHtml(
-          post.excerpt.rendered
-        ),
+        description: stripHtml(post.excerpt.rendered),
 
-        image: fixWordPressImageUrl(
-          featuredImage
-        ),
+        image: fixWordPressImageUrl(featuredImage),
 
-        category:
-          categories[0]?.name ||
-          "Business",
+        category: categories[0]?.name || "Business",
 
-        date: new Date(
-          post.date
-        ).toLocaleDateString(
+        date: new Date(post.date).toLocaleDateString(
           "en-US",
           {
             year: "numeric",
@@ -153,6 +134,7 @@ try {
         slug: post.slug,
       };
     });
+
   } catch (error) {
     console.error(
       "Failed to fetch WordPress posts:",
@@ -162,6 +144,7 @@ try {
     return [];
   }
 }
+
 
 export default async function ResearchMarketStudyPage() {
   const posts =
